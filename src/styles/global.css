@@ -1,0 +1,29 @@
+img {
+  max-width: 100%;
+  display: block;
+	height: auto;
+	border-radius: 6px;
+}
+
+svg {
+  max-width: 100%;
+  width: 18px;
+  height: 18px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 90em;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+
+  display: grid;
+  grid-gap: var(--g, 2rem);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(min(var(--m, 20rem), 100%), 1fr)
+  );
+}

@@ -1,0 +1,14 @@
+---
+export interface Props {
+  tidal: string;
+}
+
+const { tidal } = Astro.props;
+---
+
+<iframe
+  class="rounded"
+  src={`https://embed.tidal.com/albums/${tidal}`}
+  style="border: 0; width: 100%; height: 120px;"
+  allowfullscreen
+  allow="encrypted-media"></iframe>

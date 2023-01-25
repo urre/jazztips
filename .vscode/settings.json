@@ -1,0 +1,44 @@
+{
+  "window.title": "🟢 Jazztips Astro ${activeEditorLong}",
+  "files.exclude": {
+    "public/*.js": true,
+    "public/*.js.map": true,
+    "node_modules": true
+  },
+  "search.exclude": {
+    "public/*.js": true,
+    "node_modules": true,
+    "*.png": true,
+    "*.jpg": true,
+    "*.svg": true
+  },
+  "[astro]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+  },
+	"prettier.documentSelectors": ["**/*.astro"],
+  "emmet.includeLanguages": { "javascript": "javascriptreact" },
+  "[mdx]": {
+    "files.trimTrailingWhitespace": false,
+    "files.insertFinalNewline": false,
+    "editor.trimAutoWhitespace": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.lineHeight": 26,
+    "editor.wordWrapColumn": 172,
+    "editor.lineNumbers": "on",
+    "editor.fontSize": 16,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "wordWrapColumn"
+  }
+}

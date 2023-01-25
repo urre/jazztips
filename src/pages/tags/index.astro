@@ -1,0 +1,31 @@
+---
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+
+const allPosts = await Astro.glob("../!(about.md|search.md)*.md");
+
+const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+
+const pageTitle = "Tag Index";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={pageTitle} description="Tags" />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <div>
+        {
+          tags.map((tag) => (
+            <p>
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </p>
+          ))
+        }
+      </div>
+    </main>
+  </body>
+</html>
