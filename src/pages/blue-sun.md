@@ -1,0 +1,34 @@
+---
+layout: ../layouts/Record.astro
+title: Blue Sun
+artist: Mark Isham
+label: Sony
+year: 1995
+tags:
+  - isham
+image: >-
+  https://res.cloudinary.com/urre/image/upload/v1465690079/icd8rb7nje8anbcburlr.jpg
+cloudinarypublicid: icd8rb7nje8anbcburlr
+cloudinaryversion: 1465690079
+permalink: /blue-sun/
+spotify: 'http://open.spotify.com/track/74AaVihbQA7Bzpj5Jgso0l'
+spotify_album: null
+credits:
+  - name: Mark Isham
+    instrument: Trumpet
+  - name: Steve Tavaglione
+    instrument: Tenorsaxofon
+  - name: 'David Goldblatt '
+    instrument: Piano
+  - name: Doug Lunn
+    instrument: Bass
+  - name: Kurt Wortman
+    instrument: Drums
+  - name: David Torn
+    instrument: Guitar
+  - name: Peter Maunu
+    instrument: Guitar
+pubDate: '2011-10-29'
+---
+
+<a href="http://en.wikipedia.org/wiki/Mark_Isham">Mark Isham</a>. Scientologen och jazztrumpetaren mest känd för filmmusik och experiment med elektronik. Här i en sofistikerad inspelning med bland andra <a href="http://en.wikipedia.org/wiki/Steve_Tavaglione">Steve Tavaglione</a>.
