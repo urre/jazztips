@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Ascenseur Pour L&#8217;Echafaud
+title: Ascenseur Pour Echafaud
 artist: Miles Davis
 label: Prestige
 year: 1957

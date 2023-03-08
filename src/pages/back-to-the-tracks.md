@@ -6,7 +6,6 @@ label: Blue Note
 year: 1985
 tags:
   - brooks
-  - ''
   - hubbard
 image: >-
   https://res.cloudinary.com/urre/image/upload/v1656930955/mm1jl3v4an36s1tettpe.jpg
@@ -31,4 +30,3 @@ credits:
     instrument: Drums
 pubDate: '2022-07-04'
 ---
-

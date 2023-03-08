@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: 4
+title: Four (4)
 artist: Ass
 label: Headspin Recordings
 year: 2013

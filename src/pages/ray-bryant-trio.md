@@ -14,7 +14,6 @@ cloudinarypublicid: fxnrkadluhokd4iwhr4y
 cloudinaryversion: 1465690122
 permalink: /ray-bryant-trio/
 spotify: 'http://open.spotify.com/track/40MABoPgCZauxl8svQUBDr'
-spotify_album: null
 credits:
   - name: Ray Bryant
     instrument: Piano

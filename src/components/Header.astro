@@ -1,15 +1,18 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../config";
-import "@acab/reset.css";
 ---
 
 <header>
-  <h2>
-    {SITE_TITLE}
-  </h2>
+  <h1>
+    <a href="/">
+      <span class="dot"></span>
+      {SITE_TITLE}
+    </a>
+  </h1>
   <nav>
     <HeaderLink href="/">Home</HeaderLink>
+    <HeaderLink href="/1">Archive</HeaderLink>
     <HeaderLink href="/about">About</HeaderLink>
     <HeaderLink href="/tags">Tags</HeaderLink>
     <HeaderLink href="/search">Search</HeaderLink>

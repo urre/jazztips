@@ -13,7 +13,6 @@ image: >-
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1605707686/u66mj7dfvpfe1kifgjli.jpg
 permalink: /four-for-trane/
-tidal: 4016126
 spotify: >-
   https://open.spotify.com/album/3sAkK5Zm8cigSNCgeoAqOa?si=eL5jE86eS1a_iJfc1taElg
 buy: 'https://www.prestomusic.com/jazz/products/8518990--four-for-trane'
@@ -33,4 +32,3 @@ credits:
     instrument: Drums
 pubDate: '2020-11-20'
 ---
-

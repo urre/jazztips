@@ -2,14 +2,16 @@
 layout: ../layouts/Record.astro
 title: Portrait in Jazz
 artist: Bill Evans / Bill Evans Trio
-label: null
+label: Riverside
 year: 1960
 tags:
   - evans
 image: >-
   https://res.cloudinary.com/urre/image/upload/v1673450795/wpl8tw88mouexmlskjoc.jpg
 permalink: /portrait-in-jazz/
-spotify: undefined
+spotify: https://open.spotify.com/album/093nLQ4H81HusNsFdGS4Or
+tidal: 77678676
+apple: https://embed.music.apple.com/se/album/portrait-in-jazz/1440941536
 credits:
   - name: Scott LaFaro
     instrument: Bass
