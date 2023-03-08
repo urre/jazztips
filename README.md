@@ -5,8 +5,27 @@
 
 # Inspiration
 
-Blog, search
+Blog, search, good example on using Typescript
 + [](https://github.com/satnaing/astro-paper)
+
+Blog post
++ [](https://www.stevefenton.co.uk/blog/2022/10/astro-paging-and-listing-by-category/#the-getstaticpaths-function)
+
+
+## Save for later
+
+```js
+<time datetime={post.frontmatter.pubDate}>
+	{new Date(post.frontmatter.pubDate).toLocaleDateString(
+		"en-us",
+		{
+			year: "numeric",
+			month: "short",
+			day: "numeric",
+		}
+	)}
+</time>
+```
 
 ## 🧞 Commands
 

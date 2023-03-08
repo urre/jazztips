@@ -12,13 +12,14 @@
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
-    "@astrojs/mdx": "^0.14.0",
+    "@astrojs/mdx": "^0.17.2",
     "@astrojs/rss": "^2.0.0",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.9.0"
+    "astro": "^2.0.18",
+    "cal-sans": "^1.0.1"
   },
   "devDependencies": {
     "prettier": "^2.8.2",
-    "prettier-plugin-astro": "^0.7.2"
+    "prettier-plugin-astro": "^0.8.0"
   }
 }
