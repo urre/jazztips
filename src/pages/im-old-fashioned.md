@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: o4z7oewwakjp0wlumruz
 cloudinaryversion: 1465690268
 permalink: /im-old-fashioned/
-spotify: 'http://open.spotify.com/album/0JiB0ZtmXqtFCTqa1w4vKE'
+spotify: 'https://open.spotify.com/album/0JiB0ZtmXqtFCTqa1w4vKE'
 spotify_album: null
 credits:
   - name: Margareta Bengtsson

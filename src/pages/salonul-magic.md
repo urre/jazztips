@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: do347s35vdtxjmnwua5r
 cloudinaryversion: 1465689939
 permalink: /salonul-magic/
-spotify: 'http://open.spotify.com/track/6TbRpB229njsNjp1h5Ybxj'
+spotify: 'https://open.spotify.com/track/6TbRpB229njsNjp1h5Ybxj'
 spotify_album: null
 credits:
   - name: Erik Lindeborg

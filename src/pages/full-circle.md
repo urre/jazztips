@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: wxfoaxalbxeejfiytoy3
 cloudinaryversion: 1465690108
 permalink: /full-circle/
-spotify: 'http://open.spotify.com/track/7dmxLVjxotbgB2HytQihWh'
+spotify: 'https://open.spotify.com/track/7dmxLVjxotbgB2HytQihWh'
 spotify_album: null
 credits:
   - name: Karl-Martin Almkvist

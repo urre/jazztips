@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: rogrfqjkzf5howq5ystl
 cloudinaryversion: 1465690116
 permalink: /takeaway/
-spotify: 'http://open.spotify.com/track/46Fp4xWe2vNsNysQxKrBCV'
+spotify: 'https://open.spotify.com/track/46Fp4xWe2vNsNysQxKrBCV'
 spotify_album: null
 credits:
   - name: Joakim Milder

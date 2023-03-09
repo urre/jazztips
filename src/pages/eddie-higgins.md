@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: w8cnouepoj3jnxtphze6
 cloudinaryversion: 1465690125
 permalink: /eddie-higgins/
-spotify: 'http://open.spotify.com/track/4JfzhFScINOa4kLf7ijnhO'
+spotify: 'https://open.spotify.com/track/4JfzhFScINOa4kLf7ijnhO'
 spotify_album: null
 credits:
   - name: Eddie Higgins

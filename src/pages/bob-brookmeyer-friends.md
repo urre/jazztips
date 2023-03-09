@@ -21,7 +21,7 @@ image: >-
 cloudinarypublicid: plgwlulaesxxjdqn4u8m
 cloudinaryversion: 1465690134
 permalink: /bob-brookmeyer-friends/
-spotify: 'http://open.spotify.com/track/1ZUHdJPSwvEBIPJ2jQ5VRi'
+spotify: 'https://open.spotify.com/track/1ZUHdJPSwvEBIPJ2jQ5VRi'
 spotify_album: null
 credits:
   - name: Bob Brookmeyer

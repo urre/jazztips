@@ -18,7 +18,7 @@ image: >-
 cloudinarypublicid: sbivsgmwrrukgd6fjeii
 cloudinaryversion: 1465690188
 permalink: /today-and-tomorrow/
-spotify: 'http://open.spotify.com/track/01HQIKjcODJCBRFoETqngE'
+spotify: 'https://open.spotify.com/track/01HQIKjcODJCBRFoETqngE'
 spotify_album: null
 credits:
   - name: McCoy Tyner

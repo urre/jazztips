@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: kvvwjdhhxv4rpohz5llv
 cloudinaryversion: 1465690049
 permalink: /xy/
-spotify: 'http://open.spotify.com/track/0KElDxgJ5saprKbfiY80gu'
+spotify: 'https://open.spotify.com/track/0KElDxgJ5saprKbfiY80gu'
 spotify_album: null
 credits:
   - name: Goran Kajfes

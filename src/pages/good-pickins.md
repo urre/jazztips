@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: xrmjguajlxv62sfmwkmi
 cloudinaryversion: 1465690192
 permalink: /good-pickins/
-spotify: 'http://open.spotify.com/track/6zYUU0NZyCIbWZcQ1Hc4IM'
+spotify: 'https://open.spotify.com/track/6zYUU0NZyCIbWZcQ1Hc4IM'
 spotify_album: null
 credits:
   - name: Bill Holman

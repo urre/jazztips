@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: q5zsn1onx3136tqpljbf
 cloudinaryversion: 1465689898
 permalink: /cross-culture/
-spotify: 'http://open.spotify.com/track/1CWhVWDDAE6GffN4AXSGOz'
+spotify: 'https://open.spotify.com/track/1CWhVWDDAE6GffN4AXSGOz'
 spotify_album: null
 credits:
   - name: Joe Lovano

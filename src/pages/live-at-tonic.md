@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: ksz4zblh99mp5axue8bt
 cloudinaryversion: 1465690187
 permalink: /live-at-tonic/
-spotify: 'http://open.spotify.com/track/2dQIGN9zqpj5Gt6qRgUACM'
+spotify: 'https://open.spotify.com/track/2dQIGN9zqpj5Gt6qRgUACM'
 spotify_album: null
 credits:
   - name: Marco Benevento

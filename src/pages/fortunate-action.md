@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: iwkrhutrr8q8pd3qzqcd
 cloudinaryversion: 1465689865
 permalink: /fortunate-action/
-spotify: 'http://open.spotify.com/track/4UFlhcZHIBLKDJoAAu5Ehc'
+spotify: 'https://open.spotify.com/track/4UFlhcZHIBLKDJoAAu5Ehc'
 spotify_album: null
 credits:
   - name: Alex Snydman

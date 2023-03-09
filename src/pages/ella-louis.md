@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: jn1l35ux1hgbbgrypcyh
 cloudinaryversion: 1465689828
 permalink: /ella-louis/
-spotify: 'http://open.spotify.com/track/7nOlpGbbxIBBIQyCGMtPyy'
+spotify: 'https://open.spotify.com/track/7nOlpGbbxIBBIQyCGMtPyy'
 spotify_album: 'spotify:album:2gL5uUab5439mDFvHnBtVb'
 credits:
   - name: Louis Armstrong

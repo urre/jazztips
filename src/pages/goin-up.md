@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: ki5ifomphvz9osptgwv3
 cloudinaryversion: 1465690201
 permalink: /goin-up/
-spotify: 'http://open.spotify.com/track/1TUnByfwv3uiVeOtdAs5xk'
+spotify: 'https://open.spotify.com/track/1TUnByfwv3uiVeOtdAs5xk'
 spotify_album: null
 credits:
   - name: Freddie Hubbard

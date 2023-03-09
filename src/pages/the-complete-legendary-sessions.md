@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: iyaip8mbbokpzrrkika2
 cloudinaryversion: 1465689778
 permalink: /the-complete-legendary-sessions/
-spotify: 'http://open.spotify.com/track/1yCt3MdcRJOh3jZ29MBU73'
+spotify: 'https://open.spotify.com/track/1yCt3MdcRJOh3jZ29MBU73'
 spotify_album: 'spotify:album:0WHtceEkxzHpCUoUxmvrjc'
 credits:
   - name: Chet Baker

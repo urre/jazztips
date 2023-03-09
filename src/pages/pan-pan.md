@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: j3n3tg7vxwmhzxodur3a
 cloudinaryversion: 1465690092
 permalink: /pan-pan/
-spotify: 'http://open.spotify.com/track/2pKHftfVkXJLiUZ8VNqDF9'
+spotify: 'https://open.spotify.com/track/2pKHftfVkXJLiUZ8VNqDF9'
 spotify_album: null
 credits:
   - name: Daniel Karlsson

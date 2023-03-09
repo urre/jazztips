@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: wuiokilk624jgwnqwkil
 cloudinaryversion: 1465689993
 permalink: /the-enemies-of-energy/
-spotify: 'http://open.spotify.com/track/07pPiBdMXBz3V8Luj8S4we'
+spotify: 'https://open.spotify.com/track/07pPiBdMXBz3V8Luj8S4we'
 spotify_album: null
 credits:
   - name: Kurt Rosenwinkel

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: ngxfde4vhsutraos698h
 cloudinaryversion: 1465690068
 permalink: /can-we-still-be-friends/
-spotify: 'http://open.spotify.com/track/4YU8Vi4FR30AWvxpOvWsQM'
+spotify: 'https://open.spotify.com/track/4YU8Vi4FR30AWvxpOvWsQM'
 spotify_album: null
 credits:
   - name: Fabian Kallerdahl

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: dflocrirhnd26ajm1iv8
 cloudinaryversion: 1465689952
 permalink: /lemon-man/
-spotify: 'http://open.spotify.com/track/5rvO58d2nko4pea9DAdssb'
+spotify: 'https://open.spotify.com/track/5rvO58d2nko4pea9DAdssb'
 spotify_album: null
 credits:
   - name: Maria Kvist

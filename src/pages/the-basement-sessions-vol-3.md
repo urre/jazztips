@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: z0ya3rluwlwl4ni5bflk
 cloudinaryversion: 1465689754
 permalink: /the-basement-sessions-vol-3/
-spotify: 'http://open.spotify.com/track/5L8HvX0GTRhiIPe9vtK0Cn'
+spotify: 'https://open.spotify.com/track/5L8HvX0GTRhiIPe9vtK0Cn'
 spotify_album: 'spotify:album:7hp9XvJ9urjhOx5G3bN3ZZ'
 credits:
   - name: Jørgen Mathisen

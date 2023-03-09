@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: zhxzox4pravqd1dpnyyi
 cloudinaryversion: 1465690020
 permalink: /canada-day/
-spotify: 'http://open.spotify.com/track/72gVWNzNtcSw7zdQJoHkER'
+spotify: 'https://open.spotify.com/track/72gVWNzNtcSw7zdQJoHkER'
 spotify_album: null
 credits:
   - name: Harris Eisenstadt

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: rq1klitkjjbufyc1qgpq
 cloudinaryversion: 1465689977
 permalink: /four-mfs-playin-tunes/
-spotify: 'http://open.spotify.com/track/2IVH1Km9JFUNftxvBKJzaj'
+spotify: 'https://open.spotify.com/track/2IVH1Km9JFUNftxvBKJzaj'
 spotify_album: null
 credits:
   - name: Branford Marsalis

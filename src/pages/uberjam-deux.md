@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: wzov9d7zgx5nfdpmed5q
 cloudinaryversion: 1465689872
 permalink: /uberjam-deux/
-spotify: 'http://open.spotify.com/track/3Cx2h7HwKpt4nZ7GFKlpOl'
+spotify: 'https://open.spotify.com/track/3Cx2h7HwKpt4nZ7GFKlpOl'
 spotify_album: null
 credits:
   - name: John Scofield

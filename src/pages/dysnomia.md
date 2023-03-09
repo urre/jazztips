@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: jmkxdalkpjiyhu7wztvv
 cloudinaryversion: 1465689852
 permalink: /dysnomia/
-spotify: 'http://open.spotify.com/track/3OpmaR1b3mV0Z5CQsMwe4q'
+spotify: 'https://open.spotify.com/track/3OpmaR1b3mV0Z5CQsMwe4q'
 spotify_album: null
 credits:
   - name: Amino Belyamani

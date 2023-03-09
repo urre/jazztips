@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: iozdrp9lo03buzr8fpvl
 cloudinaryversion: 1465690072
 permalink: /sailors-fighting-in-the-dance-hall/
-spotify: 'http://open.spotify.com/track/5RTCKgYFOwHGaG2BVH3oS5'
+spotify: 'https://open.spotify.com/track/5RTCKgYFOwHGaG2BVH3oS5'
 spotify_album: null
 credits:
   - name: Nils Berg

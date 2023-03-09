@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: xicmdjajwwhsluhc8q6i
 cloudinaryversion: 1465689923
 permalink: /ah-um/
-spotify: 'http://open.spotify.com/track/3PJMsxg6rz9FOo6xNiASXz'
+spotify: 'https://open.spotify.com/track/3PJMsxg6rz9FOo6xNiASXz'
 spotify_album: null
 credits:
   - name: 'Charles Mingus '

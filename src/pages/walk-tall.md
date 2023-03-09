@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: stxxnejdh4lsbfcdmk7a
 cloudinaryversion: 1465689881
 permalink: /walk-tall/
-spotify: 'http://open.spotify.com/track/0YdeF3IsFGH8qzZtIUV79b'
+spotify: 'https://open.spotify.com/track/0YdeF3IsFGH8qzZtIUV79b'
 spotify_album: null
 credits:
   - name: Jesper Lundgaard

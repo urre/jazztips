@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: t6c1jcym3j4tbizqhzad
 cloudinaryversion: 1465689985
 permalink: /on-the-go/
-spotify: 'http://open.spotify.com/track/06JEekJzXKCTCdAJFmCsjW'
+spotify: 'https://open.spotify.com/track/06JEekJzXKCTCdAJFmCsjW'
 spotify_album: null
 credits:
   - name: Matthew Halsal

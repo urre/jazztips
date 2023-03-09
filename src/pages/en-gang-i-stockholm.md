@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: uw46jyg148vfgbz3kf37
 cloudinaryversion: 1465690269
 permalink: /en-gang-i-stockholm/
-spotify: 'http://open.spotify.com/album/1kegN7rbTZPDRPj5HfXSjK'
+spotify: 'https://open.spotify.com/album/1kegN7rbTZPDRPj5HfXSjK'
 spotify_album: null
 credits:
   - name: Margareta Bengtsson

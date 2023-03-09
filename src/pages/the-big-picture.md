@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: qkgryjfaunuwaev5yl1t
 cloudinaryversion: 1465690013
 permalink: /the-big-picture/
-spotify: 'http://open.spotify.com/track/3SBsCDKFLldy3lG3LrJtgg'
+spotify: 'https://open.spotify.com/track/3SBsCDKFLldy3lG3LrJtgg'
 spotify_album: null
 credits:
   - name: Jacob Karlzon

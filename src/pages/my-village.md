@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: ged0f9nwikwr5olqzrsj
 cloudinaryversion: 1465689871
 permalink: /my-village/
-spotify: 'http://open.spotify.com/track/7eWzNLmaSC5L2C3mwYtyWY'
+spotify: 'https://open.spotify.com/track/7eWzNLmaSC5L2C3mwYtyWY'
 spotify_album: null
 credits:
   - name: Magnus Dölerud

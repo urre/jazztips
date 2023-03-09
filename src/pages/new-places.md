@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: ckiemvcnuklbcj11bpc1
 cloudinaryversion: 1465690011
 permalink: /new-places/
-spotify: 'http://open.spotify.com/track/72IGIc2pGiyRViUDEKPSRB'
+spotify: 'https://open.spotify.com/track/72IGIc2pGiyRViUDEKPSRB'
 spotify_album: null
 credits:
   - name: Håkan Broström

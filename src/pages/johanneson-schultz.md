@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: vx8evm7ow9zhb8jsek7s
 cloudinaryversion: 1465690151
 permalink: /johanneson-schultz/
-spotify: 'http://open.spotify.com/track/30ZVE4mEh3W53fx56Rquu5'
+spotify: 'https://open.spotify.com/track/30ZVE4mEh3W53fx56Rquu5'
 spotify_album: null
 credits:
   - name: Max Schultz

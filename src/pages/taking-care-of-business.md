@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: shtp36dabgq1k1leyvlu
 cloudinaryversion: 1465690035
 permalink: /taking-care-of-business/
-spotify: 'http://open.spotify.com/track/2XNDBQnN3v0cMHVkoFkWfe'
+spotify: 'https://open.spotify.com/track/2XNDBQnN3v0cMHVkoFkWfe'
 spotify_album: null
 credits:
   - name: Oliver Nelson

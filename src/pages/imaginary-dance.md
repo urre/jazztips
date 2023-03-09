@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: kqcjaqc3oh4u1xssjyy4
 cloudinaryversion: 1465690039
 permalink: /imaginary-dance/
-spotify: 'http://open.spotify.com/track/1RacwgDlCoSZXVPCdP9Dag'
+spotify: 'https://open.spotify.com/track/1RacwgDlCoSZXVPCdP9Dag'
 spotify_album: null
 credits:
   - name: Mark Lockheart

@@ -18,7 +18,7 @@ image: >-
 cloudinarypublicid: rlvv8oqdatxnylm0vbp4
 cloudinaryversion: 1465689874
 permalink: /momentum/
-spotify: 'http://open.spotify.com/track/1oS9J5I7NxDQwbEJzGy6c6'
+spotify: 'https://open.spotify.com/track/1oS9J5I7NxDQwbEJzGy6c6'
 spotify_album: null
 credits:
   - name: Joshua Redman

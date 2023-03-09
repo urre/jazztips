@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: yqhehrn04p7n1wgjjyia
 cloudinaryversion: 1465689814
 permalink: /news/
-spotify: 'http://open.spotify.com/track/3Lop7tByFOkVVSC2XhCPjt'
+spotify: 'https://open.spotify.com/track/3Lop7tByFOkVVSC2XhCPjt'
 spotify_album: 'spotify:album:23p5VerqcIu39Jy7ZJuPdf'
 credits:
   - name: Robert Erlandsson

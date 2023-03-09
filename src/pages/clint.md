@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: edg1fiu5kpewqjojsbg9
 cloudinaryversion: 1465690129
 permalink: /clint/
-spotify: 'http://open.spotify.com/track/2rWml88f6dFnIS1xpR2WtA'
+spotify: 'https://open.spotify.com/track/2rWml88f6dFnIS1xpR2WtA'
 spotify_album: null
 credits:
   - name: Goran Kajfeš
@@ -33,4 +33,4 @@ credits:
 pubDate: '2011-08-04'
 ---
 
-Deckarfunk. <a href="http://sv.wikipedia.org/wiki/Oddjob_(musikgrupp)">Oddjob</a> tar sig an filmmusik. <a href="http://open.spotify.com/album/4HeZ7OqYlDWsXdgSQLCAdE">Bitches Brew</a> möter <a href="http://sv.wikipedia.org/wiki/Kraftwerk">Kraftwerk</a> möter dramatisk friform.
+Deckarfunk. <a href="http://sv.wikipedia.org/wiki/Oddjob_(musikgrupp)">Oddjob</a> tar sig an filmmusik. <a href="https://open.spotify.com/album/4HeZ7OqYlDWsXdgSQLCAdE">Bitches Brew</a> möter <a href="http://sv.wikipedia.org/wiki/Kraftwerk">Kraftwerk</a> möter dramatisk friform.

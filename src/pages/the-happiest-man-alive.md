@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: rfgehyxyhfkiyzbgcl0q
 cloudinaryversion: 1465690178
 permalink: /the-happiest-man-alive/
-spotify: 'http://open.spotify.com/track/3dVFiC8l97gOiCfzdXUYKL'
+spotify: 'https://open.spotify.com/track/3dVFiC8l97gOiCfzdXUYKL'
 spotify_album: null
 credits:
   - name: Andreas Gidlund

@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: j4kxztkbh6sk1qctcuai
 cloudinaryversion: 1465689785
 permalink: /ecology/
-spotify: 'http://open.spotify.com/track/3D2MOBc9Apr2cgHYmp7U43'
+spotify: 'https://open.spotify.com/track/3D2MOBc9Apr2cgHYmp7U43'
 spotify_album: 'spotify:album:1OpGY38xbdoy9uoKWQCX1t'
 credits:
   - name: Steinar Aadnekvam

@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: hahfdrxbmfm4jtxb5ugt
 cloudinaryversion: 1465690213
 permalink: /stockholm-sweden-polophony/
-spotify: 'http://open.spotify.com/track/6DjAUO7TH5KXbh4IYUvaPG'
+spotify: 'https://open.spotify.com/track/6DjAUO7TH5KXbh4IYUvaPG'
 spotify_album: null
 credits:
   - name: Emil Strandberg

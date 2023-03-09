@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: slmwgezyvxbeaiaxfzig
 cloudinaryversion: 1465690190
 permalink: /shades-of-chet/
-spotify: 'http://open.spotify.com/track/21e2k8IUsGwpJVC4HLpF5Z'
+spotify: 'https://open.spotify.com/track/21e2k8IUsGwpJVC4HLpF5Z'
 spotify_album: null
 credits:
   - name: Enrico Rava

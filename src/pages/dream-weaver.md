@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: ivh7o6xidoygilltnetd
 cloudinaryversion: 1465690058
 permalink: /dream-weaver/
-spotify: 'http://open.spotify.com/track/7fLupCvn8Yig6G02i305l3'
+spotify: 'https://open.spotify.com/track/7fLupCvn8Yig6G02i305l3'
 spotify_album: null
 credits:
   - name: 'Charles Lloyd '

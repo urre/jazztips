@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: eia1fxsg1wfolba6qlud
 cloudinaryversion: 1465690154
 permalink: /joy-luck/
-spotify: 'http://open.spotify.com/track/3mgpcKCIJ0C8cyMK9zifA7'
+spotify: 'https://open.spotify.com/track/3mgpcKCIJ0C8cyMK9zifA7'
 spotify_album: null
 credits:
   - name: Peter Erskine

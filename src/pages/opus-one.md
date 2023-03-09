@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: zplnqlsq1hz2ovtrarne
 cloudinaryversion: 1465689995
 permalink: /opus-one/
-spotify: 'http://open.spotify.com/track/1CxHJJaltLB3cXk7Mv6Aj5'
+spotify: 'https://open.spotify.com/track/1CxHJJaltLB3cXk7Mv6Aj5'
 spotify_album: null
 credits:
   - name: 'Shauli Einav '

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: iadqrkii2zcrygkhg2rv
 cloudinaryversion: 1465690031
 permalink: /smuls-paradise/
-spotify: 'http://open.spotify.com/track/1OgLkPdphuQU2bqujI9wc1'
+spotify: 'https://open.spotify.com/track/1OgLkPdphuQU2bqujI9wc1'
 spotify_album: null
 credits:
   - name: Gary Smulyan

@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: lf6pyp8d5hvzlhzthn2p
 cloudinaryversion: 1465689826
 permalink: /alla-drommars-sang/
-spotify: 'http://open.spotify.com/track/2auL5wN2pO4NLNnxhDTEWp'
+spotify: 'https://open.spotify.com/track/2auL5wN2pO4NLNnxhDTEWp'
 spotify_album: 'spotify:album:5j637tp9ZGLvMrEpjLaQPE'
 credits:
   - name: Lena Willemark

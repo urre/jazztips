@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: haftsav0hgt6fhxks0w9
 cloudinaryversion: 1465689801
 permalink: /is-that-so/
-spotify: 'http://open.spotify.com/track/1IDdcfaXWtTSzhjy2mf6SU'
+spotify: 'https://open.spotify.com/track/1IDdcfaXWtTSzhjy2mf6SU'
 spotify_album: 'spotify:album:3TuU6FEXUh3FdsmlFgrsIx'
 credits:
   - name: Niels Vincentz

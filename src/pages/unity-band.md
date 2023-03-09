@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: wna7kge6sce79mxxgllu
 cloudinaryversion: 1465689983
 permalink: /unity-band/
-spotify: 'http://open.spotify.com/track/1dmA0vCl0FmBGPeQxi8JBe'
+spotify: 'https://open.spotify.com/track/1dmA0vCl0FmBGPeQxi8JBe'
 spotify_album: null
 credits:
   - name: Pat Metheny

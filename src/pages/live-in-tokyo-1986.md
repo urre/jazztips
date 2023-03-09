@@ -19,7 +19,7 @@ image: >-
 cloudinarypublicid: dywg4siie46hvbeohxxs
 cloudinaryversion: 1465690156
 permalink: /live-in-tokyo-1986/
-spotify: 'http://open.spotify.com/track/7cN0MSaoURMpVkPXX6UiXy'
+spotify: 'https://open.spotify.com/track/7cN0MSaoURMpVkPXX6UiXy'
 spotify_album: null
 credits:
   - name: Mike Mainieri

@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: iqdkfq5dr872un6ofkzm
 cloudinaryversion: 1465690224
 permalink: /mayday/
-spotify: 'http://open.spotify.com/album/4m3p9h8WXTqTIEZkaRurJo'
+spotify: 'https://open.spotify.com/album/4m3p9h8WXTqTIEZkaRurJo'
 spotify_album: null
 credits:
   - name: Fredrik Nordström

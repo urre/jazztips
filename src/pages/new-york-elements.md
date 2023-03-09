@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: ae54ivsb4gcgotteo7op
 cloudinaryversion: 1465689991
 permalink: /new-york-elements/
-spotify: 'http://open.spotify.com/track/1Y9ySbFBfa3LhnxMHkTgbn'
+spotify: 'https://open.spotify.com/track/1Y9ySbFBfa3LhnxMHkTgbn'
 spotify_album: null
 credits:
   - name: Fredrik Kronkvist

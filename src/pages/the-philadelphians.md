@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: yzmjbmz0hrbrhgdphu0v
 cloudinaryversion: 1465690140
 permalink: /the-philadelphians/
-spotify: 'http://open.spotify.com/track/0cLnRrRzIVXMbtzNqaB7zr'
+spotify: 'https://open.spotify.com/track/0cLnRrRzIVXMbtzNqaB7zr'
 spotify_album: null
 credits:
   - name: Benny Golson

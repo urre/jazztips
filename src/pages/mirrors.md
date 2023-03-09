@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: koyl0oalurexgg3qkny7
 cloudinaryversion: 1465689766
 permalink: /mirrors/
-spotify: 'http://open.spotify.com/track/0QNJjQSYHL8q9NFpwEH5jY'
+spotify: 'https://open.spotify.com/track/0QNJjQSYHL8q9NFpwEH5jY'
 spotify_album: 'spotify:album:2AxOqBjC8Qm0cPUGR2yWug'
 credits:
   - name: Davor Kajfeš

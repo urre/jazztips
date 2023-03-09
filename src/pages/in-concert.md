@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: xgfirenqektzs5vprtzv
 cloudinaryversion: 1465689885
 permalink: /in-concert/
-spotify: 'http://open.spotify.com/track/76iRBTSIXFWfmmfwIZsZh4'
+spotify: 'https://open.spotify.com/track/76iRBTSIXFWfmmfwIZsZh4'
 spotify_album: null
 credits:
   - name: Martin Tingvall

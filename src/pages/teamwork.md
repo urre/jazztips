@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: xmxmmkmfcdhwiqirou9r
 cloudinaryversion: 1465689845
 permalink: /teamwork/
-spotify: 'http://open.spotify.com/track/032Laygbn54kdUNOegyY4C'
+spotify: 'https://open.spotify.com/track/032Laygbn54kdUNOegyY4C'
 spotify_album: 'spotify:album:2LpBvkZBGIPKI5gq7mFIH8'
 credits:
   - name: Nils Landgren

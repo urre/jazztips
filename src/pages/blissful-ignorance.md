@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: kpsee5gdes0yomh52iqm
 cloudinaryversion: 1465690075
 permalink: /blissful-ignorance/
-spotify: 'http://open.spotify.com/track/3ispJJ5vQZgK8FYpYu4RHe'
+spotify: 'https://open.spotify.com/track/3ispJJ5vQZgK8FYpYu4RHe'
 spotify_album: null
 credits:
   - name: Tore Brunborg

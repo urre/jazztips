@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: kkksc9bqveiaexuaztzi
 cloudinaryversion: 1465689948
 permalink: /state-of-the-art/
-spotify: 'http://open.spotify.com/track/5JsIqJTzzuPXPCL8QhZQzV'
+spotify: 'https://open.spotify.com/track/5JsIqJTzzuPXPCL8QhZQzV'
 spotify_album: null
 credits:
   - name: 'Jamire Williams '

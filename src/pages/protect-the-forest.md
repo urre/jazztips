@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: lfjtf0dowv8mym2j1cqv
 cloudinaryversion: 1465689957
 permalink: /protect-the-forest/
-spotify: 'http://open.spotify.com/track/5FUdwFCANjoLtKu3t0spAW'
+spotify: 'https://open.spotify.com/track/5FUdwFCANjoLtKu3t0spAW'
 spotify_album: null
 credits:
   - name: Joel Wästberg

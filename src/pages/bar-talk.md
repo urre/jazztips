@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: hqs8pokj6bgv275hs8jj
 cloudinaryversion: 1465690276
 permalink: /bar-talk/
-spotify: 'http://open.spotify.com/album/44DShcS6C2AGXezbYIJFhR'
+spotify: 'https://open.spotify.com/album/44DShcS6C2AGXezbYIJFhR'
 spotify_album: null
 credits:
   - name: Jeff "Tain" Watts
@@ -41,4 +41,4 @@ credits:
 pubDate: '2010-12-29'
 ---
 
-Jeff "Tain Watts" blev känd från Wynton Marsalis tidiga grupper. Här tillsammans med stjärnmusiker från NY. Michael Brecker, Games Genus, Joey Calderazzo Ravi Coltrane med flera. Suverän ballad i <a href="http://open.spotify.com/track/5Z8KjE6z1kYGv395XYRFJv">Tonality of Atonement</a>
+Jeff "Tain Watts" blev känd från Wynton Marsalis tidiga grupper. Här tillsammans med stjärnmusiker från NY. Michael Brecker, Games Genus, Joey Calderazzo Ravi Coltrane med flera. Suverän ballad i <a href="https://open.spotify.com/track/5Z8KjE6z1kYGv395XYRFJv">Tonality of Atonement</a>

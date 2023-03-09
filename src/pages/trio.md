@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: m49aiv3ot63sh0jpldnh
 cloudinaryversion: 1465689837
 permalink: /trio/
-spotify: 'http://open.spotify.com/track/6w5TVMk9pnjdUzjY7hrNFR'
+spotify: 'https://open.spotify.com/track/6w5TVMk9pnjdUzjY7hrNFR'
 spotify_album: 'spotify:album:6xCosVmCaVJreCo9rH2Xyz'
 credits:
   - name: Nikolaj Hess

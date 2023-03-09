@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: it9zfejge2cvsmj7dqbw
 cloudinaryversion: 1465690238
 permalink: /mare-nostrum/
-spotify: 'http://open.spotify.com/album/7iZadmuPfAJ4YJWcgXTtTK'
+spotify: 'https://open.spotify.com/album/7iZadmuPfAJ4YJWcgXTtTK'
 spotify_album: null
 credits:
   - name: RIchard Galliano

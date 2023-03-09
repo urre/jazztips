@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: krigeiynbk4dtfsyqy9a
 cloudinaryversion: 1465690135
 permalink: /ninety-miles/
-spotify: 'http://open.spotify.com/track/76KXRHceHEmxu5tsvvhktA'
+spotify: 'https://open.spotify.com/track/76KXRHceHEmxu5tsvvhktA'
 spotify_album: null
 credits:
   - name: Christian Scott

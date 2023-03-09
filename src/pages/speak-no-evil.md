@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: oixcktuwblsvywooa77u
 cloudinaryversion: 1465690263
 permalink: /speak-no-evil/
-spotify: 'http://open.spotify.com/album/0UhFHMnSg3uMcik1RAddpZ'
+spotify: 'https://open.spotify.com/album/0UhFHMnSg3uMcik1RAddpZ'
 spotify_album: null
 credits:
   - name: Wayne Shorter

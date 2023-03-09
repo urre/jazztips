@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: rfoivbr3l57g9ajssulr
 cloudinaryversion: 1465689774
 permalink: /why/
-spotify: 'http://open.spotify.com/track/5ekKEzDyzdDrpkOsyi1b8I'
+spotify: 'https://open.spotify.com/track/5ekKEzDyzdDrpkOsyi1b8I'
 spotify_album: 'spotify:album:66we1SFA2DYIh5nHDDaoaw'
 credits:
   - name: Alec Dankworth

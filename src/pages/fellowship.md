@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: jcnuudzp2m3qwdtabhqr
 cloudinaryversion: 1465690152
 permalink: /fellowship/
-spotify: 'http://open.spotify.com/track/6ByabVpvAYgTeItidBleNc'
+spotify: 'https://open.spotify.com/track/6ByabVpvAYgTeItidBleNc'
 spotify_album: null
 credits:
   - name: Myron Walden

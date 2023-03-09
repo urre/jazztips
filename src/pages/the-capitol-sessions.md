@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: nq2m5psgiwedrxiguztv
 cloudinaryversion: 1465689940
 permalink: /the-capitol-sessions/
-spotify: 'http://open.spotify.com/track/58TTcPkKqbyyqtc9hyZs5F'
+spotify: 'https://open.spotify.com/track/58TTcPkKqbyyqtc9hyZs5F'
 spotify_album: null
 credits:
   - name: Mike Melvoin

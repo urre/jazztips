@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: czoqxgfnyvue1nblvdpq
 cloudinaryversion: 1465689905
 permalink: /the-black-saint-the-sinner-lady/
-spotify: 'http://open.spotify.com/track/1sQoKlaVMfJq3D1QPmuL83'
+spotify: 'https://open.spotify.com/track/1sQoKlaVMfJq3D1QPmuL83'
 spotify_album: null
 credits:
   - name: 'Charles Mingus '

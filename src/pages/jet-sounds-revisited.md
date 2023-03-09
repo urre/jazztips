@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: rafafvglloqg6f4kdl6s
 cloudinaryversion: 1465690210
 permalink: /jet-sounds-revisited/
-spotify: 'http://open.spotify.com/track/64YUXkfSR2J9WQn893NE29'
+spotify: 'https://open.spotify.com/track/64YUXkfSR2J9WQn893NE29'
 spotify_album: null
 credits:
   - name: Nicola Conte

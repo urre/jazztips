@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: htvx4xqmrivxks2sikgk
 cloudinaryversion: 1465689953
 permalink: /good-to-be/
-spotify: 'http://open.spotify.com/track/7gFy94suSCKEWhxkryp0cd'
+spotify: 'https://open.spotify.com/track/7gFy94suSCKEWhxkryp0cd'
 spotify_album: null
 credits:
   - name: Karl-Martin Almquist

@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: gxnypqcsxbomsvp7rfip
 cloudinaryversion: 1465690080
 permalink: /i-know-you/
-spotify: 'http://open.spotify.com/track/7MHds0oHEmn5j17qc3y6Uv'
+spotify: 'https://open.spotify.com/track/7MHds0oHEmn5j17qc3y6Uv'
 spotify_album: null
 credits:
   - name: Sofia Jernberg

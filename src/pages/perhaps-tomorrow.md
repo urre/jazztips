@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: t1bprukj2ganfnal1eyv
 cloudinaryversion: 1465689805
 permalink: /perhaps-tomorrow/
-spotify: 'http://open.spotify.com/track/2RnvsZm1WaD5vYXsVI9Tbt'
+spotify: 'https://open.spotify.com/track/2RnvsZm1WaD5vYXsVI9Tbt'
 spotify_album: 'spotify:album:14l7nRajbBhpXSLGJda7cx'
 credits:
   - name: Robert Tjäderqvist

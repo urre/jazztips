@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: fsyvk1eoo0ipfifennpq
 cloudinaryversion: 1465689758
 permalink: /jazzen/
-spotify: 'http://open.spotify.com/track/2aq7Hle7YP0DcSOlUVx9Jx'
+spotify: 'https://open.spotify.com/track/2aq7Hle7YP0DcSOlUVx9Jx'
 spotify_album: 'spotify:album:7Miw544mP86G1gFz9fSzQS'
 credits:
   - name: Nina Ramsby

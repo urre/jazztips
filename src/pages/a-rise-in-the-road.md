@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: tosszjpgd3tu49q5yi5e
 cloudinaryversion: 1465689867
 permalink: /a-rise-in-the-road/
-spotify: 'http://open.spotify.com/track/6pEc73g1m0R8GoZ7qkZZev'
+spotify: 'https://open.spotify.com/track/6pEc73g1m0R8GoZ7qkZZev'
 spotify_album: null
 credits:
   - name: Bob Mintzer

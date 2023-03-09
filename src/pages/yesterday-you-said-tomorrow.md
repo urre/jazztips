@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: stjtbqpijkvzrsoz49i6
 cloudinaryversion: 1465690231
 permalink: /yesterday-you-said-tomorrow/
-spotify: 'http://open.spotify.com/album/7L1redTxd0xR0VFM9VVJFs'
+spotify: 'https://open.spotify.com/album/7L1redTxd0xR0VFM9VVJFs'
 spotify_album: null
 credits:
   - name: Christian Scott

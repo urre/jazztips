@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: fvvbcgmhdafvtowvjvi1
 cloudinaryversion: 1465689782
 permalink: /red-garlands-piano/
-spotify: 'http://open.spotify.com/track/6h8mDZ4IYxQ9h8Iy5catTL'
+spotify: 'https://open.spotify.com/track/6h8mDZ4IYxQ9h8Iy5catTL'
 spotify_album: 'spotify:album:1M5dFOkC5tn1gJVnzx4yz3'
 credits:
   - name: Red Garland

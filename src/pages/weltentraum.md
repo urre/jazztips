@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: jrucce9pjsaziczs8od6
 cloudinaryversion: 1465689798
 permalink: /weltentraum/
-spotify: 'http://open.spotify.com/track/39joSg2kCpr98xkZPOAzmX'
+spotify: 'https://open.spotify.com/track/39joSg2kCpr98xkZPOAzmX'
 spotify_album: 'spotify:album:2dq2dAQwflEuogGYUoucSb'
 credits:
   - name: Michael Wollny
@@ -23,4 +23,3 @@ credits:
     instrument: Drums
 pubDate: '2014-02-17'
 ---
-

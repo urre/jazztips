@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: vyndyfenkau7ui1nhxdk
 cloudinaryversion: 1465690259
 permalink: /mercy-mercy/
-spotify: 'http://open.spotify.com/album/4KL1evbyhFRreohhvZmXso'
+spotify: 'https://open.spotify.com/album/4KL1evbyhFRreohhvZmXso'
 spotify_album: null
 credits:
   - name: Buddy Rich

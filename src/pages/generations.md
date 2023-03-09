@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: clja6h2efdmbyv6kuxti
 cloudinaryversion: 1465690102
 permalink: /generations/
-spotify: 'http://open.spotify.com/track/4UNd3f1ymZLEGW5ekwQtp4'
+spotify: 'https://open.spotify.com/track/4UNd3f1ymZLEGW5ekwQtp4'
 spotify_album: null
 credits:
   - name: Alex Sipiagin

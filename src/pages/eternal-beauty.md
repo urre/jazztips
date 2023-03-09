@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: vukbw3eaue98dxpwyffa
 cloudinaryversion: 1465689802
 permalink: /eternal-beauty/
-spotify: 'http://open.spotify.com/track/68rfxklKi7BuaYT2Nbb1YW'
+spotify: 'https://open.spotify.com/track/68rfxklKi7BuaYT2Nbb1YW'
 spotify_album: 'spotify:album:72pWomwDvL8NeT9NOxjf2A'
 credits:
   - name: Nils Landgren

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: vhvketxne0x62ecndbll
 cloudinaryversion: 1465690242
 permalink: /wide-angels/
-spotify: 'http://open.spotify.com/album/4DKj3RKdn0oMPetRy77v7E'
+spotify: 'https://open.spotify.com/album/4DKj3RKdn0oMPetRy77v7E'
 spotify_album: null
 credits:
   - name: Michael Brecker

@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: c2wsx26hg3igbn3gw1ad
 cloudinaryversion: 1465690044
 permalink: /statement-of-intent/
-spotify: 'http://open.spotify.com/track/6NxP0hVo1O023b9Vt7fPR3'
+spotify: 'https://open.spotify.com/track/6NxP0hVo1O023b9Vt7fPR3'
 spotify_album: null
 credits:
   - name: Adam Waldmann

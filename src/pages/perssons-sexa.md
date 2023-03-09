@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: urxdvckqr54xp9mvqsub
 cloudinaryversion: 1465689841
 permalink: /perssons-sexa/
-spotify: 'http://open.spotify.com/track/3oOIoMo2tSuEuI5Sl9eAq5'
+spotify: 'https://open.spotify.com/track/3oOIoMo2tSuEuI5Sl9eAq5'
 spotify_album: 'spotify:album:5JdtCoh9It3BAp1447yXnw'
 credits:
   - name: Jens Persson

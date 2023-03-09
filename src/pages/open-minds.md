@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: hclsulsk2uzga3e0ysg6
 cloudinaryversion: 1465689906
 permalink: /open-minds/
-spotify: 'http://open.spotify.com/track/0ZZwx0flVeuV4OvmevsHIq'
+spotify: 'https://open.spotify.com/track/0ZZwx0flVeuV4OvmevsHIq'
 spotify_album: null
 credits:
   - name: Tore Johansen

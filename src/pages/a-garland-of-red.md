@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: yy5jy55rla9v88gzcvyc
 cloudinaryversion: 1465690233
 permalink: /a-garland-of-red/
-spotify: 'http://open.spotify.com/album/6XHT7vZZjAmcopOb1kmvrU'
+spotify: 'https://open.spotify.com/album/6XHT7vZZjAmcopOb1kmvrU'
 spotify_album: null
 credits:
   - name: Red Garland

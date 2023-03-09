@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: hklbkswaqetmi56dz375
 cloudinaryversion: 1465689925
 permalink: /components/
-spotify: 'http://open.spotify.com/track/2QNgPY0MzduKqNNLrON0ng'
+spotify: 'https://open.spotify.com/track/2QNgPY0MzduKqNNLrON0ng'
 spotify_album: null
 credits:
   - name: Bobby Hutcherson

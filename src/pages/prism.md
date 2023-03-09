@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: swge3bmqkbmccdtnyino
 cloudinaryversion: 1465689831
 permalink: /prism/
-spotify: 'http://open.spotify.com/track/4yyXVVNcNYZFEIhJdVKUi4'
+spotify: 'https://open.spotify.com/track/4yyXVVNcNYZFEIhJdVKUi4'
 spotify_album: 'spotify:album:18xAyeU9Zc2ly8AZnM1fg1'
 credits:
   - name: Dave Holland

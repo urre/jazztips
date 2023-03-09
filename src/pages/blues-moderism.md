@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: gbw0dzjgc1hjkrpsqjmp
 cloudinaryversion: 1465690004
 permalink: /blues-moderism/
-spotify: 'http://open.spotify.com/track/5Wuke10cLbOyprq86C21p1'
+spotify: 'https://open.spotify.com/track/5Wuke10cLbOyprq86C21p1'
 spotify_album: null
 credits:
   - name: Lars Ekman

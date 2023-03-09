@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: ctmfu5lvosmmjnlclug7
 cloudinaryversion: 1465689999
 permalink: /plastic-moon/
-spotify: 'http://open.spotify.com/track/2QjWjKO1zR9MlSX6HXTQi0'
+spotify: 'https://open.spotify.com/track/2QjWjKO1zR9MlSX6HXTQi0'
 spotify_album: null
 credits:
   - name: Magnus Hjorth

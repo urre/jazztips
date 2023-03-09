@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: owmlvp8tg4jeaolz7axq
 cloudinaryversion: 1465690275
 permalink: /rewind-that/
-spotify: 'http://open.spotify.com/album/7IVsB6XihFrqGmNvN795dp'
+spotify: 'https://open.spotify.com/album/7IVsB6XihFrqGmNvN795dp'
 spotify_album: null
 credits:
   - name: Thomas Pridgen

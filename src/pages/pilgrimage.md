@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: z16kgelhsqdhrbwby62s
 cloudinaryversion: 1465690257
 permalink: /pilgrimage/
-spotify: 'http://open.spotify.com/album/1Fpt7GLdA9akk4VhwmkVAn'
+spotify: 'https://open.spotify.com/album/1Fpt7GLdA9akk4VhwmkVAn'
 spotify_album: null
 credits:
   - name: Michael Brecker

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: u3a2ljxgvtad0c6du4jj
 cloudinaryversion: 1465689771
 permalink: /plugged-in/
-spotify: 'http://open.spotify.com/track/0p8NY7KEfqBHerXdKVl2Ru'
+spotify: 'https://open.spotify.com/track/0p8NY7KEfqBHerXdKVl2Ru'
 spotify_album: 'spotify:album:6fsjXKQu6Rfx1kQYSthiyE'
 credits:
   - name: Jozef Dumoulin

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: s8xxaamdphivguxaa2q4
 cloudinaryversion: 1465689879
 permalink: /walking-shadows/
-spotify: 'http://open.spotify.com/track/6NnxkD0AwfVYgVkf6xZE73'
+spotify: 'https://open.spotify.com/track/6NnxkD0AwfVYgVkf6xZE73'
 spotify_album: null
 credits:
   - name: Joshua Redman

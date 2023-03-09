@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: kny6pkwodocyzgslcuex
 cloudinaryversion: 1465690033
 permalink: /come-sunday/
-spotify: 'http://open.spotify.com/track/2x7XQtX3ppJCXeX6MmkEV9'
+spotify: 'https://open.spotify.com/track/2x7XQtX3ppJCXeX6MmkEV9'
 spotify_album: null
 credits:
   - name: Hank Jones

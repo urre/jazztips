@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: o3df9rugdmaoxpfpp8gt
 cloudinaryversion: 1465689987
 permalink: /togetherness/
-spotify: 'http://open.spotify.com/track/6qFVeGJmUPYckZsJTHYdu1'
+spotify: 'https://open.spotify.com/track/6qFVeGJmUPYckZsJTHYdu1'
 spotify_album: null
 credits:
   - name: Monica Dominique

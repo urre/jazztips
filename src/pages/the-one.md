@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: znwhddlpywngk5omtbxp
 cloudinaryversion: 1465689846
 permalink: /the-one/
-spotify: 'http://open.spotify.com/track/5m6obKR55t8tjO1Zi8ZsSl'
+spotify: 'https://open.spotify.com/track/5m6obKR55t8tjO1Zi8ZsSl'
 spotify_album: null
 credits:
   - name: Fredrik Lindborg

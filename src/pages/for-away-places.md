@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: n6fdyja8aargnl6s1rny
 cloudinaryversion: 1465689869
 permalink: /for-away-places/
-spotify: 'http://open.spotify.com/track/4Hw4fZhsrMCg6pxyFPKK0B'
+spotify: 'https://open.spotify.com/track/4Hw4fZhsrMCg6pxyFPKK0B'
 spotify_album: null
 credits:
   - name: Julian Shore

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: mr6ldgxecmpi4dvjypvu
 cloudinaryversion: 1465689902
 permalink: /man-in-the-fog/
-spotify: 'http://open.spotify.com/track/0G1tXurwB2Xf1Kr9zWfWn5'
+spotify: 'https://open.spotify.com/track/0G1tXurwB2Xf1Kr9zWfWn5'
 spotify_album: null
 credits:
   - name: Jan Lundgren

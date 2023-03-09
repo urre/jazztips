@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: la8vbubwdz7ji4mb64gu
 cloudinaryversion: 1465689857
 permalink: /liquid-spirit/
-spotify: 'http://open.spotify.com/track/1vjKmL3b6pURxzakZ3PFhL'
+spotify: 'https://open.spotify.com/track/1vjKmL3b6pURxzakZ3PFhL'
 spotify_album: null
 credits:
   - name: Gregory Porter

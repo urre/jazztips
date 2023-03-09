@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: mkrez44q5flwwo3gqmof
 cloudinaryversion: 1465690094
 permalink: /le-specialite/
-spotify: 'http://open.spotify.com/track/5vD2m7n5RBTVPOVm0DmKoe'
+spotify: 'https://open.spotify.com/track/5vD2m7n5RBTVPOVm0DmKoe'
 spotify_album: null
 credits:
   - name: Maggi Olin

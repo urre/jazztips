@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: flsu0teaui3idcck8d8z
 cloudinaryversion: 1465689930
 permalink: /hush/
-spotify: 'http://open.spotify.com/track/7f6udTvuwQsK6flHs6TW92'
+spotify: 'https://open.spotify.com/track/7f6udTvuwQsK6flHs6TW92'
 spotify_album: null
 credits:
   - name: Nikki Iles

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: uyiuokqnqnspqrfvuida
 cloudinaryversion: 1465689966
 permalink: /the-long-waiting/
-spotify: 'http://open.spotify.com/track/0Z6LIc7mrUnpWDDuAwmPm8'
+spotify: 'https://open.spotify.com/track/0Z6LIc7mrUnpWDDuAwmPm8'
 spotify_album: null
 credits:
   - name: Chris Laurence

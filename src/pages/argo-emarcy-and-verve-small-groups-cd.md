@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: r0sapm4lu1oirnxjoe65
 cloudinaryversion: 1465689955
 permalink: /argo-emarcy-and-verve-small-groups-cd/
-spotify: 'http://open.spotify.com/track/70174SkSJ8iUhiF6xtlmHF'
+spotify: 'https://open.spotify.com/track/70174SkSJ8iUhiF6xtlmHF'
 spotify_album: null
 credits:
   - name: Buddy Rich

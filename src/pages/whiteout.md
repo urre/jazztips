@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: e66rkzffgiivr5llsfqc
 cloudinaryversion: 1465690254
 permalink: /whiteout/
-spotify: 'http://open.spotify.com/album/4ET6e3NC40BcN2o1XI338G'
+spotify: 'https://open.spotify.com/album/4ET6e3NC40BcN2o1XI338G'
 spotify_album: null
 credits:
   - name: Morten Qvenild

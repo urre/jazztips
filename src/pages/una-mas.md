@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: xzwffs3iar7yoitetlvs
 cloudinaryversion: 1465690246
 permalink: /una-mas/
-spotify: 'http://open.spotify.com/album/6iQh4pEuOEgA9UxVaAxrwx'
+spotify: 'https://open.spotify.com/album/6iQh4pEuOEgA9UxVaAxrwx'
 spotify_album: null
 credits:
   - name: Kenny Dorham

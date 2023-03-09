@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: pmr42l1gk875wnahbtzg
 cloudinaryversion: 1465690266
 permalink: /acoustic-shapes/
-spotify: 'http://open.spotify.com/album/4DZpSRCdQNuUG42dKhXjjL'
+spotify: 'https://open.spotify.com/album/4DZpSRCdQNuUG42dKhXjjL'
 spotify_album: null
 credits:
   - name: Wolfgang Haffner

@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: xa9dpekzjfj1xz9cv56t
 cloudinaryversion: 1465690161
 permalink: /code-red/
-spotify: 'http://open.spotify.com/track/4fo0GgUa82QHyfSMx3COfo'
+spotify: 'https://open.spotify.com/track/4fo0GgUa82QHyfSMx3COfo'
 spotify_album: null
 credits:
   - name: Helge Albin

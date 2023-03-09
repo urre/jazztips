@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: x14837bvqgwk6sprhrfv
 cloudinaryversion: 1465690050
 permalink: /delphian-palace/
-spotify: 'http://open.spotify.com/track/5goAOK2S17y8Dnewo3FxkE'
+spotify: 'https://open.spotify.com/track/5goAOK2S17y8Dnewo3FxkE'
 spotify_album: null
 credits:
   - name: Fabian Kallerdahl

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: psfbddxhbzp0lkhfdvsw
 cloudinaryversion: 1465690082
 permalink: /circle-down/
-spotify: 'http://open.spotify.com/track/1VaeEQ1r3sZYSeL5pExbNZ'
+spotify: 'https://open.spotify.com/track/1VaeEQ1r3sZYSeL5pExbNZ'
 spotify_album: null
 credits:
   - name: Chad Taylor

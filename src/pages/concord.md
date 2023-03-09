@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: hduxhgu6d1b5uvpeukoj
 cloudinaryversion: 1465690009
 permalink: /concord/
-spotify: 'http://open.spotify.com/track/5ZGEOBUMCrAN2wUCFYuTXK'
+spotify: 'https://open.spotify.com/track/5ZGEOBUMCrAN2wUCFYuTXK'
 spotify_album: null
 credits:
   - name: Klas Gullbrand

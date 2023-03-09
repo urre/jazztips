@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: rwsywvoolbu8xsbnirfp
 cloudinaryversion: 1465690006
 permalink: /unanimous/
-spotify: 'http://open.spotify.com/track/43Bl7COe1znuQgm3nknZzd'
+spotify: 'https://open.spotify.com/track/43Bl7COe1znuQgm3nknZzd'
 spotify_album: null
 credits:
   - name: Ulysses Owens Jr

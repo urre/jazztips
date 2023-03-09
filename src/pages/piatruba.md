@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: j2ezxh7sftmqifpanzq0
 cloudinaryversion: 1465689773
 permalink: /piatruba/
-spotify: 'http://open.spotify.com/track/7mx6DExGKxMMoo0WCLH2hU'
+spotify: 'https://open.spotify.com/track/7mx6DExGKxMMoo0WCLH2hU'
 spotify_album: 'spotify:album:3EC2pfBEC75gtbSfx4tHOa'
 credits:
   - name: Oskar Stenmark

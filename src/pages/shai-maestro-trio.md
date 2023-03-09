@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: hgzmaet1y0sm8xe5ghgd
 cloudinaryversion: 1465689996
 permalink: /shai-maestro-trio/
-spotify: 'http://open.spotify.com/track/6rYi6XueEITNoQoTLzSA8K'
+spotify: 'https://open.spotify.com/track/6rYi6XueEITNoQoTLzSA8K'
 spotify_album: null
 credits:
   - name: Shai Maestro

@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: issukdyeyxjiakb9easz
 cloudinaryversion: 1465690048
 permalink: /momemtum-space/
-spotify: 'http://open.spotify.com/track/6zfGPUcZ9grEz9YZm1JPE3'
+spotify: 'https://open.spotify.com/track/6zfGPUcZ9grEz9YZm1JPE3'
 spotify_album: null
 credits:
   - name: Dewey Redman

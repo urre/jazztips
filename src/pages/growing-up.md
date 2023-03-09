@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: hfgzbq8cv7a0l97o1age
 cloudinaryversion: 1465689910
 permalink: /growing-up/
-spotify: 'http://open.spotify.com/track/6SEgici5YDNCuDdLdqiu7a'
+spotify: 'https://open.spotify.com/track/6SEgici5YDNCuDdLdqiu7a'
 spotify_album: null
 credits:
   - name: 'Elin Larsson '

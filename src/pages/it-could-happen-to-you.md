@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: yg7ijntrhdvqnwp5hjup
 cloudinaryversion: 1465690132
 permalink: /it-could-happen-to-you/
-spotify: 'http://open.spotify.com/track/3ZJTaixxFMyDFv4Gq9uAZi'
+spotify: 'https://open.spotify.com/track/3ZJTaixxFMyDFv4Gq9uAZi'
 spotify_album: null
 credits:
   - name: Chet Baker

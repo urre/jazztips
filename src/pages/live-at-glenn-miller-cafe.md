@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: cc1vqg5urdgl1shvzwq2
 cloudinaryversion: 1465690120
 permalink: /live-at-glenn-miller-cafe/
-spotify: 'http://open.spotify.com/track/5eOQL8DcLhwpiOlyyDt2DP'
+spotify: 'https://open.spotify.com/track/5eOQL8DcLhwpiOlyyDt2DP'
 spotify_album: null
 credits:
   - name: Fredrik Nordström

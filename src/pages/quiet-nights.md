@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: vpqpnsloefbc1bgs9c1h
 cloudinaryversion: 1465689946
 permalink: /quiet-nights/
-spotify: 'http://open.spotify.com/track/5YnzAgz3J4ymYZvcP0uuC7'
+spotify: 'https://open.spotify.com/track/5YnzAgz3J4ymYZvcP0uuC7'
 spotify_album: null
 credits:
   - name: Miles Davis

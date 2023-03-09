@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: e6tnvwlktlc3wtageuic
 cloudinaryversion: 1465690118
 permalink: /in-the-city/
-spotify: 'http://open.spotify.com/track/20jj1gLQqVGHLtmQ8sA2g6'
+spotify: 'https://open.spotify.com/track/20jj1gLQqVGHLtmQ8sA2g6'
 spotify_album: null
 credits:
   - name: Örjan Hultén

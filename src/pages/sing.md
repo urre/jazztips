@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: s4g3ijtsnoknwbx4rtr4
 cloudinaryversion: 1465689776
 permalink: /sing/
-spotify: 'http://open.spotify.com/track/5Bw2NebSHS2oSQHKqFOJUx'
+spotify: 'https://open.spotify.com/track/5Bw2NebSHS2oSQHKqFOJUx'
 spotify_album: 'spotify:album:7MkXLZtmna9nzZPnfBJcgH'
 credits:
   - name: Ellekari Sander

@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: jsnplsnlxlh4vkr6ogh2
 cloudinaryversion: 1465689890
 permalink: /i-remember-chet/
-spotify: 'http://open.spotify.com/track/3RvFRnAj2gqZsrkdfzzyCd'
+spotify: 'https://open.spotify.com/track/3RvFRnAj2gqZsrkdfzzyCd'
 spotify_album: null
 credits:
   - name: Eric Le Lann

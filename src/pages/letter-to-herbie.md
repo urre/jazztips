@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: pdvujj8weipkhbklkojc
 cloudinaryversion: 1465690281
 permalink: /letter-to-herbie/
-spotify: 'http://open.spotify.com/album/0XSp12wnbJYqi0gWmHd1EP'
+spotify: 'https://open.spotify.com/album/0XSp12wnbJYqi0gWmHd1EP'
 spotify_album: null
 credits:
   - name: Steve Tavaglione

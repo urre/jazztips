@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: aubg5ds4wa8wp2cpr0a4
 cloudinaryversion: 1465689790
 permalink: /dance-of-the-diaper-fairy/
-spotify: 'http://open.spotify.com/track/4Ze7gGsuUV6E6VPBnLqW5Y'
+spotify: 'https://open.spotify.com/track/4Ze7gGsuUV6E6VPBnLqW5Y'
 spotify_album: 'spotify:album:1Sci57Tk0UduFWuTSjlK0U'
 credits:
   - name: Per Störby Jutbring

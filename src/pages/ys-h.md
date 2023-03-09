@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: bwfj1hdvuieejukpbudm
 cloudinaryversion: 1465690278
 permalink: /ys-h/
-spotify: 'http://open.spotify.com/album/3wj0mgl6KVuhxM5rQus81e'
+spotify: 'https://open.spotify.com/album/3wj0mgl6KVuhxM5rQus81e'
 spotify_album: null
 credits:
   - name: Calle Rasmusson

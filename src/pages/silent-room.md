@@ -20,7 +20,7 @@ image: >-
 cloudinarypublicid: axcxiav3xxlkj0gbe6t8
 cloudinaryversion: 1465690236
 permalink: /silent-room/
-spotify: 'http://open.spotify.com/album/2v2CNdDc7IyT9Zs6ckpBag'
+spotify: 'https://open.spotify.com/album/2v2CNdDc7IyT9Zs6ckpBag'
 spotify_album: null
 credits:
   - name: Joakim Milder

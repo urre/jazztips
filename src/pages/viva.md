@@ -18,7 +18,7 @@ image: >-
 cloudinarypublicid: hptrm7iaxknjusq4boka
 cloudinaryversion: 1465690089
 permalink: /viva/
-spotify: 'http://open.spotify.com/track/4R3I9OEqEioQAloNlqSHKS'
+spotify: 'https://open.spotify.com/track/4R3I9OEqEioQAloNlqSHKS'
 spotify_album: null
 credits:
   - name: Diego Urcola

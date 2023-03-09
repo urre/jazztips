@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: k326vk3k5pvrvixxqify
 cloudinaryversion: 1465689928
 permalink: /baby-breeze/
-spotify: 'http://open.spotify.com/track/3oGoMftOwU2Tf1FMPKM7Of'
+spotify: 'https://open.spotify.com/track/3oGoMftOwU2Tf1FMPKM7Of'
 spotify_album: null
 credits:
   - name: 'Chet Baker '

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: p7prad5qwxolruqt6for
 cloudinaryversion: 1465689810
 permalink: /works/
-spotify: 'http://open.spotify.com/track/0nuQQJ3v2W96I0N72yWncy'
+spotify: 'https://open.spotify.com/track/0nuQQJ3v2W96I0N72yWncy'
 spotify_album: 'spotify:album:6pjlWKfKKmyYyfkSXz3koC'
 credits:
   - name: Emil Strandberg

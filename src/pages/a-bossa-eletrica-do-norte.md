@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: tafdna4ezykihjcvdvmn
 cloudinaryversion: 1465690054
 permalink: /a-bossa-eletrica-do-norte/
-spotify: 'http://open.spotify.com/track/2gaafewPkoSbPR92YOTUF0'
+spotify: 'https://open.spotify.com/track/2gaafewPkoSbPR92YOTUF0'
 spotify_album: null
 credits:
   - name: Miriam Aïda

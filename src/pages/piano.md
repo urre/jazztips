@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: nfm2clrnsxz1ejjc9twb
 cloudinaryversion: 1465690130
 permalink: /piano/
-spotify: 'http://open.spotify.com/track/4TM2QuE73tpZdcZMy8Fo91'
+spotify: 'https://open.spotify.com/track/4TM2QuE73tpZdcZMy8Fo91'
 spotify_album: null
 credits:
   - name: Mats Öberg

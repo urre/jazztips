@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: asoulyr81eo6fcnvp7dw
 cloudinaryversion: 1465689915
 permalink: /art-and-perception/
-spotify: 'http://open.spotify.com/track/4VGxDEshBjLQGQIwQXyruf'
+spotify: 'https://open.spotify.com/track/4VGxDEshBjLQGQIwQXyruf'
 spotify_album: null
 credits:
   - name: Art Farmer

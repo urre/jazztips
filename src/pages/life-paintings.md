@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: iv4s7ucmyactnjqpy4zq
 cloudinaryversion: 1465690024
 permalink: /life-paintings/
-spotify: 'http://open.spotify.com/track/6TGc5OKyQfhkV8dIpEILfa'
+spotify: 'https://open.spotify.com/track/6TGc5OKyQfhkV8dIpEILfa'
 spotify_album: null
 credits:
   - name: Abram Wilson

@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: wh9aykoxxzqq6qpy4gle
 cloudinaryversion: 1465690157
 permalink: /metropolitain/
-spotify: 'http://open.spotify.com/track/2loOCF39APXk1kHrGFEcou'
+spotify: 'https://open.spotify.com/track/2loOCF39APXk1kHrGFEcou'
 spotify_album: null
 credits:
   - name: Kyle Eastwood

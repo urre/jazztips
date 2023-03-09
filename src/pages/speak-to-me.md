@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: garsy5x1yzmt3emqq1lv
 cloudinaryversion: 1465689964
 permalink: /speak-to-me/
-spotify: 'http://open.spotify.com/track/7L29Wo3mPN8UmQOokXxvSe'
+spotify: 'https://open.spotify.com/track/7L29Wo3mPN8UmQOokXxvSe'
 spotify_album: null
 credits:
   - name: Marc Copland

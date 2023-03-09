@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: m8qzjmppqxoawglwhvl4
 cloudinaryversion: 1465690173
 permalink: /aviaja/
-spotify: 'http://open.spotify.com/track/3piQYEqS0HLi8IPRfA82t0'
+spotify: 'https://open.spotify.com/track/3piQYEqS0HLi8IPRfA82t0'
 spotify_album: null
 credits:
   - name: Severi Pyysalo

@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: ru734kgkeown0rmcgrcp
 cloudinaryversion: 1465689920
 permalink: /hometone/
-spotify: 'http://open.spotify.com/track/24FejFg9LbL9ckFBTvRUiW'
+spotify: 'https://open.spotify.com/track/24FejFg9LbL9ckFBTvRUiW'
 spotify_album: null
 credits:
   - name: Billy Drummond

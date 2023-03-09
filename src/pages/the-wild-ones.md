@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: tf3wbq4gh7jwk7i3lrhz
 cloudinaryversion: 1465689927
 permalink: /the-wild-ones/
-spotify: 'http://open.spotify.com/track/507h6UBqvnzLGEDuhDcE5P'
+spotify: 'https://open.spotify.com/track/507h6UBqvnzLGEDuhDcE5P'
 spotify_album: null
 credits:
   - name: Goran Kajfeš

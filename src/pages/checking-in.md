@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: qynbgcxjpmrxaqjeqbrf
 cloudinaryversion: 1465690018
 permalink: /checking-in/
-spotify: 'http://open.spotify.com/track/4RAOHUoWWAGyqN7fm5MXNT'
+spotify: 'https://open.spotify.com/track/4RAOHUoWWAGyqN7fm5MXNT'
 spotify_album: null
 credits:
   - name: Patrik Skog
