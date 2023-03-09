@@ -429,7 +429,7 @@ dl {
   grid-auto-flow: column;
   gap: calc(var(--gap) * 2);
   grid-template-rows: 4rem;
-  font-size: 1.5em;
+  font-size: clamp(.75rem, 3vw, 1.5rem);
 }
 
 dd {
@@ -443,7 +443,6 @@ dd {
 
 dd div {
   display: flex;
-/* justify-content: space-between; */
 align-items: center;
 gap:1rem;
 }
