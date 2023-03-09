@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: mfzcgtfbiyq6wnedb9zb
 cloudinaryversion: 1465690199
 permalink: /the-blues-and-the-abstract-truth/
-spotify: 'http://open.spotify.com/track/4iEJyAwf1FLU1ZNIHoS7YD'
+spotify: 'https://open.spotify.com/track/4iEJyAwf1FLU1ZNIHoS7YD'
 spotify_album: null
 credits:
   - name: Oliver Nelson

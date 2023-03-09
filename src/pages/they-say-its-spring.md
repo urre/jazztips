@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: dqsapvf2wmrntgdswrhn
 cloudinaryversion: 1465689875
 permalink: /they-say-its-spring/
-spotify: 'http://open.spotify.com/track/0qTlx7MkJg4I5ec38jMrDh'
+spotify: 'https://open.spotify.com/track/0qTlx7MkJg4I5ec38jMrDh'
 spotify_album: null
 credits:
   - name: Mimi Terris

@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: ab0t60onfl05twybd7lg
 cloudinaryversion: 1465689780
 permalink: /blauklang/
-spotify: 'http://open.spotify.com/track/5jqNQgoyms6E1Oqy2v6fTV'
+spotify: 'https://open.spotify.com/track/5jqNQgoyms6E1Oqy2v6fTV'
 spotify_album: 'spotify:album:1G7OcrhyRk59T0LW0YM3Qm'
 credits:
   - name: Nguyên Lê

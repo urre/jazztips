@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: ujrmuvvn2hayux2jhy93
 cloudinaryversion: 1465690193
 permalink: /charles-lloyd-in-europe/
-spotify: 'http://open.spotify.com/track/6Nv3QEZ9Tifpd0qDHoOMKQ'
+spotify: 'https://open.spotify.com/track/6Nv3QEZ9Tifpd0qDHoOMKQ'
 spotify_album: null
 credits:
   - name: Charles Lloyd

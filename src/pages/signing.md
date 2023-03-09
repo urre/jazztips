@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: jkfoda7n8ytwwgpcnbha
 cloudinaryversion: 1465689960
 permalink: /signing/
-spotify: 'http://open.spotify.com/track/39MlqGI2tKZOEAXUeVEQBW'
+spotify: 'https://open.spotify.com/track/39MlqGI2tKZOEAXUeVEQBW'
 spotify_album: null
 credits:
   - name: Joe Locke

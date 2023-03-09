@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: dr0r8bavej6pobkejbxx
 cloudinaryversion: 1465689768
 permalink: /the-set/
-spotify: 'http://open.spotify.com/track/6OQm52weN32WwD7CCgmQrb'
+spotify: 'https://open.spotify.com/track/6OQm52weN32WwD7CCgmQrb'
 spotify_album: 'spotify:album:13RVVifupjgTbJsIq2ioak'
 credits:
   - name: Tore Johansen

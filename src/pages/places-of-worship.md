@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: gygsbllgdanm44fu6hnj
 cloudinaryversion: 1465689819
 permalink: /places-of-worship/
-spotify: 'http://open.spotify.com/track/3xANsaNcUHcm2nCSpUPziR'
+spotify: 'https://open.spotify.com/track/3xANsaNcUHcm2nCSpUPziR'
 spotify_album: 'spotify:album:4RuG4cYFZhKmdwuJu6q2Cc'
 credits:
   - name: Arve Henriksen

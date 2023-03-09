@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: nvuozhrr3klyhxd96zsf
 cloudinaryversion: 1465690046
 permalink: /roy-alty/
-spotify: 'http://open.spotify.com/track/1qFQOAOWJfbGt4GpIjDPIK'
+spotify: 'https://open.spotify.com/track/1qFQOAOWJfbGt4GpIjDPIK'
 spotify_album: null
 credits:
   - name: Roy Haynes

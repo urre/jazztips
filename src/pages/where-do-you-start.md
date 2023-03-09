@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: z8t2m7qb5rb20q19i0gx
 cloudinaryversion: 1465689967
 permalink: /where-do-you-start/
-spotify: 'http://open.spotify.com/track/7ek6IyALowPfNUwnPGcYAj'
+spotify: 'https://open.spotify.com/track/7ek6IyALowPfNUwnPGcYAj'
 spotify_album: null
 credits:
   - name: 'Brad Mehldau '

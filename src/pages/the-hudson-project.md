@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: kqvh3gxinuwfcstxfqq4
 cloudinaryversion: 1465690218
 permalink: /the-hudson-project/
-spotify: 'http://open.spotify.com/track/6Lmj8BpcUeZKuAoNqOgaKn'
+spotify: 'https://open.spotify.com/track/6Lmj8BpcUeZKuAoNqOgaKn'
 spotify_album: null
 credits:
   - name: Bob Mintzer

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: an2ppv8ss57wn3waed6c
 cloudinaryversion: 1465690165
 permalink: /earfood/
-spotify: 'http://open.spotify.com/track/3uQEZW6UTSlqFigQeVano0'
+spotify: 'https://open.spotify.com/track/3uQEZW6UTSlqFigQeVano0'
 spotify_album: null
 credits:
   - name: Roy Hargrove

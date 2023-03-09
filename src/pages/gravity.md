@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: dnaeaiank3kkxs6mdl2u
 cloudinaryversion: 1465690105
 permalink: /gravity/
-spotify: 'http://open.spotify.com/track/7ez62YOoWMawFHbXO6g2E4'
+spotify: 'https://open.spotify.com/track/7ez62YOoWMawFHbXO6g2E4'
 spotify_album: null
 credits:
   - name: 'Julian Wasserfuhr '

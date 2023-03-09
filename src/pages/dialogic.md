@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: ra27wmqpvdt0mawyobc2
 cloudinaryversion: 1465690062
 permalink: /dialogic/
-spotify: 'http://open.spotify.com/track/2YH3o6OrNKND1IJlis7XFL'
+spotify: 'https://open.spotify.com/track/2YH3o6OrNKND1IJlis7XFL'
 spotify_album: null
 credits:
   - name: Anthony Branker

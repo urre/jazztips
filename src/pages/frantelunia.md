@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: uwmbcgtqbz9i3nfeq9lr
 cloudinaryversion: 1465689855
 permalink: /frantelunia/
-spotify: 'http://open.spotify.com/track/2DBMUkUXUnamwbjxBFyPb9'
+spotify: 'https://open.spotify.com/track/2DBMUkUXUnamwbjxBFyPb9'
 spotify_album: null
 credits:
   - name: 'Anders Åstrand '

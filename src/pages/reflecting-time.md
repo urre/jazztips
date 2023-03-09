@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: r0sygho38fecnukyo8s8
 cloudinaryversion: 1465689764
 permalink: /reflecting-time/
-spotify: 'http://open.spotify.com/track/5FAcw6dUZ9nVfFMLtAbQtz'
+spotify: 'https://open.spotify.com/track/5FAcw6dUZ9nVfFMLtAbQtz'
 spotify_album: 'spotify:album:3uDqT6yAlafYQzQ8h8DIYV'
 credits:
   - name: Fredrik Kronkvist

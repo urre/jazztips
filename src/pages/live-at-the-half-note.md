@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: wyqra2p4nhecgehpjdvn
 cloudinaryversion: 1465690043
 permalink: /live-at-the-half-note/
-spotify: 'http://open.spotify.com/track/0txTjrrZ0l8sWhDlzcH2N5'
+spotify: 'https://open.spotify.com/track/0txTjrrZ0l8sWhDlzcH2N5'
 spotify_album: null
 credits:
   - name: Art Farmer

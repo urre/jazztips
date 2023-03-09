@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: edenoxrptmvsmcafr1tv
 cloudinaryversion: 1465690215
 permalink: /bohemia-after-dark/
-spotify: 'http://open.spotify.com/album/1PXzbXdBnbNs3jjp6unybA'
+spotify: 'https://open.spotify.com/album/1PXzbXdBnbNs3jjp6unybA'
 spotify_album: null
 credits:
   - name: Jerome Richardson

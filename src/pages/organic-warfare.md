@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: jeljb7y5lldr4eblsyff
 cloudinaryversion: 1465690036
 permalink: /organic-warfare/
-spotify: 'http://open.spotify.com/track/1Z1XWVQMIfDonTvsTryCSI'
+spotify: 'https://open.spotify.com/track/1Z1XWVQMIfDonTvsTryCSI'
 spotify_album: null
 credits:
   - name: Jasper Hoiby

@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: cjs5c4hlmz6e1djjbjqb
 cloudinaryversion: 1465689748
 permalink: /monk-vibes/
-spotify: 'http://open.spotify.com/track/11UvchrYQEu6hL7gSczq2F'
+spotify: 'https://open.spotify.com/track/11UvchrYQEu6hL7gSczq2F'
 spotify_album: 'spotify:album:3K6tU0lajfemZSBGxmc8La'
 credits:
   - name: Jason Marsalis

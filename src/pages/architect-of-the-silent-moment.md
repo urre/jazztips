@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: zptkqyo5o4ljgsbfujdb
 cloudinaryversion: 1465690086
 permalink: /architect-of-the-silent-moment/
-spotify: 'http://open.spotify.com/track/0eBLLvjsMCdG7F5ESUga6N'
+spotify: 'https://open.spotify.com/track/0eBLLvjsMCdG7F5ESUga6N'
 spotify_album: null
 credits:
   - name: Scott Colley

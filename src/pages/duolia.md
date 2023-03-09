@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: mt3qjojdn6xkkuehylo5
 cloudinaryversion: 1465689795
 permalink: /duolia/
-spotify: 'http://open.spotify.com/track/66kHV0FjBqjEMdMkS7kf3K'
+spotify: 'https://open.spotify.com/track/66kHV0FjBqjEMdMkS7kf3K'
 spotify_album: 'spotify:album:25s5b4vxWPMmfSlPBBAPcG'
 credits:
   - name: Harald Lassen

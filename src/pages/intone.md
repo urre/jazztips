@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: kbadt0utrap3hqhevjpk
 cloudinaryversion: 1465689829
 permalink: /intone/
-spotify: 'http://open.spotify.com/track/0AED45CHEQ8kXrmIrtJOvo'
+spotify: 'https://open.spotify.com/track/0AED45CHEQ8kXrmIrtJOvo'
 spotify_album: 'spotify:album:6LyIUICVUTWHatwaPUtoEK'
 credits:
   - name: Oskar Stenmark

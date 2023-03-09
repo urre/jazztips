@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: zftmmzmgctdmekxhydu0
 cloudinaryversion: 1465690003
 permalink: /the-house-always-wins/
-spotify: 'http://open.spotify.com/track/1csGaDH9cxGzTuUmjB2EbY'
+spotify: 'https://open.spotify.com/track/1csGaDH9cxGzTuUmjB2EbY'
 spotify_album: null
 credits:
   - name: 'Dave Stapleton '

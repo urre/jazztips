@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: uxfxlkmwivs2fpzpy6xd
 cloudinaryversion: 1465690137
 permalink: /i-s/
-spotify: 'http://open.spotify.com/track/1HE2DpfFjQT2SRx9LPYuCA'
+spotify: 'https://open.spotify.com/track/1HE2DpfFjQT2SRx9LPYuCA'
 spotify_album: null
 credits:
   - name: Tore Johansen

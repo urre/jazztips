@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: hvj0ddhrarojizyvloiu
 cloudinaryversion: 1465690167
 permalink: /jaded-angels/
-spotify: 'http://open.spotify.com/track/6hGDIBQDR6R4omNd4BqwiD'
+spotify: 'https://open.spotify.com/track/6hGDIBQDR6R4omNd4BqwiD'
 spotify_album: null
 credits:
   - name: Eric Watson

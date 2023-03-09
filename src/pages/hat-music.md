@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: z2zmpiykhn0yco8skgo4
 cloudinaryversion: 1465690232
 permalink: /hat-music/
-spotify: 'http://open.spotify.com/album/0HH8Bn28HA1e4vXaYmCKLo'
+spotify: 'https://open.spotify.com/album/0HH8Bn28HA1e4vXaYmCKLo'
 spotify_album: null
 credits:
   - name: Jonas Östholm

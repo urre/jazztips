@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: t7anyotlvk43oa0lqz4a
 cloudinaryversion: 1465690226
 permalink: /moon-beams/
-spotify: 'http://open.spotify.com/album/6mlw9nAK0QBh4iWmTV6aj2'
+spotify: 'https://open.spotify.com/album/6mlw9nAK0QBh4iWmTV6aj2'
 spotify_album: null
 credits:
   - name: Bill Evans

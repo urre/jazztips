@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: kccc5o7q80s1059xxwsc
 cloudinaryversion: 1465690073
 permalink: /greg-houben-quartet-meets-pierrick-pedron/
-spotify: 'http://open.spotify.com/track/3FOJqCWtgLxFUem7MY82ot'
+spotify: 'https://open.spotify.com/track/3FOJqCWtgLxFUem7MY82ot'
 spotify_album: null
 credits:
   - name: Greg Houben

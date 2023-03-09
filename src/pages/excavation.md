@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: eqxrxwyvwms13rv39nfp
 cloudinaryversion: 1465690256
 permalink: /excavation/
-spotify: 'http://open.spotify.com/album/1LEUKTS71h8lMIQ54xGLts'
+spotify: 'https://open.spotify.com/album/1LEUKTS71h8lMIQ54xGLts'
 spotify_album: null
 credits:
   - name: Nils Janson

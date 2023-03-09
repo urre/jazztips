@@ -11,6 +11,10 @@ Blog, search, good example on using Typescript
 Blog post
 + [](https://www.stevefenton.co.uk/blog/2022/10/astro-paging-and-listing-by-category/#the-getstaticpaths-function)
 
+## Todo
+
++ [ ] Add RSS feed
++ [ ] Better search
 
 ## Save for later
 

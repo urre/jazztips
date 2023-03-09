@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: djmgjdfjrkv0t6eu3s9o
 cloudinaryversion: 1465689797
 permalink: /dashes-to-dashes/
-spotify: 'http://open.spotify.com/track/4yuMRutj2mv75wGKHMSUbe'
+spotify: 'https://open.spotify.com/track/4yuMRutj2mv75wGKHMSUbe'
 spotify_album: 'spotify:album:4IufJEhlBky2OxkE3SOlYJ'
 credits:
   - name: Mats Gustafsson

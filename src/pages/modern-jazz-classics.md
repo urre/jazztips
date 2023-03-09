@@ -18,7 +18,7 @@ image: >-
 cloudinarypublicid: ofdneeremanwayykj279
 cloudinaryversion: 1465690070
 permalink: /modern-jazz-classics/
-spotify: 'http://open.spotify.com/track/5Y3KHQz6Z0SjLHX1uCrYbb'
+spotify: 'https://open.spotify.com/track/5Y3KHQz6Z0SjLHX1uCrYbb'
 spotify_album: null
 credits:
   - name: Art Pepper

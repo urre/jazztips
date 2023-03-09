@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: htlkrtliyf4hkmdwjjq6
 cloudinaryversion: 1465690164
 permalink: /b-frisell-p-motian-r-carter/
-spotify: 'http://open.spotify.com/track/1e4q3XeoWvQCdkzXEgMCYC'
+spotify: 'https://open.spotify.com/track/1e4q3XeoWvQCdkzXEgMCYC'
 spotify_album: null
 credits:
   - name: Bill Frisell

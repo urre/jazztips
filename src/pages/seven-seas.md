@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: vhvkxdbas9drqxq5phl6
 cloudinaryversion: 1465690159
 permalink: /seven-seas/
-spotify: 'http://open.spotify.com/track/7uPARjX8n4Sf4ndZ9alTxk'
+spotify: 'https://open.spotify.com/track/7uPARjX8n4Sf4ndZ9alTxk'
 spotify_album: null
 credits:
   - name: Avishai Cohen

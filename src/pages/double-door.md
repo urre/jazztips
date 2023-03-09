@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: h0ccytwyevsjueljccfo
 cloudinaryversion: 1465690107
 permalink: /double-door/
-spotify: 'http://open.spotify.com/track/3xWnVLLmMUVMkCrcQkd9Hc'
+spotify: 'https://open.spotify.com/track/3xWnVLLmMUVMkCrcQkd9Hc'
 spotify_album: null
 credits:
   - name: Mattias Landaeus

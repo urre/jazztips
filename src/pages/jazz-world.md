@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: rpixbuk5esd0badg80tc
 cloudinaryversion: 1465689988
 permalink: /jazz-world/
-spotify: 'http://open.spotify.com/track/79tVpUwnxof9lOkRAoPNU6'
+spotify: 'https://open.spotify.com/track/79tVpUwnxof9lOkRAoPNU6'
 spotify_album: null
 credits:
   - name: 'Anders Hagberg '

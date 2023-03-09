@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: urgygq63gtkmyl3ree05
 cloudinaryversion: 1465689956
 permalink: /time-with-people/
-spotify: 'http://open.spotify.com/track/6cRQWjvmG48QKRfZ8G1G3R'
+spotify: 'https://open.spotify.com/track/6cRQWjvmG48QKRfZ8G1G3R'
 spotify_album: null
 credits:
   - name: Jamie Reynolds

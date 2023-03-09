@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: gn47gpmr6wwm7vxfgs0m
 cloudinaryversion: 1465689936
 permalink: /fanfares/
-spotify: 'http://open.spotify.com/track/4lgZrng7ZpGleFcqMgeLA7'
+spotify: 'https://open.spotify.com/track/4lgZrng7ZpGleFcqMgeLA7'
 spotify_album: null
 credits:
   - name: Chris Illingworth

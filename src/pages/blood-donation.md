@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: satbfhfaapqhtoqbz7rf
 cloudinaryversion: 1465689812
 permalink: /blood-donation/
-spotify: 'http://open.spotify.com/track/5C7nDaqt1BxyjZ3MPEbbtp'
+spotify: 'https://open.spotify.com/track/5C7nDaqt1BxyjZ3MPEbbtp'
 spotify_album: null
 credits:
   - name: Mariam The Believer

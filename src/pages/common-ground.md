@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: gb1pnfpffrxkuakzegpr
 cloudinaryversion: 1465689842
 permalink: /common-ground/
-spotify: 'http://open.spotify.com/track/2nOiOfYUI8947Lap9d82bs'
+spotify: 'https://open.spotify.com/track/2nOiOfYUI8947Lap9d82bs'
 spotify_album: 'spotify:album:0IE2Eq7tYY64slqxfeN7bT'
 credits:
   - name: Gary Burton

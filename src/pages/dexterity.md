@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: cejqzskoabrubqcmujqp
 cloudinaryversion: 1465689917
 permalink: /dexterity/
-spotify: 'http://open.spotify.com/track/2urrSPtb2bM4QmSanzSsyE'
+spotify: 'https://open.spotify.com/track/2urrSPtb2bM4QmSanzSsyE'
 spotify_album: null
 credits:
   - name: Jasper Blom

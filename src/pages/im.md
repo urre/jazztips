@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: vdih8okzrdgzdz3y5af0
 cloudinaryversion: 1465690183
 permalink: /im/
-spotify: 'http://open.spotify.com/track/5SHXxKCoJTv1EZJpYPEfG7'
+spotify: 'https://open.spotify.com/track/5SHXxKCoJTv1EZJpYPEfG7'
 spotify_album: null
 credits:
   - name: Bugge Wesseltoft

@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: mjxzzkk7tqynjpukk7qn
 cloudinaryversion: 1465690171
 permalink: /dont-fence-me-in/
-spotify: 'http://open.spotify.com/track/2h0bc197bWfFEyBTQRCnOh'
+spotify: 'https://open.spotify.com/track/2h0bc197bWfFEyBTQRCnOh'
 spotify_album: null
 credits:
   - name: Lennart Grahn

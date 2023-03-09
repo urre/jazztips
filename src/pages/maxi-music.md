@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: agjpvwe0kb50v4efsxyt
 cloudinaryversion: 1465690139
 permalink: /maxi-music/
-spotify: 'http://open.spotify.com/track/6alEtm7F6UR9wKUlO9uUFt'
+spotify: 'https://open.spotify.com/track/6alEtm7F6UR9wKUlO9uUFt'
 spotify_album: null
 credits:
   - name: Fabian Kallerdahl

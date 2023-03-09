@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: ppjyyx9qtsjbjvasrfro
 cloudinaryversion: 1465690222
 permalink: /communion/
-spotify: 'http://open.spotify.com/track/7icgsVbc7gicyHcGPW1RMS'
+spotify: 'https://open.spotify.com/track/7icgsVbc7gicyHcGPW1RMS'
 spotify_album: null
 credits:
   - name: Luciana Souza

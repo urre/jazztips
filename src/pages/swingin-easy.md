@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: whjej8jzirkmtghopcka
 cloudinaryversion: 1465690063
 permalink: /swingin-easy/
-spotify: 'http://open.spotify.com/track/2BYjKdoUf5DLdtT8bPpU6M'
+spotify: 'https://open.spotify.com/track/2BYjKdoUf5DLdtT8bPpU6M'
 spotify_album: null
 credits:
   - name: Sarah Vaughan

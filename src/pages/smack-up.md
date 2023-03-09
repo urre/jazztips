@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: taknzf5hzpusbnuea9vg
 cloudinaryversion: 1465690146
 permalink: /smack-up/
-spotify: 'http://open.spotify.com/track/3WjsDtmbZfcAcAD3qnOHfY'
+spotify: 'https://open.spotify.com/track/3WjsDtmbZfcAcAD3qnOHfY'
 spotify_album: null
 credits:
   - name: Art Pepper

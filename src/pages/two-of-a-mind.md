@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: iz8hxlxoangljms5bvvu
 cloudinaryversion: 1465689912
 permalink: /two-of-a-mind/
-spotify: 'http://open.spotify.com/track/1tRusRGwVR41hKiVhfaXso'
+spotify: 'https://open.spotify.com/track/1tRusRGwVR41hKiVhfaXso'
 spotify_album: null
 credits:
   - name: Paul Desmond

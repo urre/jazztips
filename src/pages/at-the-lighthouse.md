@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: rwbagqwdbwhjctm9mkyl
 cloudinaryversion: 1465690229
 permalink: /at-the-lighthouse/
-spotify: 'http://open.spotify.com/track/6zEYfHjIw593sk0JgfAkVB'
+spotify: 'https://open.spotify.com/track/6zEYfHjIw593sk0JgfAkVB'
 spotify_album: null
 credits:
   - name: Julian "Cannonball" Adderly

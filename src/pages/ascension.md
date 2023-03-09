@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: d2bdjfigk3acphzd5kv4
 cloudinaryversion: 1465689839
 permalink: /ascension/
-spotify: 'http://open.spotify.com/track/2I9QcEbbweZfUFzEXoarZL'
+spotify: 'https://open.spotify.com/track/2I9QcEbbweZfUFzEXoarZL'
 spotify_album: 'spotify:album:40KT5nYXhKPcAhHyrZJV7o'
 credits:
   - name: Ron Miles

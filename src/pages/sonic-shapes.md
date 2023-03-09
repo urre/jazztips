@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: ktxlsnipyxgjtbzcwhxa
 cloudinaryversion: 1465690055
 permalink: /sonic-shapes/
-spotify: 'http://open.spotify.com/track/0YWxU5DcroWn2JLGwfXjXZ'
+spotify: 'https://open.spotify.com/track/0YWxU5DcroWn2JLGwfXjXZ'
 spotify_album: null
 credits:
   - name: Carl Winther

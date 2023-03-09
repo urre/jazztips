@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: ibjzebycwky77nrt7rbj
 cloudinaryversion: 1465690100
 permalink: /dig-it-to-the-end/
-spotify: 'http://open.spotify.com/track/4R8DElRQx0b1l6xVHwFfqB'
+spotify: 'https://open.spotify.com/track/4R8DElRQx0b1l6xVHwFfqB'
 spotify_album: null
 credits:
   - name: Dan Berglund

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: zbzvubpr5skrzj3vkiph
 cloudinaryversion: 1465689981
 permalink: /christian-atunde-adjuah/
-spotify: 'http://open.spotify.com/track/2wB0eY4BWrjuMteAWehCBO'
+spotify: 'https://open.spotify.com/track/2wB0eY4BWrjuMteAWehCBO'
 spotify_album: null
 credits:
   - name: Christian Scott

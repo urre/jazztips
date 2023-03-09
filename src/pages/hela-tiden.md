@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: qihej2vtux4dzrpe8ady
 cloudinaryversion: 1465689833
 permalink: /hela-tiden/
-spotify: 'http://open.spotify.com/track/7z6sDUHLrfhmK2toYS77S1'
+spotify: 'https://open.spotify.com/track/7z6sDUHLrfhmK2toYS77S1'
 spotify_album: 'spotify:album:6DYQ4qtYRRxShJ9dclP5ii'
 credits:
   - name: Lisa Bodelius

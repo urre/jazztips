@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: m3a97l0v4ihsugokaezi
 cloudinaryversion: 1465690038
 permalink: /migrations/
-spotify: 'http://open.spotify.com/track/2kgIn9GBRyrTADPLvrvo9J'
+spotify: 'https://open.spotify.com/track/2kgIn9GBRyrTADPLvrvo9J'
 spotify_album: null
 credits:
   - name: Gary Crosby

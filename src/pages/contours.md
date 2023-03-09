@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: hpopwhtbg9gfyrduqf3a
 cloudinaryversion: 1465690253
 permalink: /contours/
-spotify: 'http://open.spotify.com/album/4Qk5Ifnki13u4bSvNwXM8Y'
+spotify: 'https://open.spotify.com/album/4Qk5Ifnki13u4bSvNwXM8Y'
 spotify_album: null
 credits:
   - name: Sam Rivers

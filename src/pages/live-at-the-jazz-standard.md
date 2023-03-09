@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: zzvr61wno5nztlh4dj0k
 cloudinaryversion: 1465690203
 permalink: /live-at-the-jazz-standard/
-spotify: 'http://open.spotify.com/album/6SgasGihW3D3uCsRZCyqlC'
+spotify: 'https://open.spotify.com/album/6SgasGihW3D3uCsRZCyqlC'
 spotify_album: null
 credits:
   - name: Dave Douglas

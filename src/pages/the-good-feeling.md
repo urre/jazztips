@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: dsgkoi9dtgwpvykdvzeo
 cloudinaryversion: 1465690099
 permalink: /the-good-feeling/
-spotify: 'http://open.spotify.com/track/2Y2FVgwRhrhh9TPDVuBC0D'
+spotify: 'https://open.spotify.com/track/2Y2FVgwRhrhh9TPDVuBC0D'
 spotify_album: null
 credits:
   - name: Christian McBride

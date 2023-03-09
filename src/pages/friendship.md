@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: chdodjq7l953thx8makn
 cloudinaryversion: 1465690057
 permalink: /friendship/
-spotify: 'http://open.spotify.com/track/0nvO4B7IJl0MqKAxH8OIJV'
+spotify: 'https://open.spotify.com/track/0nvO4B7IJl0MqKAxH8OIJV'
 spotify_album: null
 credits:
   - name: Perico Sambeat

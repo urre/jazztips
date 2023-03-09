@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: lajbecdn99fxeyeetyll
 cloudinaryversion: 1465690110
 permalink: /pappas-vardagsrum/
-spotify: 'http://open.spotify.com/track/5cGLe8GRq0B1oe6O1OQNWy'
+spotify: 'https://open.spotify.com/track/5cGLe8GRq0B1oe6O1OQNWy'
 spotify_album: null
 credits:
   - name: Emil Brandqvist

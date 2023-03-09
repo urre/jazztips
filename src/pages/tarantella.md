@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: qrvv0mt82aopqgnorfgm
 cloudinaryversion: 1465689783
 permalink: /tarantella/
-spotify: 'http://open.spotify.com/track/5mpQi1w9el22SNMbF31cCX'
+spotify: 'https://open.spotify.com/track/5mpQi1w9el22SNMbF31cCX'
 spotify_album: 'spotify:album:7KOGT89lKdtNopWnvBWYzz'
 credits:
   - name: 'Lars Danielsson '

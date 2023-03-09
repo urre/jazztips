@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: hf52sewguhwjjn0jcwsq
 cloudinaryversion: 1465689990
 permalink: /the-cherry-thing/
-spotify: 'http://open.spotify.com/track/6q6thMNqNWLkSFnX54zE0x'
+spotify: 'https://open.spotify.com/track/6q6thMNqNWLkSFnX54zE0x'
 spotify_album: null
 credits:
   - name: Mats Gustafsson

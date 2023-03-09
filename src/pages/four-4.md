@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: k5lx3dfdklw4tdwpxa5t
 cloudinaryversion: 1465689804
 permalink: /4r/
-spotify: 'http://open.spotify.com/track/0bBCAHDK0w1IX2cSjSb67H'
+spotify: 'https://open.spotify.com/track/0bBCAHDK0w1IX2cSjSb67H'
 spotify_album: 'spotify:album:72XdzJBRzjthq9jaRoVkvV'
 credits:
   - name: 'Andreas Söderström '

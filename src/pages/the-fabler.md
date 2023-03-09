@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: du6l9mptel4ytzdppgbx
 cloudinaryversion: 1465689962
 permalink: /the-fabler/
-spotify: 'http://open.spotify.com/track/3R4zGZ9QjmD5GZSyaxnPJh'
+spotify: 'https://open.spotify.com/track/3R4zGZ9QjmD5GZSyaxnPJh'
 spotify_album: null
 credits:
   - name: Max Agnas

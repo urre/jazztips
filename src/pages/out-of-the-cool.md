@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: f5b380ez2e6nekq0fnc8
 cloudinaryversion: 1465690249
 permalink: /out-of-the-cool/
-spotify: 'http://open.spotify.com/album/1aCRy8c7fwUsNpZM5jxqQU'
+spotify: 'https://open.spotify.com/album/1aCRy8c7fwUsNpZM5jxqQU'
 spotify_album: null
 credits:
   - name: Gil Evans

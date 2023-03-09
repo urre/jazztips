@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: giviz9qrdtzvaqiecmua
 cloudinaryversion: 1465690029
 permalink: /out-of-bounds/
-spotify: 'http://open.spotify.com/track/0ODRBkWwquNtwT2XgfhEKr'
+spotify: 'https://open.spotify.com/track/0ODRBkWwquNtwT2XgfhEKr'
 spotify_album: null
 credits:
   - name: 'Anders Ljunggren '

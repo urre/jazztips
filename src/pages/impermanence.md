@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: evq8yjcyov2x5nxnqcci
 cloudinaryversion: 1465689861
 permalink: /impermanence/
-spotify: 'http://open.spotify.com/track/7pRHqCzQv9tbMUVfXWFW6J'
+spotify: 'https://open.spotify.com/track/7pRHqCzQv9tbMUVfXWFW6J'
 spotify_album: null
 credits:
   - name: 'Stefan Wingefors '

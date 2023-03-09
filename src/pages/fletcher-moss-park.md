@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: vf2bsvtubmzqq13osqx2
 cloudinaryversion: 1465689932
 permalink: /fletcher-moss-park/
-spotify: 'http://open.spotify.com/track/6rvTySpYz2EKu6fHHpYksr'
+spotify: 'https://open.spotify.com/track/6rvTySpYz2EKu6fHHpYksr'
 spotify_album: null
 credits:
   - name: Matthew Halsall

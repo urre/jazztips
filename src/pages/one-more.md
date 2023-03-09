@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: kcewca0u80nz5epwkkar
 cloudinaryversion: 1465690185
 permalink: /one-more/
-spotify: 'http://open.spotify.com/track/1ufjchnZTQlmuk0jdwJr4h'
+spotify: 'https://open.spotify.com/track/1ufjchnZTQlmuk0jdwJr4h'
 spotify_album: null
 credits:
   - name: Frank Wess

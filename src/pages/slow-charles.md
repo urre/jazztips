@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: gyvtwcht2uixkpdkkmo6
 cloudinaryversion: 1465689998
 permalink: /slow-charles/
-spotify: 'http://open.spotify.com/track/2wVdn4JWyiQvamWXTZOFWG'
+spotify: 'https://open.spotify.com/track/2wVdn4JWyiQvamWXTZOFWG'
 spotify_album: null
 credits:
   - name: Martin Sjöstedt
@@ -30,4 +30,4 @@ credits:
 pubDate: '2012-06-04'
 ---
 
-Sveriges Christian McBride, <a href="http://sv.wikipedia.org/wiki/Martin_Sj%C3%B6stedt">Martin Sjöstedt</a> med hetaste bandet. Östholm bakom pianot och lirar fantastiskt. Grym tolkning av <a href="http://sv.wikipedia.org/wiki/Thelonious_Monk">Monks </a><a href="http://open.spotify.com/track/5ARieNSsXS2a3X34RsDduy">"Four In One".</a>
+Sveriges Christian McBride, <a href="http://sv.wikipedia.org/wiki/Martin_Sj%C3%B6stedt">Martin Sjöstedt</a> med hetaste bandet. Östholm bakom pianot och lirar fantastiskt. Grym tolkning av <a href="http://sv.wikipedia.org/wiki/Thelonious_Monk">Monks </a><a href="https://open.spotify.com/track/5ARieNSsXS2a3X34RsDduy">"Four In One".</a>

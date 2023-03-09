@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: exbw8d4kdeeteewqfwyo
 cloudinaryversion: 1465689944
 permalink: /dali-in-cobble-hill/
-spotify: 'http://open.spotify.com/track/51WbbglK3qDyLGyJgoUqic'
+spotify: 'https://open.spotify.com/track/51WbbglK3qDyLGyJgoUqic'
 spotify_album: null
 credits:
   - name: Clarence Penn

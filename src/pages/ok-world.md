@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: lr1cfusm7zxmlmpwvaeh
 cloudinaryversion: 1465689753
 permalink: /ok-world/
-spotify: 'http://open.spotify.com/track/4LZWTwsKbIQ1bMQ1rqwWqw'
+spotify: 'https://open.spotify.com/track/4LZWTwsKbIQ1bMQ1rqwWqw'
 spotify_album: 'spotify:album:6vQ7MqdkKGbVpsxJA6AWYj'
 credits:
   - name: Bugge Wesseltoft

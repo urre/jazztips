@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: fk07gjdcymsynum1qgmf
 cloudinaryversion: 1465690028
 permalink: /the-view/
-spotify: 'http://open.spotify.com/track/6DHLN1AT3b0VTWwG7NV1EL'
+spotify: 'https://open.spotify.com/track/6DHLN1AT3b0VTWwG7NV1EL'
 spotify_album: null
 credits:
   - name: 'Alexander Lövmark '

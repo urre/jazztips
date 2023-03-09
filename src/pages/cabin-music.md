@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: ikeubxl5fxfbpwf0b8du
 cloudinaryversion: 1465689921
 permalink: /cabin-music/
-spotify: 'http://open.spotify.com/track/0Rh41LvISDNnTb2wA4OiiE'
+spotify: 'https://open.spotify.com/track/0Rh41LvISDNnTb2wA4OiiE'
 spotify_album: null
 credits:
   - name: Klaus Holm

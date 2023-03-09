@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: d4xopvpjtxomyk7gwejg
 cloudinaryversion: 1465690208
 permalink: /live/
-spotify: 'http://open.spotify.com/track/6HcaXiDlUNseZn6FYOuFu3'
+spotify: 'https://open.spotify.com/track/6HcaXiDlUNseZn6FYOuFu3'
 spotify_album: null
 credits:
   - name: Jonas Knutsson

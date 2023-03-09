@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: qipccvrcrhplqowwznwe
 cloudinaryversion: 1465689892
 permalink: /the-music-of-jukkis-uotila/
-spotify: 'http://open.spotify.com/track/4pGx3YvvBMJuGvct9dEpWv'
+spotify: 'https://open.spotify.com/track/4pGx3YvvBMJuGvct9dEpWv'
 spotify_album: null
 credits:
   - name: Fredrik Noren

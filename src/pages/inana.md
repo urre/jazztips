@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: pmu68v3jo6zljrfu72us
 cloudinaryversion: 1465690021
 permalink: /inana/
-spotify: 'http://open.spotify.com/track/4ZPr3Mv5NPAkvIGRdDm2nV'
+spotify: 'https://open.spotify.com/track/4ZPr3Mv5NPAkvIGRdDm2nV'
 spotify_album: null
 credits:
   - name: Amir ElSaffa

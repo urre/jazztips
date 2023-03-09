@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: x49wj2sxaxmvm37iopr7
 cloudinaryversion: 1465689808
 permalink: /the-road-to-ithaca/
-spotify: 'http://open.spotify.com/track/1w0OvNiAFdbH3ueSle6HzT'
+spotify: 'https://open.spotify.com/track/1w0OvNiAFdbH3ueSle6HzT'
 spotify_album: 'spotify:album:3EyGElbVp9iYuVf7OV9HO3'
 credits:
   - name: Shai Maestro

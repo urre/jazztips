@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: pjxiapiodgpzg9sbkpy7
 cloudinaryversion: 1465689835
 permalink: /pushing-the-world-away/
-spotify: 'http://open.spotify.com/track/2ZdIftmBJqA88uoE8H1wZq'
+spotify: 'https://open.spotify.com/track/2ZdIftmBJqA88uoE8H1wZq'
 spotify_album: 'spotify:album:79HogqAl7FydqNlNZqVz79'
 credits:
   - name: Kenny Garret

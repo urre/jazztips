@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: tihcrossxkwssxaucis7
 cloudinaryversion: 1465689823
 permalink: /mwaliko/
-spotify: 'http://open.spotify.com/track/3tfY5BOMIl5Umf0k5J7mJ4'
+spotify: 'https://open.spotify.com/track/3tfY5BOMIl5Umf0k5J7mJ4'
 spotify_album: 'spotify:album:6OWifxDFJ0J9TmXUERqqWy'
 credits:
   - name: Angelique Kidjo

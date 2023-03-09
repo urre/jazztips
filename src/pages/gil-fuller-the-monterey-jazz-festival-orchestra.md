@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: wrsxftjhvwhdkhkibhqj
 cloudinaryversion: 1465690041
 permalink: /gil-fuller-the-monterey-jazz-festival-orchestra/
-spotify: 'http://open.spotify.com/track/15DDGfkzEvyTzBTRWbrnDn'
+spotify: 'https://open.spotify.com/track/15DDGfkzEvyTzBTRWbrnDn'
 spotify_album: null
 credits:
   - name: Earl Palmer

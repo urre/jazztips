@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: w3cmtczurwfqj9jdwx48
 cloudinaryversion: 1465690175
 permalink: /tomorrow-is-the-question/
-spotify: 'http://open.spotify.com/track/1RqS7kOwCATlApyw3n7iJL'
+spotify: 'https://open.spotify.com/track/1RqS7kOwCATlApyw3n7iJL'
 spotify_album: 'http://itunes.apple.com/us/album/tomorrow-is-question-instrumental/id174698744'
 credits:
   - name: Ornette Coleman

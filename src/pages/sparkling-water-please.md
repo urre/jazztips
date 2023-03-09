@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: zhv2vhelyvqp2plqcb3s
 cloudinaryversion: 1465689887
 permalink: /sparkling-water-please/
-spotify: 'http://open.spotify.com/track/0zIGL4al2GSjoaUs33oTjH'
+spotify: 'https://open.spotify.com/track/0zIGL4al2GSjoaUs33oTjH'
 spotify_album: null
 credits:
   - name: ' Zoe Rahman'

@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: n2qvhf4huzxp7dyd1ayh
 cloudinaryversion: 1465689849
 permalink: /from-sun-to-sun/
-spotify: 'http://open.spotify.com/track/7FG0qDRWIsLuMqUJzS5ek2'
+spotify: 'https://open.spotify.com/track/7FG0qDRWIsLuMqUJzS5ek2'
 spotify_album: null
 credits:
   - name: Sam Yahel

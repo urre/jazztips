@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: gzdx4cmdhddwj6zm8bfj
 cloudinaryversion: 1465690001
 permalink: /the-enchanter/
-spotify: 'http://open.spotify.com/track/1gWrOZO88kK13V9VQsmDu8'
+spotify: 'https://open.spotify.com/track/1gWrOZO88kK13V9VQsmDu8'
 spotify_album: null
 credits:
   - name: Kristian Persson

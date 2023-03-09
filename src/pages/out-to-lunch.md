@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: czf9jahisxbbnphzpged
 cloudinaryversion: 1465689942
 permalink: /out-to-lunch/
-spotify: 'http://open.spotify.com/track/6BD4u2tOTHMlACAZ8gX0Gs'
+spotify: 'https://open.spotify.com/track/6BD4u2tOTHMlACAZ8gX0Gs'
 spotify_album: null
 credits:
   - name: Eric Dolphy

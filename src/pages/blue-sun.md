@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: icd8rb7nje8anbcburlr
 cloudinaryversion: 1465690079
 permalink: /blue-sun/
-spotify: 'http://open.spotify.com/track/74AaVihbQA7Bzpj5Jgso0l'
+spotify: 'https://open.spotify.com/track/74AaVihbQA7Bzpj5Jgso0l'
 spotify_album: null
 credits:
   - name: Mark Isham

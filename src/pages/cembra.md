@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: ybh0vlykhhyil6thfwr2
 cloudinaryversion: 1465689969
 permalink: /cembra/
-spotify: 'http://open.spotify.com/track/4U5Lx7qhnDDJTdPfXa4wGS'
+spotify: 'https://open.spotify.com/track/4U5Lx7qhnDDJTdPfXa4wGS'
 spotify_album: null
 credits:
   - name: Konrad Agnas

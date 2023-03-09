@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: bhodlan0osjuehejlo50
 cloudinaryversion: 1465690205
 permalink: /soul-sisters/
-spotify: 'http://open.spotify.com/album/1Ye4Ic8BoFvYQBhjMl1BLn'
+spotify: 'https://open.spotify.com/album/1Ye4Ic8BoFvYQBhjMl1BLn'
 spotify_album: null
 credits:
   - name: Gloria Coleman

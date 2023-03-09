@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: cawfc4fke4dtuu8xjpgw
 cloudinaryversion: 1465690261
 permalink: /facing-you/
-spotify: 'http://open.spotify.com/album/0DdCvhMUteCmQw5M8JyFQ8'
+spotify: 'https://open.spotify.com/album/0DdCvhMUteCmQw5M8JyFQ8'
 spotify_album: null
 credits:
   - name: Keith Jarrett

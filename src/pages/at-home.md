@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: hl41aekxudk4ztx823ws
 cloudinaryversion: 1465689889
 permalink: /at-home/
-spotify: 'http://open.spotify.com/track/6N6NM5e8sIeX3eIO9wifpr'
+spotify: 'https://open.spotify.com/track/6N6NM5e8sIeX3eIO9wifpr'
 spotify_album: null
 credits:
   - name: George Shearing

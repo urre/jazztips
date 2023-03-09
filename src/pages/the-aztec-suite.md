@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: xmajkm46plli4psoli1y
 cloudinaryversion: 1465689894
 permalink: /the-aztec-suite/
-spotify: 'http://open.spotify.com/track/06J4ecXHuptpjf6VYywXR2'
+spotify: 'https://open.spotify.com/track/06J4ecXHuptpjf6VYywXR2'
 spotify_album: null
 credits:
   - name: Art Farmer

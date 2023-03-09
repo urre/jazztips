@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: za8au4dawctjchofpn7m
 cloudinaryversion: 1465690251
 permalink: /red-clay/
-spotify: 'http://open.spotify.com/album/3rbGfGoXGh1pFkzyehRJww'
+spotify: 'https://open.spotify.com/album/3rbGfGoXGh1pFkzyehRJww'
 spotify_album: null
 credits:
   - name: Freddie Hubbard

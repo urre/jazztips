@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: cmaukanf6qv1kk3afqln
 cloudinaryversion: 1465689913
 permalink: /as-knights-concur/
-spotify: 'http://open.spotify.com/track/6y44N3oDH8tTKCNPrvjF3F'
+spotify: 'https://open.spotify.com/track/6y44N3oDH8tTKCNPrvjF3F'
 spotify_album: null
 credits:
   - name: Peter Asplund

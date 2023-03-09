@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: qfxpyf9jth1n7dzaumpb
 cloudinaryversion: 1465690014
 permalink: /fire-in-odeshog/
-spotify: 'http://open.spotify.com/track/3r6iOieP737J4QqifgThc3'
+spotify: 'https://open.spotify.com/track/3r6iOieP737J4QqifgThc3'
 spotify_album: null
 credits:
   - name: 'Niklas Lundell '

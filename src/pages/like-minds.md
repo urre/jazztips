@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: ehrfjf9zccjxrolvub3p
 cloudinaryversion: 1465690271
 permalink: /like-minds/
-spotify: 'http://open.spotify.com/album/6ETKBls00V59uwgdcM9IW4'
+spotify: 'https://open.spotify.com/album/6ETKBls00V59uwgdcM9IW4'
 spotify_album: null
 credits:
   - name: Gary Burton

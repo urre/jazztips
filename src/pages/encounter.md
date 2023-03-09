@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: v8mrj3svliarztasujfd
 cloudinaryversion: 1465690243
 permalink: /encounter/
-spotify: 'http://open.spotify.com/album/5DsNJDm84saXMfPuruAnHd'
+spotify: 'https://open.spotify.com/album/5DsNJDm84saXMfPuruAnHd'
 spotify_album: null
 credits:
   - name: Pepper Adams

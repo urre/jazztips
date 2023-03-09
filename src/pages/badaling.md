@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: x6ula4eolanndxlxpghq
 cloudinaryversion: 1465690065
 permalink: /badaling/
-spotify: 'http://open.spotify.com/track/6L2ow7DSVaWjnXJetSsbYR'
+spotify: 'https://open.spotify.com/track/6L2ow7DSVaWjnXJetSsbYR'
 spotify_album: null
 credits:
   - name: Fredrik Ljungkvist

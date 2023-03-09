@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: rkfuxlojbhcbbmm1xgpy
 cloudinaryversion: 1465690066
 permalink: /movin/
-spotify: 'http://open.spotify.com/track/6as8YBHk3T9jOm92SJNVYH'
+spotify: 'https://open.spotify.com/track/6as8YBHk3T9jOm92SJNVYH'
 spotify_album: null
 credits:
   - name: Daniel Svensson

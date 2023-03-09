@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: y8ohb50pseh5b5ptrjwc
 cloudinaryversion: 1465689818
 permalink: /christmas-with-my-friends-iii/
-spotify: 'http://open.spotify.com/track/5g25ULGuGTBYZObsULjavU'
+spotify: 'https://open.spotify.com/track/5g25ULGuGTBYZObsULjavU'
 spotify_album: 'spotify:album:2GIDQrwqPPPvgQS397NrEI'
 credits:
   - name: Ida Sand

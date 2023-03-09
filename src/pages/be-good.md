@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: wm8frwifkn71cguqelqs
 cloudinaryversion: 1465689949
 permalink: /be-good/
-spotify: 'http://open.spotify.com/track/7jJlbnfafePn6Z2nhv4t0z'
+spotify: 'https://open.spotify.com/track/7jJlbnfafePn6Z2nhv4t0z'
 spotify_album: null
 credits:
   - name: Gregory Porter

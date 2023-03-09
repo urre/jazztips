@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: dz4yqrfqep6nucczwufq
 cloudinaryversion: 1465689816
 permalink: /in-the-clearing-in-the-cavern/
-spotify: 'http://open.spotify.com/track/1nit7y2N6t0NJrkbvNvf55'
+spotify: 'https://open.spotify.com/track/1nit7y2N6t0NJrkbvNvf55'
 spotify_album: 'spotify:album:1x6DfkOQO3nCXkVYOpUgem'
 credits:
   - name: Andreas Ulvo

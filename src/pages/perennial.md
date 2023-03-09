@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: oyimt7glq5cbrltgnbm3
 cloudinaryversion: 1465690084
 permalink: /perennial/
-spotify: 'http://open.spotify.com/track/4dxr9RdNbyDD6wHrTM23KJ'
+spotify: 'https://open.spotify.com/track/4dxr9RdNbyDD6wHrTM23KJ'
 spotify_album: null
 credits:
   - name: Rob Garcia

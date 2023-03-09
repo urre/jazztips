@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: jpulpexqdyus8i1nonoa
 cloudinaryversion: 1465689791
 permalink: /the-law-of-the-lady/
-spotify: 'http://open.spotify.com/track/16rEi5DvibK0c3JfkRs0MV'
+spotify: 'https://open.spotify.com/track/16rEi5DvibK0c3JfkRs0MV'
 spotify_album: 'spotify:album:6VVIUy099lu21IvAVEa95T'
 credits:
   - name: 'Erik Söderlind '

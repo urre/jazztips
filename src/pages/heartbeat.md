@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: tpi44g0tnj4nghhxboit
 cloudinaryversion: 1465689877
 permalink: /heartbeat/
-spotify: 'http://open.spotify.com/track/0FoRuHLz3N7lSnLsqGbcVd'
+spotify: 'https://open.spotify.com/track/0FoRuHLz3N7lSnLsqGbcVd'
 spotify_album: null
 credits:
   - name: Erik Skott

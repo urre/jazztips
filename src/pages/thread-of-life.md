@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: fbtcwezr99k3kcyv4s5k
 cloudinaryversion: 1465690235
 permalink: /thread-of-life/
-spotify: 'http://open.spotify.com/album/3bue91kokpA6IUcjQ4OUyu'
+spotify: 'https://open.spotify.com/album/3bue91kokpA6IUcjQ4OUyu'
 spotify_album: null
 credits:
   - name: Magnus Öström

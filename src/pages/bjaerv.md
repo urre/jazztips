@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: vlitbjbpz0ujizuxcp0w
 cloudinaryversion: 1465690248
 permalink: /bjaerv/
-spotify: 'http://open.spotify.com/album/3eFOS699jlREou6GIWIpL7'
+spotify: 'https://open.spotify.com/album/3eFOS699jlREou6GIWIpL7'
 spotify_album: null
 credits:
   - name: Karl-Martin Almqvist

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: kncugq3qghvfpoher66h
 cloudinaryversion: 1465689974
 permalink: /duende/
-spotify: 'http://open.spotify.com/track/0c3ljK26GJjr3ZC0UmT4Vo'
+spotify: 'https://open.spotify.com/track/0c3ljK26GJjr3ZC0UmT4Vo'
 spotify_album: null
 credits:
   - name: Avishai Cohen

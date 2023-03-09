@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: mpxsvkvgrv0emx8xzzie
 cloudinaryversion: 1465690052
 permalink: /silhouette/
-spotify: 'http://open.spotify.com/track/3QdYoXnEleKenBNlT5zVhh'
+spotify: 'https://open.spotify.com/track/3QdYoXnEleKenBNlT5zVhh'
 spotify_album: null
 credits:
   - name: Christina Von Bülow

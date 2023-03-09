@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: amthen4n3ftnsnvcgcvm
 cloudinaryversion: 1465689972
 permalink: /the-brave/
-spotify: 'http://open.spotify.com/track/3XuGrm2G6F7Wf7B5MXBAdU'
+spotify: 'https://open.spotify.com/track/3XuGrm2G6F7Wf7B5MXBAdU'
 spotify_album: null
 credits:
   - name: Ryan Trebilcock

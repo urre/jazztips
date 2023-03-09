@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: zjcxujqgvcfnillbapku
 cloudinaryversion: 1465690147
 permalink: /popmotion/
-spotify: 'http://open.spotify.com/track/33QUgq6M24MlqhxQmPrtQG'
+spotify: 'https://open.spotify.com/track/33QUgq6M24MlqhxQmPrtQG'
 spotify_album: null
 credits:
   - name: Nils Berg

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: sqg7adtfhmbl23zynag2
 cloudinaryversion: 1465690008
 permalink: /hot-house/
-spotify: 'http://open.spotify.com/track/02ze0tvoY5hQ6gEYYaRcN2'
+spotify: 'https://open.spotify.com/track/02ze0tvoY5hQ6gEYYaRcN2'
 spotify_album: null
 credits:
   - name: Chick Corea

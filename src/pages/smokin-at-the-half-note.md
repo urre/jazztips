@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: pa2nck8puormssy1baxb
 cloudinaryversion: 1465690206
 permalink: /smokin-at-the-half-note/
-spotify: 'http://open.spotify.com/album/51u5MfYdRfnowNsLkjUGzY'
+spotify: 'https://open.spotify.com/album/51u5MfYdRfnowNsLkjUGzY'
 spotify_album: null
 credits:
   - name: Wes Montgomery

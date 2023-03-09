@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: nxfmx6yeahlteffy4upp
 cloudinaryversion: 1465689860
 permalink: /seven-hills/
-spotify: 'http://open.spotify.com/track/2EKRjC6tfbzFXQDubczusI'
+spotify: 'https://open.spotify.com/track/2EKRjC6tfbzFXQDubczusI'
 spotify_album: null
 credits:
   - name: Alexi Tuomarila

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: njn5tkornazmnxus8unz
 cloudinaryversion: 1465690217
 permalink: /live-in-marciac/
-spotify: 'http://open.spotify.com/track/3xa9U76fBx0oi6GPtHHlIi'
+spotify: 'https://open.spotify.com/track/3xa9U76fBx0oi6GPtHHlIi'
 spotify_album: null
 credits:
   - name: Brad Mehldau

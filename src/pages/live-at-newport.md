@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: bapbwzmw31wn4v0idk1u
 cloudinaryversion: 1465690142
 permalink: /live-at-newport/
-spotify: 'http://open.spotify.com/track/3PlZHBkqEReKpPwUezfubm'
+spotify: 'https://open.spotify.com/track/3PlZHBkqEReKpPwUezfubm'
 spotify_album: null
 credits:
   - name: McCoy Tyner

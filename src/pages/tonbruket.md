@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: rsokyryskd4meix4xv5r
 cloudinaryversion: 1465690240
 permalink: /tonbruket/
-spotify: 'http://open.spotify.com/album/7gmwPl78M6JHaHFmx2m4Or'
+spotify: 'https://open.spotify.com/album/7gmwPl78M6JHaHFmx2m4Or'
 spotify_album: null
 credits:
   - name: Dan Berglund

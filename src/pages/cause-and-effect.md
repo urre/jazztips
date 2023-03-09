@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: zagxyywwanr3jmwkgvak
 cloudinaryversion: 1465689908
 permalink: /cause-and-effect/
-spotify: 'http://open.spotify.com/track/6sVfHDQhrrfaJ0SrlMzL2y'
+spotify: 'https://open.spotify.com/track/6sVfHDQhrrfaJ0SrlMzL2y'
 spotify_album: null
 credits:
   - name: Max Schultz

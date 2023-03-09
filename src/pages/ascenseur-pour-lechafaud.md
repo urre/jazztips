@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: xarqkce3yinxy9ewxxda
 cloudinaryversion: 1465690197
 permalink: /ascenseur-pour-lechafaud/
-spotify: 'http://open.spotify.com/track/4sgvNPBwRg10Kiz2Mp2C15'
+spotify: 'https://open.spotify.com/track/4sgvNPBwRg10Kiz2Mp2C15'
 spotify_album: null
 credits:
   - name: Miles Davis

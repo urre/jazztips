@@ -17,7 +17,7 @@ image: >-
 cloudinarypublicid: frmeqv7mggi4xfjdkb4j
 cloudinaryversion: 1465690144
 permalink: /forever/
-spotify: 'http://open.spotify.com/track/1rpIrRybSlIDHtHHihB9hK'
+spotify: 'https://open.spotify.com/track/1rpIrRybSlIDHtHHihB9hK'
 spotify_album: >-
   http://itunes.apple.com/us/album/returns-feat-al-di-meola-chick/id307851795?uo=4
 credits:

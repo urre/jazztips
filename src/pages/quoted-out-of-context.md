@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: rw29z0mk2bavfaez5yfe
 cloudinaryversion: 1465689918
 permalink: /quoted-out-of-context/
-spotify: 'http://open.spotify.com/track/63zhQs7EF5L4XtsPFhikW7'
+spotify: 'https://open.spotify.com/track/63zhQs7EF5L4XtsPFhikW7'
 spotify_album: null
 credits:
   - name: Joakim Milder

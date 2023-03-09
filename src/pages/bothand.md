@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: chcvmxi0bzs0vdgbf1u7
 cloudinaryversion: 1465690227
 permalink: /bothand/
-spotify: 'http://open.spotify.com/album/1TXj5mtN3i8GbmsI1fNsif'
+spotify: 'https://open.spotify.com/album/1TXj5mtN3i8GbmsI1fNsif'
 spotify_album: null
 credits:
   - name: Marc Copland

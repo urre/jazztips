@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: tofr25qjspg1z5xycsdl
 cloudinaryversion: 1465689883
 permalink: /silent-ways/
-spotify: 'http://open.spotify.com/track/2PMCVg0LfbjSFIZfscKA28'
+spotify: 'https://open.spotify.com/track/2PMCVg0LfbjSFIZfscKA28'
 spotify_album: null
 credits:
   - name: Cæcilie Norby

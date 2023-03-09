@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: mp7g03iglcza0cpe9pql
 cloudinaryversion: 1465689749
 permalink: /timeless/
-spotify: 'http://open.spotify.com/track/2DLyRrYTxyWcEDPh1PqnFg'
+spotify: 'https://open.spotify.com/track/2DLyRrYTxyWcEDPh1PqnFg'
 spotify_album: 'spotify:album:2PIcitn9g7XsVaVQqSciXK'
 credits:
   - name: Alicia Olatuja

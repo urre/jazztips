@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: hdpjxme1y9pm3y2nk4tu
 cloudinaryversion: 1465690195
 permalink: /at-carnegie-hall/
-spotify: 'http://open.spotify.com/track/2L7WBpHcXlw5WkVwsv5CPd'
+spotify: 'https://open.spotify.com/track/2L7WBpHcXlw5WkVwsv5CPd'
 spotify_album: null
 credits:
   - name: John Coltrane

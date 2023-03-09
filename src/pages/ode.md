@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: rmvfpepqdgoiiylkaymt
 cloudinaryversion: 1465690016
 permalink: /ode/
-spotify: 'http://open.spotify.com/track/2D9Ic5zzD23Md5lZaPPt32'
+spotify: 'https://open.spotify.com/track/2D9Ic5zzD23Md5lZaPPt32'
 spotify_album: null
 credits:
   - name: Brad Mehldau

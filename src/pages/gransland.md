@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: icr9jboh6zakgqv3jtin
 cloudinaryversion: 1465689896
 permalink: /gransland/
-spotify: 'http://open.spotify.com/track/4fCG7CnEIHfwQNEFHhWac2'
+spotify: 'https://open.spotify.com/track/4fCG7CnEIHfwQNEFHhWac2'
 spotify_album: null
 credits:
   - name: Donovan von Martens

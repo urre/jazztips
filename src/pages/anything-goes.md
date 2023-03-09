@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: mhlqzqavehwtq04gsy0i
 cloudinaryversion: 1465690090
 permalink: /anything-goes/
-spotify: 'http://open.spotify.com/track/14MAvLukd5B8AopF8EUbt7'
+spotify: 'https://open.spotify.com/track/14MAvLukd5B8AopF8EUbt7'
 spotify_album: null
 credits:
   - name: Brad Mehldau

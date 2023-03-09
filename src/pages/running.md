@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: didimwih7smxjydmpitj
 cloudinaryversion: 1465689821
 permalink: /running/
-spotify: 'http://open.spotify.com/track/0oeUNHuq2AasZLcuXGHgmf'
+spotify: 'https://open.spotify.com/track/0oeUNHuq2AasZLcuXGHgmf'
 spotify_album: 'spotify:album:6M7kwkl8zDD8oHFXY2tcpM'
 credits:
   - name: Julian Wasserfuhr

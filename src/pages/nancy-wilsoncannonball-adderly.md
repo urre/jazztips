@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: wr74zlgkmk01espkyrnt
 cloudinaryversion: 1465689933
 permalink: /nancy-wilsoncannonball-adderly/
-spotify: 'http://open.spotify.com/track/7ahQIRq0EOeY9UYVvABDFp'
+spotify: 'https://open.spotify.com/track/7ahQIRq0EOeY9UYVvABDFp'
 spotify_album: null
 credits:
   - name: 'Nancy Wilson '

@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: cwstmiebnmwnizb48rwj
 cloudinaryversion: 1465690096
 permalink: /lim-with-marc-ducret/
-spotify: 'http://open.spotify.com/track/2BwzLjUdJCTbX977i7b2mc'
+spotify: 'https://open.spotify.com/track/2BwzLjUdJCTbX977i7b2mc'
 spotify_album: null
 credits:
   - name: 'Marc Ducret '

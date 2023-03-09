@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: qzmo3ewi1gmouvqgh23w
 cloudinaryversion: 1465690104
 permalink: /beyond-the-sound-barrier/
-spotify: 'http://open.spotify.com/track/18pPJpul2MKT7X5qB8WWzS'
+spotify: 'https://open.spotify.com/track/18pPJpul2MKT7X5qB8WWzS'
 spotify_album: null
 credits:
   - name: Wayne Shorter

@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: bdh2rspfgxsxwll5629g
 cloudinaryversion: 1465689788
 permalink: /point-of-departure/
-spotify: 'http://open.spotify.com/track/0j2XdkOJSneLHYevR6JpBP'
+spotify: 'https://open.spotify.com/track/0j2XdkOJSneLHYevR6JpBP'
 spotify_album: 'spotify:album:647o8vl4OD1sjvvhql3jFS'
 credits:
   - name: Kenny Dorham

@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: sdnpklpqecihfblanrv2
 cloudinaryversion: 1465690211
 permalink: /once-around/
-spotify: 'http://open.spotify.com/album/2O0Sq95poIJLjqHJ4RSpIH'
+spotify: 'https://open.spotify.com/album/2O0Sq95poIJLjqHJ4RSpIH'
 spotify_album: null
 credits:
   - name: Emil Strandberg

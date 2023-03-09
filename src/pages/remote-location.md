@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: sbzsg5k9yufduryrxruz
 cloudinaryversion: 1465689959
 permalink: /remote-location/
-spotify: 'http://open.spotify.com/track/6wCw26g25SFLKhV5sBf5KB'
+spotify: 'https://open.spotify.com/track/6wCw26g25SFLKhV5sBf5KB'
 spotify_album: null
 credits:
   - name: Scott McLemore

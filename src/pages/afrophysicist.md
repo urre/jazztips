@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: canlzujj5k1mibshpzjz
 cloudinaryversion: 1465689751
 permalink: /afrophysicist/
-spotify: 'http://open.spotify.com/track/08Z6q2rdq0XsuPbP8LNodW'
+spotify: 'https://open.spotify.com/track/08Z6q2rdq0XsuPbP8LNodW'
 spotify_album: 'spotify:album:5oWRvCk9dkMLU5K029qw6P'
 credits:
   - name: Dee Dee Bridgewater

@@ -11,7 +11,7 @@ image: >-
 cloudinarypublicid: du9j0ghijxjyejturcet
 cloudinaryversion: 1465690123
 permalink: /a-monastic-trio/
-spotify: 'http://open.spotify.com/track/6U8beA36EpAp1CavDVb6JJ'
+spotify: 'https://open.spotify.com/track/6U8beA36EpAp1CavDVb6JJ'
 spotify_album: null
 credits:
   - name: 'Alice Coltrane '

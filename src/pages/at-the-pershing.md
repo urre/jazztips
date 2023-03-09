@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: qtoyuyfflkfjdsw6gj6h
 cloudinaryversion: 1465690220
 permalink: /at-the-pershing/
-spotify: 'http://open.spotify.com/track/7Ck8xqSVdcN0kDRsVQMIlp'
+spotify: 'https://open.spotify.com/track/7Ck8xqSVdcN0kDRsVQMIlp'
 spotify_album: null
 credits:
   - name: Ahmad Jamal

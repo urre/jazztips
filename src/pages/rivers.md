@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: zyf4zyeqrg6qhnatlrwv
 cloudinaryversion: 1465690077
 permalink: /rivers/
-spotify: 'http://open.spotify.com/track/2ekRhzXMnjKNQHTA17hnYH'
+spotify: 'https://open.spotify.com/track/2ekRhzXMnjKNQHTA17hnYH'
 spotify_album: null
 credits:
   - name: 'Mariam Wallentin '

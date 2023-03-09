@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: azqsimv1gueqymbdpcdx
 cloudinaryversion: 1465690115
 permalink: /beyond-question/
-spotify: 'http://open.spotify.com/track/4DxXV1XAveFps46LPKLIVt'
+spotify: 'https://open.spotify.com/track/4DxXV1XAveFps46LPKLIVt'
 spotify_album: null
 credits:
   - name: Claudio Roditi

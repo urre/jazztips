@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: hepsipqzv5a2oxtz4bny
 cloudinaryversion: 1465689756
 permalink: /im%e2%80%a2pro%e2%80%a2vise-never-before-seen/
-spotify: 'http://open.spotify.com/track/1cbKj4TtXg8fWzJjk4mJq9'
+spotify: 'https://open.spotify.com/track/1cbKj4TtXg8fWzJjk4mJq9'
 spotify_album: 'spotify:album:6A1TFg3jjPyZX6Sqs5hbcK'
 credits:
   - name: Sean Jones

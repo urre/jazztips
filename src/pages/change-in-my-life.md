@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: ab8kbunm30snkv5hbeq0
 cloudinaryversion: 1465690279
 permalink: /change-in-my-life/
-spotify: 'http://open.spotify.com/album/5NtEMSKBYzNUduVIM2SlKw'
+spotify: 'https://open.spotify.com/album/5NtEMSKBYzNUduVIM2SlKw'
 spotify_album: null
 credits:
   - name: Brian Blade

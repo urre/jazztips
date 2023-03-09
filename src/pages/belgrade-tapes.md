@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: o5fush4eaecizsksqkju
 cloudinaryversion: 1465690169
 permalink: /belgrade-tapes/
-spotify: 'http://open.spotify.com/album/2QIlLjILYnsOEhGqp8yVDQ'
+spotify: 'https://open.spotify.com/album/2QIlLjILYnsOEhGqp8yVDQ'
 spotify_album: null
 credits:
   - name: Nils Berg

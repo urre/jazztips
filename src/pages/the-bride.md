@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: xc5q52rirv7ngezpsira
 cloudinaryversion: 1465689971
 permalink: /the-bride/
-spotify: 'http://open.spotify.com/track/7miHdB2iuKasC1jBtftxAn'
+spotify: 'https://open.spotify.com/track/7miHdB2iuKasC1jBtftxAn'
 spotify_album: null
 credits:
   - name: Martin Höper

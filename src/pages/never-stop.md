@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: wqmlgnurqu5qwxcullw9
 cloudinaryversion: 1465690162
 permalink: /never-stop/
-spotify: 'http://open.spotify.com/track/3huev9YLrtVyUbSlw2WKGw'
+spotify: 'https://open.spotify.com/track/3huev9YLrtVyUbSlw2WKGw'
 spotify_album: null
 credits:
   - name: David King

@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: pbtkouotvyrqvxqwz8dz
 cloudinaryversion: 1465689761
 permalink: /ei-som-deg/
-spotify: 'http://open.spotify.com/track/1BEJTg0NzpORMWYJAnReWf'
+spotify: 'https://open.spotify.com/track/1BEJTg0NzpORMWYJAnReWf'
 spotify_album: 'spotify:album:7f0VSB5WhzpNwaYn7FZ8QJ'
 credits:
   - name: Sigurd Rotvik Tunestveit

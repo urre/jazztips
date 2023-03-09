@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: uu0cdiwblrzkfzpvpggg
 cloudinaryversion: 1465690182
 permalink: /improvised-action/
-spotify: 'http://open.spotify.com/track/7q6PMiq9yYQL3rnk4tQPdC'
+spotify: 'https://open.spotify.com/track/7q6PMiq9yYQL3rnk4tQPdC'
 spotify_album: null
 credits:
   - name: Fredrik Kronkvist

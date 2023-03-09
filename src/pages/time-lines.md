@@ -14,7 +14,7 @@ image: >-
 cloudinarypublicid: pwr3yj7isuxbwoseathy
 cloudinaryversion: 1465690060
 permalink: /time-lines/
-spotify: 'http://open.spotify.com/track/2fmEPxBF3eq1QFRVrJEMnv'
+spotify: 'https://open.spotify.com/track/2fmEPxBF3eq1QFRVrJEMnv'
 spotify_album: null
 credits:
   - name: Charles Tolliver

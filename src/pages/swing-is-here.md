@@ -16,7 +16,7 @@ image: >-
 cloudinarypublicid: dsse9lqozhzejpaiwcca
 cloudinaryversion: 1465690180
 permalink: /swing-is-here/
-spotify: 'http://open.spotify.com/track/3Hyzyne6B0AZSo7LHMeh1l'
+spotify: 'https://open.spotify.com/track/3Hyzyne6B0AZSo7LHMeh1l'
 spotify_album: 'http://itunes.apple.com/ca/album/swing-is-here/id311238547'
 credits:
   - name: Terry Gibbs

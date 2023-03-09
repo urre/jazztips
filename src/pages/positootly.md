@@ -15,7 +15,7 @@ image: >-
 cloudinarypublicid: semnknwlua8cyo3srwm6
 cloudinaryversion: 1465690112
 permalink: /positootly/
-spotify: 'http://open.spotify.com/track/705B8ynjiAhXwVaPtSQI4y'
+spotify: 'https://open.spotify.com/track/705B8ynjiAhXwVaPtSQI4y'
 spotify_album: null
 credits:
   - name: 'John Beasley '

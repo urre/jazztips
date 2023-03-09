@@ -12,7 +12,7 @@ image: >-
 cloudinarypublicid: dd6ffpjrvqm4xbajedvr
 cloudinaryversion: 1465689863
 permalink: /it-is-night-and-i-am-lost/
-spotify: 'http://open.spotify.com/track/30dNSdSfOqvygTsIAtUVSY'
+spotify: 'https://open.spotify.com/track/30dNSdSfOqvygTsIAtUVSY'
 spotify_album: null
 credits:
   - name: Emil Strandberg

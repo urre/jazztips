@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: fw99xilowoqgj0hplylk
 cloudinaryversion: 1465690245
 permalink: /heat/
-spotify: 'http://open.spotify.com/album/3O5Tu0Qqdlh5q3exGDfzJJ'
+spotify: 'https://open.spotify.com/album/3O5Tu0Qqdlh5q3exGDfzJJ'
 spotify_album: null
 credits:
   - name: Jacob Karlzon

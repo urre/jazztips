@@ -13,7 +13,7 @@ image: >-
 cloudinarypublicid: yrhhvvge9bzkogyqqnns
 cloudinaryversion: 1465689770
 permalink: /trios-live/
-spotify: 'http://open.spotify.com/track/2xD4aPIRnJtEMor1pewlbB'
+spotify: 'https://open.spotify.com/track/2xD4aPIRnJtEMor1pewlbB'
 spotify_album: 'spotify:album:4E4vQi6Vc8FTynRbeNcTGf'
 credits:
   - name: Joshua Redman
