@@ -1,6 +1,7 @@
 ---
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
+import optimizeImage from "../../utils/optimizeImage";
 
 export async function getStaticPaths() {
   const allPosts = await Astro.glob("../!(about.md|search.md)*.md");
@@ -45,7 +46,10 @@ export interface Props {
           posts.map(
             (post: {
               url: string | URL | null | undefined;
-              frontmatter: { image: string | null | undefined; title: unknown };
+              frontmatter: {
+                image: string | null | undefined;
+                title: string;
+              };
             }) => (
               <li>
                 <a href={post.url}>
@@ -54,7 +58,7 @@ export interface Props {
                       <img
                         width={560}
                         height={560}
-                        src={post.frontmatter.image}
+                        src={`${optimizeImage(post.frontmatter.image)}`}
                         alt={post.frontmatter.title}
                         loading="lazy"
                       />

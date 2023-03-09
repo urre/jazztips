@@ -8,6 +8,8 @@ import Tidal from "../components/record/Tidal.astro";
 import Spotify from "../components/record/Spotify.astro";
 import Apple from "../components/record/Apple.astro";
 
+import optimizeImage from "../utils/optimizeImage";
+
 export interface Props {
   content: {
     title: string;
@@ -76,7 +78,13 @@ const {
           {
             image && (
               <figure class="record-cover">
-                <img width={560} height={560} src={image} alt="" />
+                <img
+                  width={560}
+                  height={560}
+                  src={`${optimizeImage(image)}`}
+                  alt={`${artist} - ${title}`}
+                  loading="lazy"
+                />
                 <span />
               </figure>
             )
@@ -98,8 +106,8 @@ const {
 
             <div class="embeds">
               {tidal && <Tidal tidal={tidal} />}
-              {apple && <Apple apple={apple} />}
               {spotify && <Spotify spotify={spotify} />}
+              {apple && <Apple apple={apple} />}
             </div>
 
             {credits && <Musicians musicians={credits} />}
