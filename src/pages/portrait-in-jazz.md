@@ -6,8 +6,10 @@ label: Riverside
 year: 1960
 tags:
   - evans
+  - piano
+  - trio
 image: >-
-  https://res.cloudinary.com/urre/image/upload/v1673450795/wpl8tw88mouexmlskjoc.jpg
+  https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/v1673450795/wpl8tw88mouexmlskjoc.jpg
 permalink: /portrait-in-jazz/
 spotify: https://open.spotify.com/album/093nLQ4H81HusNsFdGS4Or
 tidal: 77678676
