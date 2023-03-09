@@ -94,16 +94,9 @@ svg {
   --profile: #68d391;
 }
 
-/* @font-face {
-  font-family: 'Cal Sans';
-  src: url('/fonts/CalSans-SemiBold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-} */
 @font-face {
-  font-family: "gt_walsheim_light_web";
-  src: url("/fonts/gt_walsheim_light_web-webfont.woff2") format("woff2");
+  font-family: 'interval';
+  src: url('/fonts/interval-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -111,20 +104,19 @@ svg {
 
 html,
 body {
-  font-family: "gt_walsheim_light_web", sans-serif;
+  font-family: "interval", sans-serif;
 }
 
 body {
   -webkit-text-size-adjust: 100%;
-  /* font-family: sans-serif; */
   font-size: 100%;
   line-height: 1.75;
   max-width: 130em;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
-  /* color: wheat; */
-  /* background-color: rgb(32, 0, 33); */
+  color: #111;
+  background-color: rgb(227, 249, 239);
 }
 
 
@@ -193,6 +185,7 @@ nav {
   padding-bottom: 2rem;
   border-radius: 4px;
   justify-content: end;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -282,9 +275,8 @@ a {
 iframe {
   border: 0;
 height: 120px;
-  /* width: 500px; */
-  background: white;
-  /* padding: 1rem; */
+filter: grayscale(100%);
+mix-blend-mode: multiply;
   border-radius: 8px;
   display: inline-flex;
   justify-content: center;
@@ -437,6 +429,7 @@ dl {
   grid-auto-flow: column;
   gap: calc(var(--gap) * 2);
   grid-template-rows: 4rem;
+  font-size: 1.5em;
 }
 
 dd {
