@@ -105,9 +105,30 @@ const {
             }
 
             <div class="embeds">
-              {tidal && <Tidal tidal={tidal} />}
-              {spotify && <Spotify spotify={spotify} />}
-              {apple && <Apple apple={apple} />}
+              {
+                tidal && (
+                  <div>
+                    <h3>Tidal</h3>
+                    <Tidal tidal={tidal} />
+                  </div>
+                )
+              }
+              {
+                spotify && (
+                  <div>
+                    <h3>Spotify</h3>
+                    <Spotify spotify={spotify} />
+                  </div>
+                )
+              }
+              {
+                apple && (
+                  <div>
+                    <h3>Apple Music</h3>
+                    <Apple apple={apple} />
+                  </div>
+                )
+              }
             </div>
 
             {credits && <Musicians musicians={credits} />}
