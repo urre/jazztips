@@ -60,7 +60,7 @@ picture {
 }
 
 img:hover {
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
   /* box-shadow: rgb(255 255 255) 0px 0px 0px 2px, rgb(0 82 255) 0px 0px 0px 4px; */
 }
 
