@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Jazz &#038; World
+title: Jazz & World
 artist: UNIT
 label: Pama Records/Universal
 year: 2012

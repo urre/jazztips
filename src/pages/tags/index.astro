@@ -17,11 +17,14 @@ const pageTitle = "Tag Index";
   <body>
     <Header />
     <main>
+      <h1>Tags</h1>
       <ul>
         {
           tags.map((tag) => (
             <li>
-              <a href={`/tags/${tag}`}>{tag}</a>
+              <a rel="tag" href={`/tags/${tag}`}>
+                {tag}
+              </a>
             </li>
           ))
         }

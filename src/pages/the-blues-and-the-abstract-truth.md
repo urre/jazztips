@@ -18,7 +18,7 @@ cloudinarypublicid: mfzcgtfbiyq6wnedb9zb
 cloudinaryversion: 1465690199
 permalink: /the-blues-and-the-abstract-truth/
 spotify: 'https://open.spotify.com/track/4iEJyAwf1FLU1ZNIHoS7YD'
-spotify_album: null
+tidal: 48102105
 credits:
   - name: Oliver Nelson
     instrument: 'Tenorsaxofon, altsaxofon'

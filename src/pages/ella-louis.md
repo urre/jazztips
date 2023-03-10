@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Ella &#038; Louis
+title: Ella & Louis
 artist: Ella Fitzgerald & Louis Armstrong
 label: Verve
 year: 1956

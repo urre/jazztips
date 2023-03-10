@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Charlie Haden &#038; Jim Hall
+title: Charlie Haden & Jim Hall
 artist: Charlie Haden & Him Hall
 label: Impulse
 year: 2014

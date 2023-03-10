@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Bob Brookmeyer &#038; Friends
+title: Bob Brookmeyer & Friends
 artist: Bob Brookmeyer
 label: Legacy
 year: 1965

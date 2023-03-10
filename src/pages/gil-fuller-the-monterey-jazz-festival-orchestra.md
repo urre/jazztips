@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Gil Fuller &#038; The Monterey Jazz Festival Orchestra
+title: Gil Fuller & The Monterey Jazz Festival Orchestra
 artist: 'Fuller, Moody & Gillespie'
 label: Pacific
 year: 1965

@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Johanneson &#038; Schultz
+title: Johanneson & Schultz
 artist: Peter Johanneson & Max Schultz
 label: Prophone
 year: 2011

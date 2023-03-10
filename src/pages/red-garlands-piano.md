@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Red Garland&#8217;s Piano
+title: Red Garland's Piano
 artist: Red Garland
 label: Prestige
 year: 1957
