@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Record.astro
 title: Portrait in Jazz
-artist: Bill Evans / Bill Evans Trio
+artist: Bill Evans
 label: Riverside
 year: 1960
 tags:
