@@ -12,7 +12,7 @@ const posts = (await Astro.glob("./!(about.md|search.md)*.md"))
       new Date(b.frontmatter.pubDate).valueOf() -
       new Date(a.frontmatter.pubDate).valueOf()
   )
-  .slice(0, 4);
+  .slice(0, 1);
 ---
 
 <!DOCTYPE html>
@@ -24,7 +24,8 @@ const posts = (await Astro.glob("./!(about.md|search.md)*.md"))
     <Header />
     <main>
       <section>
-        <h2>Latest Records</h2>
+        <h1>Welcome to Jazztips</h1>
+        <h2>Latest record</h2>
         <ul>
           {
             posts.map((post) => (

@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: The Black Saint &#038; The Sinner Lady
+title: The Black Saint & The Sinner Lady
 artist: Charles Mingus
 label: Impulse
 year: 1963

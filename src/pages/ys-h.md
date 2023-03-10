@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: YS &#038; H
+title: YS & H
 artist: 'Young, Shy & Handsome'
 label: null
 year: 2008
