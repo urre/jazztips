@@ -6,4 +6,6 @@ pubDate: "2022-11-14"
 ---
 
 
-Since 2010.
+Good music recommendations. Since 2010.
+
+By [Urban Sanden](https://urre.me)

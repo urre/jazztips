@@ -90,7 +90,9 @@ const {
             )
           }
           <div class="record-info">
-            <h1 class="title">{artist} - {title}</h1>
+            <h1 class="title">
+              {artist} - <span>“</span>{title}<span>”</span>
+            </h1>
 
             <h2>
               <a href={`spotify:search:label:${label}`}>{label} {year}</a>
@@ -108,7 +110,7 @@ const {
               {
                 tidal && (
                   <div>
-                    <h3>Tidal</h3>
+                    <h3>TIDAL</h3>
                     <Tidal tidal={tidal} />
                   </div>
                 )
