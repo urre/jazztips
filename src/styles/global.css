@@ -9,11 +9,7 @@
 
 /* Remove default margin */
 body,
-h1,
-h2,
-h3,
-h4,
-p,
+
 figure,
 blockquote,
 dl,
@@ -206,6 +202,10 @@ justify-content: space-between;
   header {
     display: flex;
   }
+}
+
+header h1 {
+  margin: 0
 }
 
 header h1 a {
