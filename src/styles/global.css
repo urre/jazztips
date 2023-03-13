@@ -137,6 +137,19 @@ ul {
   );
 }
 
+.tags,
+.record-info .tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* grid-auto-flow: column; */
+  /* grid-auto-columns: max-content; */
+  /* grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr)); */
+  /* gap: 1rem; */
+  /* grid-template-columns: unset; */
+}
+
 :is(h1, h2, h3, h4, h5, h6) {
   line-height: 1.2;
   margin-top: calc(var(--gap) * 1.5);
@@ -184,6 +197,15 @@ p {
 header {
   margin-top: calc(var(--gap) * 1.5);
   margin-bottom: calc(var(--gap) * 1.5);
+  /* display: flex; */
+align-items: center;
+justify-content: space-between;
+}
+
+@media (min-width: 1600px) {
+  header {
+    display: flex;
+  }
 }
 
 header h1 a {
@@ -195,14 +217,15 @@ header h1 a {
 
 nav {
   align-items: center;
-  display: flex;
-  gap: var(--gap);
+  display: grid;
+  gap: 1rem;
   list-style-type: none;
   padding-top: 2rem;
   padding-bottom: 2rem;
 
   justify-content: end;
-  flex-wrap: wrap;
+  /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+  grid-auto-flow: column;
 }
 
 [rel="tag"],
@@ -234,7 +257,7 @@ nav a:active {
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   /* font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif; */
   font-size: 16px;
   font-weight: 600;
@@ -271,9 +294,7 @@ nav a:active {
   transform: translateY(0.15rem);
 }
 
-a {
-  /* transition: all 80ms ease-in-out 0s; */
-}
+
 
 .button:hover,
 .button:focus {

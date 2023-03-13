@@ -58,6 +58,10 @@ const {
     tags,
   },
 } = Astro.props;
+
+const tidalLink = tidal
+  ? `https://tidal.com/browse/album/${tidal}`
+  : `https://listen.tidal.com/search?q=${artist}-${title}`;
 ---
 
 <html lang="en">
@@ -95,7 +99,8 @@ const {
             </h1>
 
             <h2>
-              <a href={`spotify:search:label:${label}`}>{label} {year}</a>
+              {label} –
+              {year}
             </h2>
 
             {
@@ -139,7 +144,7 @@ const {
               tags && (
                 <>
                   <h2>Tags</h2>
-                  <ul>
+                  <ul class="tags">
                     {tags.map((tag: string) => (
                       <li>
                         <a class="button" href={`/tags/${tag}`}>
@@ -153,7 +158,7 @@ const {
             }
 
             <h2>Explore</h2>
-            <ul>
+            <ul class="tags">
               <a
                 class="button"
                 href={`https://open.spotify.com/search/${artist}`}
@@ -173,10 +178,7 @@ const {
                 Open in Spotify
               </a>
 
-              <a
-                class="button"
-                href={`https://tidal.com/browse/album/${tidal}`}
-              >
+              <a class="button" href={`${tidalLink}`}>
                 <svg
                   class="inline-flex h-6 w-6 mr-1"
                   role="img"
@@ -188,7 +190,8 @@ const {
                     d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996 4.004 12l4.004-4.004L12.012 12l-4.004 4.004 4.004 4.004 4.004-4.004L12.012 12l4.004-4.004-4.004-4.004zM16.042 7.996l3.979-3.979L24 7.996l-3.979 3.979z"
                   ></path>
                 </svg>
-                Open in TIDAL
+                {tidal ? "Open" : "Search"}
+                in TIDAL
               </a>
 
               <a
