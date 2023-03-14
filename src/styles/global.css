@@ -184,16 +184,12 @@ p {
 header {
   margin-top: calc(var(--gap) * 1.5);
   margin-bottom: calc(var(--gap) * 1.5);
+  display: flex;
 
   align-items: center;
   justify-content: space-between;
 }
 
-@media (min-width: 1600px) {
-  header {
-    display: flex;
-  }
-}
 
 header h1 {
   margin: 0;
@@ -201,7 +197,7 @@ header h1 {
 
 header h1 a {
   display: flex;
-  /* justify-content: space-between; */
+
   align-items: center;
   gap: 0.5rem;
 }
@@ -222,6 +218,7 @@ nav a {
   transition: border-color 150ms;
   padding: 0.25rem 0.75rem;
   border-radius: 2rem;
+  transition: box-shadow 150ms;
 }
 
 [rel="tag"]:hover,
@@ -247,7 +244,7 @@ nav a:active {
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   display: inline-flex;
-  /* font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif; */
+
   font-size: 16px;
   font-weight: 600;
   justify-content: center;
@@ -326,11 +323,11 @@ header h1 {
   position: relative;
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .record-cover {
     aspect-ratio: 1 / 1;
   }
-}
+} */
 
 .record-cover img {
   position: relative;
