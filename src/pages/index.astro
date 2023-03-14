@@ -14,6 +14,14 @@ const posts = (await Astro.glob("./!(about.md|search.md)*.md"))
   )
   .slice(0, 1);
 
+const postsMore = (await Astro.glob("./!(about.md|search.md)*.md"))
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.pubDate).valueOf() -
+      new Date(a.frontmatter.pubDate).valueOf()
+  )
+  .slice(1, 6);
+
 export interface Props {
   content: {
     title: string;
@@ -82,6 +90,31 @@ export interface Props {
             </div>
           ))
         }
+
+        <ul>
+          {
+            postsMore.map((post: any) => (
+              <li>
+                <a href={post.url}>
+                  {post.frontmatter.image && (
+                    <figure class="record-cover">
+                      <img
+                        width={560}
+                        height={560}
+                        src={`${optimizeImage(post.frontmatter.image)}`}
+                        alt={post.frontmatter.title}
+                        loading="lazy"
+                      />
+                      <span />
+                    </figure>
+                  )}
+
+                  <h3>{post.frontmatter.title}</h3>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
       </section>
     </main>
     <Footer />
