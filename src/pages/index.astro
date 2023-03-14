@@ -55,6 +55,7 @@ export interface Props {
     <Header />
     <main>
       <section>
+        <h3>Latest record</h3>
         {
           posts.map((post: any) => (
             <div class="record-layout">
@@ -90,7 +91,7 @@ export interface Props {
             </div>
           ))
         }
-
+        <h3>Recommended lately</h3>
         <ul>
           {
             postsMore.map((post: any) => (
@@ -115,6 +116,9 @@ export interface Props {
             ))
           }
         </ul>
+        <nav>
+          <a class="button" href="/1"> Archives</a>
+        </nav>
       </section>
     </main>
     <Footer />
