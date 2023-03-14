@@ -7,7 +7,6 @@
   --profile-dark: rgb(247, 140, 121);
 }
 
-
 /* Box sizing rules */
 *,
 *::before,
@@ -87,9 +86,6 @@ svg {
   height: 18px;
 }
 
-
-
-
 @font-face {
   font-family: "HKGroteskPro";
   src: url("/fonts/HKGroteskPro-Medium.woff2") format("woff2");
@@ -117,7 +113,7 @@ body {
 html {
   background-color: rgb(254, 246, 237);
   text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 ul {
@@ -139,7 +135,6 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
-
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -165,7 +160,6 @@ h1 {
   font-size: clamp(2.2rem, 5vw, 6rem);
   letter-spacing: -0.01em;
   max-width: 30ch;
-
 }
 
 h1 span {
@@ -189,7 +183,6 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 
 header h1 {
   margin: 0;
@@ -321,10 +314,13 @@ header h1 {
 
 .record-cover {
   position: relative;
-  aspect-ratio: 1 / 1;
 }
 
-
+@media (min-width: 1200px) {
+  .record-cover {
+    aspect-ratio: 1 / 1;
+  }
+}
 
 .record-cover img {
   position: relative;
