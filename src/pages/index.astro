@@ -5,13 +5,29 @@ import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import optimizeImage from "../utils/optimizeImage";
 
+interface Frontmatter {
+  title: string;
+  description: string;
+  artist: string;
+  label?: string;
+  image?: string;
+  year?: string;
+  pubDate?: string;
+}
+
 // Use Astro.glob() to fetch all posts, and then sort them by date.
-const posts = (await Astro.glob("./!(about.md|search.md)*.md"))
-  .sort(
-    (a, b) =>
-      new Date(b.frontmatter.pubDate).valueOf() -
-      new Date(a.frontmatter.pubDate).valueOf()
-  )
+const posts = await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md");
+
+const sortedPosts = posts
+  .sort((post1, post2) => {
+    const pubDate1 = post1.frontmatter.pubDate
+      ? new Date(post1.frontmatter.pubDate).valueOf()
+      : 0;
+    const pubDate2 = post2.frontmatter.pubDate
+      ? new Date(post2.frontmatter.pubDate).valueOf()
+      : 0;
+    return pubDate2 - pubDate1;
+  })
   .slice(0, 1);
 
 const postsMore = (await Astro.glob("./!(about.md|search.md)*.md"))
@@ -29,19 +45,6 @@ export interface Props {
     pubDate?: string;
     updatedDate?: string;
     image?: string;
-    spotify?: string;
-    tidal?: string;
-    apple?: string;
-    credits?: Credit[];
-    name: string;
-    instrument: string;
-    artist?: string;
-    ogimage?: string;
-    year?: string;
-    label?: string;
-    buy?: string;
-    buyat?: string;
-    tags?: Array<string>;
   };
 }
 ---
@@ -56,40 +59,41 @@ export interface Props {
     <main>
       <section>
         <h3>Latest record</h3>
+
         {
-          posts.map((post: any) => (
-            <div class="record-layout">
-              {post.frontmatter.image && (
-                <figure class="record-cover">
-                  <img
-                    width={560}
-                    height={560}
-                    src={`${optimizeImage(post.frontmatter.image)}`}
-                    alt={`${post.frontmatter.artist} - ${post.frontmatter.title}`}
-                    loading="lazy"
-                  />
-                  <span />
-                </figure>
-              )}
-              <div class="record-info">
-                <h1 class="title">
-                  {post.frontmatter.artist}
-                  <br />
-                  <span>“</span>
-                  {post.frontmatter.title}
-                  <span>”</span>
-                </h1>
-                <h2>
-                  {post.frontmatter.label} –{post.frontmatter.year}
-                </h2>
-                <ul class="tags">
-                  <a href={post.url} class="button">
-                    Explore record
-                  </a>
-                </ul>
+          sortedPosts.map(
+            ({ frontmatter: { title, image, artist, year, label }, url }) => (
+              <div class="record-layout">
+                {image && (
+                  <figure class="record-cover">
+                    <img
+                      width={560}
+                      height={560}
+                      src={`${optimizeImage(image)}`}
+                      alt={`${artist} - ${title}`}
+                      loading="lazy"
+                    />
+                    <span />
+                  </figure>
+                )}
+                <div class="record-info">
+                  <h1 class="title">
+                    {artist}
+                    <br />
+                    <span>{title}</span>
+                  </h1>
+                  <h2>
+                    {label} – {year}
+                  </h2>
+                  <ul class="tags">
+                    <a href={url} class="button">
+                      Explore record
+                    </a>
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))
+            )
+          )
         }
         <h3>Recommended lately</h3>
         <ul>
