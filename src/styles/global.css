@@ -159,12 +159,24 @@ a {
 h1 {
   font-size: clamp(2.2rem, 5vw, 6rem);
   letter-spacing: -0.01em;
-  max-width: 30ch;
+  max-width: 20ch;
 }
 
-h1 span {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.record-info h1 span {
+  quotes: '“''”';
 }
+
+.record-info h1 span::before {
+  content: open-quote;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.record-info h1 span::after {
+  content: close-quote;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 
 h2 {
   font-size: clamp(1.5rem, 5vw, 2rem);
