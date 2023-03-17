@@ -1,4 +1,5 @@
 ---
+import Embed from "./embeds/Embed.astro";
 export interface Props {
   apple: string;
 }
@@ -6,9 +7,4 @@ export interface Props {
 const { apple } = Astro.props;
 ---
 
-<iframe
-  allow="autoplay *; encrypted-media *;"
-  frame-border="0"
-  height="82"
-  style="overflow: hidden; height: 82px;"
-  src={apple}></iframe>
+<Embed embedCode={apple} />

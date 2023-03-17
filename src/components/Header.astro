@@ -3,6 +3,40 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../config";
 ---
 
+<style>
+  header {
+    margin-top: calc(var(--gap) * 1.5);
+    margin-bottom: calc(var(--gap) * 1.5);
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    margin: 0;
+  }
+
+  header h1 a {
+    display: flex;
+
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  header .dot {
+    border-radius: 50%;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-color: var(--profile);
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+</style>
+
 <header>
   <h1>
     <a href="/">
@@ -11,7 +45,7 @@ import { SITE_TITLE } from "../config";
     </a>
   </h1>
   <nav>
-    <HeaderLink href="/1">Archives</HeaderLink>
-    <HeaderLink href="/tags">Tags</HeaderLink>
+    <HeaderLink rel="tag" href="/1">Archives</HeaderLink>
+    <HeaderLink rel="tag" href="/tags">Tags</HeaderLink>
   </nav>
 </header>

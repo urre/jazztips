@@ -4,6 +4,9 @@ import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import optimizeImage from "../utils/optimizeImage";
+import RecordLayout from "@components/record/RecordLayout.astro";
+import RecordCover from "@components/record/RecordCover.astro";
+import RecordInfo from "@components/record/RecordInfo.astro";
 
 interface Frontmatter {
   title: string;
@@ -19,15 +22,13 @@ interface Frontmatter {
 const posts = await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md");
 
 const sortedPosts = posts
-  .sort((post1, post2) => {
-    const pubDate1 = post1.frontmatter.pubDate
-      ? new Date(post1.frontmatter.pubDate).valueOf()
-      : 0;
-    const pubDate2 = post2.frontmatter.pubDate
-      ? new Date(post2.frontmatter.pubDate).valueOf()
-      : 0;
-    return pubDate2 - pubDate1;
-  })
+  .map((post) => ({
+    ...post,
+    pubDate: post.frontmatter.pubDate
+      ? new Date(post.frontmatter.pubDate).valueOf()
+      : 0,
+  }))
+  .sort((post1, post2) => post2.pubDate - post1.pubDate)
   .slice(0, 1);
 
 const postsMore = (await Astro.glob("./!(about.md|search.md)*.md"))
@@ -63,35 +64,21 @@ export interface Props {
         {
           sortedPosts.map(
             ({ frontmatter: { title, image, artist, year, label }, url }) => (
-              <div class="record-layout">
+              <RecordLayout>
                 {image && (
-                  <figure class="record-cover">
-                    <img
-                      width={560}
-                      height={560}
-                      src={`${optimizeImage(image)}`}
-                      alt={`${artist} - ${title}`}
-                      loading="lazy"
-                    />
-                    <span />
-                  </figure>
+                  <RecordCover
+                    src={`${optimizeImage(image)}`}
+                    alt={`${artist} - ${title}`}
+                  />
                 )}
-                <div class="record-info">
-                  <h1 class="title">
-                    {artist}
-                    <br />
-                    <span>{title}</span>
-                  </h1>
-                  <h2>
-                    {label} – {year}
-                  </h2>
-                  <ul class="tags">
-                    <a href={url} class="button">
-                      Explore record
-                    </a>
-                  </ul>
-                </div>
-              </div>
+                <RecordInfo
+                  artist={artist}
+                  title={title}
+                  label={label}
+                  year={year}
+                  url={url}
+                />
+              </RecordLayout>
             )
           )
         }

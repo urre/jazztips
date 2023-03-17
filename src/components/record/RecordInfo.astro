@@ -1,0 +1,46 @@
+---
+const { label, year, artist, title, url } = Astro.props;
+---
+
+<style>
+  .record-info h1 span {
+    quotes: "“" "”";
+  }
+
+  .record-info h1 span::before {
+    content: open-quote;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .record-info h1 span::after {
+    content: close-quote;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .record-info ul {
+    display: grid;
+    gap: calc(var(--gap) / 2);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  }
+</style>
+
+<div class="record-info">
+  <h1 class="title">
+    {artist}
+    <br />
+    <span>{title}</span>
+  </h1>
+  <h2>
+    {label} - {year}
+  </h2>
+
+  {
+    Astro.url.pathname === "/" && (
+      <a href={url} class="button">
+        {" "}
+        Explore record
+      </a>
+    )
+  }
+  <slot />
+</div>
