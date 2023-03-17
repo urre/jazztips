@@ -1,0 +1,49 @@
+---
+import Tidal from "@components/record/Tidal.astro";
+import Spotify from "@components/record/Spotify.astro";
+import Apple from "@components/record/Apple.astro";
+
+export interface Props {
+  spotify?: string;
+  tidal?: string;
+  apple?: string;
+}
+
+const { spotify, apple, tidal } = Astro.props;
+---
+
+<style>
+  .embeds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+</style>
+
+<div class="embeds">
+  {
+    tidal && (
+      <div>
+        <h3>TIDAL</h3>
+        <Tidal tidal={tidal} />
+      </div>
+    )
+  }
+  {
+    spotify && (
+      <div>
+        <h3>Spotify</h3>
+        <Spotify spotify={spotify} />
+      </div>
+    )
+  }
+  {
+    apple && (
+      <div>
+        <h3>Apple Music</h3>
+        <Apple apple={apple} />
+      </div>
+    )
+  }
+</div>

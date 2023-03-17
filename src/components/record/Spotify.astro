@@ -1,4 +1,6 @@
 ---
+import Embed from "./embeds/Embed.astro";
+
 export interface Props {
   spotify: string;
 }
@@ -8,9 +10,4 @@ const { spotify } = Astro.props;
 const embedCode = spotify.replace(".com/", ".com/embed/");
 ---
 
-<iframe
-  class="rounded"
-  src={embedCode}
-  allowtransparency="true"
-  frame-border="0"
-  allow="encrypted-media"></iframe>
+<Embed embedCode={embedCode} />

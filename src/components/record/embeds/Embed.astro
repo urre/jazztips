@@ -1,0 +1,41 @@
+---
+export interface Props {
+  embedCode?: string;
+  class?: string;
+}
+
+const { embedCode, classname } = Astro.props;
+---
+
+<style>
+  .embeds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  iframe {
+    border: 0;
+    height: 120px;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  * {
+    background-color: red;
+  }
+</style>
+
+<iframe
+  class={classname}
+  src={embedCode}
+  allowtransparency="true"
+  frame-border="0"
+  height="82"
+  style="overflow: hidden; height: 82px;"
+  allow="encrypted-media"></iframe>

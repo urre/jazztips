@@ -1,0 +1,270 @@
+<style is:global>
+  :root {
+    --fluid-gap: clamp(0.5rem, 3vw, 1.5rem);
+    --gap: 2rem;
+    --profile: rgb(0, 137, 101);
+    --profile-dark: rgb(247, 140, 121);
+  }
+
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  /* Remove default margin */
+  body,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+    /* transition: all 150ms; */
+    border: 2px solid white;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  svg {
+    max-width: 100%;
+    width: 18px;
+    height: 18px;
+  }
+
+  @font-face {
+    font-family: "HKGroteskPro";
+    src: url("/fonts/HKGroteskPro-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    /* font-display: swap; */
+  }
+
+  html,
+  body {
+    font-family: "HKGroteskPro", sans-serif;
+  }
+
+  body {
+    -webkit-text-size-adjust: 100%;
+    font-size: 100%;
+    line-height: 1.75;
+    max-width: 130em;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #111;
+  }
+
+  html {
+    background-color: rgb(254, 246, 237);
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: calc(var(--gap));
+
+    display: grid;
+    gap: calc(var(--gap) * 2);
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(var(--fluid-gap) * 10), 1fr)
+    );
+  }
+
+  /* CSS */
+  .button {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    gap: 0.5rem;
+  }
+
+  .button svg {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+
+  .button:hover,
+  .button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+
+  .button:active {
+    transform: translateY(0.15rem);
+  }
+
+  .button:hover,
+  .button:focus {
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-template-rows: 4rem;
+    font-size: clamp(0.75rem, 3vw, 1.2rem);
+  }
+
+  dd div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  p {
+    font-size: clamp(0.75rem, 3vw, 1.2rem);
+  }
+
+  /* TODO. CSS Modules using scoped styles in components = CSS modules */
+
+  footer {
+    margin-top: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6) {
+    line-height: 1.2;
+    margin-top: calc(var(--gap) * 1);
+    margin-bottom: calc(var(--gap) * 0.5);
+    padding: 0;
+    font-weight: initial;
+
+    background: linear-gradient(to top, var(--profile), var(--profile-dark));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 5vw, 6rem);
+    letter-spacing: -0.01em;
+    max-width: 20ch;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    letter-spacing: 0.01em;
+  }
+
+  p {
+    letter-spacing: 0.045em;
+  }
+
+  nav {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    list-style-type: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: end;
+    grid-auto-flow: column;
+  }
+
+  [rel="tag"] {
+    transition: border-color 150ms;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    transition: box-shadow 150ms;
+  }
+
+  [rel="tag"]:hover,
+  [rel="tag"]:focus {
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  [rel="tag"]:active {
+    transform: translateY(0.15rem);
+  }
+</style>

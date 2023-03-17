@@ -1,4 +1,6 @@
 ---
+import Embed from "./embeds/Embed.astro";
+
 export interface Props {
   tidal: string;
 }
@@ -6,9 +8,4 @@ export interface Props {
 const { tidal } = Astro.props;
 ---
 
-<iframe
-  src={`https://embed.tidal.com/albums/${tidal}`}
-  allowfullscreen="true"
-  frame-border="0"
-  style="height: 82px"
-  allow="encrypted-media"></iframe>
+<Embed embedCode={`https://embed.tidal.com/albums/${tidal}`} />
