@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Goin&#8217; Up
+title: Goin' Up
 artist: Freddie Hubbard
 label: Blue Note
 year: 1960

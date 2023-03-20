@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Swingin&#8217; Easy
+title: Swingin' Easy
 artist: Sarah Vaughan
 label: Emarcy
 year: 1957

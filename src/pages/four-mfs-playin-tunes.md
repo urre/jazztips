@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: 'Four MF:s Playin&#8217; Tunes'
+title: "Four MF:s Playin' Tunes"
 artist: Branford Marsalis
 label: Marsalis Music
 year: 2012

@@ -1,0 +1,20 @@
+---
+export interface Props {
+  tag?: string;
+}
+
+const { tags } = Astro.props;
+---
+
+<h2>Tags</h2>
+<ul class="tags">
+  {
+    tags.map((tag: string) => (
+      <li>
+        <a class="button" href={`/tags/${tag}`}>
+          {tag}
+        </a>
+      </li>
+    ))
+  }
+</ul>

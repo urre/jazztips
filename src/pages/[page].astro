@@ -2,16 +2,32 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
+import Pagination from "@components/Pagination.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import optimizeImage from "../utils/optimizeImage";
+import RecordCover from "@components/record/RecordCover.astro";
+
+interface Frontmatter {
+  title: string;
+  description: string;
+  artist: string;
+  label?: string;
+  image?: string;
+  year?: string;
+  pubDate?: string;
+}
 
 export async function getStaticPaths({ paginate }: any) {
-  const allPosts = (await Astro.glob("./!(about.md|search.md)*.md"))
-    .sort(
-      (a, b) =>
-        new Date(b.frontmatter.pubDate).valueOf() -
-        new Date(a.frontmatter.pubDate).valueOf()
-    )
+  const allPosts = (
+    await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md")
+  )
+    .map((post) => ({
+      ...post,
+      pubDate: post.frontmatter.pubDate
+        ? new Date(post.frontmatter.pubDate).valueOf()
+        : 0,
+    }))
+    .sort((post1, post2) => post2.pubDate - post1.pubDate)
     .slice(6, -1);
 
   return paginate(allPosts, { pageSize: 30 });
@@ -30,64 +46,36 @@ const { page } = Astro.props;
     <main>
       <section>
         <h2>Archive</h2>
-        <nav>
-          {
-            page.url.prev ? (
-              <a class="button" href={page.url.prev}>
-                Previous
-              </a>
-            ) : null
-          }
-          {
-            page.url.next ? (
-              <a class="button" href={page.url.next}>
-                Next
-              </a>
-            ) : null
-          }
-        </nav>
+        <Pagination prev={page.url.prev} next={page.url.next} />
 
         <ul>
           {
-            page.data.map((post: any) => (
-              <li>
-                <a href={post.url}>
-                  {post.frontmatter.image && (
-                    <figure class="record-cover">
-                      <img
-                        width={560}
-                        height={560}
-                        src={`${optimizeImage(post.frontmatter.image)}`}
-                        alt={post.frontmatter.title}
-                        loading="lazy"
+            page.data.map(
+              ({
+                frontmatter: { title, image, artist },
+                url,
+              }: {
+                frontmatter: Frontmatter;
+                url: string;
+              }) => (
+                <li>
+                  <a href={url}>
+                    {image && (
+                      <RecordCover
+                        src={`${optimizeImage(image)}`}
+                        alt={`${artist} - ${title}`}
                       />
-                      <span />
-                    </figure>
-                  )}
+                    )}
 
-                  <h3>{post.frontmatter.title}</h3>
-                </a>
-              </li>
-            ))
+                    <h3>{title}</h3>
+                  </a>
+                </li>
+              )
+            )
           }
         </ul>
 
-        <nav>
-          {
-            page.url.prev ? (
-              <a class="button" href={page.url.prev}>
-                Previous
-              </a>
-            ) : null
-          }
-          {
-            page.url.next ? (
-              <a class="button" href={page.url.next}>
-                Next
-              </a>
-            ) : null
-          }
-        </nav>
+        <Pagination prev={page.url.prev} next={page.url.next} />
       </section>
     </main>
     <Footer />

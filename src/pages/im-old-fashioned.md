@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: I&#8217;m Old Fashioned
+title: I'm Old Fashioned
 artist: Margareta Bengtsson
 label: EMI
 year: 2006

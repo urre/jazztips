@@ -8,6 +8,7 @@ import optimizeImage from "../utils/optimizeImage";
 import RecordCover from "@components/record/RecordCover.astro";
 import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
+import Tags from "@components/record/Tags.astro";
 
 export interface Props {
   content: {
@@ -29,14 +30,10 @@ export interface Props {
     buy?: string;
     buyat?: string;
     src?: string;
+    pulled?: boolean;
     alt?: string;
     tags?: Array<string>;
   };
-}
-
-export interface Credit {
-  name: string;
-  instrument: string;
 }
 
 const {
@@ -83,6 +80,7 @@ const tidalLink = tidal
           {
             image && (
               <RecordCover
+                pulled={true}
                 src={`${optimizeImage(image)}`}
                 alt={`${artist} - ${title}`}
               />
@@ -102,25 +100,25 @@ const tidalLink = tidal
 
             {credits && <Musicians musicians={credits} />}
 
-            {
-              tags && (
-                <>
-                  <h2>Tags</h2>
-                  <ul class="tags">
-                    {tags.map((tag: string) => (
-                      <li>
-                        <a class="button" href={`/tags/${tag}`}>
-                          {tag}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )
-            }
+            {tags && <Tags tags={tags} />}
 
             <h2>Explore</h2>
             <ul class="tags">
+              <a class="button" href={`${tidalLink}`}>
+                <svg
+                  class="inline-flex h-6 w-6 mr-1"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Tidal icon</title>
+                  <path
+                    d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996 4.004 12l4.004-4.004L12.012 12l-4.004 4.004 4.004 4.004 4.004-4.004L12.012 12l4.004-4.004-4.004-4.004zM16.042 7.996l3.979-3.979L24 7.996l-3.979 3.979z"
+                  ></path>
+                </svg>
+                {tidal ? "Play" : "Search"}
+                on TIDAL
+              </a>
               <a
                 class="button"
                 href={`https://open.spotify.com/search/${artist}`}
@@ -138,22 +136,6 @@ const tidalLink = tidal
                   ></path>
                 </svg>
                 Play on Spotify
-              </a>
-
-              <a class="button" href={`${tidalLink}`}>
-                <svg
-                  class="inline-flex h-6 w-6 mr-1"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Tidal icon</title>
-                  <path
-                    d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996 4.004 12l4.004-4.004L12.012 12l-4.004 4.004 4.004 4.004 4.004-4.004L12.012 12l4.004-4.004-4.004-4.004zM16.042 7.996l3.979-3.979L24 7.996l-3.979 3.979z"
-                  ></path>
-                </svg>
-                {tidal ? "Play" : "Search"}
-                on TIDAL
               </a>
 
               <a
