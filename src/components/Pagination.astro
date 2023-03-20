@@ -1,0 +1,38 @@
+---
+export interface Props {
+  prev?: string;
+  next?: string;
+}
+
+const { prev, next } = Astro.props;
+---
+
+<style>
+  nav {
+    align-items: center;
+    display: grid;
+    gap: 1rem;
+    list-style-type: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: end;
+    grid-auto-flow: column;
+  }
+</style>
+
+<nav>
+  {
+    prev ? (
+      <a class="button" href={prev}>
+        Previous
+      </a>
+    ) : null
+  }
+  {
+    next ? (
+      <a class="button" href={next}>
+        Next
+      </a>
+    ) : null
+  }
+</nav>

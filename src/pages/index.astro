@@ -18,7 +18,6 @@ interface Frontmatter {
   pubDate?: string;
 }
 
-// Use Astro.glob() to fetch all posts, and then sort them by date.
 const posts = await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md");
 
 const sortedPosts = posts
@@ -28,26 +27,7 @@ const sortedPosts = posts
       ? new Date(post.frontmatter.pubDate).valueOf()
       : 0,
   }))
-  .sort((post1, post2) => post2.pubDate - post1.pubDate)
-  .slice(0, 1);
-
-const postsMore = (await Astro.glob("./!(about.md|search.md)*.md"))
-  .sort(
-    (a, b) =>
-      new Date(b.frontmatter.pubDate).valueOf() -
-      new Date(a.frontmatter.pubDate).valueOf()
-  )
-  .slice(1, 6);
-
-export interface Props {
-  content: {
-    title: string;
-    description: string;
-    pubDate?: string;
-    updatedDate?: string;
-    image?: string;
-  };
-}
+  .sort((post1, post2) => post2.pubDate - post1.pubDate);
 ---
 
 <!DOCTYPE html>
@@ -62,49 +42,48 @@ export interface Props {
         <h3>Latest record</h3>
 
         {
-          sortedPosts.map(
-            ({ frontmatter: { title, image, artist, year, label }, url }) => (
-              <RecordLayout>
-                {image && (
-                  <RecordCover
-                    src={`${optimizeImage(image)}`}
-                    alt={`${artist} - ${title}`}
+          sortedPosts
+            .slice(0, 1)
+            .map(
+              ({ frontmatter: { title, image, artist, year, label }, url }) => (
+                <RecordLayout>
+                  {image && (
+                    <RecordCover
+                      pulled={true}
+                      src={`${optimizeImage(image)}`}
+                      alt={`${artist} - ${title}`}
+                    />
+                  )}
+                  <RecordInfo
+                    artist={artist}
+                    title={title}
+                    label={label}
+                    year={year}
+                    url={url}
                   />
-                )}
-                <RecordInfo
-                  artist={artist}
-                  title={title}
-                  label={label}
-                  year={year}
-                  url={url}
-                />
-              </RecordLayout>
+                </RecordLayout>
+              )
             )
-          )
         }
         <h3>Recommended lately</h3>
         <ul>
           {
-            postsMore.map((post: any) => (
-              <li>
-                <a href={post.url}>
-                  {post.frontmatter.image && (
-                    <figure class="record-cover">
-                      <img
-                        width={560}
-                        height={560}
-                        src={`${optimizeImage(post.frontmatter.image)}`}
-                        alt={post.frontmatter.title}
-                        loading="lazy"
+            sortedPosts
+              .slice(1, 6)
+              .map(({ frontmatter: { title, artist, image }, url }) => (
+                <li>
+                  <a href={url}>
+                    {image && (
+                      <RecordCover
+                        src={`${optimizeImage(image)}`}
+                        alt={`${artist} - ${title}`}
                       />
-                      <span />
-                    </figure>
-                  )}
+                    )}
 
-                  <h3>{post.frontmatter.title}</h3>
-                </a>
-              </li>
-            ))
+                    <h3>{title}</h3>
+                  </a>
+                </li>
+              ))
           }
         </ul>
         <nav>

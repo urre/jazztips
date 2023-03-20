@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Phils&#8217; Mood
+title: Phils' Mood
 artist: Phil Woods & Space Jazz Trio
 label: Philology
 year: 1990

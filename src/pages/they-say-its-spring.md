@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: They say it&#8217;s spring
+title: They say it's spring
 artist: Mimi Terris
 label: Calibrated/Naxos
 year: 2013

@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Don&#8217;t Fence Me In
+title: Don't Fence Me In
 artist: 'Bohuslän Big Band, Colin Towns & Nils Landgren'
 label: ACT
 year: 2011

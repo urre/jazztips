@@ -1,6 +1,4 @@
 ---
-import Apa from "@components/record/Apa.astro";
-
 export interface UsersListProps {
   musicians: Musician[];
 }
@@ -15,7 +13,7 @@ const { musicians } = Astro.props;
 
 <h2>Musicians</h2>
 {
-  musicians.map((musician: { instrument: string; name: string }) => (
+  musicians.map((musician: Musician) => (
     <dl>
       <dt>
         <a

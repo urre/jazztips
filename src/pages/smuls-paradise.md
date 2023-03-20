@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Smuls&#8217; Paradise
+title: Smuls' Paradise
 artist: Gary Smulyan
 label: Capri
 year: 2012

@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Good Pickin&#8217;s
+title: Good Pickin's
 artist: Howard Roberts
 label: Verve
 year: 1959
