@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: 'Oh Lord, Why can't I keep my big mouth'
+title: "Oh Lord, Why can't I keep my big mouth"
 artist: Yttling Jazz
 label: Headspin
 year: 2005
