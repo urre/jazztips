@@ -11,6 +11,12 @@ Blog, search, good example on using Typescript
 Blog post
 + [](https://www.stevefenton.co.uk/blog/2022/10/astro-paging-and-listing-by-category/#the-getstaticpaths-function)
 
+## Generate a nice OG Image
+
+```shell
+docker run --rm -v `pwd`:/opt/node/js jazztips-canvas ./tools/og-image.js a-bossa-eletrica-do-norte.md
+```
+
 ## Todo
 
 + [ ] Add RSS feed

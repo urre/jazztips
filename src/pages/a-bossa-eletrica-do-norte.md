@@ -6,6 +6,7 @@ label: Connective
 year: 2010
 tags:
   - aida
+ogimage: https://res.cloudinary.com/urre/image/upload/v1679421047/nm2ofniesydf0vdelpjb.jpg
   - block
   - bossa
   - brasilianskt

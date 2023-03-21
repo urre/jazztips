@@ -8,6 +8,7 @@ tags:
   - evans
   - piano
   - trio
+ogimage: https://res.cloudinary.com/urre/image/upload/v1679421506/oxxqrtsnewkfv6jmttzo.jpg
 image: >-
   https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/v1673450795/wpl8tw88mouexmlskjoc.jpg
 permalink: /portrait-in-jazz/
