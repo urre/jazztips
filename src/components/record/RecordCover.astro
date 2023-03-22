@@ -14,11 +14,14 @@ const { src, artist, title, pulled } = Astro.props;
 <style>
   .record-cover {
     position: relative;
-    transition: transform 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 200px;
+    /* transition: transform 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    transition: transform 800ms ease-in-out;
   }
 
   @media (min-width: 1200px) {
     .record-cover {
+      max-width: unset;
       aspect-ratio: 1 / 1;
     }
   }
@@ -35,7 +38,7 @@ const { src, artist, title, pulled } = Astro.props;
   }
 
   .record-cover:hover span {
-    transform: translateX(25%);
+    transform: translateX(20%);
   }
 
   .record-cover span {

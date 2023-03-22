@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: In The Clearing &#8211; In the Cavern
+title: In The Clearing In the Cavern
 artist: Eple Trio
 label: NOR-CD
 year: 2010
