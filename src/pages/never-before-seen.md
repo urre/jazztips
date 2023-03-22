@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Im•pro•vise &#8211; Never Before Seen
+title: Im•pro•vise Never Before Seen
 artist: Sean Jones
 label: Mack Avenue
 year: 2014
