@@ -22,7 +22,12 @@ const { src, artist, title, pulled } = Astro.props;
   @media (min-width: 768px) {
     .record-cover {
       max-width: unset;
-      /* aspect-ratio: 1 / 1; */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .record-cover {
+      aspect-ratio: 1 / 1;
     }
   }
 
