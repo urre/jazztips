@@ -108,7 +108,7 @@ if (!fileData.attributes.ogimage) {
       function (error, result) {
         insertLine(`${filename}`)
           .content(`ogimage: ${result.secure_url}`)
-          .at(11)
+          .at(7)
           .then(function (err) {
             console.log(
               `✅ Cloudinary image done and inserted ${result.secure_url}`
