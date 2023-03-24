@@ -7,6 +7,7 @@ import optimizeImage from "../utils/optimizeImage";
 import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordCover from "@components/record/RecordCover.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
+import Button from "@components/Button.astro";
 
 interface Frontmatter {
   title: string;
@@ -87,7 +88,7 @@ const sortedPosts = posts
           }
         </ul>
         <nav>
-          <a class="button" href="/1"> Archives</a>
+          <Button href="/1">Archives</Button>
         </nav>
       </section>
     </main>

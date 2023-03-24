@@ -55,7 +55,7 @@ if (!fileData.attributes.ogimage) {
     const canvas = createCanvas(width, height);
     const context = canvas.getContext("2d");
     // Fill with white background color
-    context.fillStyle = "#fef6ed";
+    context.fillStyle = "#e4edeb";
     context.fillRect(0, 0, canvas.width, canvas.height);
     // Add image to canvas
     context.drawImage(image, 40, 50, 600, 600);

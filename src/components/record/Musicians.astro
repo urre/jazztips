@@ -1,5 +1,5 @@
 ---
-export interface UsersListProps {
+export interface MusicianListProps {
   musicians: Musician[];
 }
 
@@ -11,6 +11,22 @@ export interface Musician {
 const { musicians } = Astro.props;
 ---
 
+<style>
+  dl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: column;
+    grid-template-rows: 4rem;
+    font-size: clamp(0.75rem, 3vw, 1.2rem);
+  }
+
+  dt {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+</style>
+
 <h2>Musicians</h2>
 {
   musicians.map((musician: Musician) => (
@@ -19,7 +35,6 @@ const { musicians } = Astro.props;
         {musician.name}
         <a
           href={`https://www.discogs.com/search/?q=${musician.name}&type=artist`}
-          rel="tag"
           title={`Explore ${musician.name} on Discogs`}
         >
           <svg
