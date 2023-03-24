@@ -1,10 +1,10 @@
 <style is:global>
   :root {
+    --profile: #008965;
+    --profile-dark: #f78c79;
+    --background: #e4edeb;
     --fluid-gap: clamp(0.5rem, 3vw, 1.5rem);
     --gap: 2rem;
-    --profile: #008965;
-    --profile-dark: rgb(247, 140, 121);
-    --background: #e4edeb;
   }
 
   /* Box sizing rules */
@@ -152,6 +152,11 @@
   a {
     text-decoration: none;
     color: unset;
+  }
+
+  p a {
+    color: var(--profile);
+    text-decoration: underline;
   }
 
   h1 {
