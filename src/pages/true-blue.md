@@ -8,9 +8,9 @@ tags:
   - tina
   - brooks
   - hubbard
-ogimage: https://res.cloudinary.com/urre/image/upload/v1679642681/inyvtgsjihoebqijrgvf.jpg
   - saxophone
   - blue note
+ogimage: https://res.cloudinary.com/urre/image/upload/v1679642681/inyvtgsjihoebqijrgvf.jpg
 permalink: /true-blue/
 spotify: https://open.spotify.com/album/2E4Zyg78Slt7IyJhIbYbtW
 image: https://res.cloudinary.com/urre/image/upload/v1679642557/ggexjvowsfkx1jqvpmdq.jpg
