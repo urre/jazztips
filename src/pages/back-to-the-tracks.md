@@ -5,6 +5,7 @@ artist: Tina Brooks
 label: Blue Note
 year: 1985
 tags:
+  - tina
   - brooks
   - hubbard
 image: >-
