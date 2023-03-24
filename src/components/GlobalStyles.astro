@@ -34,14 +34,6 @@
     scroll-behavior: smooth;
   }
 
-  /* Set core body defaults */
-  body {
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-
   /* A elements that don't have a class get default styles */
   a:not([class]) {
     text-decoration-skip-ink: auto;
@@ -88,12 +80,10 @@
     font-display: swap;
   }
 
-  html,
   body {
-    font-family: "Spectral-Light", sans-serif;
-  }
-
-  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
     -webkit-text-size-adjust: 100%;
     font-size: 100%;
     line-height: 1.75;
@@ -102,6 +92,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
     color: #111;
+    font-family: "Spectral-Light", "Times New Roman", Times, serif;
   }
 
   html {
