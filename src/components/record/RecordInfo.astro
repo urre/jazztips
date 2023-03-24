@@ -1,4 +1,6 @@
 ---
+import Button from "@components/Button.astro";
+
 const { label, year, artist, title, url } = Astro.props;
 ---
 
@@ -34,13 +36,6 @@ const { label, year, artist, title, url } = Astro.props;
     {label} - {year}
   </h2>
 
-  {
-    Astro.url.pathname === "/" && (
-      <a href={url} class="button">
-        {" "}
-        Explore record
-      </a>
-    )
-  }
+  {Astro.url.pathname === "/" && <Button href={url}> Explore record</Button>}
   <slot />
 </div>

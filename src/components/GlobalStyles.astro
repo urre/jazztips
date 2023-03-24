@@ -4,6 +4,7 @@
     --gap: 2rem;
     --profile: #008965;
     --profile-dark: rgb(247, 140, 121);
+    --background: #e4edeb;
   }
 
   /* Box sizing rules */
@@ -50,7 +51,6 @@
   picture {
     max-width: 100%;
     display: block;
-    /* transition: all 150ms; */
     border: 2px solid white;
   }
 
@@ -84,7 +84,7 @@
     src: url("/fonts/Spectral-Light.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-    /* font-display: swap; */
+    font-display: swap;
   }
 
   html,
@@ -104,7 +104,7 @@
   }
 
   html {
-    background-color: #fef6ed;
+    background-color: var(--background);
     text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
@@ -120,72 +120,6 @@
       auto-fit,
       minmax(calc(var(--fluid-gap) * 9), 1fr)
     );
-  }
-
-  /* CSS */
-  .button {
-    align-items: center;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.85);
-    cursor: pointer;
-    display: inline-flex;
-    font-weight: normal;
-    font-size: 16px;
-
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
-    position: relative;
-    text-decoration: none;
-    transition: box-shadow 150ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: auto;
-    gap: 0.5rem;
-  }
-
-  .button svg {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-  }
-
-  .button:hover,
-  .button:focus {
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
-  }
-
-  .button:active {
-    transform: translateY(0.15rem);
-  }
-
-  .button:hover,
-  .button:focus {
-    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
-  }
-
-  dl {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-flow: column;
-    grid-template-rows: 4rem;
-    font-size: clamp(0.75rem, 3vw, 1.2rem);
-  }
-
-  dd div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
   }
 
   p {
