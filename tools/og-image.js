@@ -63,7 +63,10 @@ if (!fileData.attributes.ogimage) {
     registerFont("./tools/Spectral-Light.ttf", {
       family: "Spectral",
     });
-    if (fileData.attributes.artist.length > 20) {
+    if (
+      fileData.attributes.artist.length > 20 ||
+      fileData.attributes.title.length > 20
+    ) {
       fontSize = 50;
       lineHeight = fontSize * 1.275;
       textArtistY = 140;
@@ -89,7 +92,7 @@ if (!fileData.attributes.ogimage) {
     wrapText(
       context,
       `”${fileData.attributes.title}”`,
-      640,
+      600,
       textTitleY,
       510,
       lineHeight
