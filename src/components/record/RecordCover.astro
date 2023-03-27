@@ -6,9 +6,10 @@ export interface Props {
   src?: string;
   alt?: string;
   pulled?: boolean;
+  abovefold?: boolean;
 }
 
-const { src, artist, title, pulled } = Astro.props;
+const { src, artist, title, pulled, abovefold } = Astro.props;
 ---
 
 <style>
@@ -126,12 +127,18 @@ const { src, artist, title, pulled } = Astro.props;
 </style>
 
 <figure class={`record-cover ${pulled ? "record-cover-pulled" : ""} `}>
-  <img
-    width={560}
-    height={560}
-    src={src}
-    alt={`${artist} - ${title}`}
-    loading="lazy"
-  />
+  {
+    abovefold ? (
+      <img width={560} height={560} src={src} alt={`${artist} - ${title}`} />
+    ) : (
+      <img
+        width={560}
+        height={560}
+        src={src}
+        alt={`${artist} - ${title}`}
+        loading="lazy"
+      />
+    )
+  }
   <span></span>
 </figure>
