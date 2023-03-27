@@ -17,11 +17,8 @@ const {
   description,
   image = "https://res.cloudinary.com/urre/image/upload/v1679736927/kdff3fgdyyyak6dugfso.jpg",
 } = Astro.props;
-
-console.log(image);
 ---
 
-<!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -33,10 +30,8 @@ console.log(image);
 
 <meta name="generator" content={Astro.generator} />
 
-<!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
-<!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
@@ -54,5 +49,13 @@ console.log(image);
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<link
+  rel="preload"
+  href="/fonts/Spectral-Light.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
 
 <GlobalStyles />
