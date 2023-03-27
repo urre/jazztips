@@ -114,8 +114,6 @@ const tidalLink = tidal
 
             <Embeds tidal={tidal} spotify={spotify} apple={apple} />
 
-            {credits && <Musicians musicians={credits} />}
-
             <Tags tags={tags} />
 
             <h2>Explore</h2>
@@ -171,6 +169,8 @@ const tidalLink = tidal
                 Discogs Marketplace
               </Button>
             </ul>
+
+            {credits && <Musicians musicians={credits} />}
           </RecordInfo>
         </RecordLayout>
       </article>
