@@ -91,7 +91,7 @@ if (!fileData.attributes.ogimage) {
     );
     wrapText(
       context,
-      `”${fileData.attributes.title}”`,
+      `${fileData.attributes.title}`,
       600,
       textTitleY,
       510,

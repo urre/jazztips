@@ -1,4 +1,6 @@
 ---
+import Button from "./Button.astro";
+
 export interface Props {
   prev?: string;
   next?: string;
@@ -21,18 +23,6 @@ const { prev, next } = Astro.props;
 </style>
 
 <nav>
-  {
-    prev ? (
-      <a class="button" href={prev}>
-        Previous
-      </a>
-    ) : null
-  }
-  {
-    next ? (
-      <a class="button" href={next}>
-        Next
-      </a>
-    ) : null
-  }
+  {prev ? <Button href={prev}>Previous</Button> : null}
+  {next ? <Button href={next}>Next</Button> : null}
 </nav>

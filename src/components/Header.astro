@@ -5,10 +5,17 @@ import { SITE_TITLE } from "../config";
 
 <style>
   header {
-    margin-top: calc(var(--gap) * 1.5);
-    margin-bottom: calc(var(--gap) * 1.5);
+    padding-top: calc(var(--gap) * 1.5);
+    padding-bottom: calc(var(--gap) * 1.5);
     display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
 
+  header nav {
+    display: flex;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
   }

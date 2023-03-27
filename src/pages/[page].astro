@@ -27,8 +27,7 @@ export async function getStaticPaths({ paginate }: any) {
         ? new Date(post.frontmatter.pubDate).valueOf()
         : 0,
     }))
-    .sort((post1, post2) => post2.pubDate - post1.pubDate)
-    .slice(6, -1);
+    .sort((post1, post2) => post2.pubDate - post1.pubDate);
 
   return paginate(allPosts, { pageSize: 30 });
 }
