@@ -1,18 +1,18 @@
 ---
 layout: ../layouts/Record.astro
 title: Mare Nostrum
-artist: Lundgren/Galliano/Fresu
+artist: Lundgren, Galliano & Fresu
 label: ACT
 year: 2007
+ogimage: https://res.cloudinary.com/urre/image/upload/v1681887249/tdgalashjgl9zmrnoh9t.jpg
 tags:
   - fresu
   - galliano
   - lundgren
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690238/it9zfejge2cvsmj7dqbw.jpg
 cloudinarypublicid: it9zfejge2cvsmj7dqbw
 cloudinaryversion: 1465690238
+image: "https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/q_auto,f_auto,w_600,h_600/v1681886824/mknf5uw52d2dp9sxsylt.jpg"
 permalink: /mare-nostrum/
 spotify: 'https://open.spotify.com/album/7iZadmuPfAJ4YJWcgXTtTK'
 spotify_album: null
