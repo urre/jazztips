@@ -118,7 +118,6 @@ async.series([
         musician: artist,
         instrument: credit
           .replace("Main Personnel", "")
-          .replace("Primary Artist", "")
           .replace("Mixing", "")
           .replace("Mixing", "")
           .replace("Engineer", "")
@@ -133,11 +132,14 @@ async.series([
   }),
   // Upload cover art to Cloudinary
   (uploadImage = (step) => {
-    cloudinary.uploader.upload(album.art.replace(/4$/, "6"), function (result) {
+    const media = album.art.replace("f=4", "f=5");
+    cloudinary.uploader.upload(media, function (result) {
+      console.log(result);
       album.art = result.secure_url.replace(
         "upload/",
         "upload/q_auto,f_auto,w_600,h_600/"
       );
+
       console.log("✔ Uploaded cover art to Cloudinary");
       step();
     });
@@ -175,16 +177,15 @@ async.series([
     };
 
     const filename =
-      new Date().toJSON().slice(0, 10) +
-      "-" +
       slug(album.info.title, {
         lower: true,
-      }) +
-      ".md";
+      }) + ".md";
 
     // Prepare Markdown
     const markdown =
-      "---\nlayout: post\ntitle: " +
+      "---\nlayout: " +
+      jekylldata.layout +
+      "\ntitle: " +
       jekylldata.title +
       "\nartist: " +
       jekylldata.artist +
@@ -202,6 +203,8 @@ async.series([
       jekylldata.spotify +
       "\ncredits: " +
       jekylldata.credits +
+      "pubDate: " +
+      jekylldata.pubDate +
       "\n\n---\n\n";
 
     // Save as Markdown file
