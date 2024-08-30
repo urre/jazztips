@@ -1,5 +1,5 @@
 {
-  "window.title": "🟢 Jazztips Astro ${activeEditorLong}",
+  "window.title": "🎷 Jazztips Astro",
   "files.exclude": {
     "public/*.js": true,
     "public/*.js.map": true,

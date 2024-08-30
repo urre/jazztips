@@ -49,11 +49,13 @@ const sortedPosts = posts
               ({ frontmatter: { title, image, artist, year, label }, url }) => (
                 <RecordLayout>
                   {image && (
-                    <RecordCover
-                      pulled={true}
-                      src={`${optimizeImage(image)}`}
-                      alt={`${artist} - ${title}`}
-                    />
+                    <a href={url}>
+                      <RecordCover
+                        pulled={true}
+                        src={`${optimizeImage(image)}`}
+                        alt={`${artist} - ${title}`}
+                      />
+                    </a>
                   )}
                   <RecordInfo
                     artist={artist}
