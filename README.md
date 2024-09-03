@@ -11,11 +11,22 @@ Blog, search, good example on using Typescript
 Blog post
 + [](https://www.stevefenton.co.uk/blog/2022/10/astro-paging-and-listing-by-category/#the-getstaticpaths-function)
 
+
+## Add a new record
+
+```shell
+npm run new
+```
+
+Type as argument `{artist} - {albumname}`. For example: "miles davis - kind of blue"
+
 ## Generate a nice OG Image
 
 ```shell
-docker run --rm -v `pwd`:/opt/node/js jazztips-canvas ./tools/og-image.js a-bossa-eletrica-do-norte.md
+docker run -it --env-file .env -v $(pwd):/opt/node/js -v $(pwd)/src:/opt/node/src my-node-app:latest ./tools/og-image/og-image.js sonny-rollins-and-the-contemporary-leaders.md
 ```
+
+Replace sonny-rollins-and-the-contemporary-leaders.md with the file you want to create an OG image for
 
 ## Todo
 

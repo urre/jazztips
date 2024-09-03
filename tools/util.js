@@ -16,7 +16,6 @@ const uploadImagetoCloudinary = async (url) => {
   try {
     const media = url.replace("f=4", "f=6");
     const result = await cloudinary.uploader.upload(media);
-    console.log(result.secure_url);
     return result.secure_url;
   } catch (err) {
     console.log(err);
@@ -112,7 +111,8 @@ const saveMarkdown = async (
     "\nspotify: " +
     postData.spotify +
     "\ncredits: " +
-    postData.credits;
+    postData.credits +
+    "\n---\n\n";
 
   // Save as Markdown file
   const filePath = path.join(__dirname, `../src/pages/${filename}`);
