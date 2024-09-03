@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "new": "node --no-deprecation ./tools/new-post.js"
+    "new": "node --no-deprecation ./tools/new-record.js"
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",

@@ -4,6 +4,7 @@ title: Metheny Mehldau
 pubDate: 2024/8/30
 artist: Pat Metheny / Brad Mehldau
 label:  Nonesuch
+ogimage: https://res.cloudinary.com/urre/image/upload/v1725349962/ng95y5fkta2sqwxwr55s.jpg
 year: 2006
 tags:
   - metheny
@@ -23,3 +24,4 @@ credits:
   instrument: Bass
 - name: Pat Metheny
   instrument: Guitar
+---
