@@ -4,7 +4,7 @@ title: The Contemporary Leaders
 pubDate: 2024/9/3
 artist: Sonny Rollins
 label: Contemporary
-ogimage: https://res.cloudinary.com/urre/image/upload/v1725351973/cg77qox9pzbexe1wyyvy.jpg
+ogimage: https://res.cloudinary.com/urre/image/upload/v1725368147/kz2fy5fpbkame1pj1pia.jpg
 year: 1958
 tags:
   - rollins
