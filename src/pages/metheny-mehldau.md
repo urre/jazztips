@@ -14,7 +14,8 @@ tags:
   - guitar
 image: https://res.cloudinary.com/urre/image/upload/v1725048052/n9mxotdszthukcj9fh2r.jpg
 permalink: /metheny-mehldau/
-spotify: http://open.spotify.com/album/46toyUpsWtgtWQi4ME16nj
+spotify: https://open.spotify.com/album/46toyUpsWtgtWQi4ME16nj
+tidal: 100222648?u
 credits:
 - name: Brad Mehldau
   instrument: Piano
