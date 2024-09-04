@@ -45,7 +45,6 @@ async function insertImageUrlInMarkdown(filename, imageUrl, lineNumber = 7) {
 }
 
 async function init() {
-  // Read args
   const myArgs = process.argv.slice(2);
   const useFile = myArgs[0];
 
@@ -75,7 +74,7 @@ async function init() {
   const fileData = fm(fileFrontmatter);
 
   if (!fileData.attributes.ogimage) {
-    // Load image into the canvas and add text
+    // Load image into the canvas and add text (artist, title)
     loadImage(fileData.attributes.image).then((image) => {
       // Settings
       const width = 1200;

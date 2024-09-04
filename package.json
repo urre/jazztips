@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "new": "node --no-deprecation ./tools/new-record.js",
-    "new:og": "docker run -it --env-file .env -v $(pwd):/opt/node/js -v $(pwd)/src:/opt/node/src my-node-app:latest ./tools/og-image/og-image.js"
+    "new:og": "rm temp.jpg && docker run -it --env-file .env -v $(pwd):/opt/node/js -v $(pwd)/src:/opt/node/src my-node-app:latest ./tools/og-image/og-image.js"
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
