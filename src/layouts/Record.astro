@@ -81,7 +81,7 @@ const tidalLink = tidal
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <BaseHead
       title={`${artist} - ${title}`}
-      description={description}
+      description={description ?? `Album review for ${artist} - ${title}`}
       image={ogimage}
     />
   </head>
