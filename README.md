@@ -23,7 +23,7 @@ Type as argument `{artist} - {albumname}`. For example: "miles davis - kind of b
 ## Generate a nice OG Image
 
 ```shell
-docker run -it --env-file .env -v $(pwd):/opt/node/js -v $(pwd)/src:/opt/node/src my-node-app:latest ./tools/og-image/og-image.js sonny-rollins-and-the-contemporary-leaders.md
+docker run -it --env-file .env -v $(pwd):/opt/node/js -v $(pwd)/src:/opt/node/src my-node-app:latest ./tools/og-image/og-image.js nameoffile.md
 ```
 
 Replace sonny-rollins-and-the-contemporary-leaders.md with the file you want to create an OG image for
