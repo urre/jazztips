@@ -16,7 +16,7 @@ cloudinary.config({
 
   console.log(
     "\x1b[32m%s\x1b[0m",
-    `Searhing ${args.join(" ")} on Allmusic.com...`
+    `Searching ${args.join(" ")} on Allmusic.com...`
   );
 
   // Launch the browser
