@@ -14,6 +14,11 @@ cloudinary.config({
   const args = process.argv.slice(2);
   const searchTerm = encodeURIComponent(args.join(" "));
 
+  console.log(
+    "\x1b[32m%s\x1b[0m",
+    `Searhing ${args.join(" ")} on Allmusic.com...`
+  );
+
   // Launch the browser
   const browser = await puppeteer.launch({ headless: "new" });
 
@@ -58,8 +63,9 @@ cloudinary.config({
   );
 
   // Scrape release year
-  const releasedYear = await page.$eval("div.release-date > span", (el) =>
-    el.textContent.trim()
+  const releasedYear = await page.$eval(
+    "div.release-date > span",
+    (el) => el.textContent.split(",")[1]
   );
 
   // Scrape album image URL
@@ -68,8 +74,12 @@ cloudinary.config({
   // Spotify
   let spotifySelector = await page.$("#streamBtnContainer a:nth-child(2)");
 
-  let spotifyLink = spotifySelector
+  let spotifyLinkContents = spotifySelector
     ? await page.evaluate((el) => el.href, spotifySelector)
+    : "";
+
+  spotifyLink = spotifyLinkContents.includes("spotify")
+    ? spotifyLinkContents
     : "";
 
   // Apple Music

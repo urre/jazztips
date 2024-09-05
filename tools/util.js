@@ -46,17 +46,27 @@ const saveMarkdown = async (
     "Project Director",
     "Assistant",
     "undefined",
+    "Design",
     "Coordination",
+    "Composer",
   ];
 
   const cleanedCredits = credits.filter(
     (credit) => !instrumentsToRemove.includes(credit.instrument)
   );
 
+  const cleanInstrument = (instrument) =>
+    (instrument ?? "")
+      .replace("Group Member", "")
+      .replace("Primary Artist", "")
+      .replace("Producer", "")
+      .replace("Liner Notes", "")
+      .replaceAll(",", "");
+
   const creditstring = cleanedCredits
     .map(
       ({ musician, instrument }) =>
-        `\n- name: ${musician}\n  instrument: ${instrument}`
+        `\n- name: ${musician}\n  instrument: ${cleanInstrument(instrument)}`
     )
     .join("");
 
