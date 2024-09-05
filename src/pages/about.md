@@ -8,7 +8,7 @@ pubDate: "2022-11-14"
 
 Good music recommendations. Since 2010.
 
-Built with:
+## Tech
 -  [Astro](https://astro.build/)
 - MDX
 - Typescript
