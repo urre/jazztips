@@ -79,7 +79,7 @@ cloudinary.config({
     : "";
 
   spotifyLink = spotifyLinkContents.includes("spotify")
-    ? spotifyLinkContents
+    ? spotifyLinkContents.replace('http', 'https')
     : "";
 
   // Apple Music
