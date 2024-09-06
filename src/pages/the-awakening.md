@@ -10,7 +10,7 @@ tags:
   - jamal
 image: https://res.cloudinary.com/urre/image/upload/v1725602502/nzgvfvy8ddoxt5bwggwh.jpg
 permalink: /the-awakening/
-spotify: http://open.spotify.com/album/2lM0Tamy6fq04pPCcPOZ8B
+spotify: https://open.spotify.com/album/2lM0Tamy6fq04pPCcPOZ8B
 tidal: 35655405
 credits: 
 - name: Ahmad Jamal
