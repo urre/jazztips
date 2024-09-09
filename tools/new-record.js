@@ -52,10 +52,10 @@ cloudinary.config({
     waitUntil: "networkidle2",
   });
 
+  console.log(albumLink);
+
   // Scrape album title
-  const albumTitle = await page.$eval("h1#albumTitle", (el) =>
-    el.textContent.trim()
-  );
+  const albumTitle = await page.$eval("h1", (el) => el.textContent.trim());
 
   // Scrape artist name
   const artist = await page.$eval("#albumArtists", (el) =>
@@ -79,7 +79,7 @@ cloudinary.config({
     : "";
 
   spotifyLink = spotifyLinkContents.includes("spotify")
-    ? spotifyLinkContents.replace('http', 'https')
+    ? spotifyLinkContents.replace("http", "https")
     : "";
 
   // Apple Music
