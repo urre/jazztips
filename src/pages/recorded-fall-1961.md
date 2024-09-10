@@ -11,6 +11,7 @@ tags:
   - haynes
   - brookmeyer
   - kuhn
+  - west coast
 image: https://res.cloudinary.com/urre/image/upload/w_600,h_600,c_fill/v1725867766/at4pyqcbvahfl7fcxxbu.jpg
 permalink: /recorded-fall-1961/
 tidal: 4020137
