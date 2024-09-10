@@ -62,11 +62,14 @@ cloudinary.config({
     el.textContent.trim()
   );
 
-  // Scrape release year
-  const releasedYear = await page.$eval(
-    "div.release-date > span",
-    (el) => el.textContent.split(",")[1]
-  );
+  let releasedYearSelector = await page.$("div.release-date > span");
+
+  let releasedYear = releasedYearSelector
+    ? await page.evaluate(
+        (el) => el.textContent.split(",")[1],
+        releasedYearSelector
+      )
+    : "";
 
   // Scrape album image URL
   const imageUrl = await page.$eval("#albumCover img", (img) => img.src);

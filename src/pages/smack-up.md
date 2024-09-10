@@ -1,34 +1,28 @@
 ---
 layout: ../layouts/Record.astro
 title: Smack Up
-artist: Art Pepper
-label: Conteporary
+pubDate: 2024/9/10
+artist: Art Pepper / Art Pepper Quintet
+label: Contemporary
+ogimage: https://res.cloudinary.com/urre/image/upload/v1725947667/bbprlieqbun88chbdvju.jpg
 year: 1960
 tags:
-  - kvintett
   - pepper
+  - west coast
   - sheldon
-  - west
-  - coast
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690146/taknzf5hzpusbnuea9vg.jpg
-cloudinarypublicid: taknzf5hzpusbnuea9vg
-cloudinaryversion: 1465690146
+image: https://res.cloudinary.com/urre/image/upload/v1725947478/dff7odvndx3n2an37s5x.jpg
 permalink: /smack-up/
-spotify: 'https://open.spotify.com/track/3WjsDtmbZfcAcAD3qnOHfY'
-spotify_album: null
+spotify: https://open.spotify.com/album/3OLrZAzTsdUXpPzSpjqGLT
+tidal: 345752674
 credits:
-  - name: Art Pepper
-    instrument: Altsaxofon
-  - name: Jack Sheldon
-    instrument: Trumpet
-  - name: Pete Jolly
-    instrument: Piano
-  - name: Jimmy Bond
-    instrument: Bass
-  - name: Frank Butler
-    instrument: Drums
-pubDate: '2011-07-11'
+- name: Art Pepper
+  instrument: Composer  Sax (Alto)
+- name: Frank Butler
+  instrument: Drums
+- name: Jack Sheldon
+  instrument: Guest Artist Trumpet
+- name: Jimmy Bond
+  instrument: Bass
+- name: Pete Jolly
+  instrument: Piano
 ---
-
-<a href="http://en.wikipedia.org/wiki/Art_Pepper">Art Pepper</a> levde ett hårt liv. Efter "Smack Up" inspelningen avtjänar han tre år för heroininnehav. Här dock i god form tillsammans med bland andra <a href="http://en.wikipedia.org/wiki/Jack_Sheldon">Jack Sheldon</a> på trumpet. Patenterat <a href="http://en.wikipedia.org/wiki/West_Coast_jazz">västkustsväng</a>.
