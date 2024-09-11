@@ -20,8 +20,10 @@ const { embedCode, classname } = Astro.props;
     height: 120px;
     border-radius: 8px;
     display: inline-flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
+    background-color: black;
   }
 </style>
 
@@ -30,5 +32,4 @@ const { embedCode, classname } = Astro.props;
   src={embedCode}
   allowtransparency="true"
   frame-border="0"
-  height="82"
   allow="encrypted-media"></iframe>
