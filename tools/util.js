@@ -61,6 +61,7 @@ const saveMarkdown = async (
       .replace("Primary Artist", "")
       .replace("Producer", "")
       .replace("Liner Notes", "")
+      .replace("Main Personnel", "")
       .replaceAll(",", "");
 
   const creditstring = cleanedCredits
