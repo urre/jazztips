@@ -38,6 +38,14 @@ async function insertImageUrlInMarkdown(filename, imageUrl, lineNumber = 7) {
   try {
     await insertLine(filename).content(`ogimage: ${imageUrl}`).at(lineNumber);
     console.log(`✅ Image URL inserted into ${filename} at line ${lineNumber}`);
+
+    fs.unlink(tempImage, (err) => {
+      if (err) {
+        console.error("Error deleting the image:", err);
+        return;
+      }
+      console.log("✅ Deleted temp.jpg successfully!");
+    });
   } catch (error) {
     console.error("❌ Error inserting image URL:", error.message);
     throw error;
