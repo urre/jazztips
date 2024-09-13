@@ -3,7 +3,7 @@ layout: ../layouts/Record.astro
 title: Byrd Blows on Beacon Hill
 pubDate: 2024/9/12
 artist: Donald Byrd
-label: Capitol
+label: Transition
 ogimage: https://res.cloudinary.com/urre/image/upload/v1726161549/qlxjujcm7tr6a5dckxuu.jpg
 year:  1957
 tags:
