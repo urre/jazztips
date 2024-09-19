@@ -4,6 +4,7 @@ title: Hindsight
 pubDate: 2024/9/19
 artist: Leo Lindberg Trio & Krister Andersson
 label: Jazzagenturen & Bra Skivor
+ogimage: https://res.cloudinary.com/urre/image/upload/v1726729055/szj29uackslhpks9mcyz.jpg
 year:  2024
 tags:
   - lindberg
@@ -23,3 +24,4 @@ credits:
   instrument: Bass
 - name: Moussa Fadera
   instrument: Drums
+---
