@@ -6,23 +6,36 @@ export interface Props {
   next?: string;
 }
 
+// Use Astro's direct access to props
 const { prev, next } = Astro.props;
 ---
 
 <style>
   nav {
+    display: flex; /* Flexbox is more versatile for responsive layouts */
+    justify-content: flex-end;
     align-items: center;
-    display: grid;
     gap: 1rem;
-    list-style-type: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: end;
-    grid-auto-flow: column;
+    padding: 2rem 0;
+    list-style: none;
   }
+
+  /* Responsive improvements for smaller screens */
 </style>
 
-<nav>
-  {prev ? <Button href={prev}>Previous</Button> : null}
-  {next ? <Button href={next}>Next</Button> : null}
+<nav aria-label="Pagination navigation">
+  {
+    prev && (
+      <Button href={prev} aria-label="Go to previous page">
+        Previous
+      </Button>
+    )
+  }
+  {
+    next && (
+      <Button href={next} aria-label="Go to next page">
+        Next
+      </Button>
+    )
+  }
 </nav>

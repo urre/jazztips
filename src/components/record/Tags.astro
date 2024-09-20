@@ -5,12 +5,15 @@ const { tags } = Astro.props;
 ---
 
 <h2>Tags</h2>
+
 <ul class="tags">
   {
-    tags.map((tag: string) => (
-      <li>
-        <Button href={`/tags/${tag}`}>{tag}</Button>
-      </li>
-    ))
+    tags
+      .sort((tag1: string, tag2: string) => tag1.localeCompare(tag2))
+      .map((tag: string) => (
+        <li>
+          <Button href={`/tags/${tag}`}>{tag}</Button>
+        </li>
+      ))
   }
 </ul>
