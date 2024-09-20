@@ -18,6 +18,8 @@ interface Frontmatter {
 }
 
 export async function getStaticPaths({ paginate }: any) {
+  const amount = await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md");
+
   const allPosts = (
     await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md")
   )
@@ -44,7 +46,7 @@ const { page } = Astro.props;
     <Header />
     <main>
       <section>
-        <h2>Archive</h2>
+        <h2>Archives {amount.data.lenth}</h2>
         <Pagination prev={page.url.prev} next={page.url.next} />
 
         <ul>
