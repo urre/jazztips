@@ -119,23 +119,34 @@ const tidalLink = tidal
 
             <h2>Explore</h2>
             <ul class="tags">
-              <Button href={`${tidalLink}`}>
-                <TidalIcon />
-                {tidal ? "Play" : "Search"}
-                on TIDAL
-              </Button>
-              <Button href={`https://open.spotify.com/search/${artist}`}>
-                <SpotifyIcon />
-                Search Spotify
-              </Button>
+              {
+                !tidal && (
+                  <Button href={`${tidalLink}`}>
+                    <TidalIcon />
+                    Search TIDAL
+                  </Button>
+                )
+              }
 
-              <Button
-                href={`https://music.apple.com/us/search?term=${artist}${title}`}
-              >
-                <AppleMusicIcon />
+              {
+                !spotify && (
+                  <Button href={`https://open.spotify.com/search/${artist}`}>
+                    <SpotifyIcon />
+                    Search Spotify
+                  </Button>
+                )
+              }
 
-                Search Apple Music
-              </Button>
+              {
+                !apple && (
+                  <Button
+                    href={`https://music.apple.com/us/search?term=${artist}${title}`}
+                  >
+                    <AppleMusicIcon />
+                    Search Apple Music
+                  </Button>
+                )
+              }
 
               <Button
                 href={`https://www.discogs.com/search/?q=${artist}%20${title}&type=all`}
@@ -151,7 +162,7 @@ const tidalLink = tidal
                   ></path>
                 </svg>
 
-                Find on Discogs
+                Discogs
               </Button>
 
               {
