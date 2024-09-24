@@ -76,6 +76,10 @@ const tidalLink = tidal
   : `https://listen.tidal.com/search?q=${encodeURIComponent(
       `${artist} ${title}`
     )}`;
+
+const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
+  `${artist} ${title}`
+)}`;
 ---
 
 <html lang="en">
@@ -123,9 +127,18 @@ const tidalLink = tidal
             <ul class="tags">
               {
                 !tidal && (
-                  <Button href={`${tidalLink}`}>
+                  <Button href={tidalLink}>
                     <TidalIcon />
                     Search TIDAL
+                  </Button>
+                )
+              }
+
+              {
+                tidal && (
+                  <Button href={`tidal://album/${tidal}`}>
+                    <TidalIcon />
+                    Open TIDAL Album Page
                   </Button>
                 )
               }
@@ -141,9 +154,7 @@ const tidalLink = tidal
 
               {
                 !apple && (
-                  <Button
-                    href={`https://music.apple.com/us/search?term=${artist}${title}`}
-                  >
+                  <Button href={appleLink}>
                     <AppleMusicIcon />
                     Search Apple Music
                   </Button>
@@ -164,7 +175,7 @@ const tidalLink = tidal
                   ></path>
                 </svg>
 
-                Discogs
+                Search Discogs
               </Button>
 
               {
@@ -180,12 +191,12 @@ const tidalLink = tidal
                 href={`https://www.discogs.com/sell/list?q=${artist}%20${title}&type=all`}
               >
                 <DiscogsIcon />
-                Discogs Marketplace
+                Search Discogs Marketplace
               </Button>
 
               <Button href={`https://en.wikipedia.org/wiki/${artist}`}>
                 <DiscogsIcon />
-                Wikipedia
+                Search Wikipedia
               </Button>
             </ul>
 
