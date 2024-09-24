@@ -73,7 +73,9 @@ const {
 
 const tidalLink = tidal
   ? `https://tidal.com/browse/album/${tidal}`
-  : `https://listen.tidal.com/search?q=${artist}-${title}`;
+  : `https://listen.tidal.com/search?q=${encodeURIComponent(
+      `${artist} ${title}`
+    )}`;
 ---
 
 <html lang="en">
