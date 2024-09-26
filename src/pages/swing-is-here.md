@@ -10,7 +10,7 @@ tags:
   - lewis
   - perkins
   - porcino
-  - storband
+  - bigband
 image: >-
   https://res.cloudinary.com/urre/image/upload/v1465690180/dsse9lqozhzejpaiwcca.jpg
 cloudinarypublicid: dsse9lqozhzejpaiwcca
