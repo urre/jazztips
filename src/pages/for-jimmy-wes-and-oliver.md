@@ -6,7 +6,7 @@ label: Mack Avenue Music Group
 year: 2020
 tags:
   - mcbride
-  - big band
+  - bigband
   - defrancesco
   - orgel
 image: >-

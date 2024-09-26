@@ -15,11 +15,17 @@
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
-    "@astrojs/mdx": "^0.17.2",
-    "@astrojs/rss": "^2.0.0",
-    "@astrojs/sitemap": "^1.0.0",
-    "astro": "^2.0.18",
-    "cal-sans": "^1.0.1"
+    "@astrojs/mdx": "^3.1.7",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/rss": "^4.0.7",
+    "@astrojs/sitemap": "^3.1.6",
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "astro": "^4.15.9",
+    "cal-sans": "^1.0.1",
+    "fuse.js": "^7.0.0",
+    "react": "^19.0.0-beta",
+    "react-dom": "^19.0.0-beta"
   },
   "devDependencies": {
     "prettier": "^2.8.2",
