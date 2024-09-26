@@ -2,13 +2,14 @@
 layout: ../layouts/Record.astro
 title: Modern Art
 pubDate: 2024/9/26
-artist: Bill Evans / Art Farmer
+artist: Art Farmer
 label: United Artists
 ogimage: https://res.cloudinary.com/urre/image/upload/v1727330566/nuinbwdzpb39mjmc7mkv.jpg
 year: 1958
 tags:
   - evans
   - farmer
+  - golson
 image: https://res.cloudinary.com/urre/image/upload/v1727330478/t3uixzxidvpvdjfwgehh.jpg
 permalink: /modern-art/
 spotify: https://open.spotify.com/album/35GC6fz2v6ZoXcVlKf6BA6
