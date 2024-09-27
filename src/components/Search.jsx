@@ -22,9 +22,9 @@ export default function Search({ searchList }) {
   }
 
   return (
-    <div class="search">
+    <div className="search">
       <input
-        type="text"
+        type="search"
         value={query}
         onChange={handleOnSearch}
         placeholder="Search"
