@@ -1,52 +1,44 @@
-import React, { useState } from 'react';
-import Fuse from 'fuse.js';  // Assuming you're using Fuse.js for search functionality
+import React, { useState } from "react";
+import Fuse from "fuse.js"; // Assuming you're using Fuse.js for search functionality
 
-function Search({ searchList }) {
-  // User's input state
-  const [query, setQuery] = useState('');
+export default function Search({ searchList }) {
+  const [query, setQuery] = useState("");
 
-  // Fuse.js options
   const options = {
-    keys: ['frontmatter.title', 'frontmatter.description'], // Search in these fields
-    threshold: 0.3,  // Adjust the threshold for search sensitivity
+    keys: ["frontmatter.title", "frontmatter.artist", "frontmatter.label", "frontmatter.credits.name", "frontmatter.credits.instrument", "frontmatter.description"],
+    threshold: 0.3,
   };
 
   const fuse = new Fuse(searchList, options);
 
-  // Limit the search results to 5 posts
+
   const posts = fuse
     .search(query)
     .map((result) => result.item)
     .slice(0, 5);
 
   function handleOnSearch({ target }) {
-    setQuery(target.value);  // Update query state on input change
+    setQuery(target.value);
   }
 
   return (
-    <>
-      <label>Search</label>
+    <div class="search">
       <input
         type="text"
         value={query}
         onChange={handleOnSearch}
-        placeholder="Search posts"
+        placeholder="Search"
       />
+
       {query.length > 1 && (
-        <p>
-          Found {posts.length} {posts.length === 1 ? 'result' : 'results'} for '{query}'
-        </p>
+        <ul className="search-list">
+          {posts.map((post) => (
+            <li key={post.frontmatter.title}>
+              <a href={`${post.url}`}>{post.frontmatter.title}</a>
+            </li>
+          ))}
+        </ul>
       )}
-      <ul>
-        {posts.map((post) => (
-          <li key={post.frontmatter.slug}>
-            <a href={`/${post.frontmatter.slug}`}>{post.frontmatter.title}</a>
-            <p>{post.frontmatter.description}</p>
-          </li>
-        ))}
-      </ul>
-    </>
+    </div>
   );
 }
-
-export default Search;

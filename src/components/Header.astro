@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../config";
+import SearchBar from "./SearchBar.astro";
 ---
 
 <style>
@@ -55,5 +56,6 @@ import { SITE_TITLE } from "../config";
   <nav>
     <HeaderLink rel="tag" href="/1">Archives</HeaderLink>
     <HeaderLink rel="tag" href="/tags">Tags</HeaderLink>
+    <SearchBar />
   </nav>
 </header>
