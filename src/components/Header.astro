@@ -8,17 +8,17 @@ import SearchBar from "./SearchBar.astro";
   header {
     padding-top: calc(var(--gap) * 1.5);
     padding-bottom: calc(var(--gap) * 1.5);
-    display: flex;
     gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
   }
 
   header nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
   }
 
   header h1 {
