@@ -2,6 +2,11 @@
 layout: ../layouts/Record.astro
 title: Modern Art
 pubDate: 2024/9/26
+colors:
+  - "#FFFF00"
+  - "#FFFF01"
+  - "#FFFE03"
+
 artist: Art Farmer
 label: United Artists
 ogimage: https://res.cloudinary.com/urre/image/upload/v1727330566/nuinbwdzpb39mjmc7mkv.jpg

@@ -25,7 +25,8 @@
     "cal-sans": "^1.0.1",
     "fuse.js": "^7.0.0",
     "react": "^19.0.0-beta",
-    "react-dom": "^19.0.0-beta"
+    "react-dom": "^19.0.0-beta",
+    "typescript": "^5.6.2"
   },
   "devDependencies": {
     "prettier": "^2.8.2",
