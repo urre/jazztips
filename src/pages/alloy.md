@@ -20,6 +20,9 @@ credits:
   - name: Sebastian Ågren
     instrument: Drums
 pubDate: '2016-12-17'
----
+colors:
+  - "#F8F8F8"
+  - "#FAFAFA"
+  - "#F6F6F6"
 
-Nils Jansons tredje platta i eget namn.
+---

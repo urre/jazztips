@@ -25,6 +25,10 @@ export interface Tag {
   tag: string;
 }
 
+export interface Color {
+  color: string;
+}
+
 export interface Props {
   content: {
     title: string;
@@ -48,6 +52,7 @@ export interface Props {
     src?: string;
     pulled?: boolean;
     alt?: string;
+    colors?: Color;
   };
 }
 
@@ -68,6 +73,7 @@ const {
     buy,
     buyat,
     tags,
+    colors,
   },
 } = Astro.props;
 
@@ -92,7 +98,12 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
     />
   </head>
 
-  <body>
+  <body
+    style={`
+    --primary-color: ${colors ? colors[0] : "#fff"};
+    --secondary-color: ${colors ? colors[1] : "#fff"};
+    --tertiary-color: ${colors ? colors[2] : "#fff"};`}
+  >
     <Header />
 
     <main>
