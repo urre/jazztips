@@ -83,8 +83,7 @@ const tidalLink = tidal
       `${artist} ${title}`
     )}`;
 
-const tidalId =
-  typeof tidal === "string" ? tidal.split("/")[5].replace("?u", "") : tidal;
+const tidalId = typeof tidal === "string" ? tidal.replace(/\D/g, "") : tidal;
 
 const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
   `${artist} ${title}`
