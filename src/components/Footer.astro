@@ -1,6 +1,14 @@
 ---
+const allPosts = await Astro.glob("../pages/*.md");
 ---
 
 <footer>
-  By <a href="https://twitter.com/urre">@urre</a>. <a href="/about">About</a>
+  By <a href="https://twitter.com/urre">@urre</a>. <a
+    href="/about"
+    style="text-decoration: underline;">About</a
+  >
+  <small
+    >&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp; {allPosts.length} records recommended
+    since 2010</small
+  >
 </footer>
