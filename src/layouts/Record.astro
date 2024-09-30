@@ -83,6 +83,8 @@ const tidalLink = tidal
       `${artist} ${title}`
     )}`;
 
+const tidalId = tidal?.split("/")[5].replace("?u", "");
+
 const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
   `${artist} ${title}`
 )}`;
@@ -148,7 +150,7 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
 
               {
                 tidal && (
-                  <Button href={`tidal://album/${tidal}`}>
+                  <Button href={`tidal://album/${tidalId}`}>
                     <TidalIcon />
                     Open TIDAL Album Page
                   </Button>
