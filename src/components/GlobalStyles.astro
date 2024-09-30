@@ -201,6 +201,8 @@
     top: 0.25rem;
     z-index: 100;
     list-style: none;
+    width: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
   .search-list li:hover {
@@ -211,5 +213,10 @@
     padding: 0.25rem 1rem;
     border-radius: 1rem;
     border: none;
+  }
+
+  .search-list figure + div {
+    max-width: 300px;
+    overflow-wrap: break-word;
   }
 </style>
