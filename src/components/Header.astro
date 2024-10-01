@@ -8,17 +8,24 @@ import SearchBar from "./SearchBar.astro";
   header {
     padding-top: calc(var(--gap) * 1.5);
     padding-bottom: calc(var(--gap) * 1.5);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: 768px) {
+    header {
+      flex-direction: row;
+    }
   }
 
   header nav {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
   }
 
   header h1 {
@@ -30,7 +37,7 @@ import SearchBar from "./SearchBar.astro";
     display: flex;
 
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
 
   header .dot {
@@ -42,14 +49,23 @@ import SearchBar from "./SearchBar.astro";
   }
 
   header h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  header img {
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
   }
 </style>
 
 <header>
   <h1>
     <a href="/">
-      <span class="dot"></span>
+      <img
+        src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
+        alt=""
+      />
       {SITE_TITLE}
     </a>
   </h1>
