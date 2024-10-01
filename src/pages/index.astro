@@ -40,7 +40,7 @@ const sortedPosts = posts
     <Header />
     <main>
       <section>
-        <h2>Latest record</h2>
+        <h2>Recommended lately</h2>
 
         {
           sortedPosts
@@ -68,11 +68,10 @@ const sortedPosts = posts
               )
             )
         }
-        <h2>Recommended lately</h2>
         <ul>
           {
             sortedPosts
-              .slice(1, 6)
+              .slice(1, 24)
               .map(({ frontmatter: { title, artist, image }, url }) => (
                 <li>
                   <a href={url}>
