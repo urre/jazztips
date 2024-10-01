@@ -49,6 +49,7 @@ const saveMarkdown = async (
     "Design",
     "Coordination",
     "Composer",
+    "Art Direction Design",
   ];
 
   const cleanedCredits = credits.filter(
@@ -62,6 +63,8 @@ const saveMarkdown = async (
       .replace("Producer", "")
       .replace("Liner Notes", "")
       .replace("Main Personnel", "")
+      .replace("Guest Artist", "")
+      .replace("Composer ", "")
       .replaceAll(",", "");
 
   const creditstring = cleanedCredits
