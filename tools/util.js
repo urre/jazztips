@@ -3,6 +3,8 @@ const slug = require("slug");
 const path = require("path");
 const cloudinary = require("cloudinary");
 require("dotenv").config();
+const { getMusicServiceLinks } = require("./getMusicServiceLinks");
+const { getRecordLabel } = require("./getRecordLabel");
 
 // Cloudinary settings, read secrets
 cloudinary.config({
@@ -29,14 +31,13 @@ const saveMarkdown = async (
   artist,
   releasedYear,
   imageUrl,
-  spotifyLink,
-  appleMusicLink,
   credits
 ) => {
-  const instrumentsToRemove = [
+  const productionPersonelTitles = [
     "Main Personnel",
     "Mixing",
     "Engineer",
+    "Engineering, Mixing",
     "Mastering",
     "Packaging Manager",
     "Reissue Series",
@@ -45,42 +46,41 @@ const saveMarkdown = async (
     "Photography",
     "Project Director",
     "Assistant",
+    "Producer",
+    "Art Direction",
+    "Mixing",
+    "Surround Sound",
     "undefined",
+    "Graphic Design",
     "Design",
+    "Executive Producer, Producer",
     "Coordination",
-    "Composer",
     "Art Direction Design",
   ];
 
-  const cleanedCredits = credits.filter(
-    (credit) => !instrumentsToRemove.includes(credit.instrument)
-  );
-
-  const cleanInstrument = (instrument) =>
-    (instrument ?? "")
-      .replace("Group Member", "")
-      .replace("Primary Artist", "")
-      .replace("Producer", "")
-      .replace("Liner Notes", "")
-      .replace("Main Personnel", "")
-      .replace("Guest Artist", "")
-      .replace("Composer ", "")
-      .replaceAll(",", "");
-
-  const creditstring = cleanedCredits
+  const creditstring = credits
+    .filter(({ musician, instrument }) => musician !== undefined)
+    .filter(
+      ({ musician, instrument }) =>
+        !productionPersonelTitles.includes(instrument)
+    )
     .map(
       ({ musician, instrument }) =>
-        `\n- name: ${musician}\n  instrument: ${cleanInstrument(instrument)}`
+        `\n- name: ${musician}\n  instrument: ${instrument}`
     )
     .join("");
 
   const dt = new Date();
 
+  const musicServiceLinks = await getMusicServiceLinks(
+    `${artist} ${albumTitle}`
+  );
+
   const postData = {
     layout: "../layouts/Record.astro",
     title: albumTitle.trim().replace("\n", ""),
     artist: artist.trim().replace("\n", ""),
-    label: "",
+    label: await getRecordLabel(`${artist} ${albumTitle}`),
     year: releasedYear,
     tags: "",
     image: await uploadImagetoCloudinary(imageUrl),
@@ -90,8 +90,10 @@ const saveMarkdown = async (
         lower: true,
       }) +
       "/",
-    spotify: spotifyLink !== "undefined" ? spotifyLink : "",
-    apple: appleMusicLink !== "undefined" ? appleMusicLink : "",
+    spotify: musicServiceLinks[0],
+    apple: musicServiceLinks[1],
+    tidal: musicServiceLinks[2],
+    qobuz: musicServiceLinks[3],
     credits: creditstring,
     pubDate: dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate(),
   };
@@ -124,6 +126,12 @@ const saveMarkdown = async (
     postData.permalink +
     "\nspotify: " +
     postData.spotify +
+    "\napple: " +
+    postData.apple +
+    "\ntidal: " +
+    postData.tidal +
+    "\nqobuz: " +
+    postData.qobuz +
     "\ncredits: " +
     postData.credits +
     "\n---\n\n";

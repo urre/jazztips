@@ -22,16 +22,6 @@ cloudinary.config({
   // Launch the browser
   const browser = await puppeteer.launch({ headless: "new" });
 
-  // const browser = await puppeteer.launch({
-  //   headless: false,
-  //   ignoreHTTPSErrors: true,
-  //   args: [`--window-size=1920,1080`],
-  //   defaultViewport: {
-  //     width: 1920,
-  //     height: 1080,
-  //   },
-  // });
-
   const page = await browser.newPage();
 
   // First search for the album
@@ -52,8 +42,6 @@ cloudinary.config({
     waitUntil: "networkidle2",
   });
 
-  console.log(albumLink);
-
   // Scrape album title
   const albumTitle = await page.$eval("h1", (el) => el.textContent.trim());
 
@@ -73,24 +61,6 @@ cloudinary.config({
 
   // Scrape album image URL
   const imageUrl = await page.$eval("#albumCover img", (img) => img.src);
-
-  // Spotify
-  let spotifySelector = await page.$("#streamBtnContainer a:nth-child(2)");
-
-  let spotifyLinkContents = spotifySelector
-    ? await page.evaluate((el) => el.href, spotifySelector)
-    : "";
-
-  spotifyLink = spotifyLinkContents.includes("spotify")
-    ? spotifyLinkContents.replace("http", "https")
-    : "";
-
-  // Apple Music
-  let appleMusicSelector = await page.$("#streamBtnContainer a:nth-child(3)");
-
-  let appleMusicLink = appleMusicSelector
-    ? await page.evaluate((el) => el.href, appleMusicSelector)
-    : "";
 
   // Scrape credits, musicians, and instruments
   // Click on the credits tab to load the credits section
@@ -114,15 +84,7 @@ cloudinary.config({
   );
 
   // Save Markdown file
-  saveMarkdown(
-    albumTitle,
-    artist,
-    releasedYear,
-    imageUrl,
-    spotifyLink,
-    appleMusicLink,
-    credits
-  );
+  saveMarkdown(albumTitle, artist, releasedYear, imageUrl, credits);
 
   // Close the browser
   await browser.close();

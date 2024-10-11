@@ -30,8 +30,23 @@ Replace sonny-rollins-and-the-contemporary-leaders.md with the file you want to 
 
 ## Todo
 
++ [ ] Get music service links integrated in the CLI
++ [ ] Get Open Graph image integrated in the CLI
 + [ ] Add RSS feed
-+ [ ] Better search
+
+## Use Puppeteer headless during development
+
+```js
+  // const browser = await puppeteer.launch({
+  //   headless: false,
+  //   ignoreHTTPSErrors: true,
+  //   args: [`--window-size=1920,1080`],
+  //   defaultViewport: {
+  //     width: 1920,
+  //     height: 1080,
+  //   },
+  // });
+```
 
 ## Save for later
 

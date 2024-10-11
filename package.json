@@ -20,12 +20,12 @@
     "@astrojs/rss": "^4.0.7",
     "@astrojs/sitemap": "^3.1.6",
     "@types/react": "^18.3.9",
-    "@types/react-dom": "^18.3.0",
+    "@types/react-dom": "^18.0.0",
     "astro": "^4.15.9",
     "cal-sans": "^1.0.1",
     "fuse.js": "^7.0.0",
-    "react": "^19.0.0-beta",
-    "react-dom": "^19.0.0-beta",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "typescript": "^5.6.2"
   },
   "devDependencies": {

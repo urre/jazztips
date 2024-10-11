@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Fuse from "fuse.js"; // Assuming you're using Fuse.js for search functionality
+import { useState } from "react";
+import Fuse from "fuse.js";
 
 export default function Search({ searchList }) {
   const [query, setQuery] = useState("");
