@@ -39,6 +39,7 @@ export interface Props {
     spotify?: string;
     tidal?: string;
     apple?: string;
+    qobuz?: string;
     credits?: Musician;
     tags?: Tag;
     name: string;
@@ -64,6 +65,7 @@ const {
     spotify,
     apple,
     tidal,
+    qobuz,
     credits,
     description,
     updatedDate,
@@ -169,6 +171,18 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
               )
             }
 
+            {
+              qobuz && (
+                <Button href={qobuz}>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAgVBMVEVHcEwGBgYAAAAAAAAAAAAGBgYVFRUKCgoAAAAGBgYAAAAAAAAAAAAAAAAAAAAsLCwAAAD///8wMDD29vZHR0evr6/U1NTe3t5sbGw8PDxcXFz9/f3m5uYjIyN+fn6Hh4empqYaGhp2dnZjY2Oampru7u7Ly8uPj4+5ubnExMRRUVGNe5f8AAAAEHRSTlMAjNnqxFy1/hc/UJtygDOngokDvgAAAZBJREFUKJFlk2ujgiAMhkktj9llQxDB+y2r//8Dz4A8WWd+kPG4l21Mxv7scrper7v9D/tnPynUQyflNEJ4+mI7GBS+7PaMj9uwQFR2e85VZt+PPn2zsKGdfIiBc+ALfZeJwwoDYlkBYpju96ngMCGWYvc6TyBWNQgzLLJrC6PBlJjFiROFCrMaev4sWtk1o+A9jIj30MIDiRYAca1HC43uAaBD1DZlCszJhZhreriurQMZyoixhLtAa/pRqa736w4zYOzcYul94WpUnhpEfmEHicrDGxVUIk7eI709O9zx5rx6ptopudzDEtvTJzTtF5RYefdBjaFDl43suVkT0rNNKI83CSU14uApl0pNMQi7ljiDbYJaj/FWWDf2TWDp8Bfq7FkSlaR6dI1XmPENpTtRJcrAXdlZ0wzoT0qNufgLjQoqonnDeLTVrnMUEMWqddp8LERvLN2/aMRzW2NWVSqXC02KscJr7AnGm5vLcn40dZhET2pq8p7cEMzSTa2AwOpFYsNsTftdmp6Pr98hIvYLZI0wRI7GxjsAAAAASUVORK5CYII="
+                    alt=""
+                  />
+                  Listen on Qobuz
+                </Button>
+              )
+            }
+
             <Button
               href={`https://www.discogs.com/search/?q=${artist}%20${title}&type=all`}
             >
@@ -194,13 +208,6 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
                 </Button>
               )
             }
-
-            <Button
-              href={`https://www.discogs.com/sell/list?q=${artist}%20${title}&type=all`}
-            >
-              <DiscogsIcon />
-              Search Discogs Marketplace
-            </Button>
 
             <Button href={`https://en.wikipedia.org/wiki/${artist}`}>
               <DiscogsIcon />
