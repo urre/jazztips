@@ -1,0 +1,44 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+
+const allPosts = await Astro.glob("../pages/*.md");
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <h1>About Jazztips.se</h1>
+        <h2>{allPosts.length} good music recommendations since 2010</h2>
+
+        <img
+          src="https://res.cloudinary.com/urre/image/upload/v1534260522/urre_dpsi17.jpg"
+          alt="A photo of Urban Sandén"
+          loading="lazy"
+          role="presentation"
+          style="border-radius: 50%"
+        />
+        <p>
+          A passion project by <a href="https://urre.me">Urban Sandén</a>
+        </p>
+
+        <p>
+          Using <a href="https://astro.build">Astro</a>, <a
+            href="https://react.dev">React</a
+          >, <a href="https://cloudinary.com/">Cloudinary</a> and <a
+            href="https://vercel.com">Vercel</a
+          >
+        </p>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
