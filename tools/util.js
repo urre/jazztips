@@ -5,6 +5,7 @@ const cloudinary = require("cloudinary");
 require("dotenv").config();
 const { getMusicServiceLinks } = require("./getMusicServiceLinks");
 const { getRecordLabel } = require("./getRecordLabel");
+const { generateImageAndInsertToMarkdown } = require("./og-image");
 
 // Cloudinary settings, read secrets
 cloudinary.config({
@@ -76,6 +77,14 @@ const saveMarkdown = async (
     `${artist} ${albumTitle}`
   );
 
+  const filename =
+    slug(albumTitle, {
+      lower: true,
+    }) + ".md";
+
+  // Save as Markdown file
+  const filePath = path.join(__dirname, `../src/pages/${filename}`);
+
   const postData = {
     layout: "../layouts/Record.astro",
     title: albumTitle.trim().replace("\n", ""),
@@ -84,6 +93,11 @@ const saveMarkdown = async (
     year: releasedYear,
     tags: "",
     image: await uploadImagetoCloudinary(imageUrl),
+    ogimage: await generateImageAndInsertToMarkdown(
+      imageUrl,
+      artist,
+      albumTitle
+    ),
     permalink:
       "/" +
       slug(albumTitle.trim().replace("\n", ""), {
@@ -97,11 +111,6 @@ const saveMarkdown = async (
     credits: creditstring,
     pubDate: dt.getFullYear() + "/" + (dt.getMonth() + 1) + "/" + dt.getDate(),
   };
-
-  const filename =
-    slug(albumTitle, {
-      lower: true,
-    }) + ".md";
 
   // Prepare Markdown
   const markdown =
@@ -122,6 +131,8 @@ const saveMarkdown = async (
     artist.trim().replace("\n", "").split(" ")[1].toLowerCase() +
     "\nimage: " +
     postData.image +
+    "\nogimage: " +
+    postData.ogimage +
     "\npermalink: " +
     postData.permalink +
     "\nspotify: " +
@@ -136,14 +147,12 @@ const saveMarkdown = async (
     postData.credits +
     "\n---\n\n";
 
-  // Save as Markdown file
-  const filePath = path.join(__dirname, `../src/pages/${filename}`);
-
   fs.writeFile(filePath, markdown, (err) => {
     if (err) {
       console.error("Error writing file:", err);
     } else {
       console.log(`✔ Saved Markdown file in ./src/pages/${filename}`);
+      process.exit(0);
     }
   });
 };
