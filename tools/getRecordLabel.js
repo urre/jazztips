@@ -24,21 +24,20 @@ async function getRecordLabel(query) {
       };
     });
 
-    const str = result[0].label;
+    const str = result[0]?.label;
 
-    return str;
+    if (str) {
+      const words = str.split(" ");
+      const index = words.indexOf("Records");
 
-    // const regex = /([A-Za-z\s]+) Records[.”;]*/g;
-    // const matches = str.match(regex);
-
-    // return (
-    //   matches &&
-    //   matches[0]
-    //     .replace("through", "")
-    //     .replace("by", "")
-    //     .replace(".", "")
-    //     .trim()
-    // );
+      if (index > 0) {
+        return words[index - 1] + " " + words[index];
+      } else {
+        return "Records not found";
+      }
+    } else {
+      return "Label is undefined";
+    }
   } catch (e) {
     console.log(e);
   }

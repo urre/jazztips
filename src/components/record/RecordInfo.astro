@@ -33,7 +33,7 @@ const { label, year, artist, title, url } = Astro.props;
     <span>{title}</span>
   </h1>
   <h2>
-    {label} - {year}
+    {label} ({year})
   </h2>
 
   {Astro.url.pathname === "/" && <Button href={url}> Explore record</Button>}
