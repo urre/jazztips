@@ -7,24 +7,22 @@ export interface Props {
   alt?: string;
   pulled?: boolean;
   abovefold?: boolean;
+  size?: string;
 }
 
-const { src, artist, title, pulled, abovefold } = Astro.props;
+const { src, artist, title, pulled, abovefold, size } = Astro.props;
 ---
 
 <style>
   .record-cover {
     position: relative;
     max-width: 300px;
-    /* transition: transform 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275); */
     transition: transform 800ms ease-in-out;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
-  @media (min-width: 768px) {
-    .record-cover {
-      max-width: unset;
-    }
+  .record-cover:has(img.image-lg) {
+    max-width: 500px;
   }
 
   @media (min-width: 1200px) {
@@ -130,7 +128,13 @@ const { src, artist, title, pulled, abovefold } = Astro.props;
 <figure class={`record-cover ${pulled ? "record-cover-pulled" : ""} `}>
   {
     abovefold ? (
-      <img width={560} height={560} src={src} alt={`${artist} - ${title}`} />
+      <img
+        width={560}
+        height={560}
+        src={src}
+        alt={`${artist} - ${title}`}
+        class={`${size === "large" ? "image-lg" : ""}`}
+      />
     ) : (
       <img
         width={560}
