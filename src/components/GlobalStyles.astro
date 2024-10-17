@@ -111,8 +111,21 @@
     list-style: none;
     padding: 0;
     margin-top: calc(var(--gap));
-    display: flex;
-    flex-gap: var(--gap);
+    gap: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+  }
+
+  @media (min-width: 768px) {
+    ul:not(.plain-list) {
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    }
+  }
+
+  ul:not(.plain-list) > li {
+    /* flex: 0 0 25%; */
+
+    /* flex: 1 1 var(--min); */
   }
 
   p {
