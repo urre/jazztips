@@ -12,7 +12,7 @@ ogimage: http://res.cloudinary.com/urre/image/upload/v1728885825/ea7d8sd22aw27xr
 permalink: /hank-mobley-quartet/
 spotify: https://open.spotify.com/album/4RyagozbMjdxY3OYsQFkC7
 apple: https://embed.music.apple.com/us/album/hank-mobley-quartet-ep/1443139366
-tidal: https://tidal.com/browse/artist/3513675
+tidal: https://tidal.com/browse/album/77618931?u
 qobuz: https://www.qobuz.com/us-en/interpreter/hank-mobley-quartet/369717
 credits:
 - name: Hank Mobley

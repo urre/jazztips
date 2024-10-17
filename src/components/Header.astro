@@ -9,7 +9,7 @@ import SearchBar from "./SearchBar.astro";
     padding-top: calc(var(--gap) * 1.5);
     padding-bottom: calc(var(--gap) * 1.5);
     width: 100%;
-    gap: 1em;
+    gap: calc(var(--gap) * 1.5);
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
@@ -24,7 +24,7 @@ import SearchBar from "./SearchBar.astro";
   @media (min-width: 768px) {
     header nav {
       display: flex;
-      gap: 1em;
+      gap: calc(var(--gap) * 1.5);
       justify-content: space-between;
       align-items: center;
     }
