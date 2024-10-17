@@ -6,28 +6,33 @@ import SearchBar from "./SearchBar.astro";
 
 <style>
   header {
-    padding-top: calc(var(--gap) * 1.5);
-    padding-bottom: calc(var(--gap) * 1.5);
     width: 100%;
-    gap: calc(var(--gap) * 1.5);
     display: flex;
-    justify-content: space-between;
+    gap: calc(var(--gap) * 1.5);
+    /* justify-content: space-between; */
     flex-direction: column-reverse;
+    padding-top: calc(var(--gap));
   }
 
   @media (min-width: 768px) {
     header {
+      padding-bottom: calc(var(--gap) * 1.5);
+      padding-top: calc(var(--gap) * 1.5);
       flex-direction: row;
     }
   }
 
   @media (min-width: 768px) {
     header nav {
-      display: flex;
-      gap: calc(var(--gap) * 1.5);
-      justify-content: space-between;
-      align-items: center;
     }
+  }
+
+  header nav {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--gap) / 2);
   }
 
   header h1 {
