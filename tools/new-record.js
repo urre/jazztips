@@ -12,29 +12,39 @@ cloudinary.config({
 
 (async () => {
   const args = process.argv.slice(2);
-  const searchTerm = encodeURIComponent(args.join(" "));
+  const searchTerm = encodeURIComponent(args.join("+"));
 
-  console.log(
-    "\x1b[32m%s\x1b[0m",
-    `Searching ${args.join(" ")} on Allmusic.com...`
-  );
+  console.log("\x1b[32m%s\x1b[0m", `Searching ${args.join(" ")} on Discogs...`);
 
   // Launch the browser
-  const browser = await puppeteer.launch({ headless: "new" });
+  // const browser = await puppeteer.launch({ headless: "new" });
+  const browser = await puppeteer.launch({
+    headless: false,
+    ignoreHTTPSErrors: true,
+    args: [`--window-size=1920,1080`],
+    defaultViewport: {
+      width: 1920,
+      height: 1080,
+    },
+  });
 
   const page = await browser.newPage();
 
   // First search for the album
-  await page.goto(`https://www.allmusic.com/search/all/${searchTerm}`, {
+  await page.goto(`https://www.discogs.com/search?q=${searchTerm}`, {
     waitUntil: "networkidle2",
   });
 
   // Consent cookies
-  await page.locator(".fc-cta-consent").click();
+  await page.waitForSelector("#onetrust-accept-btn-handler", {
+    visible: true,
+    timeout: 5000,
+  });
+  await page.click("#onetrust-accept-btn-handler");
 
   // Scrape first album link
   const albumLink = await page.$eval(
-    "#scrollGridContainer > div.album > .info > .title a",
+    "#search_results > li:nth-child(1) > a",
     (el) => el.href
   );
 
@@ -43,48 +53,47 @@ cloudinary.config({
   });
 
   // Scrape album title
-  const albumTitle = await page.$eval("h1", (el) => el.textContent.trim());
-
-  // Scrape artist name
-  const artist = await page.$eval("#albumArtists", (el) =>
-    el.textContent.trim()
+  const albumTitle = await page.$eval(
+    "#page h1",
+    (el) => el.textContent.split("–")[1]
   );
 
-  let releasedYearSelector = await page.$("div.release-date > span");
+  // Scrape artist name
+  const artist = await page.$eval(
+    "#page h1",
+    (el) => el.textContent.split("–")[0]
+  );
+
+  let releasedYearSelector = await page.$(
+    "#page > div.content_3oPo5 > div:nth-child(2) > div > div.info_23nnx > table > tbody > tr:nth-child(4) > td > a > time"
+  );
 
   let releasedYear = releasedYearSelector
     ? await page.evaluate(
-        (el) => el.textContent.split(",")[1],
+        (el) => el.textContent.split(",")[1].trim(),
         releasedYearSelector
       )
     : "";
 
-  // Scrape album image URL
-  const imageUrl = await page.$eval("#albumCover img", (img) => img.src);
-
-  // Scrape credits, musicians, and instruments
-  // Click on the credits tab to load the credits section
-
-  await page.locator("#creditsTab h2").click();
-
-  // Wait for the credits table to be loaded
-  await page.waitForSelector("#credits");
+  // // Scrape album image URL
+  // const imageUrl = await page.$eval(
+  //   "#page > div.content_3oPo5 > div:nth-child(2) > div > div.thumbnail_1RxJB > div > a > div > picture > img",
+  //   (img) => img.src
+  // );
 
   // Scrape credits, musicians, and instruments from the credits table
-  const credits = await page.$$eval("#credits tr", (rows) =>
+  const credits = await page.$$eval("#release-credits > div > ul li", (rows) =>
     rows.map((row) => {
-      const musician = row
-        .querySelector("td.singleCredit span.artist")
-        ?.textContent.trim();
+      const musician = row.querySelector("span.link_15cpV")?.textContent.trim();
       const instrument = row
-        .querySelector("td.singleCredit span.artistCredits")
+        .querySelector("span.role_2ga14")
         ?.textContent.trim();
       return { musician, instrument };
     })
   );
 
   // Save Markdown file
-  saveMarkdown(albumTitle, artist, releasedYear, imageUrl, credits);
+  saveMarkdown(albumTitle, artist, releasedYear, credits);
 
   // Close the browser
   await browser.close();

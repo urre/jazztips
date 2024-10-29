@@ -27,13 +27,7 @@ const uploadImagetoCloudinary = async (url) => {
 };
 
 // Save as markdown
-const saveMarkdown = async (
-  albumTitle,
-  artist,
-  releasedYear,
-  imageUrl,
-  credits
-) => {
+const saveMarkdown = async (albumTitle, artist, releasedYear, credits) => {
   const productionPersonelTitles = [
     "Main Personnel",
     "Mixing",
@@ -82,8 +76,15 @@ const saveMarkdown = async (
       lower: true,
     }) + ".md";
 
-  // Save as Markdown file
+  // Specify Markdown file path
   const filePath = path.join(__dirname, `../src/pages/${filename}`);
+
+  // Get record cover image URL from LastFM API
+  const getAlbumCoverUrl = require("./record-cover");
+  const coverUrl = await getAlbumCoverUrl(
+    artist.trim().replace("\n", ""),
+    albumTitle.trim().replace("\n", "")
+  );
 
   const postData = {
     layout: "../layouts/Record.astro",
@@ -92,9 +93,9 @@ const saveMarkdown = async (
     label: await getRecordLabel(`${artist} ${albumTitle}`),
     year: releasedYear,
     tags: "",
-    image: await uploadImagetoCloudinary(imageUrl),
+    image: await uploadImagetoCloudinary(coverUrl),
     ogimage: await generateImageAndInsertToMarkdown(
-      imageUrl,
+      coverUrl,
       artist,
       albumTitle
     ),
