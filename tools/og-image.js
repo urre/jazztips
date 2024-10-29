@@ -16,7 +16,7 @@ cloudinary.config({
 const mainImageWidth = 1200;
 const mainImageHeight = 630;
 
-const fontPath = "./Spectral-Light.ttf";
+// const fontPath = "./Spectral-Light.ttf";
 
 // Function to download image from URL
 async function downloadImage(url) {
@@ -30,7 +30,7 @@ async function downloadImage(url) {
 // Function to generate SVG with text for Sharp to composite
 function generateTextSVG(heading, description) {
   return `
-    <svg width="${mainImageWidth}" height="${mainImageHeight}">
+    <svg width="${mainImageWidth}" height="${mainImageHeight}" viewBox="0 0 1200 630">
    <style>
 
 	 .heading { font-size: 84px; fill: black; font-family: serif; font-weight: normal; line-height: 1; }
@@ -109,7 +109,7 @@ async function generateImageAndInsertToMarkdown(
     // Function to generate SVG with a red circle
     function generateCircleSVG(diameter, color) {
       return `
-    <svg width="${diameter}" height="${diameter}" xmlns="http://www.w3.org/2000/svg">
+    <svg width="${diameter}" height="${diameter}" xmlns="http://www.w3.org/2000/svg" >
       <circle cx="${diameter / 2}" cy="${diameter / 2}" r="${
         diameter / 2
       }" fill="${color}" />
