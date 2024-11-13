@@ -26,10 +26,13 @@ async function getMusicServiceLinks(query) {
           link: $(el).find("a").attr("href"),
         };
       });
-      albumLinks[index] = links[0].link.replace(
-        "music.apple",
-        "embed.music.apple"
-      );
+
+      links[0]
+        ? (albumLinks[index] = links[0].link.replace(
+            "music.apple",
+            "embed.music.apple"
+          ))
+        : (albumLinks[index] = "");
     }
 
     return albumLinks;
