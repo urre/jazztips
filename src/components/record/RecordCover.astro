@@ -22,7 +22,7 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
   }
 
   .record-cover:has(img.image-lg) {
-    max-width: 500px;
+    max-width: 800px;
   }
 
   @media (min-width: 1200px) {
@@ -59,8 +59,8 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
     transform: translateX(10px) translateY(0.5rem);
     height: 90%;
     width: 90%;
-    max-width: 560px;
-    max-height: 560px;
+    max-width: 800px;
+    max-height: 800px;
     aspect-ratio: 1 / 1;
     background-image: -webkit-radial-gradient(
         rgba(0, 0, 0, 1) 0,
@@ -111,11 +111,11 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
   }
 
   .record-cover-pulled span {
-    transform: translateX(25%);
+    transform: translateX(20%);
   }
 
   .record-cover-pulled:hover span {
-    transform: translateX(35%);
+    transform: translateX(30%);
   }
 
   @media (min-width: 1200px) {
@@ -129,8 +129,8 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
   {
     abovefold ? (
       <img
-        width={560}
-        height={560}
+        width={`${size === "large" ? "800" : "560"}`}
+        height={`${size === "large" ? "800" : "560"}`}
         src={src}
         alt={`${artist} - ${title}`}
         class={`${size === "large" ? "image-lg" : ""}`}
@@ -142,6 +142,7 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
         src={src}
         alt={`${artist} - ${title}`}
         loading="lazy"
+        class={`${size === "large" ? "image-lg" : ""}`}
       />
     )
   }
