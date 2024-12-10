@@ -11,7 +11,9 @@
     "astro": "astro",
     "new": "node --no-deprecation ./tools/new-record.js",
     "new:og": "docker run -it --env-file ./.env -v $(pwd):/opt/node/js -v $(pwd)/src:/opt/node/src my-node-app:latest ./tools/og-image/og-image.js",
-    "release": "git add . && git commit -m 'New record' && git push"
+    "release": "git add . && git commit -m 'New record' && git push",
+    "ogimage": "node tools/generate-og-image.js",
+    "links": "node tools/generate-links.js"
   },
   "dependencies": {
     "@acab/reset.css": "^0.5.3",
