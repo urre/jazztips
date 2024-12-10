@@ -4,7 +4,7 @@ const cloudinary = require("cloudinary").v2;
 const fs = require("fs").promises;
 
 const insertLine = require("insert-line");
-require("dotenv").config({ path: ["../.env"] });
+require("dotenv").config({ path: ".env" });
 
 cloudinary.config({
   cloud_name: process.env.CLOUDNAME,
@@ -27,19 +27,35 @@ async function downloadImage(url) {
   return Buffer.from(response.data, "binary");
 }
 
+// Function to escape XML special characters
+function escapeXml(unsafe) {
+  return unsafe.replace(/[&<>"']/g, function (c) {
+    switch (c) {
+      case '&': return '&amp;';
+      case '<': return '&lt;';
+      case '>': return '&gt;';
+      case '"': return '&quot;';
+      case "'": return '&apos;';
+      default: return c;
+    }
+  });
+}
+
 // Function to generate SVG with text for Sharp to composite
 function generateTextSVG(heading, description) {
+  const safeHeading = escapeXml(heading);
+  const safeDescription = escapeXml(description);
+
   return `
     <svg width="${mainImageWidth}" height="${mainImageHeight}" viewBox="0 0 1200 630">
-   <style>
-
-	 .heading { font-size: 84px; fill: black; font-family: serif; font-weight: normal; line-height: 1; }
-			.description { font-size: 48px; fill: black; font-family: serif; }
-		</style>
-		<text x="550" y="250" class="heading" width="550" height="200">
-		${heading}
-		</text>
-   <text x="550" y="400" class="description">&#8220;${description}&#8221;</text>
+      <style>
+        .heading { font-size: 84px; fill: black; font-family: serif; font-weight: normal; line-height: 1; }
+        .description { font-size: 48px; fill: black; font-family: serif; }
+      </style>
+      <text x="550" y="250" class="heading" width="550" height="200">
+        ${safeHeading}
+      </text>
+      <text x="550" y="400" class="description">&#8220;${safeDescription}&#8221;</text>
     </svg>
   `;
 }
@@ -110,9 +126,8 @@ async function generateImageAndInsertToMarkdown(
     function generateCircleSVG(diameter, color) {
       return `
     <svg width="${diameter}" height="${diameter}" xmlns="http://www.w3.org/2000/svg" >
-      <circle cx="${diameter / 2}" cy="${diameter / 2}" r="${
-        diameter / 2
-      }" fill="${color}" />
+      <circle cx="${diameter / 2}" cy="${diameter / 2}" r="${diameter / 2
+        }" fill="${color}" />
     </svg>
   `;
     }
@@ -148,5 +163,8 @@ async function generateImageAndInsertToMarkdown(
   }
 }
 
-// Export the function for external use
-module.exports = { generateImageAndInsertToMarkdown };
+// Export both functions
+module.exports = {
+  generateImageAndInsertToMarkdown,
+  insertOgImageToMarkdown
+};
