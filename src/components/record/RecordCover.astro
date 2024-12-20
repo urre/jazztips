@@ -23,6 +23,7 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
 
   .record-cover:has(img.image-lg) {
     max-width: 800px;
+    pointer-events: none;
   }
 
   @media (min-width: 1200px) {
