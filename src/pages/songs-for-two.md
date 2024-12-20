@@ -19,6 +19,6 @@ credits:
   instrument: Piano
 spotify: https://open.spotify.com/album/7E4FdR9PixNt7UYkVZ63Zu
 apple: https://embed.music.apple.com/us/album/tony-sings-for-two-bonus-track-version/576713366
-tidal: https://tidal.com/browse/artist/96
+tidal: https://tidal.com/browse/album/17891138?u
 qobuz: https://www.qobuz.com/au-en/album/tony-sings-for-two-tony-bennett/w0vngb1sxlxwb
 ---
