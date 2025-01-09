@@ -147,8 +147,8 @@
 
   :is(h1, h2, h3, h4, h5, h6) {
     line-height: 1.2;
-    margin-top: calc(var(--gap) * 1);
-    margin-bottom: calc(var(--gap) * 0.5);
+    /* margin-top: calc(var(--gap) * 1);
+    margin-bottom: calc(var(--gap) * 0.5); */
     padding: 0;
     font-weight: initial;
   }
@@ -225,5 +225,14 @@
   .search-list figure + div {
     max-width: 300px;
     overflow-wrap: break-word;
+  }
+
+  fieldset {
+    padding: 1rem 1.5rem;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+    border-radius: 16px;
+    border: none;
+    border: 1px solid #ccc;
   }
 </style>

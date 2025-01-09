@@ -4,19 +4,21 @@ import Button from "@components/Button.astro";
 const { tags } = Astro.props;
 ---
 
-<h2>Tags</h2>
+<fieldset>
+  <legend>Tags</legend>
 
-<ul>
-  {
-    tags
-      .sort((tag1: string, tag2: string) => tag1.localeCompare(tag2))
-      .map((tag: string) => (
-        <li>
-          <Button href={`/tags/${tag}`}>{tag}</Button>
-        </li>
-      ))
-  }
-</ul>
+  <ul>
+    {
+      tags
+        .sort((tag1: string, tag2: string) => tag1.localeCompare(tag2))
+        .map((tag: string) => (
+          <li>
+            <Button href={`/tags/${tag}`}>{tag}</Button>
+          </li>
+        ))
+    }
+  </ul>
+</fieldset>
 
 <style>
   ul {
