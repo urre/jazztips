@@ -6,7 +6,7 @@ const { tags } = Astro.props;
 
 <h2>Tags</h2>
 
-<ul class="tags">
+<ul>
   {
     tags
       .sort((tag1: string, tag2: string) => tag1.localeCompare(tag2))
@@ -17,3 +17,12 @@ const { tags } = Astro.props;
       ))
   }
 </ul>
+
+<style>
+  ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+</style>
