@@ -13,10 +13,12 @@ async function getMusicServiceLinks(query) {
   try {
     for (let index = 0; index < musicServices.length; index++) {
       const service = musicServices[index];
-      const encodedQuery = encodeURIComponent(`${query} ${service === 'apple+music' ? 'apple music' : service} album`);
+      const encodedQuery = encodeURIComponent(
+        `${query} ${service === "apple+music" ? "apple music" : service} album`
+      );
       const url = `https://www.google.com/search?q=${encodedQuery}`;
 
-      console.log(`Searching for ${service}:`, url);
+      console.log(`\n\nSearching for a ${service} link: `);
 
       const response = await unirest.get(url).headers({
         "User-Agent":
@@ -26,11 +28,13 @@ async function getMusicServiceLinks(query) {
       const $ = cheerio.load(response.body);
       let found = false;
 
-      $(".MjjYud").each((i, el) => {
+      $(".dURPMd div").each((i, el) => {
+        console.log("selector: ", $el);
         if (!found) {
           const link = $(el).find("a").attr("href");
+          console.log(link);
           if (link) {
-            const isServiceLink = link.includes(service.replace('+music', ''));
+            const isServiceLink = link.includes(service.replace("+music", ""));
             if (isServiceLink) {
               albumLinks[index] = link.includes("music.apple")
                 ? link.replace("music.apple", "embed.music.apple")
@@ -43,17 +47,17 @@ async function getMusicServiceLinks(query) {
       });
 
       if (!found) {
-        console.log(`No link found for ${service}`);
-        albumLinks[index] = '';
+        console.log(`⚠️ No link found for ${service}`);
+        albumLinks[index] = "";
       }
 
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
     }
 
     return albumLinks;
   } catch (e) {
-    console.error('Error searching for links:', e);
-    return Array(musicServices.length).fill('');
+    console.error("Error searching for links:", e);
+    return Array(musicServices.length).fill("");
   }
 }
 
