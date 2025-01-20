@@ -124,10 +124,9 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             )
           }
 
-          <Embeds tidal={tidal} spotify={spotify} apple={apple} />
-
           {credits && <Musicians musicians={credits} />}
 
+          <Embeds tidal={tidal} spotify={spotify} apple={apple} />
           <Tags tags={tags} />
 
           <Explore
