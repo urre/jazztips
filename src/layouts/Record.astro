@@ -10,6 +10,8 @@ import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
 import Tags from "@components/record/Tags.astro";
 import Explore from "@components/record/Explore.astro";
+import type { ACTION_ERROR_CODES } from "astro:actions";
+import RecordCopyButton from "@components/record/RecordCopyButton.astro";
 
 export interface Musician {
   name: string;
@@ -70,7 +72,6 @@ const {
     buy,
     buyat,
     tags,
-    colors,
   },
 } = Astro.props;
 
@@ -141,6 +142,13 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             spotify={spotify}
             appleLink={appleLink}
             apple={apple}
+          />
+          <RecordCopyButton
+            artist={artist}
+            title={title}
+            label={label}
+            year={year}
+            credits={credits}
           />
         </RecordInfo>
       </RecordLayout>
