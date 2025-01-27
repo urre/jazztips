@@ -14,10 +14,7 @@ const getAlbumCoverUrl = require("./record-cover");
 
 // Get record cover image URL from LastFM API
 const test = async () => {
-  const coverUrl = await getAlbumCoverUrl(
-    "Walter Smith III",
-    "three of us are from Houston and Reuben is not"
-  );
+  const coverUrl = await getAlbumCoverUrl("Sonny Rollins", "The Bridge");
   return coverUrl;
 };
 

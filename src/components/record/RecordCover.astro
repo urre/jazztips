@@ -16,18 +16,18 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
 <style>
   .record-cover {
     position: relative;
-    max-width: 300px;
+    max-width: 200px;
     transition: transform 800ms ease-in-out;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
-  .record-cover:has(img.image-lg) {
+  /* .record-cover:has(img.image-lg) {
     max-width: 300px;
-  }
+  } */
 
   @media (min-width: 1400px) {
     .record-cover:has(img.image-lg) {
-      max-width: 600px;
+      max-width: 500px;
     }
   }
 

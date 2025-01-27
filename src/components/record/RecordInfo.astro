@@ -5,6 +5,12 @@ const { label, year, artist, title, url } = Astro.props;
 ---
 
 <style>
+  .record-info h1 {
+    text-wrap: balance;
+    max-width: 20ch;
+    margin-bottom: 0;
+  }
+
   .record-info h1 span {
     quotes: "“" "”";
   }
