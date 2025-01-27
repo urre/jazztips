@@ -8,8 +8,8 @@ import SearchBar from "./SearchBar.astro";
   header {
     width: 100%;
     display: flex;
-    gap: calc(var(--gap) * 1.5);
-    flex-direction: column-reverse;
+    gap: clamp(1.15rem, 5vw, 2rem);
+    flex-direction: column;
     padding-top: calc(var(--gap));
     padding-bottom: 2rem;
   }
@@ -19,11 +19,6 @@ import SearchBar from "./SearchBar.astro";
       padding-bottom: calc(var(--gap) * 1.5);
       padding-top: calc(var(--gap) * 1.5);
       flex-direction: row;
-    }
-  }
-
-  @media (min-width: 768px) {
-    header nav {
     }
   }
 
@@ -56,13 +51,20 @@ import SearchBar from "./SearchBar.astro";
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: clamp(1.15rem, 5vw, 2rem);
   }
 
   header img {
     border-radius: 50%;
-    width: 96px;
-    height: 96px;
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (min-width: 768px) {
+    header img {
+      width: 96px;
+      height: 96px;
+    }
   }
 </style>
 
@@ -71,7 +73,7 @@ import SearchBar from "./SearchBar.astro";
     <a href="/">
       <img
         src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
-        alt=""
+        alt="Jazztips icon"
       />
       {SITE_TITLE}
     </a>
