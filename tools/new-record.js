@@ -1,100 +1,201 @@
-const puppeteer = require("puppeteer");
-const cloudinary = require("cloudinary");
-require("dotenv").config();
-const { saveMarkdown } = require("./util");
+#!/usr/bin/env node
 
-// Cloudinary settings, read secrets
-cloudinary.config({
-  cloud_name: process.env.CLOUDNAME,
-  api_key: process.env.APIKEY,
-  api_secret: process.env.APISECRET,
-});
+import fs from "fs-extra";
+import fetch from "node-fetch";
+import slugify from "slugify";
+import path from "path";
+import { fileURLToPath } from "url";
+import { execSync } from "child_process";
+import dotenv from "dotenv";
 
-(async () => {
-  const args = process.argv.slice(2);
-  const searchTerm = encodeURIComponent(args.join("+"));
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const parentDir = path.resolve(__dirname, "../");
 
-  console.log("\x1b[32m%s\x1b[0m", `Searching ${args.join(" ")} on Discogs...`);
+// Load .env from the parent directory
+dotenv.config({ path: path.join(parentDir, ".env") });
 
-  // Launch the browser
-  // const browser = await puppeteer.launch({ headless: "new" });
-  const browser = await puppeteer.launch({
-    headless: false,
-    ignoreHTTPSErrors: true,
-    args: [`--window-size=1920,1080`],
-    defaultViewport: {
-      width: 1920,
-      height: 1080,
-    },
+const LASTFM_API_KEY = process.env.LASTFM_API_KEY;
+
+if (!LASTFM_API_KEY) {
+  console.error(
+    "❌ Missing LASTFM_API_KEY! Please set it in .env (parent folder)"
+  );
+  process.exit(1);
+}
+
+// Read CLI arguments
+const args = process.argv.slice(2);
+if (args.length < 2) {
+  console.error("Usage: node new-record.js <artist> <albumname>");
+  process.exit(1);
+}
+
+const [artist, albumname] = args;
+const slug = slugify(albumname, { lower: true });
+const outputPath = path.join(parentDir, "src/pages", `${slug}.md`);
+
+// Fetch album details from Last.fm
+async function getAlbumDetails() {
+  const url = `http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${LASTFM_API_KEY}&artist=${encodeURIComponent(
+    artist
+  )}&album=${encodeURIComponent(albumname)}&format=json`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data.album;
+  } catch (error) {
+    console.error("❌ Error fetching album details:", error);
+    return null;
+  }
+}
+
+// Fetch album cover image from Last.fm
+// Fetch the largest album cover image from Last.fm
+async function getAlbumCover() {
+  const albumDetails = await getAlbumDetails();
+  return albumDetails?.image?.[albumDetails.image.length - 1]?.["#text"] || "";
+}
+
+// Fetch label and year from Last.fm
+async function getLabelAndYear() {
+  const albumDetails = await getAlbumDetails();
+  const label = albumDetails?.label || "Unknown";
+  const year = albumDetails?.released
+    ? albumDetails.released.split(" ")[0]
+    : "Unknown";
+  return { label, year };
+}
+
+// Generate Credits for musicians (Name + Instrument)
+async function getCredits() {
+  const albumDetails = await getAlbumDetails();
+  const credits = [];
+  albumDetails?.artist?.tags?.tag?.forEach((musician) => {
+    credits.push({ name: musician.name, instrument: "Unknown" });
   });
+  return credits;
+}
 
-  const page = await browser.newPage();
+// Generate Credits for musicians (Name + Instrument) using Ollama (Mistral)
+function queryCreditsForAlbum(albumName, artistName) {
+  const prompt = `What musicians are playing on the album "${albumName}" by "${artistName}"? List the musicians' names and their instruments in a markdown-friendly format like the following example:
+  - name: Drew Gress
+    instrument: Double Bass
+  - name: Joey Baron
+    instrument: Drums
+  - name: John Abercrombie
+    instrument: Guitar
+  - name: Marc Copland
+    instrument: Piano
+  Please format the output accordingly for "${albumName}" by "${artistName}".`;
 
-  // First search for the album
-  await page.goto(`https://www.discogs.com/search?q=${searchTerm}`, {
-    waitUntil: "networkidle2",
-  });
+  try {
+    const result = execSync(`ollama run mistral "${prompt}"`, {
+      encoding: "utf8",
+    }).trim();
+    return result;
+  } catch (error) {
+    console.error("❌ Error fetching credits from Ollama:", error);
+    return "Error generating credits.";
+  }
+}
 
-  // Consent cookies
-  await page.waitForSelector("#onetrust-accept-btn-handler", {
-    visible: true,
-    timeout: 5000,
-  });
-  await page.click("#onetrust-accept-btn-handler");
+// Generate Markdown content using Ollama (Mistral)
+function queryOllama(prompt) {
+  try {
+    return execSync(`ollama run mistral "${prompt}"`, {
+      encoding: "utf8",
+    }).trim();
+  } catch (error) {
+    console.error("❌ Error running Ollama:", error);
+    return "Error generating markdown.";
+  }
+}
 
-  // Scrape first album link
-  // const albumLink = await page.$eval(
-  //   "#search_results > li:nth-child(1) > a",
-  //   (el) => el.href
-  // );
+// Generate Release Year for the album using Ollama
+function queryReleaseYearForAlbum(albumName, artistName) {
+  const prompt = `What year was the album "${albumName}" by "${artistName}" released? Please provide the release year.`;
 
-  // await page.goto(`${albumLink}`, {
-  //   waitUntil: "networkidle2",
-  // });
+  try {
+    const result = execSync(`ollama run mistral "${prompt}"`, {
+      encoding: "utf8",
+    }).trim();
+    return result;
+  } catch (error) {
+    console.error("❌ Error fetching release year from Ollama:", error);
+    return "Unknown Year";
+  }
+}
 
-  // // Scrape album title
-  // const albumTitle = await page.$eval(
-  //   "#page h1",
-  //   (el) => el.textContent.split("–")[1]
-  // );
+// Generate Label for the album using Ollama
+function queryLabelForAlbum(albumName, artistName) {
+  const prompt = `What is the record label name for the album "${albumName}" by "${artistName}"? Please provide the label name. Only include max 2 words.`;
 
-  // // Scrape artist name
-  // const artist = await page.$eval(
-  //   "#page h1",
-  //   (el) => el.textContent.split("–")[0]
-  // );
+  try {
+    const result = execSync(`ollama run mistral "${prompt}"`, {
+      encoding: "utf8",
+    }).trim();
+    return result;
+  } catch (error) {
+    console.error("❌ Error fetching label from Ollama:", error);
+    return "Unknown Label";
+  }
+}
 
-  // let releasedYearSelector = await page.$(
-  //   "#page > div.content_3oPo5 > div:nth-child(2) > div > div.info_23nnx > table > tbody > tr:nth-child(4) > td > a > time"
-  // );
+// Main function
+async function generateMarkdown() {
+  const coverImage = await getAlbumCover();
 
-  // let releasedYear = releasedYearSelector
-  //   ? await page.evaluate(
-  //       (el) => el.textContent.split(",")[1].trim(),
-  //       releasedYearSelector
-  //     )
-  //   : "";
+  // Fetch year and label using Ollama
+  const year = queryReleaseYearForAlbum(albumname, artist);
+  const label = queryLabelForAlbum(albumname, artist);
 
-  // // // Scrape album image URL
-  // // const imageUrl = await page.$eval(
-  // //   "#page > div.content_3oPo5 > div:nth-child(2) > div > div.thumbnail_1RxJB > div > a > div > picture > img",
-  // //   (img) => img.src
-  // // );
+  // Get musician credits from Ollama
+  const credits = queryCreditsForAlbum(albumname, artist);
 
-  // // Scrape credits, musicians, and instruments from the credits table
-  // const credits = await page.$$eval("#release-credits > div > ul li", (rows) =>
-  //   rows.map((row) => {
-  //     const musician = row.querySelector("span.link_15cpV")?.textContent.trim();
-  //     const instrument = row
-  //       .querySelector("span.role_2ga14")
-  //       ?.textContent.trim();
-  //     return { musician, instrument };
-  //   })
-  // );
+  const prompt = `Generate a markdown file for a jazz album with the following details:
 
-  // // Save Markdown file
-  // saveMarkdown(albumTitle, artist, releasedYear, credits);
+- Artist: ${artist}
+- Album: ${albumname}
+- Cover image: ${coverImage || "No image available"}
+- Layout: ../layouts/Record.astro
+- Filename should be ${slug}.md
+- Include tags
+- Use single qoutes around pubDate like this pubDate: '2005-01-30'
+- Include a section for credits with musicians and instruments.
+- The content should match this structure:
 
-  // Close the browser
-  // await browser.close();
-})();
+---
+layout: ../layouts/Record.astro
+title: ${albumname}
+pubDate: ${new Date().toISOString().split("T")[0]}
+artist: ${artist}
+label: ""
+year: ${year}
+tags:
+  - ${slug}
+ogimage: ${coverImage}
+image: ${coverImage}
+permalink: /${slug}/
+credits:
+  ${credits}
+---
+
+Now generate this markdown file's full contents, including album information, credits. Don't include backticks in the beginning of the file.`;
+
+  const markdownContent = queryOllama(prompt);
+
+  if (!markdownContent || markdownContent.includes("Error")) {
+    console.error("❌ Failed to generate markdown.");
+    return;
+  }
+
+  await fs.outputFile(outputPath, markdownContent);
+  console.log(`✅ Markdown file created: ${outputPath}`);
+}
+
+// Run script
+generateMarkdown();

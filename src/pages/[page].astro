@@ -44,7 +44,8 @@ const { page } = Astro.props;
     <Header />
     <main>
       <section>
-        <h1>Archives</h1>
+        <h1>Records</h1>
+        <p>Page {page.currentPage} of {page.lastPage}</p>
         <Pagination prev={page.url.prev} next={page.url.next} />
 
         <ul>

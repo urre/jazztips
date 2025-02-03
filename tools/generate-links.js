@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const fs = require("fs").promises;
-const path = require("path");
-const { getMusicServiceLinks } = require("./getMusicServiceLinks");
+import fs from "fs/promises";
+import path from "path";
+import { getMusicServiceLinks } from "./getMusicServiceLinks.js";
 
 async function main() {
   try {
