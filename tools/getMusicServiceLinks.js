@@ -1,7 +1,7 @@
-const cheerio = require("cheerio");
-const unirest = require("unirest");
+import * as cheerio from "cheerio";
+import unirest from "unirest";
 
-async function getMusicServiceLinks(query) {
+export async function getMusicServiceLinks(query) {
   console.log(
     "\x1b[32m%s\x1b[0m",
     `Searching music service album links for ${query} on Google.com...`
@@ -60,5 +60,3 @@ async function getMusicServiceLinks(query) {
     return Array(musicServices.length).fill("");
   }
 }
-
-module.exports = { getMusicServiceLinks };

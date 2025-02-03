@@ -1,0 +1,57 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+
+const allPosts = await Astro.glob("../pages/*.md");
+
+const groupedPosts: { [key: number]: typeof allPosts } = allPosts.reduce(
+  (acc: { [key: number]: typeof allPosts }, post) => {
+    const year = new Date(post.frontmatter.pubDate).getFullYear();
+    if (!acc[year]) {
+      acc[year] = [];
+    }
+    acc[year].push(post);
+    return acc;
+  },
+  {}
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <h1>Archives</h1>
+        <h2>{allPosts.length} good music recommendations since 2010</h2>
+        <ul>
+          {
+            Object.keys(groupedPosts)
+              .reverse()
+              .map((year: string) => (
+                <li>
+                  <h2>
+                    {year} <span class="pill">{groupedPosts[year].length}</span>
+                  </h2>
+                  <ul class="plain-list">
+                    {groupedPosts[year].map((post: any) => (
+                      <li>
+                        <a href={post.url}>{post.frontmatter.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))
+          }
+        </ul>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

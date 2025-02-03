@@ -4,6 +4,25 @@ import { SITE_TITLE } from "../config";
 import SearchBar from "./SearchBar.astro";
 ---
 
+<header>
+  <h1>
+    <a href="/">
+      <img
+        src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
+        alt="Jazztips icon"
+      />
+      {SITE_TITLE}
+    </a>
+  </h1>
+  <nav>
+    <HeaderLink rel="tag" href="/1">Records</HeaderLink>
+    <HeaderLink rel="tag" href="/archives">Archive</HeaderLink>
+    <HeaderLink rel="tag" href="/tags">Tags</HeaderLink>
+    <HeaderLink rel="tag" href="/about">About</HeaderLink>
+    <SearchBar />
+  </nav>
+</header>
+
 <style>
   header {
     width: 100%;
@@ -67,21 +86,3 @@ import SearchBar from "./SearchBar.astro";
     }
   }
 </style>
-
-<header>
-  <h1>
-    <a href="/">
-      <img
-        src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
-        alt="Jazztips icon"
-      />
-      {SITE_TITLE}
-    </a>
-  </h1>
-  <nav>
-    <HeaderLink rel="tag" href="/1">Archives</HeaderLink>
-    <HeaderLink rel="tag" href="/tags">Tags</HeaderLink>
-    <HeaderLink rel="tag" href="/about">About</HeaderLink>
-    <SearchBar />
-  </nav>
-</header>
