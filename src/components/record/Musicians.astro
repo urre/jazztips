@@ -25,7 +25,7 @@ const { musicians } = Astro.props;
               title={`Explore ${musician.name} on Discogs`}
               target="_blank"
             >
-              <em>Search Discogs →</em>
+              <em>Discogs →</em>
             </a>
           </div>
           <div class="instrument">{musician.instrument}</div>
@@ -51,15 +51,10 @@ const { musicians } = Astro.props;
   }
 
   .name a {
-    opacity: 0;
     font-size: smaller;
     text-decoration: underline;
     text-underline-offset: 4px;
     font-size: 0.85rem;
-  }
-
-  .name:hover a {
-    opacity: 1;
   }
 
   .instrument {
