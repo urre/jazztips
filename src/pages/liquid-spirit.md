@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/Record.astro
+pubDate: '2013-09-07'
 title: Liquid Spirit
 artist: Gregory Porter
 label: Blue Note
@@ -29,7 +30,6 @@ credits:
     instrument: Bass
   - name: Emanuel Harrold
     instrument: Drums
-pubDate: '2013-09-07'
 ---
 
 Ny platta med Gregory Porter. Denna gången utgiven på Blue Note. 10 nya originallåtar av Porter präglade av egna livserfarenheter. Även en fin version av "I Fall In Love Too Easily”. Två ytterligare covers, Abbey Lincoln’s "Lonesome Lover” och Ramsey Lewis’ hit "The ‘In’ Crowd.”

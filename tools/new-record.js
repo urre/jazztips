@@ -179,7 +179,6 @@ tags:
   - ${slug}
 ogimage: ${coverImage}
 image: ${coverImage}
-permalink: /${slug}/
 credits:
   ${credits}
 ---
@@ -195,6 +194,16 @@ Now generate this markdown file's full contents, including album information, cr
 
   await fs.outputFile(outputPath, markdownContent);
   console.log(`✅ Markdown file created: ${outputPath}`);
+
+  try {
+    const result = execSync(`code "${outputPath}"`, {
+      encoding: "utf8",
+    }).trim();
+    return result;
+  } catch (error) {
+    console.error("❌ Error fetching credits from Ollama:", error);
+    return "Error generating credits.";
+  }
 }
 
 // Run script
