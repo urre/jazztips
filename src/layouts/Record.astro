@@ -127,7 +127,15 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
 
           {credits && <Musicians musicians={credits} />}
 
-          <Embeds tidal={tidal} spotify={spotify} apple={apple} />
+          <Embeds
+            tidal={tidal}
+            spotify={spotify}
+            apple={apple}
+            qobuz={qobuz}
+            artist={artist}
+            title={title}
+            cover={optimizeImage(image)}
+          />
           <Tags tags={tags} />
 
           <Explore
@@ -143,6 +151,7 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             appleLink={appleLink}
             apple={apple}
           />
+
           <RecordCopyButton
             artist={artist}
             title={title}
