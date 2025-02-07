@@ -2,14 +2,19 @@
 import Tidal from "@components/record/Tidal.astro";
 import Spotify from "@components/record/Spotify.astro";
 import Apple from "@components/record/Apple.astro";
+import Qobuz from "@components/record/Qobuz.astro";
 import HiResIcon from "@components/icons/HiResIcon.astro";
 export interface Props {
   spotify?: string;
+  qobuz?: string;
   tidal?: string;
   apple?: string;
+  cover?: string;
+  artist?: string;
+  title?: string;
 }
 
-const { spotify, apple, tidal } = Astro.props;
+const { spotify, apple, tidal, qobuz, cover, artist, title } = Astro.props;
 ---
 
 <fieldset>
@@ -44,6 +49,16 @@ const { spotify, apple, tidal } = Astro.props;
         </div>
       )
     }
+    {
+      qobuz && (
+        <div>
+          <h3>
+            Qobuz <HiResIcon />
+          </h3>
+          <Qobuz link={qobuz} artist={artist} title={title} cover={cover} />
+        </div>
+      )
+    }
   </div>
 </fieldset>
 
@@ -51,6 +66,10 @@ const { spotify, apple, tidal } = Astro.props;
   .embeds {
     display: flex;
     flex-wrap: wrap;
-    gap: calc(var(--fluid-gap) * 1);
+    gap: calc(var(--fluid-gap) * 1.5);
+  }
+
+  .embeds div {
+    flex: 0 0 25%;
   }
 </style>
