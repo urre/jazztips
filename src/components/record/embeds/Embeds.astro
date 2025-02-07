@@ -27,20 +27,20 @@ const { spotify, apple, tidal } = Astro.props;
       )
     }
     {
-      spotify && (
-        <div>
-          <h3>Spotify</h3>
-          <Spotify spotify={spotify} />
-        </div>
-      )
-    }
-    {
       apple && (
         <div>
           <h3>
             Apple Music <HiResIcon />
           </h3>
           <Apple apple={apple} />
+        </div>
+      )
+    }
+    {
+      spotify && (
+        <div>
+          <h3>Spotify</h3>
+          <Spotify spotify={spotify} />
         </div>
       )
     }
