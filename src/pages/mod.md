@@ -3,7 +3,7 @@ layout: ../layouts/Record.astro
 title: Mod
 pubDate: '2025-02-07'
 artist: Anna-Maria Nordström
-label: ACT Music
+label: Varva
 year: 2024
 image: https://res.cloudinary.com/urre/image/upload/v1738940197/gmevy14rq1d7ipsqynja.jpg
 ogimage: https://res.cloudinary.com/urre/image/upload/v1738940197/gmevy14rq1d7ipsqynja.jpg
