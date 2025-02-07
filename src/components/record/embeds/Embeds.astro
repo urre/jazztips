@@ -2,7 +2,7 @@
 import Tidal from "@components/record/Tidal.astro";
 import Spotify from "@components/record/Spotify.astro";
 import Apple from "@components/record/Apple.astro";
-
+import HiResIcon from "@components/icons/HiResIcon.astro";
 export interface Props {
   spotify?: string;
   tidal?: string;
@@ -19,7 +19,9 @@ const { spotify, apple, tidal } = Astro.props;
     {
       tidal && (
         <div>
-          <h3>TIDAL</h3>
+          <h3>
+            TIDAL <HiResIcon />
+          </h3>
           <Tidal tidal={tidal} />
         </div>
       )
@@ -35,7 +37,9 @@ const { spotify, apple, tidal } = Astro.props;
     {
       apple && (
         <div>
-          <h3>Apple Music</h3>
+          <h3>
+            Apple Music <HiResIcon />
+          </h3>
           <Apple apple={apple} />
         </div>
       )
