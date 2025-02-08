@@ -13,7 +13,7 @@ const { musicians } = Astro.props;
 
 <fieldset>
   <legend>Musicians</legend>
-  <ul>
+  <ul class="musicians">
     {
       musicians.map((musician: Musician) => (
         <li class="musician">
@@ -36,10 +36,12 @@ const { musicians } = Astro.props;
 </fieldset>
 
 <style>
-  .ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
+  @media (min-width: 1024px) {
+    ul.musicians {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4rem;
+    }
   }
 
   .name {
