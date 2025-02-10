@@ -13,8 +13,6 @@ import { getCollection } from "astro:content";
 const records = (await getCollection("records")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
-
-console.log(records.slice(0, 1));
 ---
 
 <!DOCTYPE html>
@@ -62,7 +60,8 @@ console.log(records.slice(0, 1));
                   )}
 
                   <h3>
-                    {record.data.artist} - {record.data.title}
+                    {record.data.artist}
+                    <br /> {record.data.title}
                   </h3>
                 </a>
               </li>
