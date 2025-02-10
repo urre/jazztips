@@ -3,17 +3,18 @@ import RecordCover from "@components/record/RecordCover.astro";
 import BaseHead from "@components/BaseHead.astro";
 import Header from "@components/Header.astro";
 import optimizeImage from "@utils/optimizeImage";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts = await Astro.glob("../!(about.md|search.md)*.md");
+  const allPosts = await getCollection("records");
 
   const uniqueTags = [
-    ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
+    ...new Set(allPosts.map((post) => post.data.tags).flat()),
   ];
 
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter(
-      (post) => post.frontmatter.tags && post.frontmatter.tags.includes(tag)
+      (post) => post.data.tags && post.data.tags.includes(tag)
     );
 
     return {
@@ -25,10 +26,6 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-
-export interface Props {
-  post: string;
-}
 ---
 
 <html lang="en">
@@ -42,30 +39,21 @@ export interface Props {
       <h1>Tagged <em>{tag}</em></h1>
       <ul>
         {
-          posts.map(
-            (post: {
-              url: string | URL | null | undefined;
-              frontmatter: {
-                image: string | null | undefined;
-                artist: string;
-                title: string;
-              };
-            }) => (
-              <li>
-                <a href={post.url}>
-                  {post.frontmatter.image && (
-                    <RecordCover
-                      src={`${optimizeImage(post.frontmatter.image)}`}
-                      artist={post.frontmatter.artist}
-                      title={post.frontmatter.title}
-                    />
-                  )}
+          posts.map((record) => (
+            <li>
+              <a href={`/${record.id}`}>
+                {record.data.image && (
+                  <RecordCover
+                    src={`${optimizeImage(record.data.image)}`}
+                    artist={record.data.artist}
+                    title={record.data.title}
+                  />
+                )}
 
-                  <h3>{post.frontmatter.title}</h3>
-                </a>
-              </li>
-            )
-          )
+                <h3>{record.data.title}</h3>
+              </a>
+            </li>
+          ))
         }
       </ul>
     </main>

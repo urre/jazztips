@@ -2,12 +2,14 @@
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
 
-const allPosts = await Astro.glob("../!(about.md|search.md)*.md");
+import { getCollection } from "astro:content";
 
-const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
-const uniqueTagCount = [
-  ...new Set(allPosts.map((post) => post.frontmatter.tags).flat()),
-].length;
+// Get all posts from the collection
+const records = await getCollection("records"); // or whatever your collection name is
+
+// Extract tags from post data instead of frontmatter
+const tags = [...new Set(records.map((record) => record.data.tags).flat())];
+const uniqueTagCount = tags.length;
 
 const pageTitle = "Tag Index";
 ---

@@ -6,33 +6,24 @@ import Pagination from "@components/Pagination.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import optimizeImage from "../utils/optimizeImage";
 import RecordCover from "@components/record/RecordCover.astro";
+import { getCollection } from "astro:content";
 
-interface Frontmatter {
-  title: string;
-  description: string;
-  artist: string;
-  label?: string;
-  image?: string;
-  year?: string;
-  pubDate?: string;
-}
+export async function getStaticPaths({ paginate }) {
+  const allPosts = await getCollection("records");
 
-export async function getStaticPaths({ paginate }: any) {
-  const allPosts = (
-    await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md")
-  )
+  const sortedPosts = allPosts
     .map((post) => ({
       ...post,
-      pubDate: post.frontmatter.pubDate
-        ? new Date(post.frontmatter.pubDate).valueOf()
-        : 0,
+      pubDate: post.data.pubDate ? new Date(post.data.pubDate).valueOf() : 0,
     }))
-    .sort((post1, post2) => post2.pubDate - post1.pubDate);
+    .sort((a, b) => b.pubDate - a.pubDate);
 
-  return paginate(allPosts, { pageSize: 30 });
+  return paginate(sortedPosts, { pageSize: 30 });
 }
 
 const { page } = Astro.props;
+
+console.log(page);
 ---
 
 <!DOCTYPE html>
@@ -50,28 +41,20 @@ const { page } = Astro.props;
 
         <ul>
           {
-            page.data.map(
-              ({
-                frontmatter: { title, image, artist },
-                url,
-              }: {
-                frontmatter: Frontmatter;
-                url: string;
-              }) => (
-                <li>
-                  <a href={url}>
-                    {image && (
-                      <RecordCover
-                        src={`${optimizeImage(image)}`}
-                        alt={`${artist} - ${title}`}
-                      />
-                    )}
+            page.data.map((record) => (
+              <li>
+                <a href={`/${record.id}`}>
+                  {record.data.image && (
+                    <RecordCover
+                      src={`${optimizeImage(record.data.image)}`}
+                      alt={`${record.data.artist} - ${record.data.title}`}
+                    />
+                  )}
 
-                    <h3>{title}</h3>
-                  </a>
-                </li>
-              )
-            )
+                  <h3>{record.data.title}</h3>
+                </a>
+              </li>
+            ))
           }
         </ul>
 

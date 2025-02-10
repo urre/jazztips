@@ -134,7 +134,7 @@ const saveMarkdown = async (albumTitle, artist, releasedYear, credits) => {
     postData.image +
     "\nogimage: " +
     postData.ogimage +
-    "\npermalink: " +
+    "\n
     postData.permalink +
     "\nspotify: " +
     postData.spotify +

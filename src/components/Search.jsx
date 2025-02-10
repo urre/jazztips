@@ -2,16 +2,19 @@ import { useState } from "react";
 import Fuse from "fuse.js";
 
 export default function Search({ searchList }) {
+
+console.log(searchList);
+
   const [query, setQuery] = useState("");
 
   const options = {
     keys: [
-      "frontmatter.title",
-      "frontmatter.artist",
-      "frontmatter.label",
-      "frontmatter.credits.name",
-      "frontmatter.credits.instrument",
-      "frontmatter.description",
+      "data.title",
+      "data.artist",
+      "data.label",
+      "data.credits.name",
+      "data.credits.instrument",
+      "data.description",
     ],
     threshold: 0.3,
   };
@@ -39,13 +42,13 @@ export default function Search({ searchList }) {
       {query.length > 1 && (
         <ul className="search-list">
           {posts.map((post) => (
-            <li key={post.frontmatter.title}>
+            <li key={post.data.title}>
               <a href={`${post.url}`} style={{display: 'flex', gap: '1rem'}}>
 
                 <figure style={{width: '40px', height: '40px', flexShrink: '0', backgroundColor: '#f6f6f6' }}>
                   <img
-                    src={post.frontmatter.image}
-                    alt={post.frontmatter.title}
+                    src={post.data.image}
+                    alt={post.data.title}
                     width={50}
                     height={50}
                     loading="lazy"
@@ -53,7 +56,7 @@ export default function Search({ searchList }) {
                     />
                 </figure>
                 <div>
-                  {post.frontmatter.artist} - {post.frontmatter.title}
+                  {post.data.artist} - {post.data.title}
                 </div>
               </a>
 

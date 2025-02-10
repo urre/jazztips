@@ -10,7 +10,6 @@ import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
 import Tags from "@components/record/Tags.astro";
 import Explore from "@components/record/Explore.astro";
-import type { ACTION_ERROR_CODES } from "astro:actions";
 import RecordCopyButton from "@components/record/RecordCopyButton.astro";
 
 export interface Musician {
@@ -27,53 +26,51 @@ export interface Color {
 }
 
 export interface Props {
-  content: {
-    title: string;
-    description: string;
-    pubDate?: string;
-    updatedDate?: string;
-    image?: string;
-    spotify?: string;
-    tidal?: string;
-    apple?: string;
-    qobuz?: string;
-    credits?: Musician;
-    tags?: Tag;
-    name: string;
-    instrument: string;
-    artist?: string;
-    ogimage?: string;
-    year?: string;
-    label?: string;
-    buy?: string;
-    buyat?: string;
-    src?: string;
-    pulled?: boolean;
-    alt?: string;
-    colors?: Color;
-  };
+  title: string;
+  description: string;
+  pubDate?: string;
+  updatedDate?: string;
+  image?: string;
+  spotify?: string;
+  tidal?: string;
+  apple?: string;
+  qobuz?: string;
+  credits?: Musician;
+  tags?: Tag;
+  name: string;
+  instrument: string;
+  artist?: string;
+  ogimage?: string;
+  year?: string;
+  label?: string;
+  buy?: string;
+  buyat?: string;
+  src?: string;
+  pulled?: boolean;
+  alt?: string;
+  colors?: Color;
 }
 
 const {
-  content: {
-    title,
-    artist,
-    ogimage,
-    spotify,
-    apple,
-    tidal,
-    qobuz,
-    credits,
-    description,
-    updatedDate,
-    year,
-    label,
-    image,
-    buy,
-    buyat,
-    tags,
-  },
+  title,
+  artist,
+  ogimage,
+  spotify,
+  apple,
+  tidal,
+  qobuz,
+  credits,
+  description,
+  updatedDate,
+  year,
+  label,
+  image,
+  buy,
+  buyat,
+  tags,
 } = Astro.props;
+
+console.log(title);
 
 const tidalLink = tidal
   ? `https://tidal.com/browse/album/${tidal}`
