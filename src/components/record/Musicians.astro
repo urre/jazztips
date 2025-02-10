@@ -36,11 +36,22 @@ const { musicians } = Astro.props;
 </fieldset>
 
 <style>
+  .musicians {
+    --gap: 2rem;
+
+    display: unset;
+  }
   @media (min-width: 1024px) {
-    ul.musicians {
+    .musicians {
       display: flex;
       flex-wrap: wrap;
-      gap: 4rem;
+      gap: var(--gap);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .musician {
+      flex: 0 0 calc(35% - var(--gap));
     }
   }
 
@@ -59,9 +70,9 @@ const { musicians } = Astro.props;
     font-size: 0.85rem;
   }
 
-  .instrument {
+  /* .instrument {
     flex-basis: 20%;
-  }
+  } */
 
   .link a {
     display: flex;

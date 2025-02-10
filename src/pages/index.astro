@@ -8,27 +8,13 @@ import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordCover from "@components/record/RecordCover.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
 import Button from "@components/Button.astro";
+import { getCollection } from "astro:content";
 
-interface Frontmatter {
-  title: string;
-  description: string;
-  artist: string;
-  label?: string;
-  image?: string;
-  year?: string;
-  pubDate?: string;
-}
+const records = (await getCollection("records")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 
-const posts = await Astro.glob<Frontmatter>("./!(about.md|search.md)*.md");
-
-const sortedPosts = posts
-  .map((post) => ({
-    ...post,
-    pubDate: post.frontmatter.pubDate
-      ? new Date(post.frontmatter.pubDate).valueOf()
-      : 0,
-  }))
-  .sort((post1, post2) => post2.pubDate - post1.pubDate);
+console.log(records.slice(0, 1));
 ---
 
 <!DOCTYPE html>
@@ -41,52 +27,46 @@ const sortedPosts = posts
     <main>
       <section>
         {
-          sortedPosts
-            .slice(0, 1)
-            .map(
-              ({ frontmatter: { title, image, artist, year, label }, url }) => (
-                <RecordLayout>
-                  {image && (
-                    <a href={url}>
-                      <RecordCover
-                        pulled={true}
-                        size="large"
-                        src={`${optimizeImage(image)}`}
-                        alt={`${artist} - ${title}`}
-                      />
-                    </a>
-                  )}
-                  <RecordInfo
-                    artist={artist}
-                    title={title}
-                    label={label}
-                    year={year}
-                    url={url}
+          records.slice(0, 1).map((record) => (
+            <RecordLayout>
+              {record.data.image && (
+                <a href={record.id}>
+                  <RecordCover
+                    pulled={true}
+                    size="large"
+                    src={`${optimizeImage(record.data.image)}`}
+                    alt={`${record.data.artist} - ${record.data.title}`}
                   />
-                </RecordLayout>
-              )
-            )
+                </a>
+              )}
+              <RecordInfo
+                artist={record.data.artist}
+                title={record.data.title}
+                label={record.data.label}
+                year={record.data.year}
+                url={record.id}
+              />
+            </RecordLayout>
+          ))
         }
         <ul>
           {
-            sortedPosts
-              .slice(1, 24)
-              .map(({ frontmatter: { title, artist, image }, url }) => (
-                <li>
-                  <a href={url}>
-                    {image && (
-                      <RecordCover
-                        src={`${optimizeImage(image)}`}
-                        alt={`${artist} - ${title}`}
-                      />
-                    )}
+            records.slice(1, 24).map((record) => (
+              <li>
+                <a href={record.id}>
+                  {record.data.image && (
+                    <RecordCover
+                      src={`${optimizeImage(record.data.image)}`}
+                      alt={`${record.data.artist} - ${record.data.title}`}
+                    />
+                  )}
 
-                    <h3>
-                      {artist} - {title}
-                    </h3>
-                  </a>
-                </li>
-              ))
+                  <h3>
+                    {record.data.artist} - {record.data.title}
+                  </h3>
+                </a>
+              </li>
+            ))
           }
         </ul>
         <nav>

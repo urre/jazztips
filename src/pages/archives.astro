@@ -3,20 +3,24 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { getCollection } from "astro:content";
+const records = await getCollection("records");
 
-const allPosts = await Astro.glob("../pages/*.md");
-
-const groupedPosts: { [key: number]: typeof allPosts } = allPosts.reduce(
-  (acc: { [key: number]: typeof allPosts }, post) => {
-    const year = new Date(post.frontmatter.pubDate).getFullYear();
+const groupedPosts = records
+  .sort(
+    (a, b) =>
+      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+  )
+  .reduce((acc: { [key: number]: typeof records }, post) => {
+    const year = new Date(post.data.pubDate).getFullYear();
     if (!acc[year]) {
       acc[year] = [];
     }
     acc[year].push(post);
     return acc;
-  },
-  {}
-);
+  }, {});
+
+console.log(groupedPosts);
 ---
 
 <!DOCTYPE html>
@@ -29,7 +33,7 @@ const groupedPosts: { [key: number]: typeof allPosts } = allPosts.reduce(
     <main>
       <section>
         <h1>Archives</h1>
-        <h2>{allPosts.length} good music recommendations since 2010</h2>
+        <h2>{records.length} good music recommendations since 2010</h2>
         <ul>
           {
             Object.keys(groupedPosts)
@@ -37,12 +41,15 @@ const groupedPosts: { [key: number]: typeof allPosts } = allPosts.reduce(
               .map((year: string) => (
                 <li>
                   <h2>
-                    {year} <span class="pill">{groupedPosts[year].length}</span>
+                    {parseInt(year)}{" "}
+                    <span class="pill">{groupedPosts[year].length}</span>
                   </h2>
                   <ul class="plain-list">
                     {groupedPosts[year].map((post: any) => (
                       <li>
-                        <a href={post.url}>{post.frontmatter.title}</a>
+                        <a href={`/${post.id}`}>
+                          {post.data.artist} - {post.data.title}
+                        </a>
                       </li>
                     ))}
                   </ul>
