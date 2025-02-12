@@ -34,7 +34,7 @@ if (args.length < 2) {
 
 const [artist, albumname] = args;
 const slug = slugify(albumname, { lower: true });
-const outputPath = path.join(parentDir, "src/pages", `${slug}.md`);
+const outputPath = path.join(parentDir, "src/content/", `${slug}.md`);
 
 // Fetch album details from Last.fm
 async function getAlbumDetails() {
@@ -81,7 +81,8 @@ async function getCredits() {
 
 // Generate Credits for musicians (Name + Instrument) using Ollama (Mistral)
 function queryCreditsForAlbum(albumName, artistName) {
-  const prompt = `What musicians are playing on the album "${albumName}" by "${artistName}"? List the musicians' names and their instruments in a markdown-friendly format like the following example:
+  const prompt = `List musicians that are playing on the album "${albumName}" by "${artistName}" in YML format like this:
+
   - name: Drew Gress
     instrument: Double Bass
   - name: Joey Baron
@@ -90,7 +91,7 @@ function queryCreditsForAlbum(albumName, artistName) {
     instrument: Guitar
   - name: Marc Copland
     instrument: Piano
-  Please format the output accordingly for "${albumName}" by "${artistName}".`;
+  `;
 
   try {
     const result = execSync(`ollama run mistral "${prompt}"`, {
@@ -156,7 +157,7 @@ async function generateMarkdown() {
   // Get musician credits from Ollama
   const credits = queryCreditsForAlbum(albumname, artist);
 
-  const prompt = `Generate a markdown file for a jazz album with the following details:
+  const prompt = `Generate a markdown with the frontmatter output only beginning with --- and ending with ---  for a jazz album with the following details:
 
 - Artist: ${artist}
 - Album: ${albumname}
