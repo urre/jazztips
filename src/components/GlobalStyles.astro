@@ -181,18 +181,16 @@
     transition: border-color 150ms;
     padding: 0.25rem 0.75rem;
     border-radius: 2rem;
-    transition: box-shadow 150ms;
+    transition: box-shadow 0.1s;
   }
 
-  [rel="tag"]:hover,
-  [rel="tag"]:focus {
+  [rel="tag"]:hover {
     box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
   }
 
-  [rel="tag"]:active {
-    transform: translateY(0.15rem);
+  [rel="tag"]:focus-visible {
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
   }
-
   .search {
     position: relative;
   }
