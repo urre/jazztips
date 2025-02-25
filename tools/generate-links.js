@@ -13,13 +13,13 @@ async function main() {
     }
 
     // Construct path to look in src/pages directory
-    const fullPath = path.join(process.cwd(), "src", "pages", mdFile);
+    const fullPath = path.join(process.cwd(), "src", "content", mdFile);
 
     // Check if file exists
     try {
       await fs.access(fullPath);
     } catch (error) {
-      console.error(`File not found: ${mdFile} in src/pages directory`);
+      console.error(`File not found: ${mdFile} in src/content directory`);
       process.exit(1);
     }
 
