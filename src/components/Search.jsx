@@ -3,8 +3,6 @@ import Fuse from "fuse.js";
 
 export default function Search({ searchList }) {
 
-console.log(searchList);
-
   const [query, setQuery] = useState("");
 
   const options = {

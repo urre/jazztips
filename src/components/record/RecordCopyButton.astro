@@ -51,9 +51,7 @@ ${creditsText ? `\n\n${creditsText}` : ""}`.trim();
 
       navigator.clipboard
         .writeText(copyText)
-        .then(() => {
-          console.log(copyText);
-        })
+        .then(() => {})
         .catch((err) => {
           console.error("Failed to copy: ", err);
         });
