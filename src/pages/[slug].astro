@@ -14,8 +14,6 @@ type Props = CollectionEntry<"records">;
 
 const post = Astro.props;
 const { Content } = await render(post);
-
-console.log(Content);
 ---
 
 <Record {...post.data}>

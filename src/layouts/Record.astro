@@ -70,8 +70,6 @@ const {
   tags,
 } = Astro.props;
 
-console.log(title);
-
 const tidalLink = tidal
   ? `https://tidal.com/browse/album/${tidal}`
   : `https://listen.tidal.com/search?q=${encodeURIComponent(
