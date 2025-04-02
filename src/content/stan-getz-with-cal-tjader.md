@@ -12,7 +12,7 @@ tags:
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuXLeELZKuebmt7jKyzsIDKBjcuGPi4CyXA&s
 permalink: /stan-getz-with-cal-tjader/
 tidal: https://tidal.com/browse/album/1286225
-apple: https://music.apple.com/us/album/stan-getz-cal-tjader-sextet-original-jazz-classics/1444019828
+apple: https://embed.music.apple.com/us/album/stan-getz-cal-tjader-sextet-original-jazz-classics/1444019828
 spotify: https://open.spotify.com/album/0hwd4vschIBGFg5qaRaufq
 credits:
 - name: Stan Getz
