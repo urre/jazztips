@@ -20,6 +20,10 @@ const { musicians } = Astro.props;
           <div class="name">
             {musician.name}
 
+            <a href={`${Astro.request.url}/?query=${musician.name}`}>
+              <em>Search Jazztips →</em>
+            </a>
+
             <a
               href={`https://www.discogs.com/search/?q=${musician.name}&type=artist`}
               title={`Explore ${musician.name} on Discogs`}
