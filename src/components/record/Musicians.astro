@@ -18,19 +18,21 @@ const { musicians } = Astro.props;
       musicians.map((musician: Musician) => (
         <li class="musician">
           <div class="name">
-            {musician.name}
+            <span>{musician.name}</span>
 
-            <a href={`${Astro.request.url}/?query=${musician.name}`}>
-              <em>Search Jazztips →</em>
-            </a>
+            <div class="name-meta">
+              <a href={`${Astro.request.url}/?query=${musician.name}`}>
+                <em>Search Jazztips →</em>
+              </a>
 
-            <a
-              href={`https://www.discogs.com/search/?q=${musician.name}&type=artist`}
-              title={`Explore ${musician.name} on Discogs`}
-              target="_blank"
-            >
-              <em>Discogs →</em>
-            </a>
+              <a
+                href={`https://www.discogs.com/search/?q=${musician.name}&type=artist`}
+                title={`Explore ${musician.name} on Discogs`}
+                target="_blank"
+              >
+                <em>Search Discogs →</em>
+              </a>
+            </div>
           </div>
           <div class="instrument">{musician.instrument}</div>
         </li>
@@ -62,9 +64,18 @@ const { musicians } = Astro.props;
   .name {
     flex-basis: 30%;
     display: inline-flex;
-    gap: 2rem;
+    gap: 0rem;
+    flex-direction: column;
+  }
+
+  .name span {
+    font-size: 1.5rem;
+  }
+
+  .name-meta {
+    display: flex;
+    gap: 1rem;
     align-items: center;
-    /* font-size: 1.5rem; */
   }
 
   .name a {
@@ -73,10 +84,6 @@ const { musicians } = Astro.props;
     text-underline-offset: 4px;
     font-size: 0.85rem;
   }
-
-  /* .instrument {
-    flex-basis: 20%;
-  } */
 
   .link a {
     display: flex;
