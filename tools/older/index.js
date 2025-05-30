@@ -1,5 +1,5 @@
-const { generateImageAndInsertToMarkdown } = require("./og-image.js");
-const getAlbumCoverUrl = require("./record-cover");
+const { generateImageAndInsertToMarkdown } = require("../og-image.js");
+const getAlbumCoverUrl = require("../record-cover.js");
 
 // const test = async () => {
 //   const image = await generateImageAndInsertToMarkdown(

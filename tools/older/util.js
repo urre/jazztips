@@ -3,9 +3,9 @@ const slug = require("slug");
 const path = require("path");
 const cloudinary = require("cloudinary");
 require("dotenv").config();
-const { getMusicServiceLinks } = require("./getMusicServiceLinks");
-const { getRecordLabel } = require("./getRecordLabel");
-const { generateImageAndInsertToMarkdown } = require("./og-image");
+const { getMusicServiceLinks } = require("./older/getMusicServiceLinks");
+const { getRecordLabel } = require("./older/getRecordLabel");
+const { generateImageAndInsertToMarkdown } = require("./older/og-image");
 
 // Cloudinary settings, read secrets
 cloudinary.config({
