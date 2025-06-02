@@ -4,7 +4,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const TAVILY_API_KEY = process.env.TAVILY_API_KEY!;
-
+const LASTFM_API_KEY = process.env.LASTFM_API_KEY;
 
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.SPOTIFY_CLIENT_ID!,
@@ -65,6 +65,7 @@ export async function fetchTidalAlbumLink(artist: string, album: string): Promis
 
     const links: string[] = response.data.results.map((r: any) => r.url);
 
+
     // Filter for Tidal album URLs
     const tidalLink = links.find(url =>
       url.includes("tidal.com") && url.includes("/album/")
@@ -78,12 +79,50 @@ export async function fetchTidalAlbumLink(artist: string, album: string): Promis
   }
 }
 
+export async function fetchRecordCoverUrl(artist: string, album: string): Promise<string | null> {
+  try {
+    const cleanedArtist = artist.trim();
+    const cleanedAlbum = album.trim();
+
+    const url = "https://ws.audioscrobbler.com/2.0/";
+
+    const response = await axios.get(url, {
+      params: {
+        method: "album.getInfo",
+        api_key: LASTFM_API_KEY,
+        artist: cleanedArtist,
+        album: cleanedAlbum,
+        format: "json"
+      },
+      validateStatus: status => status < 500
+    });
+
+    if (response.status === 404 || !response.data?.album) {
+      console.warn(`Last.fm: Album not found for "${artist}" - "${album}"`);
+      return null;
+    }
+
+    const images = response.data.album.image;
+    if (!images || images.length === 0) return null;
+
+
+    const largest = [...images].reverse().find((img: any) => img['#text']);
+    return largest?.['#text'] || null;
+
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.warn("Last.fm cover fetch failed:", message);
+    return null;
+  }
+}
+
 export async function fetchStreamingLinks(artist: string, album: string) {
-  const [spotify, apple, tidal] = await Promise.all([
+  const [spotify, apple, tidal, image] = await Promise.all([
     fetchSpotifyAlbumLink(artist, album),
     fetchAppleMusicAlbumLink(artist, album),
     fetchTidalAlbumLink(artist, album),
+    fetchRecordCoverUrl(artist, album),
   ]);
 
-  return { spotify, apple, tidal };
+  return { spotify, apple, tidal, image };
 }
