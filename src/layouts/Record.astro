@@ -120,6 +120,14 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             )
           }
 
+          <RecordCopyButton
+            artist={artist}
+            title={title}
+            label={label}
+            year={year}
+            credits={credits}
+            description={description}
+          />
           {credits && <Musicians musicians={credits} />}
 
           <Embeds
@@ -145,15 +153,6 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             spotify={spotify}
             appleLink={appleLink}
             apple={apple}
-          />
-
-          <RecordCopyButton
-            artist={artist}
-            title={title}
-            label={label}
-            year={year}
-            credits={credits}
-            description={description}
           />
         </RecordInfo>
       </RecordLayout>
