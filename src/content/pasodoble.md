@@ -11,7 +11,7 @@ tags:
 image: https://res.cloudinary.com/urre/image/upload/v1744179786/htmsspuakfymswufo3fi.jpg
 permalink: /pasodoble/
 tidal: https://tidal.com/browse/album/20241580
-apple: https://music.apple.com/se/album/pasodoble/285253811
+apple: https://embed.music.apple.com/se/album/pasodoble/285253811
 spotify: https://open.spotify.com/album/4xseZh6RlkT8d1RePNfFPU
 credits:
 - name: Lars Danielsson

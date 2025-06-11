@@ -1,0 +1,80 @@
+---
+import { getCollection } from "astro:content";
+import RecordCover from "./record/RecordCover.astro";
+import optimizeImage from "@utils/optimizeImage";
+
+export interface Props {
+  credits?: Array<{ name: string; instrument: string }>;
+}
+
+const { credits } = Astro.props;
+
+// Get all records
+const allRecords = await getCollection("records");
+
+// Find records where any of our credits (by name) appear
+const appearsOn = credits
+  ? allRecords.filter((record) =>
+      record.data.credits?.some((recordCredit) =>
+        credits.some((ourCredit) => ourCredit.name === recordCredit.name)
+      )
+    )
+  : [];
+
+// Get the specific credits that appear on each record
+const appearingCredits = credits
+  ? [
+      ...new Map(
+        credits
+          .flatMap((ourCredit) => {
+            const recordsWithCredit = appearsOn
+              .filter((record) =>
+                record.data.credits?.some(
+                  (recordCredit) => recordCredit.name === ourCredit.name
+                )
+              )
+              .map((record) => ({
+                name: record.data.title,
+                instrument: ourCredit.instrument,
+                slug: record.id,
+              }));
+
+            return recordsWithCredit;
+          })
+          .map((record) => [record.slug, record])
+      ).values(),
+    ]
+  : [];
+---
+
+{
+  appearingCredits.length > 0 && (
+    <div>
+      <h2>Musicians on this records also appears on</h2>
+      <ul>
+        {appearingCredits.map((credit) => (
+          <li>
+            <a href={`/${encodeURIComponent(credit.slug)}`}>
+              {/* We need to get the actual record data to display the image */}
+              {appearsOn.find((record) => record.id === credit.slug)?.data
+                .image && (
+                <RecordCover
+                  src={`${optimizeImage(
+                    appearsOn.find((record) => record.id === credit.slug)?.data
+                      .image ?? ""
+                  )}`}
+                  alt={`${credit.name}`}
+                />
+              )}
+
+              <h3>
+                {/* The credit name represents the album title here */}
+                {credit.name}
+              </h3>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
