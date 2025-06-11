@@ -11,7 +11,7 @@ tags:
   - ross
   - scott
   - brewer
-image: https://www.bluenote.com/files/2024/10/OutOfInto_MotionI_cover-500x500.jpg
+image: https://storage.highresaudio.com/2024/12/06/qvs86t-motioni-preview-m3.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1733855950/ztbgomykkkx6ul7ttfdj.jpg
 
 credits:

@@ -11,6 +11,7 @@ import RecordInfo from "@components/record/RecordInfo.astro";
 import Tags from "@components/record/Tags.astro";
 import Explore from "@components/record/Explore.astro";
 import RecordCopyButton from "@components/record/RecordCopyButton.astro";
+import AlsoAppearsOn from "@components/AlsoAppearsOn.astro";
 
 export interface Musician {
   name: string;
@@ -154,6 +155,8 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             appleLink={appleLink}
             apple={apple}
           />
+
+          {artist && <AlsoAppearsOn credits={credits} />}
         </RecordInfo>
       </RecordLayout>
     </article>
