@@ -21,15 +21,15 @@ credits:
 - name: Philip Norris
   instrument: Bass
 - name: Kyle Poole
-  instrument: Drums (tracks 1-4, 8)
+  instrument: Drums
 - name: Joe Farnsworth
-  instrument: Drums (tracks 5, 6, 7, 9)
+  instrument: Drums
 - name: Tivon Pennicott
-  instrument: Tenor Saxophone (tracks 3, 4, 9)
+  instrument: Tenor Saxophone
 - name: Bruce Harris
-  instrument: Trumpet (tracks 3, 4, 9)
+  instrument: Trumpet
 - name: Frank Lacy
-  instrument: Trombone (tracks 3, 9)
+  instrument: Trombone
 - name: Cecily Petrarca
-  instrument: Koshkah (track 3)
+  instrument: Koshkah
 ---
