@@ -82,6 +82,8 @@ const tidalId = typeof tidal === "string" ? tidal.replace(/\D/g, "") : tidal;
 const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
   `${artist} ${title}`
 )}`;
+
+const postId = Astro.url.pathname;
 ---
 
 <html lang="en">
@@ -121,14 +123,6 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             )
           }
 
-          <RecordCopyButton
-            artist={artist}
-            title={title}
-            label={label}
-            year={year}
-            credits={credits}
-            description={description}
-          />
           {credits && <Musicians musicians={credits} />}
 
           <Embeds
@@ -156,7 +150,15 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
             apple={apple}
           />
 
-          {artist && <AlsoAppearsOn credits={credits} />}
+          {artist && <AlsoAppearsOn musicians={credits} postId={postId} />}
+          <RecordCopyButton
+            artist={artist}
+            title={title}
+            label={label}
+            year={year}
+            credits={credits}
+            description={description}
+          />
         </RecordInfo>
       </RecordLayout>
     </article>
