@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/Record.astro
 title: Dream Manifest
-pubDate: 2025-06-18
+pubDate: 2025-06-17
 artist: Theo Croker
 label: Star People Nation
 year: 2025
