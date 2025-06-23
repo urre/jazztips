@@ -1,0 +1,158 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { getCollection } from "astro:content";
+const records = await getCollection("records");
+
+// Extract all musicians and their instruments from records
+type Musician = {
+  name: string;
+  instrument: string;
+  albums: Array<{
+    title: string;
+    artist: string;
+    slug: string;
+  }>;
+};
+
+// Collect all musicians
+const allMusicians: Musician[] = [];
+
+records.forEach((record) => {
+  if (record.data.credits && Array.isArray(record.data.credits)) {
+    record.data.credits.forEach((credit) => {
+      if (credit.name && credit.instrument) {
+        // Check if this musician already exists in our collection
+        const existingMusician = allMusicians.find(
+          (m) => m.name === credit.name && m.instrument === credit.instrument
+        );
+        const albumInfo = {
+          title: record.data.title,
+          artist: record.data.artist,
+          slug: record.id,
+        };
+
+        if (existingMusician) {
+          // Add this album to the existing musician's albums
+          existingMusician.albums.push(albumInfo);
+        } else {
+          // Add a new musician entry
+          allMusicians.push({
+            name: credit.name,
+            instrument: credit.instrument,
+            albums: [albumInfo],
+          });
+        }
+      }
+    });
+  }
+});
+
+// Sort musicians alphabetically by name
+allMusicians.sort((a, b) => a.name.localeCompare(b.name));
+
+// Get unique instruments for filtering
+const instruments = [
+  ...new Set(allMusicians.map((musician) => musician.instrument)),
+].sort();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <h1>Musicians</h1>
+        <h2><span class="pill">{allMusicians.length}</span> musicians found</h2>
+
+        <div class="filter-container">
+          <select id="instrument-filter">
+            <option value="all">All instruments</option>
+            {
+              instruments.map((instrument) => (
+                <option value={instrument}>{instrument}</option>
+              ))
+            }
+          </select>
+        </div>
+
+        <ul>
+          {
+            instruments
+              .filter((instrument) => instrument !== "-")
+              .map((instrument) => {
+                const musiciansForInstrument = allMusicians.filter(
+                  (musician) => musician.instrument === instrument
+                );
+                return musiciansForInstrument.length > 5 ? (
+                  <li>
+                    <h2>{instrument}</h2>
+                    <span class="pill">
+                      {musiciansForInstrument.length} musician
+                      {musiciansForInstrument.length > 1 ? "s" : ""}
+                    </span>
+                    <ul class="plain-list">
+                      {musiciansForInstrument.map((musician) => (
+                        <li
+                          class="musician-item"
+                          data-instrument={musician.instrument}
+                        >
+                          <a
+                            href={`${Astro.request.url}/?query=${musician.name}`}
+                          >
+                            {musician.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ) : null;
+              })
+          }
+        </ul>
+      </section>
+
+      <style>
+        .hidden {
+          display: none;
+        }
+      </style>
+
+      <script>
+        // Client-side filtering
+        document.addEventListener("DOMContentLoaded", () => {
+          const filterSelect = document.getElementById(
+            "instrument-filter"
+          ) as HTMLSelectElement;
+          const musicianItems = document.querySelectorAll(".musician-item");
+
+          if (filterSelect) {
+            filterSelect.addEventListener("change", () => {
+              const selectedInstrument = filterSelect.value;
+
+              musicianItems.forEach((item) => {
+                const instrument = item.getAttribute("data-instrument") || "";
+
+                if (
+                  selectedInstrument === "all" ||
+                  instrument.includes(selectedInstrument)
+                ) {
+                  item.classList.remove("hidden");
+                } else {
+                  item.classList.add("hidden");
+                }
+              });
+            });
+          }
+        });
+      </script>
+    </main>
+    <Footer />
+  </body>
+</html>

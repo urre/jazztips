@@ -195,18 +195,28 @@
     position: relative;
   }
 
-  ul.search-list {
-    display: unset;
+  ul:is(.search-list) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     position: absolute;
     background-color: white;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 6px;
     left: 0;
     top: 0.25rem;
     z-index: 100;
     list-style: none;
-    width: 300px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    min-width: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+
+    @media (max-width: 480px) {
+      min-width: unset;
+      width: 100%;
+    }
   }
 
   .search-list li:hover {
@@ -221,11 +231,6 @@
       rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: 6px;
     transition: all 200ms;
-  }
-
-  .search-list figure + div {
-    max-width: 300px;
-    overflow-wrap: break-word;
   }
 
   fieldset {

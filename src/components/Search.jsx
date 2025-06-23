@@ -47,6 +47,22 @@ export default function Search({ searchList }) {
     setQuery(event.target.value);
   };
 
+  // Handle key press events to close search with Escape
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setQuery(""); // Clear the search query when Escape is pressed
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <div className="search">
       <input
@@ -61,17 +77,17 @@ export default function Search({ searchList }) {
         <ul className="search-list">
           {posts.map((post) => (
             <li key={post.id}> {/* Assuming each post has a unique `id` */}
-              <a href={`/${post.id}`} style={{ display: 'flex', gap: '1rem' }}>
-                <figure style={{ width: '40px', height: '40px', flexShrink: '0', backgroundColor: '#f6f6f6' }}>
+              <a href={`/${post.id}`} style={{ display: 'flex', gap: '1rem', alignItems: 'center'  }}>
+                <figure style={{ width: '80px', height: '80px', flexShrink: '0', backgroundColor: '#f6f6f6' }}>
                   <img
                     src={post.data.image}
                     alt={post.data.title}
-                    width={50}
-                    height={50}
+                    width={100}
+                    height={100}
                     loading="lazy"
                     style={{
-                      width: '40px',
-                      height: '40px',
+                      width: '80px',
+                      height: '80px',
                       display: 'block',
                       objectFit: 'cover',
                     }}
