@@ -71,7 +71,16 @@ export async function fetchTidalAlbumLink(artist: string, album: string): Promis
       url.includes("tidal.com") && url.includes("/album/")
     );
 
-    return tidalLink || null;
+    // Format Tidal URL to the required structure
+    if (tidalLink) {
+      if (tidalLink.includes("/browse/")) {
+        return !tidalLink.includes("?u") ? `${tidalLink}?u` : tidalLink;
+      } else {
+        return tidalLink.replace("/album/", "/browse/album/") + "?u";
+      }
+    }
+
+    return null;
   } catch (err) {
     const message = err instanceof Error ? err.message : "Unknown error";
     console.warn("Tavily Tidal search failed:", message);
