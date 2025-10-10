@@ -23,8 +23,8 @@ credits:
   instrument: Saxophones, Flute, Clarinet
 - name: Daniel Karlsson
   instrument: Piano, Keyboards
-- name: Peter Forss
+- name: Viktor Skokic
   instrument: Bass
-- name: Janne Robertsson
+- name: Lars Skoglund
   instrument: Drums
 ---
