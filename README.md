@@ -42,8 +42,7 @@ Deploys to Vercel with git
 Typical AI Prompt to use with for example Copilot in Agent Mode
 
 ```markdown
-- Create a new record for artist X and album name Y. Find music metadata and format as Frontmatter YML sand save a .md file in src/content
-- Use the script in src/tools to get streaming links and album cover art, use artist "albumname" as the arguments for npm start task
+create a new record for artist X and album name Y using #file:new-record.md
 ```
 
 ### ENV

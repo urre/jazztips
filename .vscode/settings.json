@@ -1,4 +1,9 @@
 {
+    "copilot.agent.workspaceCommands": [
+    "npm",
+    "npm install",
+    "npm run"
+  ],
   "window.title": "🎷 Jazztips Astro",
   "files.exclude": {
     "public/*.js": true,
