@@ -12,6 +12,7 @@ import Tags from "@components/record/Tags.astro";
 import Explore from "@components/record/Explore.astro";
 import RecordCopyButton from "@components/record/RecordCopyButton.astro";
 import AlsoAppearsOn from "@components/AlsoAppearsOn.astro";
+import { Analytics } from '@vercel/analytics/astro';
 
 export interface Musician {
   name: string;
@@ -164,4 +165,5 @@ const postId = Astro.url.pathname;
     </article>
   </main>
   <Footer />
+  <Analytics />
 </html>
