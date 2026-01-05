@@ -84,7 +84,7 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
   `${artist} ${title}`
 )}`;
 
-const postId = Astro.url.pathname;
+const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 ---
 
 <html lang="en">

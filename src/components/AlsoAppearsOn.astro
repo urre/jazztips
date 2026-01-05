@@ -13,12 +13,14 @@ const { musicians, postId } = Astro.props;
 // Get all records
 const allRecords = await getCollection("records");
 
-// Find records where any of our credits (by name) appear
+// Find records where any of our credits (by name) appear, excluding the current post
 const appearsOn = musicians
-  ? allRecords.filter((record) =>
-      record.data.credits?.some((recordCredit) =>
-        musicians.some((ourCredit) => ourCredit.name === recordCredit.name)
-      )
+  ? allRecords.filter(
+      (record) =>
+        record.id !== postId &&
+        record.data.credits?.some((recordCredit) =>
+          musicians.some((ourCredit) => ourCredit.name === recordCredit.name)
+        )
     )
   : [];
 
@@ -54,29 +56,27 @@ const appearingCredits = musicians
     <div>
       <h2>Musicians on this records also appears on</h2>
       <ul>
-        {appearingCredits
-          .filter((credit) => `/${credit.slug}` !== postId)
-          .map((credit) => (
-            <li>
-              <a href={`/${encodeURIComponent(credit.slug)}`}>
-                {appearsOn.find((record) => record.id === credit.slug)?.data
-                  .image && (
-                  <RecordCover
-                    src={`${optimizeImage(
-                      appearsOn.find((record) => record.id === credit.slug)
-                        ?.data.image ?? ""
-                    )}`}
-                    alt={`${credit.name}`}
-                  />
-                )}
+        {appearingCredits.map((credit) => (
+          <li>
+            <a href={`/${encodeURIComponent(credit.slug)}`}>
+              {appearsOn.find((record) => record.id === credit.slug)?.data
+                .image && (
+                <RecordCover
+                  src={`${optimizeImage(
+                    appearsOn.find((record) => record.id === credit.slug)?.data
+                      .image ?? ""
+                  )}`}
+                  alt={`${credit.name}`}
+                />
+              )}
 
-                <h3>
-                  {/* The credit name represents the album title here */}
-                  {credit.name}
-                </h3>
-              </a>
-            </li>
-          ))}
+              <h3>
+                {/* The credit name represents the album title here */}
+                {credit.name}
+              </h3>
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   )
