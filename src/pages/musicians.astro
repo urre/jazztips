@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
+import Button from "@components/Button.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
 const records = await getCollection("records");
@@ -69,6 +70,7 @@ const instruments = [
     <main>
       <section>
         <h1>Musicians</h1>
+        <p>Click a musician to see corresponding Jazztips albums</p>
         <h2><span class="pill">{allMusicians.length}</span> musicians found</h2>
 
         <div class="filter-container">
@@ -80,9 +82,12 @@ const instruments = [
               ))
             }
           </select>
+          <span id="clear-filter">
+            <Button href="#">Clear</Button>
+          </span>
         </div>
 
-        <ul>
+        <ul class="regular-list">
           {
             instruments
               .filter((instrument) => instrument !== "-")
@@ -90,14 +95,14 @@ const instruments = [
                 const musiciansForInstrument = allMusicians.filter(
                   (musician) => musician.instrument === instrument
                 );
-                return musiciansForInstrument.length > 5 ? (
-                  <li>
+                return (
+                  <li class="instrument-section" data-instrument={instrument}>
                     <h2>{instrument}</h2>
                     <span class="pill">
                       {musiciansForInstrument.length} musician
                       {musiciansForInstrument.length > 1 ? "s" : ""}
                     </span>
-                    <ul class="plain-list">
+                    <ul class="regular-list">
                       {musiciansForInstrument.map((musician) => (
                         <li
                           class="musician-item"
@@ -112,7 +117,7 @@ const instruments = [
                       ))}
                     </ul>
                   </li>
-                ) : null;
+                );
               })
           }
         </ul>
@@ -120,7 +125,10 @@ const instruments = [
 
       <style>
         .hidden {
-          display: none;
+          display: none !important;
+        }
+        .instrument-section {
+          display: block;
         }
       </style>
 
@@ -130,23 +138,39 @@ const instruments = [
           const filterSelect = document.getElementById(
             "instrument-filter"
           ) as HTMLSelectElement;
-          const musicianItems = document.querySelectorAll(".musician-item");
+          const clearButton = document.getElementById(
+            "clear-filter"
+          ) as HTMLButtonElement;
+          const instrumentSections = document.querySelectorAll(
+            ".instrument-section"
+          );
 
           if (filterSelect) {
             filterSelect.addEventListener("change", () => {
               const selectedInstrument = filterSelect.value;
 
-              musicianItems.forEach((item) => {
-                const instrument = item.getAttribute("data-instrument") || "";
+              instrumentSections.forEach((section) => {
+                const instrument =
+                  section.getAttribute("data-instrument") || "";
 
                 if (
                   selectedInstrument === "all" ||
-                  instrument.includes(selectedInstrument)
+                  instrument === selectedInstrument
                 ) {
-                  item.classList.remove("hidden");
+                  section.classList.remove("hidden");
                 } else {
-                  item.classList.add("hidden");
+                  section.classList.add("hidden");
                 }
+              });
+            });
+          }
+
+          if (clearButton && filterSelect) {
+            clearButton.addEventListener("click", (e) => {
+              e.preventDefault();
+              filterSelect.value = "all";
+              instrumentSections.forEach((section) => {
+                section.classList.remove("hidden");
               });
             });
           }
