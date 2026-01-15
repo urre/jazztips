@@ -42,7 +42,7 @@ Deploys to Vercel with git
 Typical AI Prompt to use with for example Copilot in Agent Mode
 
 ```markdown
-create a new record for artist X and album name Y using #file:new-record.md
+#new-record Create an entry for "Blue Train" by John Coltrane
 ```
 
 ### ENV
