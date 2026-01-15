@@ -1,0 +1,118 @@
+{
+  "name": "Find Streaming Links (Tavily) -> Markdown (Compat)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "ManualTrigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [200, 220]
+    },
+    {
+      "parameters": {
+        "keepOnlySet": true,
+        "values": {
+          "string": [
+            { "name": "artist", "value": "Champian Fulton" },
+            { "name": "albumname", "value": "I Was Looking For You" }
+          ]
+        }
+      },
+      "id": "SetInput",
+      "name": "Set Input",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [420, 220]
+    },
+    {
+      "parameters": {
+        "functionCode": "const artist = $json.artist;\nconst album = $json.albumname;\n\nconst platforms = [\n  { key: 'spotify', q: `${artist} - ${album} spotify` },\n  { key: 'tidal', q: `${artist} - ${album} tidal` },\n  { key: 'apple', q: `${artist} - ${album} apple music` },\n  { key: 'qobuz', q: `${artist} - ${album} qobuz` },\n];\n\nreturn platforms.map(p => ({ json: { artist, album, platform: p.key, query: p.q } }));"
+      },
+      "id": "BuildQueries",
+      "name": "Build Queries",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [650, 220]
+    },
+    {
+      "parameters": {
+        "batchSize": 1
+      },
+      "id": "SplitInBatches",
+      "name": "Split in Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [870, 220]
+    },
+    {
+      "parameters": {
+        "requestMethod": "POST",
+        "url": "https://api.tavily.com/search",
+        "jsonParameters": true,
+        "options": {},
+        "bodyParametersJson": "={{JSON.stringify({\n  api_key: $env.TAVILY_API_KEY,\n  query: $json.query,\n  search_depth: \"basic\",\n  max_results: 10,\n  include_answer: false,\n  include_raw_content: false\n})}}",
+        "headerParametersJson": "={{JSON.stringify({\"Content-Type\":\"application/json\"})}}"
+      },
+      "id": "TavilySearch",
+      "name": "Tavily Search",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [1100, 220]
+    },
+    {
+      "parameters": {
+        "functionCode": "function pickFirstMatchingUrl(platform, results) {\n  const domains = {\n    spotify: [/open\\.spotify\\.com\\//i, /spotify\\.com\\//i],\n    tidal: [/tidal\\.com\\//i],\n    apple: [/music\\.apple\\.com\\//i, /itunes\\.apple\\.com\\//i, /embed\\.music\\.apple\\.com\\//i],\n    qobuz: [/qobuz\\.com\\//i]\n  };\n\n  const regs = domains[platform] || [];\n  if (!Array.isArray(results)) return null;\n\n  for (const r of results) {\n    const url = r && r.url;\n    if (!url) continue;\n    if (regs.some(rx => rx.test(url))) return url;\n  }\n  return null;\n}\n\nconst platform = $json.platform;\nconst results = ($json.results || []);\nconst link = pickFirstMatchingUrl(platform, results);\n\nreturn [{ json: { platform, query: $json.query, link: link || '' } }];"
+      },
+      "id": "ExtractLink",
+      "name": "Extract Link",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1330, 220]
+    },
+    {
+      "parameters": {
+        "mode": "append"
+      },
+      "id": "Collect",
+      "name": "Collect Results",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 1,
+      "position": [1540, 220]
+    },
+    {
+      "parameters": {
+        "functionCode": "const items = $items();\nconst map = {};\nfor (const it of items) {\n  const j = it.json;\n  if (j && j.platform) map[j.platform] = j.link || '';\n}\n\nconst order = ['tidal', 'apple', 'spotify', 'qobuz'];\nconst lines = order.map(p => `${p}: ${map[p] || ''}`);\nreturn [{ json: { markdown: lines.join('\\n') } }];"
+      },
+      "id": "ToMarkdown",
+      "name": "To Markdown",
+      "type": "n8n-nodes-base.function",
+      "typeVersion": 1,
+      "position": [1740, 220]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [[{ "node": "Set Input", "type": "main", "index": 0 }]]
+    },
+    "Set Input": {
+      "main": [[{ "node": "Build Queries", "type": "main", "index": 0 }]]
+    },
+    "Build Queries": {
+      "main": [[{ "node": "Split in Batches", "type": "main", "index": 0 }]]
+    },
+    "Split in Batches": {
+      "main": [[{ "node": "Tavily Search", "type": "main", "index": 0 }], [{ "node": "To Markdown", "type": "main", "index": 0 }]]
+    },
+    "Tavily Search": {
+      "main": [[{ "node": "Extract Link", "type": "main", "index": 0 }]]
+    },
+    "Extract Link": {
+      "main": [[{ "node": "Collect Results", "type": "main", "index": 1 }]]
+    },
+    "Collect Results": {
+      "main": [[{ "node": "Split in Batches", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false
+}

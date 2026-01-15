@@ -44,6 +44,6 @@
       "other": "off"
     },
     "editor.fontLigatures": true,
-    "editor.wordWrap": "wordWrapColumn"
+    "editor.wordWrap": "wordWrapColumn",
   }
 }
