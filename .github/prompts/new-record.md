@@ -26,30 +26,27 @@ Gather the following information:
 - Specific descriptive tags (instruments, styles, locations, key musicians)
 
 ### Finding Streaming Links
-**Important Note**: Streaming platform search results can be unreliable when accessed programmatically. The `npm run links` script (if available) may help automate this. Otherwise:
+Use the streaming links webhook to automatically retrieve links from multiple platforms:
 
-- Manually verify each link by opening it in a browser
+```bash
+curl -sS -X POST "http://192.168.86.47:5678/webhook/streaming-links" \
+  -H "Content-Type: application/json" \
+  -d '{"artist":"Artist Name","album":"Album Title"}'
+```
+
+**Example response**:
+```
+tidal: https://tidal.com/album/58990510
+apple: https://music.apple.com/us/album/ok-computer/1097861387
+spotify: https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE
+qobuz: https://www.qobuz.com/us-en/album/ok-computer-radiohead/0634904078164
+```
+
+**Important**:
+- Always verify links by opening them in a browser
 - If a platform doesn't have the album, omit that field entirely
-- Only include links you've personally verified as working
+- The webhook may not find all platforms - manually search if needed
 
-**Search strategies**:
-
-**Spotify**:
-- Search for the artist and album name in Spotify's search
-- Copy the album URL from the address bar or share menu
-- Format: `https://open.spotify.com/album/[album-id]`
-
-**Tidal**:
-- Search for the artist and album name in Tidal's search
-- Format: `https://tidal.com/browse/album/[album-id]`
-
-**Apple Music**:
-- Search for the artist and album name in Apple Music
-- Format: `https://music.apple.com/us/album/[album-slug]/[album-id]`
-
-**Qobuz**:
-- Search for the artist and album name in Qobuz
-- Format: `https://www.qobuz.com/[region]/album/[album-slug]/[album-id]`
 ## 2. Create the Markdown File
 - Generate filename: Convert album title to lowercase kebab-case (e.g., "Chapter One" → `chapter-one.md`)
 - Create file at: `src/content/[filename].md`
