@@ -31,7 +31,7 @@ Use the streaming links webhook to automatically retrieve links from multiple pl
 ```bash
 curl -sS -X POST "http://192.168.86.47:5678/webhook/streaming-links" \
   -H "Content-Type: application/json" \
-  -d '{"artist":"Artist Name","album":"Album Title"}'
+  -d '{"artist":"Lester Young","album":"Lester Young with the Oscar Peterson Trio"}'
 ```
 
 **Example response**:
@@ -46,6 +46,8 @@ qobuz: https://www.qobuz.com/us-en/album/ok-computer-radiohead/0634904078164
 - Always verify links by opening them in a browser
 - If a platform doesn't have the album, omit that field entirely
 - The webhook may not find all platforms - manually search if needed
+- For Apple links must have the `embed` word in the URL like `https://embed.music.apple.com...`
+- For Tidal use the format `https://tidal.com/browse/album/...`
 
 ## 2. Create the Markdown File
 - Generate filename: Convert album title to lowercase kebab-case (e.g., "Chapter One" → `chapter-one.md`)
