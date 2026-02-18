@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Ella Fitzgerald and Louis Armstrong - Ella And Louis Again
+title: "Ella And Louis Again"
 pubDate: 2026-02-18
 artist: Ella Fitzgerald and Louis Armstrong
 label: Verve Records
