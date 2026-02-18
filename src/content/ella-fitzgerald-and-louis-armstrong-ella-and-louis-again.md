@@ -4,15 +4,16 @@ title: Ella Fitzgerald and Louis Armstrong - Ella And Louis Again
 pubDate: 2026-02-18
 artist: Ella Fitzgerald and Louis Armstrong
 label: Verve Records
-year: 1957-10
+year: 1957
 tags:
-  - Jazz
+  - ella
+  - luis
 permalink: https://jazztips.se/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again/
 spotify: 
 tidal: https://tidal.com/album/119011948/u
 image: https://upload.wikimedia.org/wikipedia/en/e/ea/Ellalouisagain.jpg
 apple: https://music.apple.com/au/album/ella-and-louis-again/1442955474
-qobuz: 
+qobuz: https://open.spotify.com/album/4zWqQOob980K9drUrUGM8M
 credits:
   - name: Ella Fitzgerald
     instrument: Vocals
