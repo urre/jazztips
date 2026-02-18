@@ -9,7 +9,7 @@ tags:
   - Jazz
 permalink: https://jazztips.se/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again/
 spotify: 
-tidal: 
+tidal: https://tidal.com/album/119011948/u
 image: https://upload.wikimedia.org/wikipedia/en/e/ea/Ellalouisagain.jpg
 apple: https://music.apple.com/au/album/ella-and-louis-again/1442955474
 qobuz: 
