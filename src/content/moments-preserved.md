@@ -10,7 +10,7 @@ tags:
 permalink: https://jazztips.se/moments-preserved/
 
 
-image: 
+image: https://storage.highresaudio.com/2018/05/30/wyimmc-momentspre-master.jpg
 
 
 credits:
@@ -18,12 +18,10 @@ credits:
     instrument: piano
   - name: Ameen Saleem
     instrument: bass
-  - name: Jeremy “Bean” Clemons
+  - name: Jeremy "Bean" Clemons
     instrument: drums
   - name: Roy Hargrove
-    instrument: trumpet/flugelhorn
-  - name: Brian Bacchus
-    instrument: Producer
+    instrument: flugelhorn & trumpet
 ---
 
-Sullivan Fortner's album "Moments Preserved" is a jazz release from 2018. It is Fortner's sophomore album, showcasing his musical creativity and empathy. The album features a trio with bassist Ameen Saleem and drummer Jeremy "Bean" Clemons, and includes appearances by trumpeter Roy Hargrove on several tracks. It contains a mix of original compositions and creative covers, such as an animated take on the "Wheel of Fortune" theme song and a solo piano version of Earth, Wind & Fire's "Fantasy." The album has been praised for its high-class, imaginative music and agile interplay among the musicians.
+Sullivan Fortner's album "Moments Preserved" is his sophomore release on Impulse! Records, published in 2018. The album is primarily a tight trio outing featuring Fortner on piano, Ameen Saleem on bass, and Jeremy "Bean" Clemons on drums. It also includes guest appearances by Roy Hargrove on flugelhorn and trumpet on select tracks. The work blends Fortner's original compositions with creative interpretations of covers, showcasing his unique improvisational style and his ability to draw on diverse influences from jazz to classical music. Notable tracks include his renditions of the "Wheel of Fortune" theme ("Changing Keys") and Earth, Wind & Fire's "Fantasy," alongside a medley of Thelonious Monk tunes. The album has been noted for its empathetic interplay among musicians and Fortner's creative prowess.
