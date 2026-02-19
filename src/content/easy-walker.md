@@ -9,10 +9,11 @@ tags:
   - Jazz
   - Soul-Jazz
 permalink: https://jazztips.se/easy-walker/
-
-
-image: https://store.bluenote.com/cdn/shop/files/StanleyTurrentineEasyWalkerLP.png?v=1770824385&width=1000
-
+image: https://e.snmc.io/i/600/s/0c47263fdd5e8656f56bf4bf7423e1de/2451888/stanley-turrentine-easy-walker-Cover-Art.jpg
+tidal: https://tidal.com/browse/album/9549051
+apple: https://embed.music.apple.com/kr/album/easy-walker/724359914
+spotify: https://open.spotify.com/album/2s6vNYUh1eA23xeqFLxzlc
+qobuz: https://www.qobuz.com/us-en/album/easy-walker-stanley-turrentine/0724382990857
 
 credits:
   - name: Stanley Turrentine
@@ -29,10 +30,6 @@ credits:
     instrument: bass
   - name: Billy Cobham
     instrument: drums
-  - name: Alfred Lion
-    instrument: producer
-  - name: Francis Wolff
-    instrument: producer
 ---
 
 Easy Walker is an album by jazz saxophonist Stanley Turrentine, released in February 1968 on the Blue Note label. The album features Turrentine alongside a versatile quartet including McCoy Tyner on piano, Bob Cranshaw on bass, and Mickey Roker on drums for the initial tracks. The recording sessions took place at Van Gelder Studio in Englewood Cliffs, NJ, with tracks recorded across multiple dates in July 1966, July 1967, and June 1969 for bonus tracks on later reissues.
