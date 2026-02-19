@@ -17,11 +17,15 @@ credits:
   - name: Sullivan Fortner
     instrument: piano
   - name: Ameen Saleem
-    instrument: bass
+    instrument: bass, double bass
   - name: Jeremy "Bean" Clemons
     instrument: drums
   - name: Roy Hargrove
-    instrument: flugelhorn & trumpet
+    instrument: flugelhorn, trumpet (on tracks 5 & 11)
 ---
 
-Sullivan Fortner's album "Moments Preserved" is his sophomore release on Impulse! Records, published in 2018. The album is primarily a tight trio outing featuring Fortner on piano, Ameen Saleem on bass, and Jeremy "Bean" Clemons on drums. It also includes guest appearances by Roy Hargrove on flugelhorn and trumpet on select tracks. The work blends Fortner's original compositions with creative interpretations of covers, showcasing his unique improvisational style and his ability to draw on diverse influences from jazz to classical music. Notable tracks include his renditions of the "Wheel of Fortune" theme ("Changing Keys") and Earth, Wind & Fire's "Fantasy," alongside a medley of Thelonious Monk tunes. The album has been noted for its empathetic interplay among musicians and Fortner's creative prowess.
+''"Moments Preserved" is Sullivan Fortner's sophomore album, released in 2018 on Impulse! Records. The album features a piano trio with Fortner on piano, Ameen Saleem on bass, and Jeremy "Bean" Clemons on drums, with guest appearances by Roy Hargrove on flugelhorn and trumpet on select tracks.
+
+The album is a blend of original compositions and creative covers. Notable tracks include an animated take on the "Wheel of Fortune" theme song, "Changing Keys," and a dense solo piano version of Earth, Wind & Fire's "Fantasy." The album also features interpretations of jazz standards like Duke Ellington's "In A Sentimental Mood" and a medley of Thelonious Monk tunes ("Monk's Mood" / "Ask Me Now").
+
+Fortner's original pieces include the Monk-esque "Barbra's Strut," the Latin-inspired "New Port," and "Elegy For Clyde Kerr Jr.," a tribute to his high school teacher and mentor. The album showcases Fortner's versatility, drawing on the history of pianism while maintaining his unique voice and agile interplay with his trio."''
