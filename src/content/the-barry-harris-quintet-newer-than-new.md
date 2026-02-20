@@ -4,7 +4,7 @@ title: The Barry Harris Quintet - Newer Than New
 pubDate: 2026-02-20
 artist: The Barry Harris Quintet
 label: Riverside
-year: 1961-09-28
+year: 1961
 tags:
   - Jazz
   - Jazz Instrument
@@ -30,5 +30,3 @@ credits:
   - name: Orrin Keepnews
     instrument: Producer
 ---
-
-Newer Than New is an album by pianist Barry Harris recorded on September 28, 1961, and released in 1961 on the Riverside label. The album features a quintet with Lonnie Hillyer on trumpet, Charles McPherson on alto saxophone, Ernie Farrow on bass, and Clifford Jarvis on drums. Allmusic awarded the album 4½ stars, with Ronny D. Lankforth, Jr. stating that 'the music still sounds fresh and exciting... Jazz styles, like all styles, come and go, but great music like Newer Than New transcends styles'.
