@@ -1,19 +1,17 @@
 ---
 layout: ../layouts/Record.astro
-title: Sullivan Fortner - Moments Preserved
+title: Moments Preserved
 pubDate: 2026-02-20
 artist: Sullivan Fortner
 label: Impulse! Records
 year: 2018
 tags:
-  - Jazz
-  - Post-bop
-  - Contemporary Jazz
+  - piano
 permalink: https://jazztips.se/sullivan-fortner-moments-preserved/
 spotify: https://open.spotify.com/album/6BJlE8waleuTEIuzcYqd4Q
 tidal: https://tidal.com/mix/0003df23518ed9312c5b68ecee49ed
 image: https://storage.highresaudio.com/2018/05/30/wyimmc-momentspre-master.jpg
-apple: https://music.apple.com/jp/album/moments-preserved/1370838437
+apple: https://embed.music.apple.com/jp/album/moments-preserved/1370838437
 qobuz: https://www.qobuz.com/us-en/album/moments-preserved-sullivan-fortner/vvgh11axgxisc
 credits:
   - name: Sullivan Fortner
