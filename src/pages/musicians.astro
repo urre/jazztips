@@ -2,48 +2,33 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
-import Button from "@components/Button.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
+
 const records = await getCollection("records");
 
-// Extract all musicians and their instruments from records
 type Musician = {
   name: string;
   instrument: string;
-  albums: Array<{
-    title: string;
-    artist: string;
-    slug: string;
-  }>;
+  albumCount: number;
 };
 
-// Collect all musicians
 const allMusicians: Musician[] = [];
 
 records.forEach((record) => {
   if (record.data.credits && Array.isArray(record.data.credits)) {
     record.data.credits.forEach((credit) => {
       if (credit.name && credit.instrument) {
-        // Check if this musician already exists in our collection
-        const existingMusician = allMusicians.find(
+        const existing = allMusicians.find(
           (m) => m.name === credit.name && m.instrument === credit.instrument
         );
-        const albumInfo = {
-          title: record.data.title,
-          artist: record.data.artist,
-          slug: record.id,
-        };
-
-        if (existingMusician) {
-          // Add this album to the existing musician's albums
-          existingMusician.albums.push(albumInfo);
+        if (existing) {
+          existing.albumCount++;
         } else {
-          // Add a new musician entry
           allMusicians.push({
             name: credit.name,
             instrument: credit.instrument,
-            albums: [albumInfo],
+            albumCount: 1,
           });
         }
       }
@@ -51,132 +36,500 @@ records.forEach((record) => {
   }
 });
 
-// Sort musicians alphabetically by name
 allMusicians.sort((a, b) => a.name.localeCompare(b.name));
 
-// Get unique instruments for filtering
 const instruments = [
-  ...new Set(allMusicians.map((musician) => musician.instrument)),
+  ...new Set(allMusicians.map((m) => m.instrument)),
 ].sort();
+
+// Stats
+const totalMusicians = allMusicians.length;
+const totalInstruments = instruments.length;
+const topMusicians = [...allMusicians]
+  .sort((a, b) => b.albumCount - a.albumCount)
+  .slice(0, 12);
+const maxAlbums = topMusicians[0]?.albumCount || 1;
+
+const instrumentStats = instruments
+  .filter((i) => i !== "-")
+  .map((instrument) => ({
+    name: instrument,
+    count: allMusicians.filter((m) => m.instrument === instrument).length,
+  }))
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 10);
+const maxInstrumentCount = instrumentStats[0]?.count || 1;
+
+const mostFeatured = topMusicians[0];
+
+// Group musicians by instrument, sorted by most musicians first
+const musiciansByInstrument = instruments
+  .filter((i) => i !== "-")
+  .map((instrument) => ({
+    instrument,
+    musicians: allMusicians.filter((m) => m.instrument === instrument),
+  }))
+  .sort((a, b) => b.musicians.length - a.musicians.length);
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={`Musicians — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
     <main>
-      <section>
+      <section class="page-header">
         <h1>Musicians</h1>
-        <p>Click a musician to see corresponding Jazztips albums</p>
-        <h2><span class="pill">{allMusicians.length}</span> musicians found</h2>
-
-        <div class="filter-container">
-          <select id="instrument-filter">
-            <option value="all">All instruments</option>
-            {
-              instruments.map((instrument) => (
-                <option value={instrument}>{instrument}</option>
-              ))
-            }
-          </select>
-          <span id="clear-filter">
-            <Button href="#">Clear</Button>
-          </span>
-        </div>
-
-        <ul class="regular-list">
-          {
-            instruments
-              .filter((instrument) => instrument !== "-")
-              .map((instrument) => {
-                const musiciansForInstrument = allMusicians.filter(
-                  (musician) => musician.instrument === instrument
-                );
-                return (
-                  <li class="instrument-section" data-instrument={instrument}>
-                    <h2>{instrument}</h2>
-                    <span class="pill">
-                      {musiciansForInstrument.length} musician
-                      {musiciansForInstrument.length > 1 ? "s" : ""}
-                    </span>
-                    <ul class="regular-list">
-                      {musiciansForInstrument.map((musician) => (
-                        <li
-                          class="musician-item"
-                          data-instrument={musician.instrument}
-                        >
-                          <a
-                            href={`${Astro.request.url}/?query=${musician.name}`}
-                          >
-                            {musician.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                );
-              })
-          }
-        </ul>
+        <p>The talented people behind the music — explore who plays on what.</p>
       </section>
 
-      <style>
-        .hidden {
-          display: none !important;
+      <!-- Stats grid -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">{totalMusicians}</span>
+          <span class="stat-label">Musicians</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">{totalInstruments}</span>
+          <span class="stat-label">Instruments</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">{records.length}</span>
+          <span class="stat-label">Records</span>
+        </div>
+        <div class="stat-card stat-card--highlight">
+          <span class="stat-number">{mostFeatured?.albumCount}</span>
+          <span class="stat-label">
+            Most featured: <strong>{mostFeatured?.name}</strong>
+          </span>
+        </div>
+      </section>
+
+      <!-- Charts -->
+      <section class="charts-section">
+        <div class="chart-block">
+          <h2>Top musicians by appearances</h2>
+          <div class="bar-chart">
+            {
+              topMusicians.map((musician) => (
+                <a href={`/musicians?query=${encodeURIComponent(musician.name)}`} class="bar-row">
+                  <span class="bar-label">{musician.name}</span>
+                  <div class="bar-track">
+                    <div
+                      class="bar-fill"
+                      style={`width: ${(musician.albumCount / maxAlbums) * 100}%`}
+                    />
+                  </div>
+                  <span class="bar-value pill">{musician.albumCount}</span>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="chart-block">
+          <h2>Top instruments</h2>
+          <div class="bar-chart">
+            {
+              instrumentStats.map((stat) => (
+                <div class="bar-row">
+                  <span class="bar-label">{stat.name}</span>
+                  <div class="bar-track">
+                    <div
+                      class="bar-fill bar-fill--alt"
+                      style={`width: ${(stat.count / maxInstrumentCount) * 100}%`}
+                    />
+                  </div>
+                  <span class="bar-value pill">{stat.count}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      <!-- Filter + search -->
+      <section class="filter-section">
+        <h2>Browse musicians</h2>
+        <div class="filter-row">
+          <input
+            type="search"
+            id="musician-search"
+            placeholder="Search by name…"
+            autocomplete="off"
+          />
+          <select id="instrument-filter">
+            <option value="all">All instruments</option>
+            {instruments.map((i) => <option value={i}>{i}</option>)}
+          </select>
+          <select id="sort-order">
+            <option value="count">Most musicians first</option>
+            <option value="alpha">A–Z</option>
+          </select>
+          <button id="clear-filter" class="clear-btn">Clear</button>
+        </div>
+        <p id="result-count" class="result-count"></p>
+      </section>
+
+      <!-- Musician listing -->
+      <section class="musicians-listing" id="musicians-listing">
+        {
+          musiciansByInstrument.map(({ instrument, musicians }) => (
+            <div
+              class="instrument-group"
+              data-instrument={instrument}
+              data-count={musicians.length}
+            >
+              <h3 class="instrument-heading">
+                {instrument}
+                <span class="pill">{musicians.length}</span>
+              </h3>
+              <div class="musician-cards">
+                {musicians.map((musician) => (
+                  <a
+                    href={`/musicians?query=${encodeURIComponent(musician.name)}`}
+                    class="musician-card"
+                    data-name={musician.name.toLowerCase()}
+                    data-instrument={musician.instrument}
+                  >
+                    <span class="musician-name">{musician.name}</span>
+                    <span class="pill">{musician.albumCount}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))
         }
-        .instrument-section {
-          display: block;
-        }
-      </style>
-
-      <script>
-        // Client-side filtering
-        document.addEventListener("DOMContentLoaded", () => {
-          const filterSelect = document.getElementById(
-            "instrument-filter"
-          ) as HTMLSelectElement;
-          const clearButton = document.getElementById(
-            "clear-filter"
-          ) as HTMLButtonElement;
-          const instrumentSections = document.querySelectorAll(
-            ".instrument-section"
-          );
-
-          if (filterSelect) {
-            filterSelect.addEventListener("change", () => {
-              const selectedInstrument = filterSelect.value;
-
-              instrumentSections.forEach((section) => {
-                const instrument =
-                  section.getAttribute("data-instrument") || "";
-
-                if (
-                  selectedInstrument === "all" ||
-                  instrument === selectedInstrument
-                ) {
-                  section.classList.remove("hidden");
-                } else {
-                  section.classList.add("hidden");
-                }
-              });
-            });
-          }
-
-          if (clearButton && filterSelect) {
-            clearButton.addEventListener("click", (e) => {
-              e.preventDefault();
-              filterSelect.value = "all";
-              instrumentSections.forEach((section) => {
-                section.classList.remove("hidden");
-              });
-            });
-          }
-        });
-      </script>
+        <p id="no-results" class="no-results hidden">No musicians found.</p>
+      </section>
     </main>
     <Footer />
   </body>
 </html>
+
+<style>
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  /* Stats */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat-card {
+    background: white;
+    border: 1px solid var(--grey-subtle);
+    border-radius: var(--border-radius);
+    padding: 1.25rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .stat-card--highlight {
+    border-color: var(--profile);
+    background: color-mix(in srgb, var(--profile) 8%, white);
+  }
+
+  .stat-number {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    line-height: 1;
+    color: var(--profile);
+    font-weight: bold;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    color: var(--grey);
+  }
+
+  /* Charts */
+  .charts-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (min-width: 900px) {
+    .charts-section {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .chart-block {
+    background: white;
+    border: 1px solid var(--grey-subtle);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+  }
+
+  .chart-block h2 {
+    margin-bottom: 1.25rem;
+    color: var(--grey);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+
+  .bar-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .bar-row {
+    display: grid;
+    grid-template-columns: 10rem 1fr 2.5rem;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .bar-row:hover .bar-label {
+    color: var(--profile);
+  }
+
+  @media (max-width: 600px) {
+    .bar-row {
+      grid-template-columns: 7rem 1fr 2rem;
+    }
+  }
+
+  .bar-label {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    transition: color 150ms;
+  }
+
+  .bar-track {
+    background: var(--grey-subtle);
+    border-radius: 4px;
+    height: 10px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--profile);
+    border-radius: 4px;
+  }
+
+  .bar-fill--alt {
+    background: color-mix(in srgb, var(--profile) 60%, #6b7280);
+  }
+
+  .bar-value {
+    font-size: 0.75rem;
+    text-align: right;
+  }
+
+  /* Filter */
+  .filter-section {
+    margin-bottom: 2rem;
+  }
+
+  .filter-section h2 {
+    margin-bottom: 1rem;
+  }
+
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .filter-row input[type="search"] {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .filter-row select {
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--grey-subtle);
+    background: white;
+    cursor: pointer;
+  }
+
+  .clear-btn {
+    padding: 0.35rem 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--grey-subtle);
+    background: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .clear-btn:hover {
+    border-color: var(--profile);
+    color: var(--profile);
+  }
+
+  .result-count {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--grey);
+    min-height: 1.4em;
+  }
+
+  /* Listing */
+  .musicians-listing {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .instrument-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--grey-subtle);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .musician-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.35rem;
+  }
+
+  .musician-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: white;
+    border: 1px solid var(--grey-subtle);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 150ms;
+  }
+
+  .musician-card:hover {
+    border-color: var(--profile);
+    color: var(--profile);
+  }
+
+  .musician-name {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .no-results {
+    color: var(--grey);
+    font-style: italic;
+    padding: 2rem 0;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("musician-search") as HTMLInputElement;
+    const filterSelect = document.getElementById("instrument-filter") as HTMLSelectElement;
+    const sortSelect = document.getElementById("sort-order") as HTMLSelectElement;
+    const clearBtn = document.getElementById("clear-filter") as HTMLButtonElement;
+    const resultCount = document.getElementById("result-count") as HTMLElement;
+    const noResults = document.getElementById("no-results") as HTMLElement;
+    const listing = document.getElementById("musicians-listing") as HTMLElement;
+    const instrumentGroups = Array.from(
+      document.querySelectorAll<HTMLElement>(".instrument-group")
+    );
+
+    function applySort() {
+      const order = sortSelect.value;
+      const sorted = [...instrumentGroups].sort((a, b) => {
+        if (order === "count") {
+          return Number(b.dataset.count) - Number(a.dataset.count);
+        }
+        return (a.dataset.instrument || "").localeCompare(b.dataset.instrument || "");
+      });
+      sorted.forEach((group) => listing.appendChild(group));
+      // keep no-results at end
+      const nr = document.getElementById("no-results");
+      if (nr) listing.appendChild(nr);
+    }
+
+    function update() {
+      const query = searchInput.value.trim().toLowerCase();
+      const instrument = filterSelect.value;
+      let visible = 0;
+
+      instrumentGroups.forEach((group) => {
+        const groupInstrument = group.dataset.instrument || "";
+        const instrumentMatch = instrument === "all" || groupInstrument === instrument;
+
+        if (!instrumentMatch) {
+          group.classList.add("hidden");
+          return;
+        }
+
+        const cards = group.querySelectorAll<HTMLElement>(".musician-card");
+        let groupVisible = 0;
+
+        cards.forEach((card) => {
+          const name = card.dataset.name || "";
+          const nameMatch = !query || name.includes(query);
+          if (nameMatch) {
+            card.classList.remove("hidden");
+            groupVisible++;
+            visible++;
+          } else {
+            card.classList.add("hidden");
+          }
+        });
+
+        group.classList.toggle("hidden", groupVisible === 0);
+      });
+
+      noResults.classList.toggle("hidden", visible > 0);
+      resultCount.textContent =
+        query || instrument !== "all"
+          ? `${visible} musician${visible !== 1 ? "s" : ""} found`
+          : "";
+    }
+
+    // Pre-fill from URL param
+    const urlQuery = new URLSearchParams(window.location.search).get("query");
+    if (urlQuery) {
+      searchInput.value = urlQuery;
+      update();
+    }
+
+    searchInput?.addEventListener("input", update);
+    filterSelect?.addEventListener("change", update);
+    sortSelect?.addEventListener("change", () => {
+      applySort();
+      update();
+    });
+
+    clearBtn?.addEventListener("click", () => {
+      searchInput.value = "";
+      filterSelect.value = "all";
+      sortSelect.value = "count";
+      applySort();
+      update();
+    });
+  });
+</script>
