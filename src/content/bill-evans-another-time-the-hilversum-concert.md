@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Record.astro
-title: Another Time: The Hilversum Concert
+title: "Another Time: The Hilversum Concert"
 pubDate: 2026-02-23
 artist: Bill Evans
 label: Resonance Records
@@ -13,7 +13,7 @@ tags:
 permalink: https://jazztips.se/bill-evans-another-time-the-hilversum-concert/
 spotify: https://open.spotify.com/album/5Mb1e38JMVUFpDo3JKhcHN
 tidal: https://tidal.com/browse/album/72667104
-image: https://i.discogs.com/jqCOD_c6VvT5FQjCf_OrSys01YtBGVamjPW8lnFQlHE/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGABYXNlLWlt/YWdlcy9SLTEwMTMw/NTQwLTE1NzgzMTA4/MjctMTY0OS5qcGVn.jpeg
+image: https://f4.bcbits.com/img/a3616328940_16.jpg
 apple: https://music.apple.com/co/album/another-time-the-hilversum-concert-live/1226876072
 qobuz: https://www.qobuz.com/ca-en/album/another-time-the-hilversum-concert-with-eddie-gomez-jack-dejohnette-bill-evans-feat-eddie-gomez-jack-dejohnette/0881034189523
 credits:
