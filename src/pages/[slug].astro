@@ -4,7 +4,7 @@ import Record from "../layouts/Record.astro";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("records");
+  const posts = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
   return posts.map((post) => ({
     params: { slug: post.id },
     props: post,

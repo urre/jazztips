@@ -10,7 +10,7 @@ import RecordInfo from "@components/record/RecordInfo.astro";
 import Button from "@components/Button.astro";
 import { getCollection } from "astro:content";
 
-const records = (await getCollection("records")).sort(
+const records = (await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft)).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---

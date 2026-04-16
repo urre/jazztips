@@ -5,7 +5,7 @@ import Header from "../../components/Header.astro";
 import { getCollection } from "astro:content";
 
 // Get all posts from the collection
-const records = await getCollection("records"); // or whatever your collection name is
+const records = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 
 // Extract tags from post data instead of frontmatter
 const tags = [...new Set(records.map((record) => record.data.tags).flat())];

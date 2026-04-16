@@ -11,7 +11,7 @@ export interface Props {
 const { musicians, postId } = Astro.props;
 
 // Get all records
-const allRecords = await getCollection("records");
+const allRecords = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 
 // Find records where any of our credits (by name) appear, excluding the current post
 const appearsOn = musicians

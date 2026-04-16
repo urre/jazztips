@@ -6,7 +6,7 @@ import optimizeImage from "@utils/optimizeImage";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const allPosts = await getCollection("records");
+  const allPosts = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 
   const uniqueTags = [
     ...new Set(allPosts.map((post) => post.data.tags).flat()),
