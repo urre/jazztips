@@ -2,7 +2,7 @@
 import Search from "./Search";
 import { getCollection } from "astro:content";
 
-const records = await getCollection("records");
+const records = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 ---
 
 <Search client:load searchList={records} />

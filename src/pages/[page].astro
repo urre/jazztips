@@ -9,7 +9,7 @@ import RecordCover from "@components/record/RecordCover.astro";
 import { getCollection } from "astro:content";
 
 export async function getStaticPaths({ paginate }) {
-  const allPosts = await getCollection("records");
+  const allPosts = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 
   const sortedPosts = allPosts
     .map((post) => ({

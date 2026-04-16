@@ -4,6 +4,10 @@
     "records": {
       "type": "object",
       "properties": {
+        "draft": {
+          "type": "boolean",
+          "default": false
+        },
         "title": {
           "type": "string"
         },

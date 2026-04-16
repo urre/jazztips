@@ -6,6 +6,7 @@ const records = defineCollection({
 	loader: glob({ base: './src/content/', pattern: '**/*.{md,mdx}' }),
 
 	schema: z.object({
+		draft: z.boolean().default(false),
 		title: z.string(),
     artist: z.string(),
 		pubDate: z.coerce.date(),
