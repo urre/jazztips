@@ -3,28 +3,25 @@ layout: ../layouts/Record.astro
 title: Tokyo
 draft: true
 pubDate: 2026-04-17
-artist: Brian Blade
+artist: Brian Blade, Wolfgang Muthspiel, Scott Colley
 label: ECM Records
-year: 2023
+year: 2025
 tags:
   - Jazz
+  - Contemporary Jazz
 permalink: https://jazztips.se/brian-blade-tokyo/
-spotify: https://open.spotify.com/album/4zR22xnwshsV7Muly7KDLl
+spotify: https://open.spotify.com/album/68lPlEz1PvticlwgS0aznV
 tidal: https://tidal.com/album/461568722
 image: https://e.snmc.io/i/1200/s/1f82d7017180da85048d846a4dbe140a/13709984
-apple: https://music.apple.com/cl/album/tokyo/1827925965
+apple: https://music.apple.com/de/album/tokyo/1827925965
 qobuz: https://www.qobuz.com/us-en/album/tokyo-brian-blade-scott-colley-wolfgang-muthspiel/sbttnc1gj6p0a
 credits:
+  - name: Scott Colley
+    instrument: Double Bass
   - name: Brian Blade
     instrument: Drums
   - name: Wolfgang Muthspiel
-    instrument: Guitar
-  - name: Scott Colley
-    instrument: Bass
+    instrument: Guitars
 ---
 
-Wolfgang Muthspiel's album 'Tokyo' features a trio with Scott Colley on bass and Brian Blade on drums. The album includes compositions by Muthspiel and covers such as Keith Jarrett's 'Lisbon Stomp' and Paul Motian's 'Abacus'. The music explores intricate harmonies and rhythmic interplay, showcasing the musicians' improvisational skills.
-
-The album is characterized by a subtle and refreshing listening experience, drawing comparisons to classic ECM guitar albums from the 70s, 80s, and 90s by artists like Pat Metheny, Mick Goodrick, John Abercrombie, and Ralph Towner. It balances complex harmonic structures with appealing melodies and rhythmic ideas.
-
-Key tracks like 'Pradela' highlight Muthspiel's direct thematic approach, while 'Flight' explores drifting melodies and rhythmic figures. 'Roll' offers a folk-tinged ensemble blues, and 'Christa’s Dream' presents an atmospheric journey with tremolo-soaked guitar chords. The album emphasizes genuine experimentation and interaction among the trio members.
+Brian Blade's album "Tokyo" features Wolfgang Muthspiel on guitars and Scott Colley on double bass. The album was recorded in October 2024 at Studio Dede in Tokyo and was produced by Manfred Eicher. It was released on ECM Records in 2025 and includes contemporary jazz tracks.
