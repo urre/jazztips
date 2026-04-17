@@ -44,6 +44,13 @@ const { link, cover, title, artist } = Astro.props;
     flex-direction: column;
     gap: 0.25rem;
 
+    span:first-child {
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
     span:nth-child(2) {
       color: grey;
     }

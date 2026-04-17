@@ -15,18 +15,17 @@ export interface Props {
 }
 
 const { spotify, apple, tidal, qobuz, cover, artist, title } = Astro.props;
+const count = [tidal, apple, spotify, qobuz].filter(Boolean).length;
 ---
 
 <fieldset>
   <legend>Listen</legend>
 
-  <div class="embeds">
+  <div class:list={["embeds", { "two-col": count > 3 }]}>
     {
       tidal && (
         <div>
-          <h3>
-            TIDAL <HiResIcon />
-          </h3>
+          <h3>TIDAL</h3>
           <Tidal tidal={tidal} />
         </div>
       )
@@ -34,9 +33,7 @@ const { spotify, apple, tidal, qobuz, cover, artist, title } = Astro.props;
     {
       apple && (
         <div>
-          <h3>
-            Apple Music <HiResIcon />
-          </h3>
+          <h3>Apple Music</h3>
           <Apple apple={apple} />
         </div>
       )
@@ -53,9 +50,7 @@ const { spotify, apple, tidal, qobuz, cover, artist, title } = Astro.props;
     {
       qobuz && (
         <div>
-          <h3>
-            Qobuz <HiResIcon />
-          </h3>
+          <h3>Qobuz</h3>
           <Qobuz link={qobuz} artist={artist} title={title} cover={cover} />
         </div>
       )
@@ -65,12 +60,12 @@ const { spotify, apple, tidal, qobuz, cover, artist, title } = Astro.props;
 
 <style>
   .embeds {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--fluid-gap) * 1.5);
   }
 
-  .embeds div {
-    flex: 0 0 25%;
+  .embeds.two-col {
+    grid-template-columns: repeat(2, 1fr);
   }
 </style>
