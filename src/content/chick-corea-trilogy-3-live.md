@@ -1,7 +1,6 @@
 ---
 layout: ../layouts/Record.astro
 title: Trilogy 3 (Live)
-draft: true
 pubDate: 2026-04-17
 artist: Chick Corea
 label: Candid Records
@@ -11,9 +10,9 @@ tags:
   - New York
 permalink: https://jazztips.se/chick-corea-trilogy-3-live/
 spotify: https://open.spotify.com/album/1TfKOn7USTqlVKw00xSGiy
-tidal: https://stage.tidal.com/album/503045077
-image: 
-apple: https://music.apple.com/fr/album/trilogy-3-live/1881505287
+tidal: https://tidal.com/browse/album/503045077
+image: https://1265745076.rsc.cdn77.org/1024/jpg/250578-chick-corea-trio-trilogy-3-LP-67b4c319ec71d.jpg
+apple: https://embed.music.apple.com/fr/album/trilogy-3-live/1881505287
 qobuz: https://www.qobuz.com/us-en/album/trilogy-3-chick-corea-christian-mcbride-brian-blade/qztbvjp9hfmaa
 credits:
   - name: Chick Corea
