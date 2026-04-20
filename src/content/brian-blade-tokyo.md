@@ -11,7 +11,7 @@ tags:
 permalink: https://jazztips.se/brian-blade-tokyo/
 spotify: https://open.spotify.com/album/68lPlEz1PvticlwgS0aznV
 tidal: https://tidal.com/browse/album/461568722
-image: https://e.snmc.io/i/1200/s/1f82d7017180da85048d846a4dbe140a/13709984
+image: https://m.media-amazon.com/images/I/81VZ2HbQKqL._UF1000,1000_QL80_.jpg
 apple: https://embed.music.apple.com/de/album/tokyo/1827925965
 qobuz: https://www.qobuz.com/us-en/album/tokyo-brian-blade-scott-colley-wolfgang-muthspiel/sbttnc1gj6p0a
 credits:
