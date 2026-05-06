@@ -1,7 +1,6 @@
 ---
 layout: ../layouts/Record.astro
 title: Kind of Now - The Pulse of Miles Davis
-draft: true
 pubDate: 2026-05-06
 artist: Gregory Hutchinson
 label: Warner Music
