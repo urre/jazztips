@@ -1,12 +1,12 @@
 ---
 name: jazztips
-description: Create a Jazztips record markdown file from "Artist - Album" input. Searches the web for album metadata, cover art, and streaming links (Spotify/Tidal/Apple/Qobuz), generates Astro frontmatter, writes the file under src/content/, and commits & pushes. Triggers on /jazztips or requests like "add Artist - Album to jazztips".
+description: Create a Jazztips record markdown file from "Artist - Album" input. Searches the web for album metadata, cover art, and streaming links (Spotify/Tidal/Apple/Qobuz), generates Astro frontmatter, and writes the file under src/content/ (leaves it unstaged for the user to commit). Triggers on /jazztips or requests like "add Artist - Album to jazztips".
 user_invocable: true
 ---
 
 # Jazztips Record Creator
 
-Replaces the n8n "Jazztips Record Creator Agent" workflow. Given `Artist - Album`, produce one markdown file under `src/content/<slug>.md` in this repo and push it to `origin`.
+Replaces the n8n "Jazztips Record Creator Agent" workflow. Given `Artist - Album`, produce one markdown file under `src/content/<slug>.md` in this repo. The user commits and pushes themselves.
 
 ## Configuration
 
@@ -112,19 +112,7 @@ node "$CLAUDE_PROJECT_DIR/.claude/skills/jazztips/build-markdown.js" < /tmp/jazz
 
 It prints `{"relPath": "src/content/<slug>.md", "markdown": "..."}` on stdout. Use the `Write` tool to write `markdown` to `$CLAUDE_PROJECT_DIR/<relPath>`.
 
-### Step 5 — Commit & push
-
-In `$CLAUDE_PROJECT_DIR`:
-
-```bash
-git checkout <BRANCH>
-git pull --ff-only
-git add src/content/<slug>.md
-git commit -m "Add record: <Artist> - <Album>"
-git push origin <BRANCH>
-```
-
-Report the commit SHA and the file path back to the user.
+Leave the file unstaged — the user will commit and push themselves. Report the file path back to the user.
 
 ## Field rules (must hold)
 
