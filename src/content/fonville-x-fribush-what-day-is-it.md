@@ -1,7 +1,6 @@
 ---
 layout: ../layouts/Record.astro
 title: What Day Is It
-draft: true
 pubDate: 2026-05-06
 artist: Fonville x Fribush
 label: WarHen Records
