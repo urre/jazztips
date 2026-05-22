@@ -10,7 +10,7 @@ tags:
   - Smooth Jazz
   - Contemporary Jazz
 permalink: https://jazztips.se/randy-brecker-espirito/
-image: https://srgstore.com/cdn/shop/files/album_1024x1024@2x.jpg
+image: https://srgstore.com/cdn/shop/files/album_800x.jpg
 apple: https://embed.music.apple.com/us/album/esp%C3%ADrito/1882853654
 credits:
   - name: Randy Brecker
