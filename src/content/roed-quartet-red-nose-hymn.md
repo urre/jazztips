@@ -1,7 +1,6 @@
 ---
 layout: ../layouts/Record.astro
 title: Red Nose Hymn
-draft: true
 pubDate: 2026-05-22
 artist: Røed Quartet
 label: Sauajazz
@@ -10,8 +9,15 @@ tags:
   - Jazz
   - Modern Jazz
   - Nordic Jazz
+  - Norwegian Jazz
+  - Røed
+  - Saxophone
+  - Aksel Røed
 permalink: https://jazztips.se/roed-quartet-red-nose-hymn/
+spotify: https://open.spotify.com/album/5r8HHYBohpMnBwWWehsRxx
 image: https://f4.bcbits.com/img/a2716415084_10.jpg
+apple: https://embed.music.apple.com/us/album/red-nose-hymn/1893306334
+qobuz: https://www.qobuz.com/nz-en/album/red-nose-hymn-roed-quartet/i6fisjvdlba0p
 credits:
   - name: Aksel Røed
     instrument: Saxophone
