@@ -39,7 +39,12 @@ From the results, extract (set any missing field to `null`, never omit):
 
 - `release_date` — `YYYY-MM-DD` if available, else `YYYY`
 - `description` — 2–4 paragraph **neutral, factual** summary. No opinions.
-- `tags` — genres only, e.g. `["Jazz", "Post-Bop"]`. **Never** include years.
+- `tags` — **5–8 specific descriptors** that mix broad and narrow signal. Always start with `"Jazz"`, then layer in more specific ones. Include at minimum:
+  - 1–2 **subgenres** (e.g. `"Post-Bop"`, `"Modal Jazz"`, `"Smooth Jazz"`, `"Free Jazz"`, `"Nordic Jazz"`, `"Latin Jazz"`, `"ECM Jazz"`, `"Spiritual Jazz"`)
+  - 1 **leader's surname or band-distinctive name** as a one-word tag (e.g. `"Brecker"` for a Randy Brecker album, `"Coltrane"`, `"Røed"`, `"Mehldau Trio"`). This is non-negotiable — it's what makes records cross-discoverable across an artist's catalog.
+  - 1 **lead instrument or ensemble type** (e.g. `"Trumpet"`, `"Piano Trio"`, `"Saxophone Quartet"`, `"Big Band"`, `"Vocal Jazz"`)
+  - Optionally 1–2 **notable collaborators' names** when they're a major presence (sideman of comparable renown to the leader — e.g. `"Bill Frisell"`, `"Jeff Lorber"`), or a **nationality/scene tag** (e.g. `"Swedish Jazz"`, `"Norwegian Jazz"`)
+  - **Never** include years, the album name, or the label name (label has its own field).
 - `credits` — array of `{name, role}` for **principal musicians and their instruments only**.
   - **Exclude:** Recording Engineer, Mixing Engineer, Producer, Cover Design, Cover Photo, Arranger, Artwork.
 - `label` — record label
