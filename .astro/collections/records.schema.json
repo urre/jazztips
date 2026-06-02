@@ -1,102 +1,87 @@
 {
-  "$ref": "#/definitions/records",
-  "definitions": {
-    "records": {
-      "type": "object",
-      "properties": {
-        "draft": {
-          "type": "boolean",
-          "default": false
-        },
-        "title": {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "draft": {
+      "default": false,
+      "type": "boolean"
+    },
+    "title": {
+      "type": "string"
+    },
+    "artist": {
+      "type": "string"
+    },
+    "pubDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "label": {
+      "type": "string"
+    },
+    "year": {
+      "type": "number"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "spotify": {
+      "type": "string",
+      "format": "uri"
+    },
+    "tidal": {
+      "anyOf": [
+        {
           "type": "string"
         },
-        "artist": {
-          "type": "string"
-        },
-        "pubDate": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "integer",
-              "format": "unix-time"
-            }
-          ]
-        },
-        "label": {
-          "type": "string"
-        },
-        "year": {
+        {
           "type": "number"
-        },
-        "tags": {
-          "type": "array",
-          "items": {
+        }
+      ]
+    },
+    "apple": {
+      "type": "string",
+      "format": "uri"
+    },
+    "qobuz": {
+      "type": "string",
+      "format": "uri"
+    },
+    "credits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "instrument": {
             "type": "string"
           }
         },
-        "image": {
-          "type": "string",
-          "format": "uri"
-        },
-        "spotify": {
-          "type": "string",
-          "format": "uri"
-        },
-        "tidal": {
-          "type": [
-            "string",
-            "number"
-          ]
-        },
-        "apple": {
-          "type": "string",
-          "format": "uri"
-        },
-        "qobuz": {
-          "type": "string",
-          "format": "uri"
-        },
-        "credits": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "name": {
-                "type": "string"
-              },
-              "instrument": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "name",
-              "instrument"
-            ],
-            "additionalProperties": false
-          }
-        },
-        "$schema": {
-          "type": "string"
-        }
-      },
-      "required": [
-        "title",
-        "artist",
-        "pubDate",
-        "tags",
-        "image",
-        "credits"
-      ],
-      "additionalProperties": false
+        "required": [
+          "name",
+          "instrument"
+        ]
+      }
+    },
+    "$schema": {
+      "type": "string"
     }
   },
-  "$schema": "http://json-schema.org/draft-07/schema#"
+  "required": [
+    "title",
+    "artist",
+    "pubDate",
+    "tags",
+    "image",
+    "credits"
+  ]
 }

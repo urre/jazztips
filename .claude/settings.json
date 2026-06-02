@@ -17,7 +17,20 @@
       "Bash(ls:*)",
       "Bash(mkdir:*)",
       "Bash(mv:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(curl -s \"https://itunes.apple.com/search?term=Chris+Potter+Alive+With+Ghosts+Today&entity=album&limit=5\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(r.get\\('artistName'\\),'|',r.get\\('collectionName'\\),'|',r.get\\('collectionViewUrl'\\),'|',r.get\\('releaseDate'\\),'|',r.get\\('artworkUrl100'\\)\\) for r in d.get\\('results',[]\\)]\")",
+      "Bash(curl -s \"https://api.deezer.com/search/album?q=artist:%22Chris%20Potter%22%20album:%22Alive%20With%20Ghosts%20Today%22&limit=3\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(r.get\\('artist',{}\\).get\\('name'\\),'|',r.get\\('title'\\),'|',r.get\\('link'\\),'|',r.get\\('cover_xl'\\)\\) for r in d.get\\('data',[]\\)]\")",
+      "Bash(curl -s \"https://api.deezer.com/search/album?q=artist:%22R%C3%B8ed+Quartet%22+album:%22Red+Nose+Hymn%22&limit=3\")",
+      "Bash(curl -s \"https://listen.tidal.com/v1/search/albums?query=Chris+Potter+Alive+With+Ghosts+Today&limit=3&countryCode=US&token=CzET4vdadNUFQ5JU\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(r.get\\('artist',{}\\).get\\('name'\\),'|',r.get\\('title'\\),'|',r.get\\('id'\\)\\) for r in d.get\\('items',[]\\)]\")",
+      "Bash(curl -s -H \"User-Agent: Mozilla/5.0\" \"https://www.qobuz.com/api.json/0.2/album/search?query=R%C3%B8ed+Quartet+Red+Nose+Hymn&limit=3&app_id=950096963\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(r.get\\('artist',{}\\).get\\('name'\\),'|',r.get\\('title'\\),'|',r.get\\('id'\\),'|',r.get\\('url'\\)\\) for r in d.get\\('albums',{}\\).get\\('items',[]\\)]\")",
+      "Bash(curl -s \"https://itunes.apple.com/search?term=R%C3%B8ed+Quartet+Red+Nose+Hymn&entity=album&limit=3\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(r.get\\('artistName'\\),'|',r.get\\('collectionName'\\),'|',r.get\\('collectionViewUrl'\\),'|',r.get\\('releaseDate'\\)\\) for r in d.get\\('results',[]\\)]\")",
+      "Bash(python3 -c \"import sys,json; o=json.loads\\(sys.stdin.read\\(\\)\\); print\\(o['relPath']\\); print\\('---'\\); print\\(o['markdown']\\)\")",
+      "Edit(/.claude/skills/jazztips/**)"
     ]
   }
 }
