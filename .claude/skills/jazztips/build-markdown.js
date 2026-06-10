@@ -15,6 +15,16 @@ function safeUrl(u) {
   try { return new URL(u); } catch { return null; }
 }
 
+// Quote a YAML scalar when it contains characters that would otherwise be
+// reinterpreted (colon followed by space, leading indicators, etc.).
+function yamlScalar(s) {
+  if (s == null) return "";
+  const str = String(s);
+  const needsQuote = /[:#&*!|>'"%@`]/.test(str) || /^[-?]\s/.test(str) || /^\s|\s$/.test(str);
+  if (!needsQuote) return str;
+  return `"${str.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"`;
+}
+
 function normalizeTidal(url) {
   if (!url) return "";
   const u = safeUrl(url);
@@ -92,11 +102,11 @@ async function readStdin() {
 
   const fm = `---
 layout: ../layouts/Record.astro
-title: ${meta.album}
+title: ${yamlScalar(meta.album)}
 draft: true
 pubDate: ${pubDate}
-artist: ${meta.artist}
-label: ${meta.label ?? ""}
+artist: ${yamlScalar(meta.artist)}
+label: ${yamlScalar(meta.label ?? "")}
 year: ${year}
 tags:
 ${tagLines}
