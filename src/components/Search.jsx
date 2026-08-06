@@ -13,13 +13,17 @@ export default function Search({ searchList }) {
 
   // Update the URL when the query changes
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search);
+    const url = new URL(window.location.href);
     if (query) {
-      urlParams.set("query", query); // Update URL with the query
+      url.searchParams.set("query", query);
     } else {
-      urlParams.delete("query"); // Remove query parameter if it's empty
+      url.searchParams.delete("query");
     }
-    window.history.replaceState(null, "", "?" + urlParams.toString()); // Modify URL without reloading
+    // Only write when something actually changed, and keep the URL clean:
+    // no dangling "?" when there are no params left
+    if (url.href !== window.location.href) {
+      window.history.replaceState(null, "", url.href); // Modify URL without reloading
+    }
   }, [query]);
 
   const options = {
