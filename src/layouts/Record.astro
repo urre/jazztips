@@ -87,12 +87,12 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
 const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
 ---
 
-<html lang="en">
+<html lang="sv">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <BaseHead
       title={`${artist} - ${title}`}
-      description={description ?? `Album review for ${artist} - ${title}`}
+      description={description ?? `Skivtips: ${artist} – ${title}`}
       image={ogimage}
     />
   </head>
@@ -119,7 +119,7 @@ const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
           {
             updatedDate && (
               <div>
-                Last updated on <time>{updatedDate}</time>
+                Senast uppdaterad <time>{updatedDate}</time>
               </div>
             )
           }

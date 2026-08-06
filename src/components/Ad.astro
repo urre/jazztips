@@ -1,0 +1,168 @@
+---
+import appScreen from "../assets/jazzkonserter-app.webp";
+
+export interface Props {
+  href?: string;
+  label?: string;
+}
+
+const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
+---
+
+<style>
+  .ad {
+    container-type: inline-size;
+  }
+
+  .ad-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    /* Ends in the photo's own background colour so the image blends in */
+    background: linear-gradient(180deg, #ffffff 0%, #fbfafc 40%, #f2f0f3 100%);
+    box-shadow: rgba(99, 99, 99, 0.12) 0px 2px 10px 0px;
+    transition: box-shadow 200ms;
+  }
+
+  .ad-card:hover {
+    box-shadow: rgba(99, 99, 99, 0.22) 0px 6px 20px 0px;
+  }
+
+  .ad-card:focus-visible {
+    outline: none;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  .ad-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: calc(var(--fluid-gap) * 1.15);
+    padding-bottom: 0.9rem;
+  }
+
+  .ad-pill {
+    background-color: transparent;
+    border-color: var(--grey-light);
+    color: var(--grey);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.1rem 0.6rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .ad-title {
+    margin: 0;
+    font-size: clamp(1.15rem, 1.5vw, 1.5rem);
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+  }
+
+  .ad-text {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    letter-spacing: 0.02em;
+    color: var(--grey);
+  }
+
+  .ad-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: var(--profile);
+  }
+
+  .ad-cta svg {
+    width: 13px;
+    height: 13px;
+  }
+
+  .ad-card:hover .ad-cta {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .ad-screen {
+    position: relative;
+    margin: 0;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background-color: #f2f0f3;
+  }
+
+  @container (min-width: 380px) {
+    .ad-screen {
+      aspect-ratio: 4 / 3;
+    }
+  }
+
+  .ad-screen :global(img) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 82%;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    transform: translateX(-50%);
+    transition: transform 500ms ease;
+  }
+
+  .ad-card:hover .ad-screen :global(img) {
+    transform: translateX(-50%) translateY(-2%);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ad-card,
+    .ad-screen :global(img) {
+      transition: none;
+    }
+  }
+</style>
+
+<aside class="ad" aria-label="Annons">
+  <a class="ad-card" href={href} target="_blank" rel="sponsored noopener">
+    <div class="ad-body">
+      <span class="pill ad-pill">{label}</span>
+      <p class="ad-title">Alla jazzkonserter i Sverige på ett ställe</p>
+      <p class="ad-text">
+        Hundratals kommande konserter – filtrera på stad, scen och datum.
+      </p>
+      <span class="ad-cta">
+        jazzkonserter.se
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M7 17 17 7"></path>
+          <path d="M9 7h8v8"></path>
+        </svg>
+      </span>
+    </div>
+    <figure class="ad-screen">
+      <img
+        src={appScreen.src}
+        width={appScreen.width}
+        height={appScreen.height}
+        alt="Konsertlistan på jazzkonserter.se visad i en mobil"
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
+  </a>
+</aside>
