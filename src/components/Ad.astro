@@ -115,16 +115,11 @@ const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
     border: 0;
     border-radius: 0;
     transform: translateX(-50%);
-    transition: transform 500ms ease;
   }
 
-  .ad-card:hover .ad-screen :global(img) {
-    transform: translateX(-50%) translateY(-2%);
-  }
 
   @media (prefers-reduced-motion: reduce) {
-    .ad-card,
-    .ad-screen :global(img) {
+    .ad-card {
       transition: none;
     }
   }

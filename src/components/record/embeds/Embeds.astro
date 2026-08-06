@@ -88,4 +88,20 @@ const count = [tidal, apple, spotify, qobuz].filter(Boolean).length;
   .embeds :global(iframe) {
     max-width: 100%;
   }
+
+  /* Spotify's player is shorter than the others and brings no card of its
+     own, so give it a white frame that adds up to the same height */
+  .embeds :global(iframe[src*="spotify"]) {
+    box-sizing: content-box;
+    height: 84px;
+    /* more room above/below to centre the player, less on the sides so the
+       player itself does not get squeezed */
+    padding: 18px 12px;
+    /* the padding sits outside the content box, so leave room for it */
+    max-width: calc(100% - 24px);
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
 </style>
