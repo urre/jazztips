@@ -8,6 +8,7 @@ import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordCover from "@components/record/RecordCover.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
 import Button from "@components/Button.astro";
+import Ad from "@components/Ad.astro";
 import { getCollection } from "astro:content";
 
 const records = (await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft)).sort(
@@ -16,7 +17,7 @@ const records = (await getCollection("records", ({ data }) => import.meta.env.DE
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
@@ -24,29 +25,32 @@ const records = (await getCollection("records", ({ data }) => import.meta.env.DE
     <Header />
     <main>
       <section>
-        {
-          records.slice(0, 1).map((record) => (
-            <RecordLayout>
-              {record.data.image && (
-                <a href={record.id}>
-                  <RecordCover
-                    pulled={true}
-                    size="large"
-                    src={`${optimizeImage(record.data.image)}`}
-                    alt={`${record.data.artist} - ${record.data.title}`}
-                  />
-                </a>
-              )}
-              <RecordInfo
-                artist={record.data.artist}
-                title={record.data.title}
-                label={record.data.label}
-                year={record.data.year}
-                url={record.id}
-              />
-            </RecordLayout>
-          ))
-        }
+        <div class="hero">
+          {
+            records.slice(0, 1).map((record) => (
+              <RecordLayout>
+                {record.data.image && (
+                  <a href={record.id}>
+                    <RecordCover
+                      pulled={true}
+                      size="large"
+                      src={`${optimizeImage(record.data.image)}`}
+                      alt={`${record.data.artist} - ${record.data.title}`}
+                    />
+                  </a>
+                )}
+                <RecordInfo
+                  artist={record.data.artist}
+                  title={record.data.title}
+                  label={record.data.label}
+                  year={record.data.year}
+                  url={record.id}
+                />
+              </RecordLayout>
+            ))
+          }
+          <Ad />
+        </div>
         <ul>
           {
             records.slice(1, 24).map((record) => (
@@ -69,10 +73,43 @@ const records = (await getCollection("records", ({ data }) => import.meta.env.DE
           }
         </ul>
         <nav>
-          <Button href="/1">Archives</Button>
+          <Button href="/1">Arkiv</Button>
         </nav>
       </section>
     </main>
     <Footer />
+
+    <style>
+      .hero {
+        display: grid;
+        gap: calc(var(--gap) * 1.5);
+        margin-bottom: 10vmin;
+      }
+
+      /* RecordLayout brings its own bottom margin, the grid gap handles it here */
+      .hero :global(.record-layout) {
+        margin-bottom: 0;
+      }
+
+      .hero :global(.ad) {
+        width: 100%;
+      }
+
+      /* Full width on mobile, a card-sized block from tablet up */
+      @media (min-width: 768px) {
+        .hero :global(.ad) {
+          max-width: 420px;
+        }
+      }
+
+      /* Wide enough for the record and the ad to sit side by side */
+      @media (min-width: 1600px) {
+        .hero {
+          grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+          column-gap: calc(var(--fluid-gap) * 3);
+          align-items: start;
+        }
+      }
+    </style>
   </body>
 </html>

@@ -2,4 +2,4 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'Jazztips';
-export const SITE_DESCRIPTION = 'Jazz Music recommendations since 2010';
+export const SITE_DESCRIPTION = 'Jazztips och skivrekommendationer sedan 2010';

@@ -28,15 +28,15 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="sv">
   <head>
-    <BaseHead title={`${tag}`} description="Tag" />
+    <BaseHead title={`${tag}`} description="Tagg" />
   </head>
 
   <body>
     <Header />
     <main>
-      <h1>Tagged <em>{tag}</em></h1>
+      <h1>Taggat <em>{tag}</em></h1>
       <ul>
         {
           posts.map((record) => (

@@ -5,21 +5,56 @@ import SearchBar from "./SearchBar.astro";
 ---
 
 <header>
-  <h1>
-    <a href="/">
-      <img
-        src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
-        alt="Jazztips icon"
-      />
-      {SITE_TITLE}
-    </a>
-  </h1>
-  <nav>
-    <HeaderLink rel="tag" href="/1">Records</HeaderLink>
-    <HeaderLink rel="tag" href="/archives">Archive</HeaderLink>
-    <HeaderLink rel="tag" href="/musicians">Musicians</HeaderLink>
-    <HeaderLink rel="tag" href="/tags">Tags</HeaderLink>
-    <HeaderLink rel="tag" href="/about">About</HeaderLink>
+  <div class="brand">
+    <h1>
+      <a href="/">
+        <img
+          src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
+          alt="Jazztips ikon"
+        />
+        {SITE_TITLE}
+      </a>
+    </h1>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      id="nav-toggle"
+      aria-controls="site-nav"
+      aria-expanded="false"
+      aria-label="Öppna meny"
+    >
+      <span class="bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+
+  <nav id="site-nav" aria-label="Huvudmeny">
+    <HeaderLink rel="tag" href="/1">Skivor</HeaderLink>
+    <HeaderLink rel="tag" href="/archives">Arkiv</HeaderLink>
+    <HeaderLink rel="tag" href="/musicians">Musiker</HeaderLink>
+    <HeaderLink rel="tag" href="/tags">Taggar</HeaderLink>
+    <HeaderLink rel="tag" href="/about">Om</HeaderLink>
+    <HeaderLink rel="tag" href="https://jazzkonserter.se" target="_blank">
+      Jazzkonserter
+      <svg
+        class="external"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M7 17 17 7"></path>
+        <path d="M9 7h8v8"></path>
+      </svg>
+      <span class="visually-hidden">(extern länk)</span>
+    </HeaderLink>
     <SearchBar />
   </nav>
 </header>
@@ -34,12 +69,11 @@ import SearchBar from "./SearchBar.astro";
     padding-bottom: 2rem;
   }
 
-  @media (min-width: 768px) {
-    header {
-      padding-bottom: calc(var(--gap) * 1.5);
-      padding-top: calc(var(--gap) * 1.5);
-      flex-direction: row;
-    }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
   header nav {
@@ -80,10 +114,210 @@ import SearchBar from "./SearchBar.astro";
     height: 36px;
   }
 
+  header nav svg.external {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-left: 0.3rem;
+    vertical-align: baseline;
+    opacity: 0.45;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* Hamburger */
+  .nav-toggle {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    transition: box-shadow 150ms;
+  }
+
+  .nav-toggle:hover,
+  .nav-toggle:focus-visible {
+    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  .bars {
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 14px;
+  }
+
+  .bars span {
+    position: absolute;
+    left: 0;
+    height: 1.5px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #111;
+    transition: transform 200ms ease, opacity 150ms ease;
+  }
+
+  .bars span:nth-child(1) {
+    top: 0;
+  }
+
+  .bars span:nth-child(2) {
+    top: 6px;
+  }
+
+  .bars span:nth-child(3) {
+    top: 12px;
+  }
+
+  .nav-toggle[aria-expanded="true"] .bars span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] .bars span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle[aria-expanded="true"] .bars span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  /* Mobile menu panel */
+  @media (max-width: 767px) {
+    header nav {
+      display: none;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: 0.25rem;
+      padding: 0.75rem;
+      border-radius: var(--border-radius);
+      background-color: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.07);
+      box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+    }
+
+    header nav.open {
+      display: flex;
+      animation: nav-in 180ms ease-out;
+    }
+
+    /* Only the top level links, not the search results */
+    header nav.open > :global(a) {
+      display: block;
+      padding: 0.7rem 0.75rem;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+
+    header nav.open > :global(a:hover),
+    header nav.open > :global(a.active) {
+      background-color: var(--grey-subtle);
+      box-shadow: none;
+    }
+
+    header nav :global(.search) {
+      margin-top: 0.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--grey-subtle);
+    }
+
+    header nav :global(input[type="search"]) {
+      width: 100%;
+    }
+  }
+
   @media (min-width: 768px) {
+    header {
+      padding-bottom: calc(var(--gap) * 1.5);
+      padding-top: calc(var(--gap) * 1.5);
+      flex-direction: row;
+    }
+
+    .nav-toggle {
+      display: none;
+    }
+
     header img {
       width: 96px;
       height: 96px;
     }
   }
+
+  @keyframes nav-in {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    header nav.open {
+      animation: none;
+    }
+
+    .bars span {
+      transition: none;
+    }
+  }
 </style>
+
+<script>
+  const toggle = document.getElementById("nav-toggle");
+  const nav = document.getElementById("site-nav");
+
+  if (toggle && nav) {
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Stäng meny" : "Öppna meny");
+      nav.classList.toggle("open", open);
+    };
+
+    toggle.addEventListener("click", () => {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    // Clicking outside the menu closes it
+    document.addEventListener("click", (event) => {
+      const target = event.target as Node;
+      if (
+        toggle.getAttribute("aria-expanded") === "true" &&
+        !nav.contains(target) &&
+        !toggle.contains(target)
+      ) {
+        setOpen(false);
+      }
+    });
+
+    // Reset the state when growing past the mobile breakpoint
+    window.matchMedia("(min-width: 768px)").addEventListener("change", (event) => {
+      if (event.matches) setOpen(false);
+    });
+  }
+</script>

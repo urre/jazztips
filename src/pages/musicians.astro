@@ -73,36 +73,36 @@ const musiciansByInstrument = instruments
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
-    <BaseHead title={`Musicians — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+    <BaseHead title={`Musiker — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
   </head>
   <body>
     <Header />
     <main>
       <section class="page-header">
-        <h1>Musicians</h1>
-        <p>The talented people behind the music — explore who plays on what.</p>
+        <h1>Musiker</h1>
+        <p>De begåvade människorna bakom musiken – utforska vem som spelar på vad.</p>
       </section>
 
       <!-- Stats grid -->
       <section class="stats-grid">
         <div class="stat-card">
           <span class="stat-number">{totalMusicians}</span>
-          <span class="stat-label">Musicians</span>
+          <span class="stat-label">Musiker</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">{totalInstruments}</span>
-          <span class="stat-label">Instruments</span>
+          <span class="stat-label">Instrument</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">{records.length}</span>
-          <span class="stat-label">Records</span>
+          <span class="stat-label">Skivor</span>
         </div>
         <div class="stat-card stat-card--highlight">
           <span class="stat-number">{mostFeatured?.albumCount}</span>
           <span class="stat-label">
-            Most featured: <strong>{mostFeatured?.name}</strong>
+            Flest medverkanden: <strong>{mostFeatured?.name}</strong>
           </span>
         </div>
       </section>
@@ -110,7 +110,7 @@ const musiciansByInstrument = instruments
       <!-- Charts -->
       <section class="charts-section">
         <div class="chart-block">
-          <h2>Top musicians by appearances</h2>
+          <h2>Musiker med flest medverkanden</h2>
           <div class="bar-chart">
             {
               topMusicians.map((musician) => (
@@ -130,7 +130,7 @@ const musiciansByInstrument = instruments
         </div>
 
         <div class="chart-block">
-          <h2>Top instruments</h2>
+          <h2>Vanligaste instrumenten</h2>
           <div class="bar-chart">
             {
               instrumentStats.map((stat) => (
@@ -152,23 +152,23 @@ const musiciansByInstrument = instruments
 
       <!-- Filter + search -->
       <section class="filter-section">
-        <h2>Browse musicians</h2>
+        <h2>Bläddra bland musiker</h2>
         <div class="filter-row">
           <input
             type="search"
             id="musician-search"
-            placeholder="Search by name…"
+            placeholder="Sök på namn…"
             autocomplete="off"
           />
           <select id="instrument-filter">
-            <option value="all">All instruments</option>
+            <option value="all">Alla instrument</option>
             {instruments.map((i) => <option value={i}>{i}</option>)}
           </select>
           <select id="sort-order">
-            <option value="count">Most musicians first</option>
+            <option value="count">Flest musiker först</option>
             <option value="alpha">A–Z</option>
           </select>
-          <button id="clear-filter" class="clear-btn">Clear</button>
+          <button id="clear-filter" class="clear-btn">Rensa</button>
         </div>
         <p id="result-count" class="result-count"></p>
       </section>
@@ -202,7 +202,7 @@ const musiciansByInstrument = instruments
             </div>
           ))
         }
-        <p id="no-results" class="no-results hidden">No musicians found.</p>
+        <p id="no-results" class="no-results hidden">Inga musiker hittades.</p>
       </section>
     </main>
     <Footer />
@@ -506,7 +506,7 @@ const musiciansByInstrument = instruments
       noResults.classList.toggle("hidden", visible > 0);
       resultCount.textContent =
         query || instrument !== "all"
-          ? `${visible} musician${visible !== 1 ? "s" : ""} found`
+          ? `${visible} musiker hittades`
           : "";
     }
 

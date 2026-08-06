@@ -41,6 +41,6 @@ const { label, year, artist, title, url } = Astro.props;
     {label} ({year})
   </h2>
 
-  {Astro.url.pathname === "/" && <Button href={url}> Explore record</Button>}
+  {Astro.url.pathname === "/" && <Button href={url}> Utforska skivan</Button>}
   <slot />
 </div>

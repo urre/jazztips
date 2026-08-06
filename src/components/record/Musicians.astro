@@ -12,7 +12,7 @@ const { musicians } = Astro.props;
 ---
 
 <fieldset>
-  <legend>Musicians</legend>
+  <legend>Musiker</legend>
   <ul class="musicians">
     {
       musicians.map((musician: Musician) => (
@@ -22,15 +22,15 @@ const { musicians } = Astro.props;
 
             <div class="name-meta">
               <a href={`${Astro.request.url}/?query=${musician.name}`}>
-                <em>Search Jazztips →</em>
+                <em>Sök på Jazztips →</em>
               </a>
 
               <a
                 href={`https://www.discogs.com/search/?q=${musician.name}&type=artist`}
-                title={`Explore ${musician.name} on Discogs`}
+                title={`Utforska ${musician.name} på Discogs`}
                 target="_blank"
               >
-                <em>Search Discogs →</em>
+                <em>Sök på Discogs →</em>
               </a>
             </div>
           </div>

@@ -11,19 +11,19 @@ const records = await getCollection("records", ({ data }) => import.meta.env.DEV
 const tags = [...new Set(records.map((record) => record.data.tags).flat())];
 const uniqueTagCount = tags.length;
 
-const pageTitle = "Tag Index";
+const pageTitle = "Taggregister";
 ---
 
-<html lang="en">
+<html lang="sv">
   <head>
-    <BaseHead title={pageTitle} description="Tags" />
+    <BaseHead title={pageTitle} description="Taggar" />
   </head>
 
   <body>
     <Header />
     <main>
-      <h1>View content by Tags</h1>
-      <p>Currently <em>{uniqueTagCount}</em> tags</p>
+      <h1>Utforska efter taggar</h1>
+      <p>Just nu <em>{uniqueTagCount}</em> taggar</p>
       <ul class="tags">
         {
           tags
