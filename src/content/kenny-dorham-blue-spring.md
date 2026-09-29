@@ -14,7 +14,7 @@ tags:
   - Cannonball Adderley
 permalink: https://jazztips.se/kenny-dorham-blue-spring/
 spotify: https://open.spotify.com/album/56H3LPprhZdryW2mmIReTb
-image: https://upload.wikimedia.org/wikipedia/en/9/98/Blue_Spring_%28album%29.jpg
+image: https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/d8/b8/cf/d8b8cf6c-c9db-ad04-ca25-3bfe2f3d8e00/00025218613422.rgb.jpg/1400x1400bb.jpg
 apple: https://embed.music.apple.com/gb/album/blue-spring/567724348
 credits:
   - name: Kenny Dorham
