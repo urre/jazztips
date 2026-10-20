@@ -204,6 +204,8 @@ const donuts = [
   {
     title: "Musicians by instrument",
     caption: "Main instrument · click to filter",
+    total: musicians.length,
+    totalLabel: "musicians",
     slices: donut(instrumentSlices),
   },
   {
@@ -293,12 +295,10 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
                       />
                     ))}
                   </svg>
-                  {chart.total && (
-                    <span class="donut-center">
-                      <span class="donut-total">{chart.total.toLocaleString("en")}</span>
-                      <span class="donut-label">{chart.totalLabel}</span>
-                    </span>
-                  )}
+                  <span class="donut-center">
+                    <span class="donut-total">{chart.total.toLocaleString("en")}</span>
+                    <span class="donut-label">{chart.totalLabel}</span>
+                  </span>
                 </div>
                 <table class="legend">
                   <tbody>
