@@ -6,9 +6,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
 
 const records = await getCollection("records", ({ data }) => !data.draft);
-const musicians = new Set(
-  records.flatMap((r) => (r.data.credits ?? []).map((c) => c.name.trim().toLowerCase()))
-);
 const years = new Date().getFullYear() - 2015;
 ---
 
@@ -39,10 +36,6 @@ const years = new Date().getFullYear() - 2015;
           <div>
             <dt>Records</dt>
             <dd>{records.length}</dd>
-          </div>
-          <div>
-            <dt>Musicians</dt>
-            <dd>{musicians.size.toLocaleString("en")}</dd>
           </div>
           <div>
             <dt>Years</dt>
@@ -120,7 +113,7 @@ const years = new Date().getFullYear() - 2015;
 
   .stats {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
     width: 100%;
     margin: 2rem 0;
