@@ -117,6 +117,18 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
     transform: translateX(30%);
   }
 
+  /* Tablets have room for a bigger cover than phones */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .record-cover:has(img.image-lg) {
+      max-width: 400px;
+      aspect-ratio: 1 / 1;
+    }
+
+    .record-cover:has(img.image-lg) span {
+      opacity: 1;
+    }
+  }
+
   @media (min-width: 1200px) {
     .record-cover span {
       opacity: 1;

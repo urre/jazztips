@@ -47,11 +47,18 @@ const { musicians } = Astro.props;
 
     display: unset;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
     .musicians {
       display: flex;
       flex-wrap: wrap;
       gap: var(--gap);
+    }
+  }
+
+  /* Two columns on tablets, a bit narrower on desktop */
+  @media (min-width: 768px) {
+    .musician {
+      flex: 0 0 calc(50% - var(--gap));
     }
   }
 
