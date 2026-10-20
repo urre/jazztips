@@ -9,12 +9,12 @@ const { href } = Astro.props;
 <style>
   .button {
     align-items: center;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--surface);
+    border: 1px solid var(--border);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
     box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.85);
+    color: var(--text-soft);
     cursor: pointer;
     display: inline-flex;
     font-weight: normal;
@@ -44,14 +44,14 @@ const { href } = Astro.props;
 
   .button:hover,
   .button:focus {
-    border-color: rgba(0, 0, 0, 0.15);
+    border-color: var(--border);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgba(0, 0, 0, 0.65);
+    color: var(--grey);
   }
 
   .button:hover,
   .button:focus {
-    box-shadow: rgb(255 255 255) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+    box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
   }
 </style>
 
