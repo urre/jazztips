@@ -10,7 +10,7 @@ import SearchBar from "./SearchBar.astro";
       <a href="/">
         <img
           src="https://res.cloudinary.com/urre/image/upload/v1727800699/aqw2sns0cg4bndqpimmy.jpg"
-          alt="Jazztips ikon"
+          alt="Jazztips icon"
         />
         {SITE_TITLE}
       </a>
@@ -22,7 +22,7 @@ import SearchBar from "./SearchBar.astro";
       id="nav-toggle"
       aria-controls="site-nav"
       aria-expanded="false"
-      aria-label="Öppna meny"
+      aria-label="Open menu"
     >
       <span class="bars" aria-hidden="true">
         <span></span>
@@ -32,12 +32,12 @@ import SearchBar from "./SearchBar.astro";
     </button>
   </div>
 
-  <nav id="site-nav" aria-label="Huvudmeny">
-    <HeaderLink rel="tag" href="/1">Skivor</HeaderLink>
-    <HeaderLink rel="tag" href="/archives">Arkiv</HeaderLink>
-    <HeaderLink rel="tag" href="/musicians">Musiker</HeaderLink>
-    <HeaderLink rel="tag" href="/tags">Taggar</HeaderLink>
-    <HeaderLink rel="tag" href="/about">Om</HeaderLink>
+  <nav id="site-nav" aria-label="Main menu">
+    <HeaderLink rel="tag" href="/1">Records</HeaderLink>
+    <HeaderLink rel="tag" href="/archives">Archive</HeaderLink>
+    <HeaderLink rel="tag" href="/musicians">Musicians</HeaderLink>
+    <HeaderLink rel="tag" href="/tags">Tags</HeaderLink>
+    <HeaderLink rel="tag" href="/about">About</HeaderLink>
     <HeaderLink rel="tag" href="https://jazzkonserter.se" target="_blank">
       Jazzkonserter
       <svg
@@ -53,7 +53,7 @@ import SearchBar from "./SearchBar.astro";
         <path d="M7 17 17 7"></path>
         <path d="M9 7h8v8"></path>
       </svg>
-      <span class="visually-hidden">(extern länk)</span>
+      <span class="visually-hidden">(external link)</span>
     </HeaderLink>
     <SearchBar />
   </nav>
@@ -322,7 +322,7 @@ import SearchBar from "./SearchBar.astro";
   if (toggle && nav) {
     const setOpen = (open: boolean) => {
       toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Stäng meny" : "Öppna meny");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
       nav.classList.toggle("open", open);
     };
 

@@ -7,7 +7,7 @@ const { tags } = Astro.props;
 {
   tags ? (
     <fieldset>
-      <legend>Taggar</legend>
+      <legend>Tags</legend>
       <ul>
         {tags
           .sort((tag1: string, tag2: string) => tag1.localeCompare(tag2))

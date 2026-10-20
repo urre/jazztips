@@ -23,18 +23,18 @@ const { prev, next } = Astro.props;
   /* Responsive improvements for smaller screens */
 </style>
 
-<nav aria-label="Sidnavigering">
+<nav aria-label="Pagination navigation">
   {
     prev && (
-      <Button href={prev} aria-label="Gå till föregående sida">
-        Föregående
+      <Button href={prev} aria-label="Go to previous page">
+        Previous
       </Button>
     )
   }
   {
     next && (
-      <Button href={next} aria-label="Gå till nästa sida">
-        Nästa
+      <Button href={next} aria-label="Go to next page">
+        Next
       </Button>
     )
   }
