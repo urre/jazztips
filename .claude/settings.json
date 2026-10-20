@@ -56,7 +56,25 @@
       "Bash(python3 -c ' *)",
       "Bash(curl -s \"https://api.song.link/v1-alpha.1/links?url=https%3A%2F%2Flisten.tidal.com%2Falbum%2F543847214&userCountry=US&songIfSingle=false\")",
       "Bash(curl -sL \"https://i.concordjazz.com/np_bb_asupremeblue\" -o /private/tmp/claude-501/-Users-urbansanden-projects-jazztips-astro/8681f6c4-c590-4477-a1b0-2e01b109f986/scratchpad/smart.html)",
-      "Bash(grep -oE \"spotify[^\\\\\"',<> ]{0,80}\" /private/tmp/claude-501/-Users-urbansanden-projects-jazztips-astro/8681f6c4-c590-4477-a1b0-2e01b109f986/scratchpad/smart.html)"
+      "Bash(grep -oE \"spotify[^\\\\\"',<> ]{0,80}\" /private/tmp/claude-501/-Users-urbansanden-projects-jazztips-astro/8681f6c4-c590-4477-a1b0-2e01b109f986/scratchpad/smart.html)",
+      "mcp__chrome-devtools__take_screenshot",
+      "mcp__bitbucket__bb_get",
+      "Bash(magick identify *)",
+      "mcp__claude_ai_Atlassian__getTransitionsForJiraIssue",
+      "mcp__chrome-devtools__take_snapshot",
+      "mcp__claude_ai_Atlassian__getJiraIssue",
+      "mcp__chrome-devtools__list_pages",
+      "mcp__claude_ai_Atlassian__lookupJiraAccountId",
+      "mcp__chrome-devtools__list_console_messages",
+      "mcp__claude_ai_Atlassian__searchJiraIssuesUsingJql",
+      "mcp__Claude_Browser__get_page_text",
+      "mcp__claude_ai_Atlassian__getAccessibleAtlassianResources",
+      "mcp__Claude_Browser__read_console_messages",
+      "mcp__Claude_Browser__preview_logs",
+      "mcp__terminal__read_terminal",
+      "mcp__Claude_Browser__find",
+      "mcp__claude_ai_Atlassian_MCP__getJiraIssue",
+      "mcp__Claude_Browser__preview_list"
     ]
   }
 }
