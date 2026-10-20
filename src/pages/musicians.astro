@@ -4,72 +4,233 @@ import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
+import optimizeImage from "@utils/optimizeImage";
+import { instrumentFamilies, normalizeName } from "@utils/instruments";
+// Refresh with: node scripts/fetch-avatars.mjs
+import avatars from "../data/musician-avatars.json";
 
-const records = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
+const records = (
+  await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft)
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+type Appearance = {
+  id: string;
+  title: string;
+  artist: string;
+  image: string;
+  year?: number;
+  instrument: string;
+};
 
 type Musician = {
   name: string;
-  instrument: string;
-  albumCount: number;
+  families: Set<string>;
+  familyCounts: Map<string, number>;
+  records: Appearance[];
+  last: Date;
 };
 
-const allMusicians: Musician[] = [];
+// Credits are hand-entered, so the same person can show up with stray
+// whitespace or different instrument spellings. Merge on the trimmed name.
+const byName = new Map<string, Musician>();
 
 records.forEach((record) => {
-  if (record.data.credits && Array.isArray(record.data.credits)) {
-    record.data.credits.forEach((credit) => {
-      if (credit.name && credit.instrument) {
-        const existing = allMusicians.find(
-          (m) => m.name === credit.name && m.instrument === credit.instrument
-        );
-        if (existing) {
-          existing.albumCount++;
-        } else {
-          allMusicians.push({
-            name: credit.name,
-            instrument: credit.instrument,
-            albumCount: 1,
-          });
-        }
-      }
+  record.data.credits?.forEach((credit) => {
+    const name = normalizeName(credit.name ?? "");
+    if (!name || name === "-") return;
+
+    const key = name.toLowerCase();
+    const musician =
+      byName.get(key) ??
+      byName
+        .set(key, {
+          name,
+          families: new Set(),
+          familyCounts: new Map(),
+          records: [],
+          last: record.data.pubDate,
+        })
+        .get(key)!;
+
+    instrumentFamilies(credit.instrument ?? "").forEach((f) => {
+      musician.families.add(f);
+      musician.familyCounts.set(f, (musician.familyCounts.get(f) ?? 0) + 1);
     });
-  }
+
+    if (!musician.records.some((r) => r.id === record.id)) {
+      musician.records.push({
+        id: record.id,
+        title: record.data.title,
+        artist: record.data.artist,
+        image: record.data.image,
+        year: record.data.year,
+        instrument: credit.instrument?.trim() ?? "",
+      });
+    }
+    if (record.data.pubDate > musician.last) musician.last = record.data.pubDate;
+  });
 });
 
-allMusicians.sort((a, b) => a.name.localeCompare(b.name));
-
-const instruments = [
-  ...new Set(allMusicians.map((m) => m.instrument)),
-].sort();
+const musicians = [...byName.values()].sort(
+  (a, b) => b.records.length - a.records.length || a.name.localeCompare(b.name)
+);
 
 // Stats
-const totalMusicians = allMusicians.length;
-const totalInstruments = instruments.length;
-const topMusicians = [...allMusicians]
-  .sort((a, b) => b.albumCount - a.albumCount)
-  .slice(0, 12);
-const maxAlbums = topMusicians[0]?.albumCount || 1;
+const regulars = musicians.filter((m) => m.records.length >= 3).length;
+const creditsPerRecord =
+  records.reduce((sum, r) => sum + (r.data.credits?.length ?? 0), 0) / (records.length || 1);
 
-const instrumentStats = instruments
-  .filter((i) => i !== "-")
-  .map((instrument) => ({
-    name: instrument,
-    count: allMusicians.filter((m) => m.instrument === instrument).length,
-  }))
-  .sort((a, b) => b.count - a.count)
-  .slice(0, 10);
-const maxInstrumentCount = instrumentStats[0]?.count || 1;
-
+const topMusicians = musicians.slice(0, 20);
+const maxAlbums = topMusicians[0]?.records.length || 1;
 const mostFeatured = topMusicians[0];
 
-// Group musicians by instrument, sorted by most musicians first
-const musiciansByInstrument = instruments
-  .filter((i) => i !== "-")
-  .map((instrument) => ({
-    instrument,
-    musicians: allMusicians.filter((m) => m.instrument === instrument),
+const families = [...new Set(musicians.flatMap((m) => [...m.families]))]
+  .map((name) => ({
+    name,
+    count: musicians.filter((m) => m.families.has(name)).length,
   }))
-  .sort((a, b) => b.musicians.length - a.musicians.length);
+  .sort((a, b) => b.count - a.count);
+
+// What each musician is credited with most often, so every musician counts once
+const mainFamily = (m: Musician) =>
+  [...m.familyCounts].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "Other";
+
+// Charts. Colors follow the entity (fixed slot per section), never the rank.
+type Slice = { label: string; value: number; color: string; family?: string };
+
+// Categorical slots in fixed order, plus gray for everything folded into "Other"
+const slots = [
+  "light-dark(#2a78d6, #3987e5)",
+  "light-dark(#eb6834, #d95926)",
+  "light-dark(#1baf7a, #199e70)",
+  "light-dark(#eda100, #c98500)",
+  "light-dark(#e87ba4, #d55181)",
+  "light-dark(#008300, #008300)",
+];
+const otherColor = "light-dark(#a3a29b, #6b6a66)";
+
+const mainCounts = new Map<string, number>();
+musicians.forEach((m) => mainCounts.set(mainFamily(m), (mainCounts.get(mainFamily(m)) ?? 0) + 1));
+const rankedMain = [...mainCounts].sort((a, b) => b[1] - a[1]);
+const instrumentSlices: Slice[] = [
+  ...rankedMain.slice(0, slots.length).map(([family, value], i) => ({
+    label: family,
+    family,
+    value,
+    color: slots[i],
+  })),
+  {
+    label: "Other instruments",
+    value: rankedMain.slice(slots.length).reduce((sum, [, n]) => sum + n, 0),
+    color: otherColor,
+  },
+];
+
+const sections: Array<[label: string, families: string[], color: string]> = [
+  ["Rhythm section", ["Bass", "Drums", "Percussion"], slots[0]],
+  ["Horns", ["Saxophone", "Trumpet", "Trombone", "Woodwinds", "Horns & tuba"], slots[1]],
+  ["Keys & guitar", ["Piano & keys", "Guitar", "Vibes & mallets", "Synths & electronics"], slots[2]],
+  ["Voices & strings", ["Vocals", "Strings"], slots[3]],
+];
+
+const allCredits = records.flatMap((r) => r.data.credits ?? []);
+const sectionSlices: Slice[] = [
+  ...sections.map(([label, , color]) => ({ label, color, value: 0 })),
+  { label: "Composers, producers & other", color: otherColor, value: 0 },
+];
+allCredits.forEach((credit) => {
+  const family = instrumentFamilies(credit.instrument ?? "")[0];
+  const index = sections.findIndex(([, members]) => members.includes(family));
+  sectionSlices[index === -1 ? sections.length : index].value++;
+});
+
+// Label names vary ("Blue Note" / "Blue Note Records", "Impulse" / "Impulse!")
+const labelCounts = new Map<string, { name: string; count: number }>();
+records.forEach(({ data }) => {
+  const name = data.label?.trim().replace(/!$/, "").replace(/\s+(records|recordings|music|entertainment)$/i, "");
+  if (!name) return;
+  const entry = labelCounts.get(name.toLowerCase()) ?? { name, count: 0 };
+  entry.count++;
+  labelCounts.set(name.toLowerCase(), entry);
+});
+const topLabels = [...labelCounts.values()].sort((a, b) => b.count - a.count).slice(0, 8);
+const maxLabel = topLabels[0]?.count || 1;
+
+// Skip missing or mistyped release years
+const thisYear = new Date().getFullYear();
+const decadeCounts = new Map<number, number>();
+records.forEach(({ data }) => {
+  if (!data.year || data.year < 1900 || data.year > thisYear + 1) return;
+  const decade = Math.floor(data.year / 10) * 10;
+  decadeCounts.set(decade, (decadeCounts.get(decade) ?? 0) + 1);
+});
+const decadeKeys = [...decadeCounts.keys()];
+const decades = Array.from(
+  { length: (Math.max(...decadeKeys) - Math.min(...decadeKeys)) / 10 + 1 },
+  (_, i) => {
+    const decade = Math.min(...decadeKeys) + i * 10;
+    return { decade, count: decadeCounts.get(decade) ?? 0 };
+  }
+);
+const maxDecade = Math.max(...decades.map((d) => d.count));
+const datedRecords = decades.reduce((sum, d) => sum + d.count, 0);
+
+// Donut slice paths on a 120×120 viewBox
+const donut = (slices: Slice[]) => {
+  const total = slices.reduce((sum, s) => sum + s.value, 0);
+  const [cx, cy, outer, inner] = [60, 60, 58, 40];
+  const point = (r: number, a: number) => `${cx + r * Math.sin(a)} ${cy - r * Math.cos(a)}`;
+  let angle = 0;
+  return slices.map((slice) => {
+    const sweep = (slice.value / total) * Math.PI * 2;
+    const [start, end] = [angle, angle + sweep];
+    angle = end;
+    const large = sweep > Math.PI ? 1 : 0;
+    return {
+      ...slice,
+      percent: Math.round((slice.value / total) * 100),
+      path: [
+        `M ${point(outer, start)}`,
+        `A ${outer} ${outer} 0 ${large} 1 ${point(outer, end)}`,
+        `L ${point(inner, end)}`,
+        `A ${inner} ${inner} 0 ${large} 0 ${point(inner, start)}`,
+        "Z",
+      ].join(" "),
+    };
+  });
+};
+
+const donuts = [
+  {
+    title: "Musicians by instrument",
+    caption: "Main instrument · click to filter",
+    total: musicians.length,
+    totalLabel: "musicians",
+    slices: donut(instrumentSlices),
+  },
+  {
+    title: "Who's on the bandstand",
+    caption: "Share of all credits",
+    total: allCredits.length,
+    totalLabel: "credits",
+    slices: donut(sectionSlices),
+  },
+];
+
+const avatarFor = (name: string) =>
+  (avatars as Record<string, { image: string }>)[name.toLowerCase()]?.image;
+
+const initials = (name: string) =>
+  name
+    .split(" ")
+    .map((part) => part[0])
+    .slice(0, 2)
+    .join("");
+
+const monthYear = (date: Date) =>
+  date.toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+
+const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent(name)}#directory`;
 ---
 
 <!DOCTYPE html>
@@ -85,124 +246,262 @@ const musiciansByInstrument = instruments
         <p>The talented people behind the music — explore who plays on what.</p>
       </section>
 
-      <!-- Stats grid -->
-      <section class="stats-grid">
+      <section class="stats-grid" aria-label="Overview">
         <div class="stat-card">
-          <span class="stat-number">{totalMusicians}</span>
+          <span class="stat-number">{musicians.length.toLocaleString("en")}</span>
           <span class="stat-label">Musicians</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-number">{totalInstruments}</span>
-          <span class="stat-label">Instruments</span>
         </div>
         <div class="stat-card">
           <span class="stat-number">{records.length}</span>
           <span class="stat-label">Records</span>
         </div>
-        <div class="stat-card stat-card--highlight">
-          <span class="stat-number">{mostFeatured?.albumCount}</span>
-          <span class="stat-label">
-            Most featured: <strong>{mostFeatured?.name}</strong>
-          </span>
+        <div class="stat-card">
+          <span class="stat-number">{regulars}</span>
+          <span class="stat-label">Regulars, on 3+ records</span>
         </div>
+        <div class="stat-card">
+          <span class="stat-number">{creditsPerRecord.toFixed(1)}</span>
+          <span class="stat-label">Musicians per record</span>
+        </div>
+        {
+          mostFeatured && (
+            <a class="stat-card stat-card--highlight" href={musicianLink(mostFeatured.name)} data-open-musician={mostFeatured.name}>
+              <span class="stat-number">{mostFeatured.records.length}</span>
+              <span class="stat-label">
+                Most featured: <strong>{mostFeatured.name}</strong>
+              </span>
+            </a>
+          )
+        }
       </section>
 
-      <!-- Charts -->
-      <section class="charts-section">
-        <div class="chart-block">
-          <h2>Top musicians by appearances</h2>
-          <div class="bar-chart">
+      <section class="charts" aria-label="Charts">
+        {
+          donuts.map((chart) => (
+            <figure class="panel chart">
+              <figcaption>
+                <h2>{chart.title}</h2>
+                <p class="chart-caption">{chart.caption}</p>
+              </figcaption>
+              <div class="donut-layout">
+                <div class="donut">
+                  <svg viewBox="0 0 120 120" role="img" aria-label={chart.title}>
+                    {chart.slices.map((slice, i) => (
+                      <path
+                        d={slice.path}
+                        style={`fill: ${slice.color}`}
+                        data-key={i}
+                        data-tip={`${slice.label}: ${slice.value.toLocaleString("en")} (${slice.percent}%)`}
+                      />
+                    ))}
+                  </svg>
+                  <span class="donut-center">
+                    <span class="donut-total">{chart.total.toLocaleString("en")}</span>
+                    <span class="donut-label">{chart.totalLabel}</span>
+                  </span>
+                </div>
+                <table class="legend">
+                  <tbody>
+                    {chart.slices.map((slice, i) => (
+                      <tr data-key={i}>
+                        <th scope="row">
+                          <span class="swatch" style={`background: ${slice.color}`} />
+                          {slice.family ? (
+                            <button type="button" class="legend-filter" data-family={slice.family}>
+                              {slice.label}
+                            </button>
+                          ) : (
+                            slice.label
+                          )}
+                        </th>
+                        <td>{slice.value.toLocaleString("en")}</td>
+                        <td class="legend-percent">{slice.percent}%</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </figure>
+          ))
+        }
+
+        <figure class="panel chart">
+          <figcaption>
+            <h2>Top labels</h2>
+            <p class="chart-caption">{labelCounts.size} labels in total</p>
+          </figcaption>
+          <ol class="bar-chart plain-list">
             {
-              topMusicians.map((musician) => (
-                <a href={`/musicians?query=${encodeURIComponent(musician.name)}`} class="bar-row">
-                  <span class="bar-label">{musician.name}</span>
-                  <div class="bar-track">
-                    <div
-                      class="bar-fill"
-                      style={`width: ${(musician.albumCount / maxAlbums) * 100}%`}
-                    />
-                  </div>
-                  <span class="bar-value pill">{musician.albumCount}</span>
-                </a>
+              topLabels.map((label) => (
+                <li>
+                  <span class="bar-row bar-row--static" data-tip={`${label.name}: ${label.count} records`}>
+                    <span class="bar-label">{label.name}</span>
+                    <span class="bar-track">
+                      <span class="bar-fill" style={`width: ${(label.count / maxLabel) * 100}%`} />
+                    </span>
+                    <span class="bar-value">{label.count}</span>
+                  </span>
+                </li>
               ))
             }
-          </div>
-        </div>
+          </ol>
+        </figure>
 
-        <div class="chart-block">
-          <h2>Top instruments</h2>
-          <div class="bar-chart">
+        <figure class="panel chart">
+          <figcaption>
+            <h2>Records by decade</h2>
+            <p class="chart-caption">{datedRecords} records with a release year</p>
+          </figcaption>
+          <div class="columns" role="img" aria-label={`Records by decade: ${decades.map((d) => `${d.decade}s ${d.count}`).join(", ")}`}>
             {
-              instrumentStats.map((stat) => (
-                <div class="bar-row">
-                  <span class="bar-label">{stat.name}</span>
-                  <div class="bar-track">
-                    <div
-                      class="bar-fill bar-fill--alt"
-                      style={`width: ${(stat.count / maxInstrumentCount) * 100}%`}
-                    />
-                  </div>
-                  <span class="bar-value pill">{stat.count}</span>
+              decades.map((d) => (
+                <div class="column" data-tip={`${d.decade}s: ${d.count} records`}>
+                  <span class="column-value">{d.count === maxDecade ? d.count : ""}</span>
+                  <span class="column-bar" style={`height: ${(d.count / maxDecade) * 100}%`} />
+                  <span class="column-label">{`’${String(d.decade).slice(2)}`}</span>
                 </div>
               ))
             }
           </div>
+        </figure>
+      </section>
+      <div class="tooltip" id="chart-tooltip" role="tooltip" hidden></div>
+
+      <section class="panel featured">
+        <div class="featured-header">
+          <h2>Most featured</h2>
+          <a class="featured-credit" href="https://commons.wikimedia.org" target="_blank" rel="noopener">
+            Photos: Wikimedia Commons
+          </a>
         </div>
+        <ol class="featured-grid plain-list">
+          {
+            topMusicians.map((musician, i) => (
+              <li>
+                <a href={musicianLink(musician.name)} class="featured-card" data-open-musician={musician.name}>
+                  <span class="avatar">
+                    {avatarFor(musician.name) ? (
+                      <img src={avatarFor(musician.name)} alt="" loading="lazy" width="56" height="56" />
+                    ) : (
+                      <span class="avatar-initials" aria-hidden="true">{initials(musician.name)}</span>
+                    )}
+                    <span class="rank">{i + 1}</span>
+                  </span>
+                  <span class="featured-text">
+                    <span class="featured-name">{musician.name}</span>
+                    <span class="featured-meta">{mainFamily(musician)}</span>
+                    <span class="featured-bar">
+                      <span class="bar-track">
+                        <span class="bar-fill" style={`width: ${(musician.records.length / maxAlbums) * 100}%`} />
+                      </span>
+                      <span class="bar-value">{musician.records.length}</span>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            ))
+          }
+        </ol>
       </section>
 
-      <!-- Filter + search -->
-      <section class="filter-section">
-        <h2>Browse musicians</h2>
-        <div class="filter-row">
+      <section class="directory" id="directory">
+        <div class="directory-header">
+          <h2>Browse musicians</h2>
+          <p id="result-count" class="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="toolbar">
           <input
             type="search"
             id="musician-search"
-            placeholder="Search by name…"
+            placeholder="Search musicians or records…"
             autocomplete="off"
+            aria-label="Search musicians or records"
           />
-          <select id="instrument-filter">
-            <option value="all">All instruments</option>
-            {instruments.map((i) => <option value={i}>{i}</option>)}
-          </select>
-          <select id="sort-order">
-            <option value="count">Most musicians first</option>
+          <select id="sort-order" aria-label="Sort">
+            <option value="count">Most records</option>
+            <option value="recent">Recently featured</option>
             <option value="alpha">A–Z</option>
           </select>
-          <button id="clear-filter" class="clear-btn">Clear</button>
         </div>
-        <p id="result-count" class="result-count"></p>
-      </section>
 
-      <!-- Musician listing -->
-      <section class="musicians-listing" id="musicians-listing">
-        {
-          musiciansByInstrument.map(({ instrument, musicians }) => (
-            <div
-              class="instrument-group"
-              data-instrument={instrument}
-              data-count={musicians.length}
-            >
-              <h3 class="instrument-heading">
-                {instrument}
-                <span class="pill">{musicians.length}</span>
-              </h3>
-              <div class="musician-cards">
-                {musicians.map((musician) => (
-                  <a
-                    href={`/musicians?query=${encodeURIComponent(musician.name)}`}
-                    class="musician-card"
-                    data-name={musician.name.toLowerCase()}
-                    data-instrument={musician.instrument}
-                  >
-                    <span class="musician-name">{musician.name}</span>
-                    <span class="pill">{musician.albumCount}</span>
-                  </a>
-                ))}
-              </div>
-            </div>
-          ))
-        }
-        <p id="no-results" class="no-results hidden">No musicians found.</p>
+        <div class="chips" role="group" aria-label="Filter by instrument">
+          <button type="button" class="chip" data-family="all" aria-pressed="true">All</button>
+          {
+            families.map((family) => (
+              <button type="button" class="chip" data-family={family.name} aria-pressed="false">
+                {family.name} <span class="chip-count">{family.count}</span>
+              </button>
+            ))
+          }
+        </div>
+
+        <div class="list-head" aria-hidden="true">
+          <span>Name</span>
+          <span>Plays</span>
+          <span>Records</span>
+          <span>Last featured</span>
+        </div>
+
+        <div class="musician-list" id="musician-list">
+          {
+            musicians.map((musician) => (
+              <details
+                class="musician"
+                data-name={musician.name.toLowerCase()}
+                data-search={[musician.name, ...musician.records.flatMap((r) => [r.title, r.artist])]
+                  .join(" ")
+                  .toLowerCase()}
+                data-families={[...musician.families].join("|")}
+                data-count={musician.records.length}
+                data-last={musician.last.valueOf()}
+              >
+                <summary>
+                  <span class="musician-name">{musician.name}</span>
+                  <span class="families">
+                    {[...musician.families].map((f) => (
+                      <span class="family-tag">{f}</span>
+                    ))}
+                  </span>
+                  <span class="count">
+                    <span class="count-bar" style={`width: ${(musician.records.length / maxAlbums) * 100}%`} />
+                    <span class="count-value">{musician.records.length}</span>
+                  </span>
+                  <span class="last">{monthYear(musician.last)}</span>
+                </summary>
+                <ul class="appearances plain-list">
+                  {musician.records.map((record) => (
+                    <li>
+                      <a href={`/${record.id}`}>
+                        <img data-src={optimizeImage(record.image)} alt="" width="56" height="56" />
+                        <span>
+                          <span class="appearance-title">
+                            {record.artist} – {record.title}
+                          </span>
+                          <span class="appearance-meta">
+                            {[record.instrument, record.year].filter(Boolean).join(" · ")}
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                  <li class="discogs">
+                    <a
+                      href={`https://www.discogs.com/search/?q=${encodeURIComponent(musician.name)}&type=artist`}
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Find {musician.name} on Discogs →
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            ))
+          }
+        </div>
+
+        <p id="no-results" class="no-results" hidden>No musicians found.</p>
+        <button type="button" id="show-more" class="show-more" hidden></button>
       </section>
     </main>
     <Footer />
@@ -214,227 +513,727 @@ const musiciansByInstrument = instruments
     margin-bottom: 2rem;
   }
 
+  h2 {
+    font-size: 0.8rem;
+    color: var(--grey);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+  }
+
+  .plain-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
   /* Stats */
   .stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .stat-card {
-    background: white;
+    background: var(--surface);
     border: 1px solid var(--grey-subtle);
     border-radius: var(--border-radius);
     padding: 1.25rem 1rem;
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0.35rem;
   }
 
   .stat-card--highlight {
     border-color: var(--profile);
-    background: color-mix(in srgb, var(--profile) 8%, white);
+    background: color-mix(in srgb, var(--profile) 8%, var(--surface));
+    transition: box-shadow 150ms;
+  }
+
+  .stat-card--highlight:hover {
+    box-shadow: var(--shadow) 0px 4px 14px 0px;
   }
 
   .stat-number {
     font-size: clamp(1.75rem, 4vw, 2.75rem);
     line-height: 1;
     color: var(--profile);
-    font-weight: bold;
+    font-variant-numeric: tabular-nums;
   }
 
   .stat-label {
     font-size: 0.85rem;
     color: var(--grey);
+    line-height: 1.3;
+  }
+
+  .stat-label strong {
+    color: var(--text);
+    font-weight: normal;
   }
 
   /* Charts */
-  .charts-section {
+  .charts {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    gap: 1rem;
+    margin: 0 0 1rem;
   }
 
-  @media (min-width: 900px) {
-    .charts-section {
+  @media (min-width: 800px) {
+    .charts {
       grid-template-columns: 1fr 1fr;
     }
   }
 
-  .chart-block {
-    background: white;
+  @media (min-width: 1500px) {
+    .charts {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .chart {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .chart h2 {
+    margin-bottom: 0.15rem;
+  }
+
+  .chart-caption {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--grey);
+    letter-spacing: 0.02em;
+  }
+
+  .donut-layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .donut {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    flex: 0 0 auto;
+  }
+
+  .donut svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* The surface-colored stroke is the gap between slices */
+  .donut path {
+    stroke: var(--surface);
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    transition: opacity 150ms;
+  }
+
+  .chart.highlighting path:not(.active) {
+    opacity: 0.3;
+  }
+
+  .donut-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
+    pointer-events: none;
+  }
+
+  .donut-total {
+    font-size: 1.25rem;
+  }
+
+  .donut-label {
+    font-size: 0.7rem;
+    color: var(--grey);
+  }
+
+  .legend {
+    flex: 1 1 180px;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  .legend th {
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 0;
+  }
+
+  .legend td {
+    text-align: right;
+    padding-left: 0.75rem;
+    color: var(--grey);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .legend .legend-percent {
+    width: 3rem;
+  }
+
+  .legend-filter {
+    all: unset;
+    cursor: pointer;
+  }
+
+  .legend-filter:hover,
+  .legend-filter[aria-pressed="true"] {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .legend-filter:focus-visible {
+    outline: 2px solid var(--profile);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  .legend tr {
+    cursor: default;
+    transition: opacity 150ms;
+  }
+
+  .chart.highlighting tr:not(.active) {
+    opacity: 0.45;
+  }
+
+  .swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    flex: 0 0 auto;
+  }
+
+  .columns {
+    flex: 1;
+    min-height: 140px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 4px;
+    align-items: end;
+    border-bottom: 1px solid var(--grey-light);
+    padding-top: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .column {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .column-bar {
+    width: 100%;
+    max-width: 28px;
+    min-height: 2px;
+    background: var(--profile);
+    border-radius: 4px 4px 0 0;
+    transition: opacity 150ms;
+  }
+
+  .columns:hover .column:not(:hover) .column-bar {
+    opacity: 0.45;
+  }
+
+  .column-value {
+    font-size: 0.75rem;
+    color: var(--grey);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .column-label {
+    position: absolute;
+    top: 100%;
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+    color: var(--grey);
+  }
+
+  .tooltip {
+    position: fixed;
+    z-index: 200;
+    pointer-events: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    white-space: nowrap;
+    background: var(--text);
+    color: var(--bg-color);
+    box-shadow: var(--shadow) 0px 4px 14px 0px;
+  }
+
+  /* Panels */
+  .panel {
+    background: var(--surface);
     border: 1px solid var(--grey-subtle);
     border-radius: var(--border-radius);
     padding: 1.5rem;
-  }
-
-  .chart-block h2 {
-    margin-bottom: 1.25rem;
-    color: var(--grey);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
+    min-width: 0;
   }
 
   .bar-chart {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.15rem;
   }
 
   .bar-row {
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
     display: grid;
-    grid-template-columns: 10rem 1fr 2.5rem;
+    grid-template-columns: minmax(6rem, 9rem) 1fr 2rem;
     align-items: center;
     gap: 0.75rem;
-    text-decoration: none;
-    color: inherit;
+    padding: 0.3rem 0.5rem;
+    margin: 0 -0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 150ms;
   }
 
-  .bar-row:hover .bar-label {
-    color: var(--profile);
+  .bar-row--static {
+    cursor: default;
   }
 
-  @media (max-width: 600px) {
-    .bar-row {
-      grid-template-columns: 7rem 1fr 2rem;
-    }
+  .bar-row:hover,
+  .bar-row[aria-pressed="true"] {
+    background-color: var(--grey-subtle);
+  }
+
+  .bar-row:focus-visible {
+    box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
   }
 
   .bar-label {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #333;
-    transition: color 150ms;
   }
 
   .bar-track {
+    display: block;
     background: var(--grey-subtle);
     border-radius: 4px;
-    height: 10px;
+    height: 8px;
     overflow: hidden;
   }
 
   .bar-fill {
+    display: block;
     height: 100%;
     background: var(--profile);
     border-radius: 4px;
   }
 
-  .bar-fill--alt {
-    background: color-mix(in srgb, var(--profile) 60%, #6b7280);
-  }
-
   .bar-value {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--grey);
     text-align: right;
+    font-variant-numeric: tabular-nums;
   }
 
-  /* Filter */
-  .filter-section {
-    margin-bottom: 2rem;
+  .featured {
+    margin-bottom: 3rem;
   }
 
-  .filter-section h2 {
+  .featured-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
     margin-bottom: 1rem;
   }
 
-  .filter-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    align-items: center;
+  .featured-header h2 {
+    margin: 0;
   }
 
-  .filter-row input[type="search"] {
-    flex: 1;
-    min-width: 180px;
-  }
-
-  .filter-row select {
-    padding: 0.35rem 0.75rem;
-    border-radius: 6px;
-    border: 1px solid var(--grey-subtle);
-    background: white;
-    cursor: pointer;
-  }
-
-  .clear-btn {
-    padding: 0.35rem 1rem;
-    border-radius: 6px;
-    border: 1px solid var(--grey-subtle);
-    background: white;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-
-  .clear-btn:hover {
-    border-color: var(--profile);
-    color: var(--profile);
-  }
-
-  .result-count {
-    margin-top: 0.75rem;
-    font-size: 0.85rem;
+  .featured-credit {
+    font-size: 0.7rem;
     color: var(--grey);
-    min-height: 1.4em;
   }
 
-  /* Listing */
-  .musicians-listing {
+  .featured-credit:hover {
+    text-decoration: underline;
+  }
+
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+    gap: 0.5rem;
+  }
+
+  .featured-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: background-color 150ms, border-color 150ms;
+  }
+
+  .featured-card:hover {
+    background-color: var(--surface-hover);
+    border-color: var(--grey-subtle);
+  }
+
+  .featured-card:focus-visible {
+    outline: none;
+    box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  .avatar {
+    position: relative;
+    flex: 0 0 auto;
+    width: 56px;
+    height: 56px;
+  }
+
+  .avatar img,
+  .avatar-initials {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 0;
+    background: var(--grey-subtle);
+  }
+
+  .avatar img {
+    object-fit: cover;
+    /* Portraits usually have the face in the upper part */
+    object-position: 50% 20%;
+  }
+
+  .avatar-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--grey);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+  }
+
+  .rank {
+    position: absolute;
+    right: -4px;
+    bottom: -4px;
+    min-width: 22px;
+    height: 22px;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    font-size: 0.7rem;
+    background: var(--surface);
+    border: 1px solid var(--grey-subtle);
+    color: var(--grey);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .featured-text {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 0.1rem;
+    min-width: 0;
+    flex: 1;
+    line-height: 1.25;
   }
 
-  .instrument-heading {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border-bottom: 1px solid var(--grey-subtle);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-  }
-
-  .musician-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.35rem;
-  }
-
-  .musician-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    background: white;
-    border: 1px solid var(--grey-subtle);
-    border-radius: 8px;
-    text-decoration: none;
-    color: inherit;
-    transition: border-color 150ms;
-  }
-
-  .musician-card:hover {
-    border-color: var(--profile);
-    color: var(--profile);
-  }
-
-  .musician-name {
+  .featured-name {
     font-size: 0.95rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .hidden {
-    display: none !important;
+  .featured-meta {
+    font-size: 0.75rem;
+    color: var(--grey);
+  }
+
+  .featured-bar {
+    display: grid;
+    grid-template-columns: 1fr 1.5rem;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+  }
+
+  /* Directory */
+  .directory {
+    scroll-margin-top: 1rem;
+  }
+
+  .directory-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .directory-header h2 {
+    font-size: clamp(1.15rem, 5vw, 2rem);
+    color: inherit;
+    text-transform: none;
+    letter-spacing: 0.01em;
+  }
+
+  .result-count {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--grey);
+  }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .toolbar input[type="search"] {
+    flex: 1 1 240px;
+    padding: 0.5rem 1rem;
+  }
+
+  .toolbar select {
+    flex: 0 0 auto;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chip {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.75rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    transition: border-color 150ms, background-color 150ms;
+  }
+
+  .chip:hover {
+    border-color: var(--profile);
+  }
+
+  .chip:focus-visible {
+    box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  .chip[aria-pressed="true"] {
+    background: var(--profile);
+    border-color: var(--profile);
+    color: var(--bg-color);
+  }
+
+  .chip-count {
+    opacity: 0.65;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .list-head,
+  .musician summary {
+    display: grid;
+    grid-template-columns: minmax(10rem, 1.2fr) 2fr 7rem 7rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.55rem 1rem;
+  }
+
+  .list-head {
+    white-space: nowrap;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--grey);
+    padding-bottom: 0.4rem;
+  }
+
+  .musician-list {
+    background: var(--surface);
+    border: 1px solid var(--grey-subtle);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+  }
+
+  .musician + .musician {
+    border-top: 1px solid var(--grey-subtle);
+  }
+
+  .musician summary {
+    cursor: pointer;
+    list-style: none;
+    transition: background-color 150ms;
+  }
+
+  .musician summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .musician summary:hover,
+  .musician[open] summary {
+    background-color: var(--surface-hover);
+  }
+
+  .musician summary:focus-visible {
+    outline: 2px solid var(--profile);
+    outline-offset: -2px;
+  }
+
+  .musician-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .musician-name::before {
+    content: "▸";
+    display: inline-block;
+    width: 1rem;
+    color: var(--grey);
+    font-size: 0.8em;
+    transition: transform 150ms;
+  }
+
+  .musician[open] .musician-name::before {
+    transform: rotate(90deg);
+  }
+
+  .families {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    min-width: 0;
+  }
+
+  .family-tag {
+    font-size: 0.7rem;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    background: var(--grey-subtle);
+    color: var(--grey);
+    white-space: nowrap;
+  }
+
+  .count {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .count-bar {
+    height: 6px;
+    min-width: 4px;
+    max-width: 4rem;
+    border-radius: 3px;
+    background: var(--profile);
+  }
+
+  .count-value,
+  .last {
+    font-size: 0.85rem;
+    color: var(--grey);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .appearances {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem 1rem 1rem 2rem;
+    background-color: var(--surface-hover);
+  }
+
+  .appearances a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.4rem;
+    border-radius: 8px;
+    line-height: 1.3;
+    background: var(--surface);
+    border: 1px solid var(--grey-subtle);
+    transition: border-color 150ms;
+  }
+
+  .appearances a:hover {
+    border-color: var(--profile);
+  }
+
+  .appearances img {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 auto;
+    object-fit: cover;
+    border: 0;
+    border-radius: 4px;
+    background: var(--grey-subtle);
+  }
+
+  .appearance-title {
+    display: block;
+    font-size: 0.85rem;
+  }
+
+  .appearance-meta {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--grey);
+  }
+
+  .appearances .discogs {
+    grid-column: 1 / -1;
+  }
+
+  .appearances .discogs a {
+    all: unset;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--profile);
+  }
+
+  .appearances .discogs a:hover {
+    text-decoration: underline;
   }
 
   .no-results {
@@ -442,94 +1241,212 @@ const musiciansByInstrument = instruments
     font-style: italic;
     padding: 2rem 0;
   }
+
+  .show-more {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .show-more:hover,
+  .show-more:focus-visible {
+    border-color: var(--profile);
+    color: var(--profile);
+  }
+
+  .show-more[hidden],
+  .musician[hidden] {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .list-head {
+      display: none;
+    }
+
+    .musician summary {
+      grid-template-columns: 1fr auto;
+      row-gap: 0.25rem;
+    }
+
+    .families {
+      grid-row: 2;
+      grid-column: 1 / -1;
+      padding-left: 1rem;
+    }
+
+    .last {
+      display: none;
+    }
+
+    .appearances {
+      padding-left: 1rem;
+    }
+  }
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const searchInput = document.getElementById("musician-search") as HTMLInputElement;
-    const filterSelect = document.getElementById("instrument-filter") as HTMLSelectElement;
-    const sortSelect = document.getElementById("sort-order") as HTMLSelectElement;
-    const clearBtn = document.getElementById("clear-filter") as HTMLButtonElement;
-    const resultCount = document.getElementById("result-count") as HTMLElement;
-    const noResults = document.getElementById("no-results") as HTMLElement;
-    const listing = document.getElementById("musicians-listing") as HTMLElement;
-    const instrumentGroups = Array.from(
-      document.querySelectorAll<HTMLElement>(".instrument-group")
-    );
+  const PAGE_SIZE = 100;
 
-    function applySort() {
-      const order = sortSelect.value;
-      const sorted = [...instrumentGroups].sort((a, b) => {
-        if (order === "count") {
-          return Number(b.dataset.count) - Number(a.dataset.count);
-        }
-        return (a.dataset.instrument || "").localeCompare(b.dataset.instrument || "");
-      });
-      sorted.forEach((group) => listing.appendChild(group));
-      // keep no-results at end
-      const nr = document.getElementById("no-results");
-      if (nr) listing.appendChild(nr);
-    }
+  // Chart hover: one shared tooltip, and slice <-> legend row highlighting
+  const tooltip = document.getElementById("chart-tooltip") as HTMLElement;
 
-    function update() {
-      const query = searchInput.value.trim().toLowerCase();
-      const instrument = filterSelect.value;
-      let visible = 0;
-
-      instrumentGroups.forEach((group) => {
-        const groupInstrument = group.dataset.instrument || "";
-        const instrumentMatch = instrument === "all" || groupInstrument === instrument;
-
-        if (!instrumentMatch) {
-          group.classList.add("hidden");
-          return;
-        }
-
-        const cards = group.querySelectorAll<HTMLElement>(".musician-card");
-        let groupVisible = 0;
-
-        cards.forEach((card) => {
-          const name = card.dataset.name || "";
-          const nameMatch = !query || name.includes(query);
-          if (nameMatch) {
-            card.classList.remove("hidden");
-            groupVisible++;
-            visible++;
-          } else {
-            card.classList.add("hidden");
-          }
-        });
-
-        group.classList.toggle("hidden", groupVisible === 0);
-      });
-
-      noResults.classList.toggle("hidden", visible > 0);
-      resultCount.textContent =
-        query || instrument !== "all"
-          ? `${visible} musician${visible !== 1 ? "s" : ""} found`
-          : "";
-    }
-
-    // Pre-fill from URL param
-    const urlQuery = new URLSearchParams(window.location.search).get("query");
-    if (urlQuery) {
-      searchInput.value = urlQuery;
-      update();
-    }
-
-    searchInput?.addEventListener("input", update);
-    filterSelect?.addEventListener("change", update);
-    sortSelect?.addEventListener("change", () => {
-      applySort();
-      update();
+  document.querySelectorAll<HTMLElement>("[data-tip]").forEach((mark) => {
+    mark.addEventListener("pointermove", (event) => {
+      tooltip.textContent = mark.dataset.tip!;
+      tooltip.hidden = false;
+      tooltip.style.left = `${event.clientX + 12}px`;
+      tooltip.style.top = `${event.clientY - 36}px`;
     });
+    mark.addEventListener("pointerleave", () => (tooltip.hidden = true));
+  });
 
-    clearBtn?.addEventListener("click", () => {
-      searchInput.value = "";
-      filterSelect.value = "all";
-      sortSelect.value = "count";
-      applySort();
-      update();
+  document.querySelectorAll<HTMLElement>(".chart").forEach((chart) => {
+    const highlight = (key?: string) => {
+      chart.classList.toggle("highlighting", key !== undefined);
+      chart.querySelectorAll<HTMLElement>("[data-key]").forEach((el) => {
+        el.classList.toggle("active", el.dataset.key === key);
+      });
+    };
+    chart.querySelectorAll<HTMLElement>("[data-key]").forEach((el) => {
+      el.addEventListener("pointerenter", () => highlight(el.dataset.key));
+      el.addEventListener("pointerleave", () => highlight());
     });
   });
+
+  const searchInput = document.getElementById("musician-search") as HTMLInputElement;
+  const sortSelect = document.getElementById("sort-order") as HTMLSelectElement;
+  const resultCount = document.getElementById("result-count") as HTMLElement;
+  const noResults = document.getElementById("no-results") as HTMLElement;
+  const showMore = document.getElementById("show-more") as HTMLButtonElement;
+  const list = document.getElementById("musician-list") as HTMLElement;
+  const directory = document.getElementById("directory") as HTMLElement;
+  const rows = Array.from(list.querySelectorAll<HTMLDetailsElement>(".musician"));
+  const familyButtons = document.querySelectorAll<HTMLButtonElement>("[data-family]");
+
+  let family = "all";
+  let limit = PAGE_SIZE;
+
+  // Covers only load when a row is opened
+  rows.forEach((row) => {
+    row.addEventListener("toggle", () => {
+      if (!row.open) return;
+      row.querySelectorAll<HTMLImageElement>("img[data-src]").forEach((img) => {
+        img.src = img.dataset.src!;
+        img.removeAttribute("data-src");
+      });
+    });
+  });
+
+  function sortRows() {
+    const order = sortSelect.value;
+    const sorted = [...rows].sort((a, b) => {
+      if (order === "alpha") return a.dataset.name!.localeCompare(b.dataset.name!);
+      if (order === "recent") return Number(b.dataset.last) - Number(a.dataset.last);
+      return Number(b.dataset.count) - Number(a.dataset.count);
+    });
+    list.append(...sorted);
+  }
+
+  function syncUrl() {
+    const params = new URLSearchParams();
+    const query = searchInput.value.trim();
+    if (query) params.set("musician", query);
+    if (family !== "all") params.set("instrument", family);
+    if (sortSelect.value !== "count") params.set("sort", sortSelect.value);
+    const search = params.toString();
+    history.replaceState(null, "", `${location.pathname}${search ? `?${search}` : ""}${location.hash}`);
+  }
+
+  function update() {
+    const query = searchInput.value.trim().toLowerCase();
+    let matches = 0;
+
+    // rows are in sorted DOM order, so the first `limit` matches are shown
+    list.querySelectorAll<HTMLDetailsElement>(".musician").forEach((row) => {
+      const familyMatch = family === "all" || row.dataset.families!.split("|").includes(family);
+      const queryMatch = !query || row.dataset.search!.includes(query);
+      const match = familyMatch && queryMatch;
+      if (match) matches++;
+      row.hidden = !match || matches > limit;
+    });
+
+    familyButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.family === family));
+    });
+
+    const shown = Math.min(matches, limit);
+    resultCount.textContent =
+      matches === shown ? `${matches.toLocaleString("en")} musicians` : `Showing ${shown} of ${matches.toLocaleString("en")}`;
+    noResults.hidden = matches > 0;
+    showMore.hidden = matches <= limit;
+    showMore.textContent = `Show all ${matches.toLocaleString("en")}`;
+
+    syncUrl();
+  }
+
+  function reset() {
+    limit = PAGE_SIZE;
+    update();
+  }
+
+  function openMusician(name: string) {
+    searchInput.value = name;
+    family = "all";
+    reset();
+    const row = rows.find((r) => r.dataset.name === name.toLowerCase());
+    if (row) row.open = true;
+    directory.scrollIntoView({ behavior: "smooth" });
+  }
+
+  searchInput.addEventListener("input", reset);
+
+  sortSelect.addEventListener("change", () => {
+    sortRows();
+    reset();
+  });
+
+  familyButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const value = button.dataset.family!;
+      family = family === value && value !== "all" ? "all" : value;
+      reset();
+      if (!button.classList.contains("chip")) {
+        directory.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  showMore.addEventListener("click", () => {
+    limit = Infinity;
+    update();
+  });
+
+  document.querySelectorAll<HTMLAnchorElement>("[data-open-musician]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      openMusician(link.dataset.openMusician!);
+    });
+  });
+
+  // Restore state from the URL, e.g. links from record pages
+  const params = new URLSearchParams(location.search);
+  const sort = params.get("sort");
+  if (sort && [...sortSelect.options].some((o) => o.value === sort)) {
+    sortSelect.value = sort;
+    sortRows();
+  }
+  family = params.get("instrument") ?? "all";
+  searchInput.value = params.get("musician") ?? "";
+  update();
+
+  const exact = rows.find((r) => r.dataset.name === searchInput.value.trim().toLowerCase());
+  if (exact) exact.open = true;
 </script>
