@@ -73,7 +73,7 @@ export default function Search({ searchList }) {
         type="search"
         value={query} // Input value is controlled by `query` state
         onChange={handleOnSearch} // Update state when the user types
-        placeholder="Sök"
+        placeholder="Search"
       />
 
       {/* Display search results only when query length is greater than 1 */}
