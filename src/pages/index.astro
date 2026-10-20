@@ -102,6 +102,16 @@ const records = (await getCollection("records", ({ data }) => import.meta.env.DE
         }
       }
 
+      /* Tablets: cover and title side by side, vinyl peeking out between them */
+      @media (min-width: 768px) and (max-width: 1199px) {
+        .hero :global(.record-layout) {
+          display: grid;
+          grid-template-columns: min(400px, 44vw) minmax(0, 1fr);
+          column-gap: calc(var(--fluid-gap) * 5);
+          align-items: center;
+        }
+      }
+
       /* Wide enough for the record and the ad to sit side by side */
       @media (min-width: 1600px) {
         .hero {

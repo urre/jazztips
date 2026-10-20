@@ -246,7 +246,10 @@ import SearchBar from "./SearchBar.astro";
     header {
       padding-bottom: calc(var(--gap) * 1.5);
       padding-top: calc(var(--gap) * 1.5);
-      flex-direction: row;
+    }
+
+    header nav > :global(a) {
+      white-space: nowrap;
     }
 
     .nav-toggle {
@@ -256,6 +259,37 @@ import SearchBar from "./SearchBar.astro";
     header img {
       width: 96px;
       height: 96px;
+    }
+  }
+
+  /* Tablets: logo on its own row, the nav gets the full width below it */
+  @media (min-width: 768px) and (max-width: 1099px) {
+    header {
+      gap: 1rem;
+    }
+
+    header img {
+      width: 64px;
+      height: 64px;
+    }
+
+    header nav {
+      flex-wrap: nowrap;
+      gap: 0.5rem;
+    }
+
+    header nav :global(.search) {
+      flex: 0 1 220px;
+    }
+
+    header nav :global(input[type="search"]) {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    header {
+      flex-direction: row;
     }
   }
 
