@@ -22,7 +22,7 @@ const { link, cover, title, artist } = Astro.props;
     width: 310px;
     height: 125px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      var(--border) 0px 0px 0px 1px;
     border-radius: 6px;
     border: 0;
     height: 120px;
@@ -30,7 +30,7 @@ const { link, cover, title, artist } = Astro.props;
     display: flex;
     gap: 1rem;
     align-items: center;
-    background-color: white;
+    background-color: var(--surface);
   }
 
   .qobuz img {
@@ -52,7 +52,7 @@ const { link, cover, title, artist } = Astro.props;
     }
 
     span:nth-child(2) {
-      color: grey;
+      color: var(--grey);
     }
   }
 </style>

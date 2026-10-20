@@ -28,6 +28,16 @@ const {
 <meta name="msapplication-TileColor" content="#008965" />
 <meta name="theme-color" content="#008965" />
 
+<!-- Runs before first paint so a saved light/dark choice doesn't flash -->
+<script is:inline>
+  try {
+    const theme = localStorage.getItem("theme");
+    if (theme === "light" || theme === "dark") {
+      document.documentElement.dataset.theme = theme;
+    }
+  } catch {}
+</script>
+
 <meta name="generator" content={Astro.generator} />
 
 <link rel="canonical" href={canonicalURL} />

@@ -82,7 +82,7 @@ export default function Search({ searchList }) {
           {posts.map((post) => (
             <li key={post.id}> {/* Assuming each post has a unique `id` */}
               <a href={`/${post.id}`} style={{ display: 'flex', gap: '1rem', alignItems: 'center'  }}>
-                <figure style={{ width: '80px', height: '80px', flexShrink: '0', backgroundColor: '#f6f6f6' }}>
+                <figure style={{ width: '80px', height: '80px', flexShrink: '0', backgroundColor: 'var(--surface-hover)' }}>
                   <img
                     src={post.data.image}
                     alt={post.data.title}
