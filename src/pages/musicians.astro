@@ -295,7 +295,7 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
                   </svg>
                   {chart.total && (
                     <span class="donut-center">
-                      <span class="donut-total">{chart.total.toLocaleString("en")}</span>
+                      <span class="donut-total">{chart.total?.toLocaleString("en")}</span>
                       <span class="donut-label">{chart.totalLabel}</span>
                     </span>
                   )}
