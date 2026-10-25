@@ -37,7 +37,7 @@ const { page } = Astro.props;
         <p>Page {page.currentPage} of {page.lastPage}</p>
         <Pagination prev={page.url.prev} next={page.url.next} />
 
-        <ul>
+        <ul class="record-grid">
           {
             page.data.map((record) => (
               <li>

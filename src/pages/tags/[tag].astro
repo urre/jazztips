@@ -35,7 +35,7 @@ const { posts, label } = Astro.props;
     <Header />
     <main>
       <h1>Tagged <em>{label}</em></h1>
-      <ul>
+      <ul class="record-grid">
         {
           posts.map((record) => (
             <li>
@@ -48,7 +48,10 @@ const { posts, label } = Astro.props;
                   />
                 )}
 
-                <h3>{record.data.title}</h3>
+                <h3>
+                  {record.data.artist}
+                  <br /> {record.data.title}
+                </h3>
               </a>
             </li>
           ))

@@ -127,7 +127,7 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  ul:not(.plain-list) {
+  ul:not(.plain-list, .record-grid) {
     list-style: none;
     padding: 0;
     margin-top: calc(var(--gap));
@@ -137,16 +137,51 @@
   }
 
   @media (min-width: 768px) {
-    ul:not(.plain-list) {
+    ul:not(.plain-list, .record-grid) {
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     }
   }
 
-  /* Tablets: three columns in portrait, four in landscape */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    ul:not(.plain-list) {
-      grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+  /* Grids of record covers. The column count comes from a minimum cell
+     width, and the covers fill their cells so rows line up without gaps:
+     2 on phones, 3-4 on tablets, 5-6 on laptops, 7+ on big screens */
+  .record-grid {
+    --cell: 140px;
+
+    list-style: none;
+    padding: 0;
+    margin: var(--gap) 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--cell)), 1fr));
+    gap: clamp(1.25rem, 3vw, 2.25rem) clamp(0.75rem, 2vw, 1.5rem);
+  }
+
+  @media (min-width: 600px) {
+    .record-grid {
+      --cell: 170px;
     }
+  }
+
+  @media (min-width: 1024px) {
+    .record-grid {
+      --cell: 200px;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .record-grid {
+      --cell: 220px;
+    }
+  }
+
+  .record-grid .record-cover.record-cover {
+    max-width: none;
+  }
+
+  .record-grid h3 {
+    margin: 0.6rem 0 0;
+    font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+    line-height: 1.35;
   }
 
   ul:is(.regular-list) {

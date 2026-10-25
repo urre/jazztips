@@ -51,9 +51,9 @@ const records = (await getCollection("records", ({ data }) => import.meta.env.DE
           }
           <Ad />
         </div>
-        <ul>
+        <ul class="record-grid">
           {
-            records.slice(1, 24).map((record) => (
+            records.slice(1, 25).map((record) => (
               <li>
                 <a href={record.id}>
                   {record.data.image && (
