@@ -45,26 +45,16 @@ const { musicians } = Astro.props;
   .musicians {
     --gap: 2rem;
 
-    display: unset;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
+  /* As many columns as fit: two or three on tablets, four on desktop */
   @media (min-width: 768px) {
     .musicians {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--gap);
-    }
-  }
-
-  /* Two columns on tablets, a bit narrower on desktop */
-  @media (min-width: 768px) {
-    .musician {
-      flex: 0 0 calc(50% - var(--gap));
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .musician {
-      flex: 0 0 calc(35% - var(--gap));
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem var(--gap);
     }
   }
 
