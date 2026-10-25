@@ -7,8 +7,8 @@ year: 1956
 tags:
   - ella
   - luis
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689828/jn1l35ux1hgbbgrypcyh.jpg
+image: ../assets/covers/ella-louis.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689828/jn1l35ux1hgbbgrypcyh.jpg
 
 
 

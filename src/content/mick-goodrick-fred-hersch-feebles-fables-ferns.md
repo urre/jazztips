@@ -16,7 +16,8 @@ tags:
 permalink: https://jazztips.se/mick-goodrick-fred-hersch-feebles-fables-ferns/
 spotify: https://open.spotify.com/album/1LVWCfQ5dLlIem5qFAT7X4
 tidal: https://tidal.com/browse/album/532844247
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/5f/e7/545fe7dd-e34c-0bd7-8d04-5c9e98783361/25UM1IM64584.rgb.jpg/800x800bb.jpg
+image: ../assets/covers/mick-goodrick-fred-hersch-feebles-fables-ferns.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/54/5f/e7/545fe7dd-e34c-0bd7-8d04-5c9e98783361/25UM1IM64584.rgb.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/feebles-fables-ferns/1889203827
 qobuz: https://www.qobuz.com/us-en/album/feebles-fables-ferns-fred-hersch-mick-goodrick/mf8vmnn4wz47a
 credits:

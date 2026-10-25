@@ -16,7 +16,8 @@ tags:
 permalink: https://jazztips.se/nicholas-payton-a-supreme-blue/
 spotify: https://open.spotify.com/album/6g0hUzE7MozpOpJR0Y8uuk
 tidal: https://tidal.com/browse/album/543847214
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/e4/c0/29e4c0c0-8879-d860-05d2-d9ea4ce92b3d/26CRGIM54615.rgb.jpg/600x600bb.jpg
+image: ../assets/covers/nicholas-payton-a-supreme-blue.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/e4/c0/29e4c0c0-8879-d860-05d2-d9ea4ce92b3d/26CRGIM54615.rgb.jpg/600x600bb.jpg
 apple: https://embed.music.apple.com/us/album/a-supreme-blue/6765482846?uo=4
 qobuz: https://www.qobuz.com/fr-fr/album/a-supreme-blue-nicholas-payton-butcher-brown/c3warl2o0fvgb
 credits:

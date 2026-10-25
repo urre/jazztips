@@ -11,8 +11,8 @@ tags:
   - mehldau
   - metheny
   - patitucci
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690257/z16kgelhsqdhrbwby62s.jpg
+image: ../assets/covers/pilgrimage.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690257/z16kgelhsqdhrbwby62s.jpg
 
 
 

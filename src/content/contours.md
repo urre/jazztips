@@ -12,8 +12,8 @@ tags:
   - carter
   - hubbard
   - rivers
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690253/hpopwhtbg9gfyrduqf3a.jpg
+image: ../assets/covers/contours.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690253/hpopwhtbg9gfyrduqf3a.jpg
 
 
 

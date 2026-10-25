@@ -10,8 +10,8 @@ tags:
   - york
   - trumpet
   - turner
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689730/k33z89j0kbuirdu3hgr0.jpg
+image: ../assets/covers/wind.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689730/k33z89j0kbuirdu3hgr0.jpg
 
 
 

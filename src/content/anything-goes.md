@@ -9,8 +9,8 @@ tags:
   - porter
   - radiohead
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690090/mhlqzqavehwtq04gsy0i.jpg
+image: ../assets/covers/anything-goes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690090/mhlqzqavehwtq04gsy0i.jpg
 
 
 

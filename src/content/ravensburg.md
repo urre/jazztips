@@ -8,8 +8,8 @@ tags:
   - eick
   - trumpet
   - ecm
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1521302623/q8prcgvuec1pgwi2bumt.jpg
+image: ../assets/covers/ravensburg.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1521302623/q8prcgvuec1pgwi2bumt.jpg
 
 spotify: >-
   https://open.spotify.com/track/1VJWskMZ1rc8yGlCJcpjDT?si=R86ZSMAGRoSPnUog1PUzBQ

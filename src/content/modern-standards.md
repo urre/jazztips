@@ -11,7 +11,8 @@ tags:
   - evans
   - mason
 ogimage: http://res.cloudinary.com/urre/image/upload/v1736406072/yrysk5gtxbqb4mar1pd8.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1736406059/qtjgnaquqcyfybmzb9fm.jpg
+image: ../assets/covers/modern-standards.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1736406059/qtjgnaquqcyfybmzb9fm.jpg
 
 credits:
 - name: Niels Lan Doky

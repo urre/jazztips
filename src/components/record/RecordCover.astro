@@ -1,16 +1,25 @@
 ---
+import { Picture } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
 export interface Props {
-  image?: string;
+  image: ImageMetadata;
   artist?: string;
   title?: string;
-  src?: string;
   alt?: string;
   pulled?: boolean;
   abovefold?: boolean;
-  size?: string;
+  size?: "large";
 }
 
-const { src, artist, title, pulled, abovefold, size } = Astro.props;
+const { image, artist, title, alt, pulled, abovefold, size } = Astro.props;
+const large = size === "large";
+
+// Grid covers are at most ~250 css px wide, the large one at most 500
+const widths = large ? [480, 840, 1000] : [240, 480];
+const sizes = large
+  ? "(max-width: 767px) 240px, (max-width: 1399px) 420px, 500px"
+  : "(max-width: 599px) 50vw, 250px";
 ---
 
 <style>
@@ -31,6 +40,10 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
     .record-cover {
       aspect-ratio: 1 / 1;
     }
+  }
+
+  .record-cover picture {
+    display: contents;
   }
 
   .record-cover img {
@@ -137,25 +150,16 @@ const { src, artist, title, pulled, abovefold, size } = Astro.props;
 </style>
 
 <figure class={`record-cover ${pulled ? "record-cover-pulled" : ""} `}>
-  {
-    abovefold ? (
-      <img
-        width={`${size === "large" ? "800" : "560"}`}
-        height={`${size === "large" ? "800" : "560"}`}
-        src={src}
-        alt={`${artist} - ${title}`}
-        class={`${size === "large" ? "image-lg" : ""}`}
-      />
-    ) : (
-      <img
-        width={560}
-        height={560}
-        src={src}
-        alt={`${artist} - ${title}`}
-        loading="lazy"
-        class={`${size === "large" ? "image-lg" : ""}`}
-      />
-    )
-  }
+  <Picture
+    src={image}
+    alt={alt ?? `${artist} - ${title}`}
+    widths={widths}
+    sizes={sizes}
+    formats={["avif", "webp"]}
+    fallbackFormat="webp"
+    class={large ? "image-lg" : undefined}
+    loading={abovefold ? "eager" : "lazy"}
+    fetchpriority={abovefold ? "high" : undefined}
+  />
   <span></span>
 </figure>

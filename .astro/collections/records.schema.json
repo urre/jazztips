@@ -29,6 +29,13 @@
       }
     },
     "image": {
+      "type": "string"
+    },
+    "imageSource": {
+      "type": "string",
+      "format": "uri"
+    },
+    "ogimage": {
       "type": "string",
       "format": "uri"
     },

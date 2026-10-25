@@ -9,7 +9,8 @@ year: 1989
 tags:
   - jarrett
   - trio
-image: https://res.cloudinary.com/urre/image/upload/v1725367780/u9lgkgebqdouqas4sbcr.jpg
+image: ../assets/covers/changeless.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1725367780/u9lgkgebqdouqas4sbcr.jpg
 tidal: 13370555
 
 spotify: http://open.spotify.com/album/4P4gASBR9igEdmZNDzlTuG

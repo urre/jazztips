@@ -10,8 +10,8 @@ tags:
   - kronkvist
   - kullhammar
   - sextett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690182/uu0cdiwblrzkfzpvpggg.jpg
+image: ../assets/covers/improvised-action.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690182/uu0cdiwblrzkfzpvpggg.jpg
 
 
 

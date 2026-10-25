@@ -13,7 +13,8 @@ tags:
   - binney
   - acuna
   - stagnaro
-image: https://m.media-amazon.com/images/I/71r8yQfUjML._UF1000,1000_QL80_.jpg
+image: ../assets/covers/olympians.avif
+imageSource: https://m.media-amazon.com/images/I/71r8yQfUjML._UF1000,1000_QL80_.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1733855266/kzwdebyjrkm2leph2ugw.jpg
 
 credits:

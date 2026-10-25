@@ -8,8 +8,8 @@ tags:
   - live
   - tingvall
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689885/xgfirenqektzs5vprtzv.jpg
+image: ../assets/covers/in-concert.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689885/xgfirenqektzs5vprtzv.jpg
 
 
 

@@ -7,8 +7,8 @@ year: 2015
 tags:
   - glasper
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689735/uhiojzhca7jzzdqatf3e.jpg
+image: ../assets/covers/covered.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689735/uhiojzhca7jzzdqatf3e.jpg
 
 
 

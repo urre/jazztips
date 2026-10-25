@@ -10,8 +10,8 @@ tags:
   - ölmedal
   - östholm
   - stoner
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690232/z2zmpiykhn0yco8skgo4.jpg
+image: ../assets/covers/hat-music.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690232/z2zmpiykhn0yco8skgo4.jpg
 
 
 

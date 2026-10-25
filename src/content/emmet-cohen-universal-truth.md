@@ -15,7 +15,8 @@ tags:
   - George Coleman
 permalink: https://jazztips.se/emmet-cohen-universal-truth/
 spotify: https://open.spotify.com/album/5JguHYfSLjVomb3nAwP5Lm
-image: https://f4.bcbits.com/img/a2721359850_10.jpg
+image: ../assets/covers/emmet-cohen-universal-truth.avif
+imageSource: https://f4.bcbits.com/img/a2721359850_10.jpg
 apple: https://embed.music.apple.com/us/album/universal-truth/1884692966
 qobuz: https://www.qobuz.com/fr-fr/album/universal-truth-emmet-cohen/solhot7rzs6up
 credits:

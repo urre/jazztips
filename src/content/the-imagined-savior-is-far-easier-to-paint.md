@@ -9,8 +9,8 @@ tags:
   - 'trumpet,'
   - blue
   - note
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1470400747/kmbgokkzxjv9hzyc7tt2.jpg
+image: ../assets/covers/the-imagined-savior-is-far-easier-to-paint.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1470400747/kmbgokkzxjv9hzyc7tt2.jpg
 
 spotify: 'https://open.spotify.com/album/2fFRpTyEaRfDv477Tbw7rQ'
 credits:

@@ -1,8 +1,23 @@
 ---
 import Search from "./Search";
 import { getCollection } from "astro:content";
+import { coverThumb } from "@utils/coverThumb";
 
 const records = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
+
+// The list is embedded in every page, so only send what the search reads
+const searchList = await Promise.all(
+  records.map(async ({ id, data }) => ({
+    id,
+    data: {
+      title: data.title,
+      artist: data.artist,
+      label: data.label,
+      credits: data.credits,
+      image: await coverThumb(data.image),
+    },
+  }))
+);
 ---
 
-<Search client:load searchList={records} />
+<Search client:load searchList={searchList} />

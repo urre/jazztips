@@ -8,8 +8,8 @@ tags:
   - asplund
   - kvarett
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689913/cmaukanf6qv1kk3afqln.jpg
+image: ../assets/covers/as-knights-concur.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689913/cmaukanf6qv1kk3afqln.jpg
 
 
 

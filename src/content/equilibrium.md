@@ -8,8 +8,8 @@ tags:
   - duo
   - Guitar
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689715/pos66yy5rmra37gcw8kl.jpg
+image: ../assets/covers/equilibrium.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689715/pos66yy5rmra37gcw8kl.jpg
 
 
 

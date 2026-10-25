@@ -8,8 +8,8 @@ tags:
   - keezer
   - locke
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689960/jkfoda7n8ytwwgpcnbha.jpg
+image: ../assets/covers/signing.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689960/jkfoda7n8ytwwgpcnbha.jpg
 
 
 

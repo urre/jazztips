@@ -10,8 +10,8 @@ tags:
   - schultz
   - sjöstedt
   - stenson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690151/vx8evm7ow9zhb8jsek7s.jpg
+image: ../assets/covers/johanneson-schultz.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690151/vx8evm7ow9zhb8jsek7s.jpg
 
 
 

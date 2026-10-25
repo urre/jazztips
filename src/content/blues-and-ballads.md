@@ -8,7 +8,8 @@ tags:
   - piano
   - 'trio,'
   - mehldau
-image: 'https://res.cloudinary.com/urre/image/upload/v1477839077/where_hxzvwg.jpg'
+image: ../assets/covers/blues-and-ballads.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1477839077/where_hxzvwg.jpg
 
 spotify: 'https://open.spotify.com/track/7cm93ymXYQy1XRdYx4i5Jy'
 credits:

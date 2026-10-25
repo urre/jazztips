@@ -9,8 +9,8 @@ tags:
   - bigband
   - defrancesco
   - orgel
-image: >-
-  https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1606915632/screenshots/fghrcq1z1j4pk3sgyp2l.png
+image: ../assets/covers/for-jimmy-wes-and-oliver.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1606915632/screenshots/fghrcq1z1j4pk3sgyp2l.png
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1608555117/uu72pvca68uuto85zbsg.jpg
 

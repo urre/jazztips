@@ -9,8 +9,8 @@ tags:
   - garde
   - cherry
   - coleman
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690175/w3cmtczurwfqj9jdwx48.jpg
+image: ../assets/covers/tomorrow-is-the-question.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690175/w3cmtczurwfqj9jdwx48.jpg
 
 
 

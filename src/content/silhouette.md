@@ -8,8 +8,8 @@ tags:
   - bülow
   - kvintett
   - lundin
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690052/mpxsvkvgrv0emx8xzzie.jpg
+image: ../assets/covers/silhouette.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690052/mpxsvkvgrv0emx8xzzie.jpg
 
 
 

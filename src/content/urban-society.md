@@ -6,8 +6,8 @@ label: Soul Note
 year: 2002
 tags:
   - partipilo
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690087/uxgcnkm2jqehqp0fsy89.jpg
+image: ../assets/covers/urban-society.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690087/uxgcnkm2jqehqp0fsy89.jpg
 
 
 

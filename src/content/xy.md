@@ -6,8 +6,8 @@ label: Headspin
 year: 2011
 tags:
   - kajfes
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690049/kvvwjdhhxv4rpohz5llv.jpg
+image: ../assets/covers/xy.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690049/kvvwjdhhxv4rpohz5llv.jpg
 
 
 

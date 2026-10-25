@@ -9,8 +9,8 @@ tags:
   - piano
   - red
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689782/fvvbcgmhdafvtowvjvi1.jpg
+image: ../assets/covers/red-garlands-piano.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689782/fvvbcgmhdafvtowvjvi1.jpg
 
 
 

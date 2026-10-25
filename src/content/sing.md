@@ -7,8 +7,8 @@ year: 2014
 tags:
   - Vocals
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689776/s4g3ijtsnoknwbx4rtr4.jpg
+image: ../assets/covers/sing.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689776/s4g3ijtsnoknwbx4rtr4.jpg
 
 
 

@@ -7,8 +7,8 @@ year: 2012
 tags:
   - mehldau
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689967/z8t2m7qb5rb20q19i0gx.jpg
+image: ../assets/covers/where-do-you-start.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689967/z8t2m7qb5rb20q19i0gx.jpg
 
 
 

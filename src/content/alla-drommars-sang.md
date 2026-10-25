@@ -9,8 +9,8 @@ tags:
   - folkjazz
   - folkmusik
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689826/lf6pyp8d5hvzlhzthn2p.jpg
+image: ../assets/covers/alla-drommars-sang.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689826/lf6pyp8d5hvzlhzthn2p.jpg
 
 
 

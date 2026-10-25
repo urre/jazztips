@@ -7,8 +7,8 @@ year: 2009
 tags:
   - taylor
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690082/psfbddxhbzp0lkhfdvsw.jpg
+image: ../assets/covers/circle-down.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690082/psfbddxhbzp0lkhfdvsw.jpg
 
 
 

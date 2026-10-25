@@ -8,8 +8,8 @@ tags:
   - 60-tal
   - indie
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690162/wqmlgnurqu5qwxcullw9.jpg
+image: ../assets/covers/never-stop.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690162/wqmlgnurqu5qwxcullw9.jpg
 
 
 

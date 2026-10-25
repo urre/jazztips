@@ -9,8 +9,8 @@ tags:
   - capitol
   - duo
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689940/nq2m5psgiwedrxiguztv.jpg
+image: ../assets/covers/the-capitol-sessions.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689940/nq2m5psgiwedrxiguztv.jpg
 
 
 

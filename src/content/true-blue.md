@@ -13,7 +13,8 @@ tags:
 ogimage: https://res.cloudinary.com/urre/image/upload/v1679642681/inyvtgsjihoebqijrgvf.jpg
 
 spotify: https://open.spotify.com/album/2E4Zyg78Slt7IyJhIbYbtW
-image: https://res.cloudinary.com/urre/image/upload/v1679642557/ggexjvowsfkx1jqvpmdq.jpg
+image: ../assets/covers/true-blue.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1679642557/ggexjvowsfkx1jqvpmdq.jpg
 tidal: 77634865
 credits:
   - name: Tina Brooks

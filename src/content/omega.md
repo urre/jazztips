@@ -8,8 +8,8 @@ tags:
   - blue note
   - wilkins
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1614578611/screenshots/spg8c9niifeyoos3hmh4.jpg
+image: ../assets/covers/omega.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1614578611/screenshots/spg8c9niifeyoos3hmh4.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1614578798/f2zsdcxqutftqftjos8p.jpg
 

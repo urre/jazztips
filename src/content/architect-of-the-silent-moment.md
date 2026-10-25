@@ -10,8 +10,8 @@ tags:
   - maret
   - moran
   - sanchez
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690086/zptkqyo5o4ljgsbfujdb.jpg
+image: ../assets/covers/architect-of-the-silent-moment.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690086/zptkqyo5o4ljgsbfujdb.jpg
 
 
 

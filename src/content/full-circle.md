@@ -10,8 +10,8 @@ tags:
   - kvartett
   - östholm
   - vogler
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690108/wxfoaxalbxeejfiytoy3.jpg
+image: ../assets/covers/full-circle.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690108/wxfoaxalbxeejfiytoy3.jpg
 
 
 

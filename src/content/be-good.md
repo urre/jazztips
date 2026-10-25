@@ -8,8 +8,8 @@ tags:
   - porter
   - Vocals
   - vokal
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689949/wm8frwifkn71cguqelqs.jpg
+image: ../assets/covers/be-good.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689949/wm8frwifkn71cguqelqs.jpg
 
 
 

@@ -9,8 +9,8 @@ tags:
   - Bass
   - danielsson
   - harland
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689783/qrvv0mt82aopqgnorfgm.jpg
+image: ../assets/covers/tarantella.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689783/qrvv0mt82aopqgnorfgm.jpg
 
 
 

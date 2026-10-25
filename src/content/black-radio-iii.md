@@ -7,7 +7,8 @@ label: Loma Vista
 year:  2022
 tags:
   - glasper
-image: https://res.cloudinary.com/urre/image/upload/v1729080530/q06v9nom30p97lqqyszc.jpg
+image: ../assets/covers/black-radio-iii.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1729080530/q06v9nom30p97lqqyszc.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1729080532/fokkykxye2noohb29zuu.jpg
 
 spotify: https://open.spotify.com/album/0rLSX7OMtwRHDjjCWL6tHC

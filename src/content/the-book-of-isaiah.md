@@ -13,7 +13,8 @@ permalink: /the-book-of-isaiah/
 spotify: https://open.spotify.com/album/3Ef6ZoiXdtfXxDrn9UGQyG
 apple: https://embed.music.apple.com/us/album/the-book-of-isaiah-modern-jazz-ministry/1804698891?uo=4
 tidal: https://tidal.com/browse/album/426444371?u
-image: https://res.cloudinary.com/urre/image/upload/v1750660156/uquogj3gld7jyfnfn92w.jpg
+image: ../assets/covers/the-book-of-isaiah.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1750660156/uquogj3gld7jyfnfn92w.jpg
 credits:
 - name: Isaiah J. Thompson
   instrument: Piano (all tracks), Background Vocals (II, VIII)

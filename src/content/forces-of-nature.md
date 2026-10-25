@@ -10,7 +10,8 @@ tags:
   - tyner
   - henderson
 ogimage: http://res.cloudinary.com/urre/image/upload/v1737100925/ly9qzd9zkkhida8gywgi.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1737100919/ypfhvfgo8lv7gc3r3bpj.jpg
+image: ../assets/covers/forces-of-nature.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1737100919/ypfhvfgo8lv7gc3r3bpj.jpg
 
 credits:
 - name: McCoy Tyner

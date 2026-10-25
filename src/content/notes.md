@@ -10,8 +10,8 @@ tags:
   - linton
   - piano
   - westin
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689740/kwlppdspyququ5h1dmhp.jpg
+image: ../assets/covers/notes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689740/kwlppdspyququ5h1dmhp.jpg
 
 
 

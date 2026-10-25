@@ -6,8 +6,8 @@ label: Mainland
 year: 2010
 tags:
   - blom
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689917/cejqzskoabrubqcmujqp.jpg
+image: ../assets/covers/dexterity.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689917/cejqzskoabrubqcmujqp.jpg
 
 
 

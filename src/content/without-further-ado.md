@@ -14,7 +14,8 @@ permalink: /without-further-ado/
 spotify: https://open.spotify.com/album/3vkNGUlipZ7lxgJzaO6VXy
 apple: https://embed.music.apple.com/us/album/without-further-ado-vol-1/1818889585?uo=4
 tidal: https://tidal.com/browse/album/92439206?u
-image: https://f4.bcbits.com/img/a0247136435_16.jpg
+image: ../assets/covers/without-further-ado.avif
+imageSource: https://f4.bcbits.com/img/a0247136435_16.jpg
 credits:
 - name: Christian McBride
   instrument: Bass, Bandleader

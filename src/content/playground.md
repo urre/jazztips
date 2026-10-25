@@ -8,8 +8,8 @@ tags:
   - katche
   - ecm
   - eick
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1642453998/iojxpg9zr3vm3mdpkqxf.jpg
+image: ../assets/covers/playground.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1642453998/iojxpg9zr3vm3mdpkqxf.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1642454191/opio6pnvihphe5nljo1j.jpg
 

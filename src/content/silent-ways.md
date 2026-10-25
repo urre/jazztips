@@ -6,8 +6,8 @@ label: ACT
 year: 2013
 tags:
   - norby
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689883/tofr25qjspg1z5xycsdl.jpg
+image: ../assets/covers/silent-ways.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689883/tofr25qjspg1z5xycsdl.jpg
 
 
 

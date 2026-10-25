@@ -8,8 +8,8 @@ tags:
   - strandberg
   - trio
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689810/p7prad5qwxolruqt6for.jpg
+image: ../assets/covers/works.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689810/p7prad5qwxolruqt6for.jpg
 
 
 

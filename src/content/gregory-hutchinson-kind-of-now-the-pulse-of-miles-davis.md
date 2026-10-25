@@ -11,7 +11,8 @@ tags:
   - Contemporary Jazz
 permalink: https://jazztips.se/gregory-hutchinson-kind-of-now-the-pulse-of-miles-davis/
 spotify: https://open.spotify.com/album/2LG2xjDwbgyAgLaOSstbA5
-image: https://i.scdn.co/image/ab67616d00001e0248f7812bd31f14169f0bc86a
+image: ../assets/covers/gregory-hutchinson-kind-of-now-the-pulse-of-miles-davis.avif
+imageSource: https://i.scdn.co/image/ab67616d00001e0248f7812bd31f14169f0bc86a
 apple: https://embed.music.apple.com/us/album/kind-of-now-the-pulse-of-miles-davis/1867530269
 qobuz: https://www.qobuz.com/es-es/album/kind-of-now-the-pulse-of-miles-davis-gregory-hutchinson/yppqe44oqw3q3
 credits:

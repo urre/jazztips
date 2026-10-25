@@ -10,7 +10,8 @@ tags:
   - gadd
   - lee
   - landgren
-image: https://res.cloudinary.com/urre/image/upload/v1745827828/rbakw8bqn3lnzdskt6wf.jpg
+image: ../assets/covers/all-that-matters.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1745827828/rbakw8bqn3lnzdskt6wf.jpg
 permalink: /all-that-matters/
 tidal: https://tidal.com/browse/album/382545270
 apple: https://embed.music.apple.com/us/album/all-that-matters/1764078452

@@ -8,8 +8,8 @@ tags:
   - burton
   - kvartett
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689842/gb1pnfpffrxkuakzegpr.jpg
+image: ../assets/covers/common-ground.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689842/gb1pnfpffrxkuakzegpr.jpg
 
 
 

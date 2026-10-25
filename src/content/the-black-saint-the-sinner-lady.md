@@ -8,8 +8,8 @@ tags:
   - avant
   - garde
   - mingus
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689905/czoqxgfnyvue1nblvdpq.png
+image: ../assets/covers/the-black-saint-the-sinner-lady.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689905/czoqxgfnyvue1nblvdpq.png
 
 
 

@@ -9,8 +9,8 @@ tags:
   - jazzland
   - electronic
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605706389/screenshots/mem3jwy6ro4j7norhx1p.jpg
+image: ../assets/covers/nu-minns-jag.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605706389/screenshots/mem3jwy6ro4j7norhx1p.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1605707007/wkcddgxcisv4fv1mett0.jpg
 

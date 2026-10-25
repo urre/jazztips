@@ -10,8 +10,8 @@ tags:
   - kvartett
   - mcbride
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690281/pdvujj8weipkhbklkojc.jpg
+image: ../assets/covers/letter-to-herbie.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690281/pdvujj8weipkhbklkojc.jpg
 
 
 

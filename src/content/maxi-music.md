@@ -7,8 +7,8 @@ year: 2006
 tags:
   - kallerdahl
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690139/agjpvwe0kb50v4efsxyt.jpg
+image: ../assets/covers/maxi-music.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690139/agjpvwe0kb50v4efsxyt.jpg
 
 
 

@@ -6,8 +6,8 @@ label: Headspin Recordings
 year: 2013
 tags:
   - Guitar
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689804/k5lx3dfdklw4tdwpxa5t.jpg
+image: ../assets/covers/four-4.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689804/k5lx3dfdklw4tdwpxa5t.jpg
 
 
 

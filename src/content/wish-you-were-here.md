@@ -8,7 +8,8 @@ year: 2023
 tags:
   - laurance
   - league
-image: https://res.cloudinary.com/urre/image/upload/v1747308522/qaclwtv8awqowpymspos.jpg
+image: ../assets/covers/wish-you-were-here.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1747308522/qaclwtv8awqowpymspos.jpg
 permalink: /where-you-wish-you-were/
 tidal: https://tidal.com/browse/album/257607774
 apple: https://embed.music.apple.com/us/album/where-you-wish-you-were/1652476627

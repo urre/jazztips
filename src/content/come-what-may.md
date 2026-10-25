@@ -10,7 +10,8 @@ tags:
   - mehldau
   - mcbride
   - blade
-image: https://lastfm.freetls.fastly.net/i/u/300x300/7fcc7bc385e4f8e2f1358b152e644733.jpg
+image: ../assets/covers/come-what-may.avif
+imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/7fcc7bc385e4f8e2f1358b152e644733.jpg
 ogimage: https://lastfm.freetls.fastly.net/i/u/300x300/7fcc7bc385e4f8e2f1358b152e644733.jpg
 credits:
 - name: Joshua Redman

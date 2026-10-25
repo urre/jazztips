@@ -15,8 +15,8 @@ tags:
   - milder
   - monk
   - ölmedal
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690236/axcxiav3xxlkj0gbe6t8.jpg
+image: ../assets/covers/silent-room.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690236/axcxiav3xxlkj0gbe6t8.jpg
 
 
 

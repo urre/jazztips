@@ -14,7 +14,8 @@ permalink: /aaron-parks-by-all-means/
 spotify: https://open.spotify.com/album/0Bb8tnCWkiCrZFJ4BSXx9e
 apple: https://embed.music.apple.com/us/album/by-all-means/1835522208?uo=4
 tidal: https://tidal.com/browse/album/470623983?u
-image: https://store.bluenote.com/cdn/shop/files/2025_AP-BAM_DigitalCover-HQ-3000px.jpg?v=1757432863
+image: ../assets/covers/aaron-parks-by-all-means.avif
+imageSource: https://store.bluenote.com/cdn/shop/files/2025_AP-BAM_DigitalCover-HQ-3000px.jpg?v=1757432863
 credits:
 - name: Aaron Parks
   instrument: Piano

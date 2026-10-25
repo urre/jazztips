@@ -9,7 +9,8 @@ tags:
   - patitucci
   - potter
   - blade
-image: https://editionrecords.com/wp-content/uploads/2024/11/EDN1258_Spirit_Fall_Packshot_1500-1000x1000.jpg.webp
+image: ../assets/covers/spirit-fall.avif
+imageSource: https://editionrecords.com/wp-content/uploads/2024/11/EDN1258_Spirit_Fall_Packshot_1500-1000x1000.jpg.webp
 permalink: /spirit-fall/
 tidal: https://tidal.com/browse/album/399566297?u
 apple: https://embed.music.apple.com/us/album/spirit-fall-feat-chris-potter-brian-blade/1779751292

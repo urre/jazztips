@@ -9,7 +9,8 @@ tags:
   - joy
   - vocal
 ogimage: https://res.cloudinary.com/urre/image/upload/v1738940904/vr3pzzxcwvkvp7bayikc.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1738940904/vr3pzzxcwvkvp7bayikc.jpg
+image: ../assets/covers/linger-awhile.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1738940904/vr3pzzxcwvkvp7bayikc.jpg
 spotify: https://open.spotify.com/album/1TZ16QfCsARON0efp6mGga
 apple: https://embed.music.apple.com/sb/album/linger-awhile/1637144888
 tidal: https://tidal.com/browse/album/247470693?u

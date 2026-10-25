@@ -7,8 +7,8 @@ year: 2010
 tags:
   - piano
   - septet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689869/n6fdyja8aargnl6s1rny.jpg
+image: ../assets/covers/for-away-places.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689869/n6fdyja8aargnl6s1rny.jpg
 
 
 

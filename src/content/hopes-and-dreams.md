@@ -7,8 +7,8 @@ year: 2015
 tags:
   - duo
   - orgel
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689738/jvpqpjjt6apwgvhvxzu7.jpg
+image: ../assets/covers/hopes-and-dreams.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689738/jvpqpjjt6apwgvhvxzu7.jpg
 
 
 

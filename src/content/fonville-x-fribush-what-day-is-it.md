@@ -11,7 +11,8 @@ tags:
   - Funk
 permalink: https://jazztips.se/fonville-x-fribush-what-day-is-it/
 tidal: https://tidal.com/browse/album/474771801
-image: https://f4.bcbits.com/img/a1863630490_10.jpg
+image: ../assets/covers/fonville-x-fribush-what-day-is-it.avif
+imageSource: https://f4.bcbits.com/img/a1863630490_10.jpg
 credits:
   - name: Corey Fonville
     instrument: Drums, Percussion

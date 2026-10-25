@@ -8,8 +8,8 @@ tags:
   - kullhammar
   - norgren
   - storband
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689720/yebr3xeajkrgclyrbf3u.jpg
+image: ../assets/covers/pathfinding.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689720/yebr3xeajkrgclyrbf3u.jpg
 
 
 

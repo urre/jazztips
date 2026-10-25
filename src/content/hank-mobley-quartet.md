@@ -7,7 +7,8 @@ label: Blue Note
 year: 1955
 tags:
   - mobley
-image: https://res.cloudinary.com/urre/image/upload/v1728885823/eko1u8qkt2acakoe856n.jpg
+image: ../assets/covers/hank-mobley-quartet.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1728885823/eko1u8qkt2acakoe856n.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1728885825/ea7d8sd22aw27xrhqtdy.jpg
 
 spotify: https://open.spotify.com/album/4RyagozbMjdxY3OYsQFkC7

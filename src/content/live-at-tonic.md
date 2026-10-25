@@ -8,8 +8,8 @@ tags:
   - benevento
   - live
   - tonic
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690187/ksz4zblh99mp5axue8bt.jpg
+image: ../assets/covers/live-at-tonic.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690187/ksz4zblh99mp5axue8bt.jpg
 
 
 

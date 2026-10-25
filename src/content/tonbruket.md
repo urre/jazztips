@@ -8,8 +8,8 @@ tags:
   - berglund
   - est
   - svensson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690240/rsokyryskd4meix4xv5r.jpg
+image: ../assets/covers/tonbruket.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690240/rsokyryskd4meix4xv5r.jpg
 
 
 

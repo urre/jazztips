@@ -15,7 +15,8 @@ tags:
   - Fusion
 permalink: https://jazztips.se/charlie-hunter-space-bomb/
 spotify: https://open.spotify.com/album/6cS20VoCGwqqmtgfrI1Akt
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/6e/73/066e7383-23eb-6e40-1265-5f47717c6dd7/199806729823.jpg/800x800bb.jpg
+image: ../assets/covers/charlie-hunter-space-bomb.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/6e/73/066e7383-23eb-6e40-1265-5f47717c6dd7/199806729823.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/space-bomb/1862297219
 qobuz: https://www.qobuz.com/us-en/album/space-bomb-charlie-hunter-corey-fonville-andrew-randazzo-dj-harrison/k3yg0e2l72ehx
 credits:

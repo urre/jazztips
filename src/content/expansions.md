@@ -12,7 +12,8 @@ tags:
   - shaw
   - carter
   - bartz
-image: https://res.cloudinary.com/urre/image/upload/v1727415357/jcojfqxm9pwpapowtsl6.jpg
+image: ../assets/covers/expansions.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727415357/jcojfqxm9pwpapowtsl6.jpg
 
 spotify: https://open.spotify.com/album/3404M6AYZg8trSX9jWEVhZ
 tidal: https://tidal.com/browse/album/77821373?u

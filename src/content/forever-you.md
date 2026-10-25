@@ -9,8 +9,8 @@ tags:
   - danielsson
   - lund
   - wakenius
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690264/tsmfeijgl6zacvqb9y1q.jpg
+image: ../assets/covers/forever-you.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690264/tsmfeijgl6zacvqb9y1q.jpg
 
 
 

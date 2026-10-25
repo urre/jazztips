@@ -12,8 +12,8 @@ tags:
   - forever
   - trio
   - white
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690144/frmeqv7mggi4xfjdkb4j.jpg
+image: ../assets/covers/forever.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690144/frmeqv7mggi4xfjdkb4j.jpg
 
 
 

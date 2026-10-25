@@ -9,8 +9,8 @@ tags:
   - kvintett
   - nordiskt
   - norge
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689768/dr0r8bavej6pobkejbxx.jpg
+image: ../assets/covers/the-set.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689768/dr0r8bavej6pobkejbxx.jpg
 
 
 

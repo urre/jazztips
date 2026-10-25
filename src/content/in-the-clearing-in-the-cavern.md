@@ -7,8 +7,8 @@ year: 2010
 tags:
   - norge
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689816/dz4yqrfqep6nucczwufq.jpg
+image: ../assets/covers/in-the-clearing-in-the-cavern.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689816/dz4yqrfqep6nucczwufq.jpg
 
 
 

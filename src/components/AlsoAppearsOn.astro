@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import RecordCover from "./record/RecordCover.astro";
-import optimizeImage from "@utils/optimizeImage";
 
 export interface Props {
   musicians?: Array<{ name: string; instrument: string }>;
@@ -62,10 +61,7 @@ const appearingCredits = musicians
               {appearsOn.find((record) => record.id === credit.slug)?.data
                 .image && (
                 <RecordCover
-                  src={`${optimizeImage(
-                    appearsOn.find((record) => record.id === credit.slug)?.data
-                      .image ?? ""
-                  )}`}
+                  image={appearsOn.find((record) => record.id === credit.slug)!.data.image}
                   alt={`${credit.name}`}
                 />
               )}

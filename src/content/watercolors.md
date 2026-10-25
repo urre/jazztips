@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1726120965/jjhhmg6etootyx
 year:  1977
 tags:
   - metheny
-image: https://res.cloudinary.com/urre/image/upload/v1726120808/r0amoptr9hkvrvoza064.jpg
+image: ../assets/covers/watercolors.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726120808/r0amoptr9hkvrvoza064.jpg
 
 spotify: https://open.spotify.com/album/0zlSV683pRVrcTmtyQ8IZ9
 credits:

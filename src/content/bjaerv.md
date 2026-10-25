@@ -9,8 +9,8 @@ tags:
   - danemo
   - nordmark
   - nylander
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690248/vlitbjbpz0ujizuxcp0w.jpg
+image: ../assets/covers/bjaerv.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690248/vlitbjbpz0ujizuxcp0w.jpg
 
 
 

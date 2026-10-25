@@ -7,8 +7,8 @@ year: 2017
 tags:
   - parks
   - hart
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1648042276/screenshots/tvxvkk9kcpmm27et2ykk.jpg
+image: ../assets/covers/find-the-way.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1648042276/screenshots/tvxvkk9kcpmm27et2ykk.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1673449837/khmgrbk9o0hqfllraesj.jpg
 

@@ -13,7 +13,8 @@ tags:
 permalink: https://jazztips.se/bill-evans-another-time-the-hilversum-concert/
 spotify: https://open.spotify.com/album/5Mb1e38JMVUFpDo3JKhcHN
 tidal: https://tidal.com/browse/album/72667104
-image: https://f4.bcbits.com/img/a3616328940_16.jpg
+image: ../assets/covers/bill-evans-another-time-the-hilversum-concert.avif
+imageSource: https://f4.bcbits.com/img/a3616328940_16.jpg
 apple: https://music.apple.com/co/album/another-time-the-hilversum-concert-live/1226876072
 qobuz: https://www.qobuz.com/ca-en/album/another-time-the-hilversum-concert-with-eddie-gomez-jack-dejohnette-bill-evans-feat-eddie-gomez-jack-dejohnette/0881034189523
 credits:

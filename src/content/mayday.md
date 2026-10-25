@@ -10,8 +10,8 @@ tags:
   - palle
   - rundqvist
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690224/iqdkfq5dr872un6ofkzm.jpg
+image: ../assets/covers/mayday.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690224/iqdkfq5dr872un6ofkzm.jpg
 spotify: 'https://open.spotify.com/album/4m3p9h8WXTqTIEZkaRurJo'
 credits:
   - name: Fredrik Nordström

@@ -6,8 +6,8 @@ label: Oh Yeah Records
 year: 2013
 tags:
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689887/zhv2vhelyvqp2plqcb3s.jpg
+image: ../assets/covers/sparkling-water-please.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689887/zhv2vhelyvqp2plqcb3s.jpg
 
 
 

@@ -5,7 +5,8 @@ pubDate: '2025-02-20'
 artist: John Coltrane Quartet
 label: Impulse
 year: 1963
-image: https://res.cloudinary.com/urre/image/upload/v1740038647/mroyuqyug2srsfzu11d0.jpg
+image: ../assets/covers/chim-chim.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1740038647/mroyuqyug2srsfzu11d0.jpg
 tidal: https://tidal.com/browse/album/77598248
 tags:
   - coltrane

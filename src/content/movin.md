@@ -9,8 +9,8 @@ tags:
   - lindgren
   - ministorband
   - orchestra
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690066/rkfuxlojbhcbbmm1xgpy.jpg
+image: ../assets/covers/movin.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690066/rkfuxlojbhcbbmm1xgpy.jpg
 
 
 

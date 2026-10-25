@@ -6,8 +6,8 @@ label: NOR-CD
 year: 2013
 tags:
   - duo
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689795/mt3qjojdn6xkkuehylo5.jpg
+image: ../assets/covers/duolia.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689795/mt3qjojdn6xkkuehylo5.jpg
 
 
 

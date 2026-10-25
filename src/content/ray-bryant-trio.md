@@ -8,8 +8,8 @@ tags:
   - bryant
   - trio
   - wright
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690122/fxnrkadluhokd4iwhr4y.jpg
+image: ../assets/covers/ray-bryant-trio.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690122/fxnrkadluhokd4iwhr4y.jpg
 
 
 

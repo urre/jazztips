@@ -9,8 +9,8 @@ tags:
   - Pieranunzi
   - Saxophone
   - woods
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689723/dfon6e3o1g6e0uyhfbnn.jpg
+image: ../assets/covers/phils-mood.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689723/dfon6e3o1g6e0uyhfbnn.jpg
 
 
 

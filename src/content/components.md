@@ -7,8 +7,8 @@ year: 1965
 tags:
   - bluenote
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689925/hklbkswaqetmi56dz375.jpg
+image: ../assets/covers/components.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689925/hklbkswaqetmi56dz375.jpg
 
 
 

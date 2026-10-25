@@ -10,8 +10,8 @@ tags:
   - kjellberg
   - swallow
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690137/uxfxlkmwivs2fpzpy6xd.jpg
+image: ../assets/covers/i-s.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690137/uxfxlkmwivs2fpzpy6xd.jpg
 
 
 

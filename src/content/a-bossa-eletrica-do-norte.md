@@ -11,8 +11,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1679421047/nm2ofniesydf0v
   - bossa
   - brasilianskt
   - kronkvist
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690054/tafdna4ezykihjcvdvmn.jpg
+image: ../assets/covers/a-bossa-eletrica-do-norte.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690054/tafdna4ezykihjcvdvmn.jpg
 
 
 

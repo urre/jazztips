@@ -12,7 +12,8 @@ tags:
   - trio
   - guitar
 ogimage: http://res.cloudinary.com/urre/image/upload/v1736406559/ak19xvrplrsmyhrxddo6.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1736406489/k54bkzf9qiyqpdwhirpp.jpg
+image: ../assets/covers/sofo-session.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1736406489/k54bkzf9qiyqpdwhirpp.jpg
 
 credits:
 - name: Gustav Lundgren

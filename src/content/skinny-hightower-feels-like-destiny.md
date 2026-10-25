@@ -14,7 +14,8 @@ tags:
   - Neo-Soul
   - Instrumental R&B
 permalink: https://jazztips.se/skinny-hightower-feels-like-destiny/
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/d9/52/8bd952b7-441b-5208-7ead-13235540bf40/820200065285.jpg/1400x1400bb.jpg
+image: ../assets/covers/skinny-hightower-feels-like-destiny.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8b/d9/52/8bd952b7-441b-5208-7ead-13235540bf40/820200065285.jpg/1400x1400bb.jpg
 apple: https://embed.music.apple.com/us/album/feels-like-destiny/1870985496
 qobuz: https://www.qobuz.com/us-en/album/feels-like-destiny-skinny-hightower/va3dk53yth0eh
 credits:

@@ -9,8 +9,8 @@ tags:
   - frisell
   - motian
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690164/htlkrtliyf4hkmdwjjq6.jpg
+image: ../assets/covers/b-frisell-p-motian-r-carter.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690164/htlkrtliyf4hkmdwjjq6.jpg
 
 
 

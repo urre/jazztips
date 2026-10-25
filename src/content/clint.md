@@ -12,8 +12,8 @@ tags:
   - oddjob
   - robertsson
   - ruskträsk
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690129/edg1fiu5kpewqjojsbg9.jpg
+image: ../assets/covers/clint.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690129/edg1fiu5kpewqjojsbg9.jpg
 
 
 

@@ -10,7 +10,8 @@ tags:
   - landgren
   - trombone
   - piano
-image: https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_600,h_600/v1681889516/mmcwfuycvh7ov0izh2p6.jpg
+image: ../assets/covers/kristallen.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_600,h_600/v1681889516/mmcwfuycvh7ov0izh2p6.jpg
 
 spotify: https://open.spotify.com/album/1qvXyMcTxiAw6zFlem7BIW
 tidal: 121890893

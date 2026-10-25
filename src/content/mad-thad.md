@@ -13,7 +13,8 @@ permalink: https://jazztips.se/mad-thad/
 spotify: https://open.spotify.com/album/2pfi5cqwQrId0wz7qOUZTQ
 apple: https://embed.music.apple.com/us/album/mad-thad-remastered/378869378?uo=4
 tidal: https://tidal.com/browse/album/6017035
-image: https://lastfm.freetls.fastly.net/i/u/300x300/38ba896fdf6451eba12e9b38c64b59cb.jpg
+image: ../assets/covers/mad-thad.avif
+imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/38ba896fdf6451eba12e9b38c64b59cb.jpg
 credits:
   - name: Thad Jones
     instrument: Trumpet

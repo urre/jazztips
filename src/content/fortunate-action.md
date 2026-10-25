@@ -7,8 +7,8 @@ year: 2013
 tags:
   - bop
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689865/iwkrhutrr8q8pd3qzqcd.jpg
+image: ../assets/covers/fortunate-action.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689865/iwkrhutrr8q8pd3qzqcd.jpg
 
 
 

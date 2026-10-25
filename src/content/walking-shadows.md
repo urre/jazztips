@@ -8,8 +8,8 @@ tags:
   - blade
   - orkester
   - redman
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689879/s8xxaamdphivguxaa2q4.jpg
+image: ../assets/covers/walking-shadows.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689879/s8xxaamdphivguxaa2q4.jpg
 
 
 

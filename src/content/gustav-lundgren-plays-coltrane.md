@@ -15,7 +15,8 @@ tags:
   - Coltrane
   - Jorge Rossy
 permalink: https://jazztips.se/gustav-lundgren-plays-coltrane/
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/ba/a8/06baa80a-ad50-d3e0-156e-51a517ddb269/8721555737747.png/1400x1400bb.jpg
+image: ../assets/covers/gustav-lundgren-plays-coltrane.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/ba/a8/06baa80a-ad50-d3e0-156e-51a517ddb269/8721555737747.png/1400x1400bb.jpg
 apple: https://embed.music.apple.com/us/album/plays-coltrane-feat-jorge-rossy-rasmus-s%C3%B8rensen-p%C3%A4r/6786330236
 credits:
   - name: Gustav Lundgren

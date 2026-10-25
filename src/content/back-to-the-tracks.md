@@ -8,8 +8,8 @@ tags:
   - tina
   - brooks
   - hubbard
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1656930955/mm1jl3v4an36s1tettpe.jpg
+image: ../assets/covers/back-to-the-tracks.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1656930955/mm1jl3v4an36s1tettpe.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1668694623/ey7tsanpdk0g546kfdsh.jpg
 

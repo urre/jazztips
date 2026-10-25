@@ -8,8 +8,8 @@ tags:
   - duo
   - Guitar
   - haden
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689746/dqn3rbvrnqbvob9c4rmr.jpg
+image: ../assets/covers/charlie-haden-jim-hall.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689746/dqn3rbvrnqbvob9c4rmr.jpg
 
 
 

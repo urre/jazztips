@@ -9,8 +9,8 @@ tags:
   - garland
   - parker
   - taylor
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690233/yy5jy55rla9v88gzcvyc.jpg
+image: ../assets/covers/a-garland-of-red.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690233/yy5jy55rla9v88gzcvyc.jpg
 
 
 

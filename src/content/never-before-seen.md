@@ -8,8 +8,8 @@ tags:
   - jones
   - kvartett
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689756/hepsipqzv5a2oxtz4bny.jpg
+image: ../assets/covers/never-before-seen.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689756/hepsipqzv5a2oxtz4bny.jpg
 
 
 

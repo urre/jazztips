@@ -7,8 +7,8 @@ year: 2012
 tags:
   - funk
   - sextett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690001/gzdx4cmdhddwj6zm8bfj.jpg
+image: ../assets/covers/the-enchanter.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690001/gzdx4cmdhddwj6zm8bfj.jpg
 
 
 

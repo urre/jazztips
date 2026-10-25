@@ -10,8 +10,8 @@ tags:
   - robertsson
   - spering
   - texas
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690092/j3n3tg7vxwmhzxodur3a.jpg
+image: ../assets/covers/pan-pan.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690092/j3n3tg7vxwmhzxodur3a.jpg
 
 
 

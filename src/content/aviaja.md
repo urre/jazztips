@@ -10,8 +10,8 @@ tags:
   - jormin
   - pyysalo
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690173/m8qzjmppqxoawglwhvl4.jpg
+image: ../assets/covers/aviaja.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690173/m8qzjmppqxoawglwhvl4.jpg
 
 
 

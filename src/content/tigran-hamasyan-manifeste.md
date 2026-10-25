@@ -17,7 +17,8 @@ tags:
 permalink: https://jazztips.se/tigran-hamasyan-manifeste/
 spotify: https://open.spotify.com/album/5DksO6hOezz6mTfYOctZ6f
 tidal: https://tidal.com/browse/album/462512673
-image: https://lydialiebman.com/wp-content/uploads/2025/12/Tigran-Hamasyan-2.6-Tigran-Hamasyan.png
+image: ../assets/covers/tigran-hamasyan-manifeste.avif
+imageSource: https://lydialiebman.com/wp-content/uploads/2025/12/Tigran-Hamasyan-2.6-Tigran-Hamasyan.png
 apple: https://embed.music.apple.com/kg/album/manifeste/1841668692
 qobuz: https://www.qobuz.com/us-en/album/manifeste-tigran-hamasyan/citmf3fqcgq3a
 credits:

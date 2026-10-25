@@ -9,8 +9,8 @@ tags:
   - caprice
   - kallerdal
   - ståhl
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690072/iozdrp9lo03buzr8fpvl.jpg
+image: ../assets/covers/sailors-fighting-in-the-dance-hall.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690072/iozdrp9lo03buzr8fpvl.jpg
 
 
 

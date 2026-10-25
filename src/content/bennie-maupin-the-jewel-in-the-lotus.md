@@ -15,7 +15,8 @@ tags:
   - Spiritual Jazz
 permalink: https://jazztips.se/bennie-maupin-the-jewel-in-the-lotus/
 spotify: https://open.spotify.com/album/1Na5QsavsjOUqtj4f4Bxn1
-image: https://www.musicmaniarecords.be/media/coverart-big/256053-the-jewel-in-the-lotus.jpg
+image: ../assets/covers/bennie-maupin-the-jewel-in-the-lotus.avif
+imageSource: https://www.musicmaniarecords.be/media/coverart-big/256053-the-jewel-in-the-lotus.jpg
 apple: https://embed.music.apple.com/us/album/the-jewel-in-the-lotus/1863144202
 qobuz: https://www.qobuz.com/at-de/album/the-jewel-in-the-lotus-bennie-maupin/0060251723520
 credits:

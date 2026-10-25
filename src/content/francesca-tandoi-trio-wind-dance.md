@@ -15,7 +15,8 @@ permalink: /francesca-tandoi-trio-wind-dance/
 spotify: https://open.spotify.com/album/5pBkn1ckgGO7cN3FH8uStU
 apple: https://embed.music.apple.com/us/album/wind-dance/1569950978?uo=4
 tidal: https://tidal.com/browse/album/185926812
-image: https://i.discogs.com/x-S7hsfFOLukrhA6XQlqQO8ujIT0ohO-9LhHNWK3yKQ/rs:fit/g:sm/q:90/h:535/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDg2/NTI5LTE2MjMzMTQ3/NDYtNTk4OS5qcGVn.jpeg
+image: ../assets/covers/francesca-tandoi-trio-wind-dance.avif
+imageSource: https://i.discogs.com/x-S7hsfFOLukrhA6XQlqQO8ujIT0ohO-9LhHNWK3yKQ/rs:fit/g:sm/q:90/h:535/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5MDg2/NTI5LTE2MjMzMTQ3/NDYtNTk4OS5qcGVn.jpeg
 credits:
 - name: Francesca Tandoi
   instrument: Piano, Vocals

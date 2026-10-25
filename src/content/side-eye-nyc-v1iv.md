@@ -9,8 +9,8 @@ tags:
   - guitar
   - gilmore
   - francies
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1642934247/viv7iwnupqicbetjhtib.jpg
+image: ../assets/covers/side-eye-nyc-v1iv.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1642934247/viv7iwnupqicbetjhtib.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1642935005/x0jlrkuzmpuhpmsilhdl.jpg
 

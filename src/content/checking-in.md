@@ -11,8 +11,8 @@ tags:
   - melo
   - moses
   - olandersson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690018/qynbgcxjpmrxaqjeqbrf.jpg
+image: ../assets/covers/checking-in.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690018/qynbgcxjpmrxaqjeqbrf.jpg
 
 
 

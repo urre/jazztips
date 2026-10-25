@@ -9,8 +9,8 @@ tags:
   - piano
   - trio
 ogimage: https://res.cloudinary.com/urre/image/upload/v1679421506/oxxqrtsnewkfv6jmttzo.jpg
-image: >-
-  https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/v1673450795/wpl8tw88mouexmlskjoc.jpg
+image: ../assets/covers/portrait-in-jazz.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/v1673450795/wpl8tw88mouexmlskjoc.jpg
 
 spotify: https://open.spotify.com/album/093nLQ4H81HusNsFdGS4Or
 tidal: 77678676

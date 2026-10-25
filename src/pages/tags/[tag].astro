@@ -2,7 +2,6 @@
 import RecordCover from "@components/record/RecordCover.astro";
 import BaseHead from "@components/BaseHead.astro";
 import Header from "@components/Header.astro";
-import optimizeImage from "@utils/optimizeImage";
 import { getCollection } from "astro:content";
 import { mergeTags, tagKey } from "@utils/tags";
 
@@ -42,7 +41,7 @@ const { posts, label } = Astro.props;
               <a href={`/${record.id}`}>
                 {record.data.image && (
                   <RecordCover
-                    src={`${optimizeImage(record.data.image)}`}
+                    image={record.data.image}
                     artist={record.data.artist}
                     title={record.data.title}
                   />

@@ -8,8 +8,8 @@ tags:
   - reynolds
   - Saxophone
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1506179691/a2799578864_10_xdpycm.jpg
+image: ../assets/covers/bob-reynolds-hindsight.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1506179691/a2799578864_10_xdpycm.jpg
 
 spotify: 'https://open.spotify.com/track/2BXLMV1bZlsSvTnr8uBn1F'
 tidal: 77980659

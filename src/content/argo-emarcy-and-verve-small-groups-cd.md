@@ -8,8 +8,8 @@ tags:
   - box
   - buddy
   - rich
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689955/r0sapm4lu1oirnxjoe65.jpg
+image: ../assets/covers/argo-emarcy-and-verve-small-groups-cd.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689955/r0sapm4lu1oirnxjoe65.jpg
 
 
 

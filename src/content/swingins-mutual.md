@@ -10,7 +10,8 @@ tags:
   - vocal
   - shearing
 ogimage: http://res.cloudinary.com/urre/image/upload/v1736406382/pudrryd9koqgwv9kuswz.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1736406346/sgrnbskpsrwfy29wh93f.jpg
+image: ../assets/covers/swingins-mutual.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1736406346/sgrnbskpsrwfy29wh93f.jpg
 
 credits:
 - name: George Shearing

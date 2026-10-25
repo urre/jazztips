@@ -9,8 +9,8 @@ tags:
   - ellis
   - Percussion
   - Drums
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689774/rfoivbr3l57g9ajssulr.jpg
+image: ../assets/covers/why.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689774/rfoivbr3l57g9ajssulr.jpg
 
 
 

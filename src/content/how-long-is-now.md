@@ -9,8 +9,8 @@ tags:
   - danielsson
   - rantala
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1520179218/sedh3mtbhicbsrop3ijr_dwjgjk.jpg
+image: ../assets/covers/how-long-is-now.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1520179218/sedh3mtbhicbsrop3ijr_dwjgjk.jpg
 
 spotify: 'https://open.spotify.com/track/13rhCnFZEw9NUXdSWam3MO'
 credits:

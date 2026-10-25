@@ -6,8 +6,8 @@ label: Decca
 year: 2016
 tags:
   - porter
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1485087275/krth4pkcnjgexaum2uv4.jpg
+image: ../assets/covers/take-me-to-the-alley.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1485087275/krth4pkcnjgexaum2uv4.jpg
 
 spotify: 'https://open.spotify.com/track/6D5adqQiOQV5Yzora0KpPO'
 credits:

@@ -8,8 +8,8 @@ tags:
   - rasmusson
   - folkelid
   - symfoni
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1520179182/kalle-rasmusson-one_xgqgh3_agot49.jpg
+image: ../assets/covers/one.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1520179182/kalle-rasmusson-one_xgqgh3_agot49.jpg
 
 spotify: 'https://open.spotify.com/track/5fKwEBF54Y1wbJWMwDasYn'
 credits:

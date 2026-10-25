@@ -9,7 +9,8 @@ tags:
   - swallow
   - jazz
   - post-bop
-image: https://res.cloudinary.com/urre/image/upload/v1733381947/lsfmn4en15chdmmmvdch.jpg
+image: ../assets/covers/deconstructed.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1733381947/lsfmn4en15chdmmmvdch.jpg
 ogimage: https://res.cloudinary.com/urre/image/upload/v1733381947/lsfmn4en15chdmmmvdch.jpg
 
 spotify: https://open.spotify.com/album/0wjBwy1oHa2h1xjAoNvge7

@@ -8,8 +8,8 @@ tags:
   - flygelhorn
   - folkmusik
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689773/j2ezxh7sftmqifpanzq0.jpg
+image: ../assets/covers/piatruba.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689773/j2ezxh7sftmqifpanzq0.jpg
 
 
 

@@ -9,8 +9,8 @@ tags:
   - fitzgerald
   - storband
   - swing
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1641294220/liqr7xejlnftrnuagxnx.jpg
+image: ../assets/covers/ella-swings-lightly.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1641294220/liqr7xejlnftrnuagxnx.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1641294320/ryv5z9ikoctpqs9d72dj.jpg
 

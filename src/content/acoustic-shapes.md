@@ -8,8 +8,8 @@ tags:
   - danielsson
   - haffner
   - landgren
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690266/pmr42l1gk875wnahbtzg.jpg
+image: ../assets/covers/acoustic-shapes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690266/pmr42l1gk875wnahbtzg.jpg
 
 
 

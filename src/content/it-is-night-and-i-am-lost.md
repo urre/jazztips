@@ -7,8 +7,8 @@ year: 2013
 tags:
   - improvisation
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689863/dd6ffpjrvqm4xbajedvr.png
+image: ../assets/covers/it-is-night-and-i-am-lost.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689863/dd6ffpjrvqm4xbajedvr.png
 
 
 

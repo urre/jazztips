@@ -11,8 +11,8 @@ tags:
   - hill
   - sextett
   - williams
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689788/bdh2rspfgxsxwll5629g.png
+image: ../assets/covers/point-of-departure.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689788/bdh2rspfgxsxwll5629g.png
 
 
 

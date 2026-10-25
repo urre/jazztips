@@ -9,8 +9,8 @@ tags:
   - Electric
   - Bass
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689855/uwmbcgtqbz9i3nfeq9lr.jpg
+image: ../assets/covers/frantelunia.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689855/uwmbcgtqbz9i3nfeq9lr.jpg
 
 
 

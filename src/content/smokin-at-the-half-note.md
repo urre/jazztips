@@ -10,8 +10,8 @@ tags:
   - kelly
   - miles
   - montgomery
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690206/pa2nck8puormssy1baxb.jpg
+image: ../assets/covers/smokin-at-the-half-note.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690206/pa2nck8puormssy1baxb.jpg
 
 
 

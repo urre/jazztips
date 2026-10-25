@@ -12,8 +12,8 @@ tags:
   - owens
   - roker
   - wess
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690185/kcewca0u80nz5epwkkar.jpg
+image: ../assets/covers/one-more.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690185/kcewca0u80nz5epwkkar.jpg
 
 
 

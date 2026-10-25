@@ -8,8 +8,8 @@ tags:
   - piano
   - trio
   - norge
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1468405553/WEB_Image-Espen-Eriksen-Trio-Never-Ending-January-1700886905_tbwist.jpg
+image: ../assets/covers/never-ending-january.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1468405553/WEB_Image-Espen-Eriksen-Trio-Never-Ending-January-1700886905_tbwist.jpg
 
 
 

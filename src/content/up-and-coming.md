@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1726208441/ukv3rtx4fn1l7i
 year:  2017
 tags:
   - abercrombie
-image: https://res.cloudinary.com/urre/image/upload/v1726206627/jjxukbhhtia2s6qruijz.jpg
+image: ../assets/covers/up-and-coming.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726206627/jjxukbhhtia2s6qruijz.jpg
 credits:
 - name: Drew Gress
   instrument: Double Bass

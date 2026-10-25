@@ -7,8 +7,8 @@ year: 2009
 tags:
   - taylor
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690075/kpsee5gdes0yomh52iqm.jpg
+image: ../assets/covers/blissful-ignorance.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690075/kpsee5gdes0yomh52iqm.jpg
 
 
 

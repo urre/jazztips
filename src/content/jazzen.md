@@ -9,8 +9,8 @@ tags:
   - hederos
   - piano
   - ramsby
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689758/fsyvk1eoo0ipfifennpq.jpg
+image: ../assets/covers/jazzen.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689758/fsyvk1eoo0ipfifennpq.jpg
 
 
 

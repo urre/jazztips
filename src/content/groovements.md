@@ -7,8 +7,8 @@ year: 2016
 tags:
   - parks
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1479154193/groovements_j6fk90.jpg
+image: ../assets/covers/groovements.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1479154193/groovements_j6fk90.jpg
 
 spotify: 'https://open.spotify.com/track/6YeQJTy8BAiTdDUooihG9p'
 credits:

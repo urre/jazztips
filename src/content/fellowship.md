@@ -6,8 +6,8 @@ label: Blue Note
 year: 1998
 tags:
   - blade
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690152/jcnuudzp2m3qwdtabhqr.jpg
+image: ../assets/covers/fellowship.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690152/jcnuudzp2m3qwdtabhqr.jpg
 
 
 

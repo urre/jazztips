@@ -9,8 +9,8 @@ tags:
   - knutsson
   - live
   - öberg
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690208/d4xopvpjtxomyk7gwejg.jpg
+image: ../assets/covers/live.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690208/d4xopvpjtxomyk7gwejg.jpg
 
 
 

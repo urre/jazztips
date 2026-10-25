@@ -12,8 +12,8 @@ tags:
   - massive
   - lounge
   - schema
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690210/rafafvglloqg6f4kdl6s.jpg
+image: ../assets/covers/jet-sounds-revisited.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690210/rafafvglloqg6f4kdl6s.jpg
 
 
 

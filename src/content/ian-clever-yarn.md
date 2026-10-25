@@ -12,7 +12,8 @@ tags:
   - canadian
 permalink: /ian-clever-yarn/
 tidal: https://tidal.com/browse/album/394089096
-image: https://f4.bcbits.com/img/a3905238155_16.jpg
+image: ../assets/covers/ian-clever-yarn.avif
+imageSource: https://f4.bcbits.com/img/a3905238155_16.jpg
 credits:
 - name: Ian Cleaver
   instrument: Trumpet

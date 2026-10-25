@@ -15,7 +15,8 @@ tags:
   - Wes Montgomery
 permalink: https://jazztips.se/harold-land-west-coast-blues/
 spotify: https://open.spotify.com/album/1Entnsy9p08J6IqYny3h5G
-image: https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/71/73/d3/7173d322-961e-1cff-3c52-9a86856973f2/00025218614627.rgb.jpg/1400x1400bb.jpg
+image: ../assets/covers/harold-land-west-coast-blues.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/71/73/d3/7173d322-961e-1cff-3c52-9a86856973f2/00025218614627.rgb.jpg/1400x1400bb.jpg
 apple: https://embed.music.apple.com/us/album/west-coast-blues/1443149512
 qobuz: https://www.qobuz.com/fr-fr/album/west-coast-blues-harold-land-sextet/0002521861462
 credits:

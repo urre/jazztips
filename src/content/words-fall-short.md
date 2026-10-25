@@ -14,7 +14,8 @@ permalink: /words-fall-short/
 spotify: https://open.spotify.com/album/2toluYLW38SlSkSYLHscpR
 apple: https://embed.music.apple.com/us/album/words-fall-short/1806729005?uo=4
 tidal: https://tidal.com/browse/album/441820911
-image: https://lastfm.freetls.fastly.net/i/u/300x300/fc83c942921bd342f54e563076b9ca11.jpg
+image: ../assets/covers/words-fall-short.avif
+imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/fc83c942921bd342f54e563076b9ca11.jpg
 credits:
 - name: Joshua Redman
   instrument: Tenor Saxophone

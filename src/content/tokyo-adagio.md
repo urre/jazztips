@@ -15,7 +15,8 @@ permalink: /tokyo-adagio/
 spotify: https://open.spotify.com/album/2DfE4N5GMMZu4jndF1wAHn
 apple: https://embed.music.apple.com/us/album/tokyo-adagio/1444201151?uo=4
 tidal: https://tidal.com/browse/album/1213529
-image: https://lastfm.freetls.fastly.net/i/u/300x300/c3a38fea907e55a755049e526483c562.jpg
+image: ../assets/covers/tokyo-adagio.avif
+imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/c3a38fea907e55a755049e526483c562.jpg
 credits:
 - name: Charlie Haden
   instrument: Double Bass

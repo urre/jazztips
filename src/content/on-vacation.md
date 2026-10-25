@@ -11,8 +11,8 @@ tags:
   - mason
   - smooth
   - soft
-image: >-
-  https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605001500/screenshots/zslawza8yugaqh13hgkh.jpg
+image: ../assets/covers/on-vacation.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605001500/screenshots/zslawza8yugaqh13hgkh.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1605117515/xrjajqwyryg9dlmaqc10.jpg
 

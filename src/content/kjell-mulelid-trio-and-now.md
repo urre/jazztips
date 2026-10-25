@@ -15,7 +15,8 @@ permalink: /kjell-mulelid-trio-and-now/
 spotify: https://open.spotify.com/album/6DlnFlZTrd19WA41zUjZUh
 apple: https://embed.music.apple.com/us/album/and-now/1825131856
 tidal: https://tidal.com/browse/album/403165839?u
-image: https://f4.bcbits.com/img/a0420412888_16.jpg
+image: ../assets/covers/kjell-mulelid-trio-and-now.avif
+imageSource: https://f4.bcbits.com/img/a0420412888_16.jpg
 credits:
 - name: Kjell Mulelid
   instrument: Piano

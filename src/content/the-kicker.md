@@ -10,7 +10,8 @@ tags:
   - bluenote
   - green
   - vibraphone
-image: https://res.cloudinary.com/urre/image/upload/v1731666472/phevpohjisxfy5bv2ki3.jpg
+image: ../assets/covers/the-kicker.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1731666472/phevpohjisxfy5bv2ki3.jpg
 
 spotify: https://open.spotify.com/album/1f7mgkzNfziaRNbLZ4gkAX
 tidal: https://tidal.com/browse/album/3276106?u

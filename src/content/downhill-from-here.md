@@ -10,7 +10,8 @@ tags:
   - guitar
   - trio
   - contemporary
-image: https://res.cloudinary.com/urre/image/upload/v1750054720/xybysy8hgza0xbuxcqsu.jpg
+image: ../assets/covers/downhill-from-here.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1750054720/xybysy8hgza0xbuxcqsu.jpg
 permalink: /downhill-from-here/
 spotify: https://open.spotify.com/album/2dJaduFbec6caQ5s4JtJGK
 apple: https://embed.music.apple.com/us/album/downhill-from-here-feat-larry-grenadier-marcus-gilmore/1784309511

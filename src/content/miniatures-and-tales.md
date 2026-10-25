@@ -8,7 +8,8 @@ year: 2025
 tags:
   - maestro
   - trio
-image: https://res.cloudinary.com/urre/image/upload/v1746425485/aup8foewkbbidmeof1gg.jpg
+image: ../assets/covers/miniatures-and-tales.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1746425485/aup8foewkbbidmeof1gg.jpg
 permalink: /miniatures-and-tales/
 tidal: https://tidal.com/browse/album/419493251?u
 apple: https://embed.music.apple.com/us/album/miniatures-and-tales/1794297870

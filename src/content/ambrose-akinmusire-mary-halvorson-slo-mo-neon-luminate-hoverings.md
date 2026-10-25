@@ -16,7 +16,8 @@ tags:
 permalink: https://jazztips.se/ambrose-akinmusire-mary-halvorson-slo-mo-neon-luminate-hoverings/
 spotify: https://open.spotify.com/album/69Olg2e3XppXDG5aw3Abvt
 tidal: https://tidal.com/browse/album/524763902
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/18/cb/8218cb96-f898-0061-39ca-d5c888484fd4/075597892857.jpg/800x800bb.jpg
+image: ../assets/covers/ambrose-akinmusire-mary-halvorson-slo-mo-neon-luminate-hoverings.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/82/18/cb/8218cb96-f898-0061-39ca-d5c888484fd4/075597892857.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/slo-mo-neon-luminate-hoverings/1883167016
 qobuz: https://www.qobuz.com/us-en/album/slo-mo-neon-luminate-hoverings-ambrose-akinmusire-mary-halvorson/s72f56i96dkig
 credits:

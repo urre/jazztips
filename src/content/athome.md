@@ -8,7 +8,8 @@ year: 2025
 tags:
   - fulton
   - lindquist
-image: https://f4.bcbits.com/img/a1849109412_16.jpg
+image: ../assets/covers/athome.avif
+imageSource: https://f4.bcbits.com/img/a1849109412_16.jpg
 permalink: /at-home/
 tidal: https://tidal.com/browse/album/411398705?u
 apple: https://embed.music.apple.com/ca/album/i-was-looking-for-you-single/1790283727

@@ -8,7 +8,8 @@ year: 2023
 tags:
   - kugelmann
   - trio
-image: https://res.cloudinary.com/urre/image/upload/v1747308630/vyctgk2yyxku3bj4vuqg.jpg
+image: ../assets/covers/stormy-beauty.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1747308630/vyctgk2yyxku3bj4vuqg.jpg
 permalink: /stormy-beauty/
 tidal: https://tidal.com/browse/album/287699296
 apple: https://embed.music.apple.com/us/album/stormy-beauty/1681102690

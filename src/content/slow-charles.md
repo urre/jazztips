@@ -9,8 +9,8 @@ tags:
   - kvintett
   - östholm
   - sjöstedt
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689998/gyvtwcht2uixkpdkkmo6.jpg
+image: ../assets/covers/slow-charles.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689998/gyvtwcht2uixkpdkkmo6.jpg
 
 
 

@@ -9,8 +9,8 @@ tags:
   - kuba
   - sanchez
   - scott
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690135/krigeiynbk4dtfsyqy9a.jpg
+image: ../assets/covers/ninety-miles.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690135/krigeiynbk4dtfsyqy9a.jpg
 
 
 

@@ -9,8 +9,8 @@ tags:
   - goldberg
   - kronkvist
   - rogers
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689991/ae54ivsb4gcgotteo7op.jpg
+image: ../assets/covers/new-york-elements.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689991/ae54ivsb4gcgotteo7op.jpg
 
 
 
