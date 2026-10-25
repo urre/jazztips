@@ -57,7 +57,7 @@ If WebSearch is rate-limited or returns nothing useful, fall back to WebFetch on
 
 Search: `<Artist> <Album> album cover art`
 
-Pick the first direct image URL (`.jpg`/`.jpeg`/`.png`/`.webp`) from a reputable source. Prefer Discogs, Bandcamp, label sites, Wikipedia. This becomes `cover_image_url`.
+Pick the first direct image URL (`.jpg`/`.jpeg`/`.png`/`.webp`) from a reputable source. Prefer Discogs, Bandcamp, label sites, Wikipedia. Apple Music artwork from the iTunes Search API (`artworkUrl100` with `100x100bb` swapped for `1000x1000bb`) is a reliable clean, square option. Aim for at least 600 px. This becomes `cover_image_url`; Step 4 downloads it into the repo, so the URL only has to work once.
 
 ### Step 3 — Streaming links (four WebSearches, one per platform)
 
@@ -120,6 +120,14 @@ node "$CLAUDE_PROJECT_DIR/.claude/skills/jazztips/build-markdown.js" < /tmp/jazz
 
 It prints `{"relPath": "src/content/<slug>.md", "markdown": "..."}` on stdout. Use the `Write` tool to write `markdown` to `$CLAUDE_PROJECT_DIR/<relPath>`. The frontmatter includes `draft: true` at this point.
 
+Then store the cover locally. Covers live in `src/assets/covers/` as compact AVIF files and the content schema requires a local `image`, so the build fails on a remote URL:
+
+```bash
+cd "$CLAUDE_PROJECT_DIR" && node scripts/localize-covers.mjs <slug>
+```
+
+This downloads `image`, saves `src/assets/covers/<slug>.avif` (max 1000 px) and rewrites the frontmatter to `image: ../assets/covers/<slug>.avif` plus `imageSource: <original URL>`. If the download fails, pick another cover URL, put it in `image:` and run it again.
+
 ### Step 5 — Build, then commit & push (or bail out)
 
 Run the Astro build from `$CLAUDE_PROJECT_DIR`:
@@ -135,7 +143,7 @@ cd "$CLAUDE_PROJECT_DIR" && npm run build
 
 ```bash
 cd "$CLAUDE_PROJECT_DIR"
-git add src/content/<slug>.md
+git add src/content/<slug>.md src/assets/covers/<slug>.avif
 git commit -m "Add record: <Artist> - <Album>"
 git push origin main
 ```
