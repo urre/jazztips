@@ -7,7 +7,8 @@ year: 1959
 ogimage: https://res.cloudinary.com/urre/image/upload/v1727159711/grdv3ukyvuznwzfwdweu.jpg
 tags:
   - manne
-image: https://res.cloudinary.com/urre/image/upload/v1727159323/smc4tx2kxruqp98drq8v.jpg
+image: ../assets/covers/complete-live-at-the-black-hawk.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727159323/smc4tx2kxruqp98drq8v.jpg
 
 spotify: https://open.spotify.com/album/2VUpnklVn3CDFcJ6KFEgjT
 tidal: https://tidal.com/browse/album/65701203?u

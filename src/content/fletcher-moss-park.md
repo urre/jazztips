@@ -6,8 +6,8 @@ label: Gondwana
 year: 2012
 tags:
   - halsall
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689932/vf2bsvtubmzqq13osqx2.jpg
+image: ../assets/covers/fletcher-moss-park.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689932/vf2bsvtubmzqq13osqx2.jpg
 
 
 

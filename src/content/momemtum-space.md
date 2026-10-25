@@ -9,8 +9,8 @@ tags:
   - jones
   - redman
   - taylor
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690048/issukdyeyxjiakb9easz.jpg
+image: ../assets/covers/momemtum-space.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690048/issukdyeyxjiakb9easz.jpg
 
 
 

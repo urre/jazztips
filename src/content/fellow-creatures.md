@@ -8,8 +8,8 @@ tags:
   - phronesis
   - Bass
   - edition
-image: >-
-  https://res.cloudinary.com/urre/image/upload/c_scale,w_600/v1468781757/a0235545513_10_tp2g1x.jpg
+image: ../assets/covers/fellow-creatures.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/c_scale,w_600/v1468781757/a0235545513_10_tp2g1x.jpg
 
 
 

@@ -8,8 +8,8 @@ tags:
   - debut
   - reynolds
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689956/urgygq63gtkmyl3ree05.jpg
+image: ../assets/covers/time-with-people.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689956/urgygq63gtkmyl3ree05.jpg
 
 
 

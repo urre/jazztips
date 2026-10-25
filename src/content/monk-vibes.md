@@ -10,8 +10,8 @@ tags:
   - marsalis
   - monk
   - rodgers
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689748/cjs5c4hlmz6e1djjbjqb.jpg
+image: ../assets/covers/monk-vibes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689748/cjs5c4hlmz6e1djjbjqb.jpg
 
 
 

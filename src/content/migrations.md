@@ -8,8 +8,8 @@ tags:
   - bop
   - crosby
   - sextett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690038/m3a97l0v4ihsugokaezi.jpg
+image: ../assets/covers/migrations.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690038/m3a97l0v4ihsugokaezi.jpg
 
 
 

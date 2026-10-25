@@ -7,8 +7,8 @@ year: 2017
 tags:
   - blade
   - fellowship
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1512909141/f1x1ux6sptjufh2m3rab.jpg
+image: ../assets/covers/body-and-shadow.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1512909141/f1x1ux6sptjufh2m3rab.jpg
 credits:
   - name: Melvin Butler
     instrument: 'Group, Member  Sax (Tenor)'

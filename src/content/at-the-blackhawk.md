@@ -7,7 +7,8 @@ label: Analogue Productions
 year: 2024
 tags:
   - monk
-image: https://res.cloudinary.com/urre/image/upload/v1731520544/eij5euquykwxjj4rr5wg.jpg
+image: ../assets/covers/at-the-blackhawk.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1731520544/eij5euquykwxjj4rr5wg.jpg
 ogimage: https://res.cloudinary.com/urre/image/upload/v1731520544/eij5euquykwxjj4rr5wg.jpg
 
 tidal: https://tidal.com/browse/album/3629300?u

@@ -12,8 +12,8 @@ tags:
   - hip
   - jones
   - scat
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690132/yg7ijntrhdvqnwp5hjup.jpg
+image: ../assets/covers/it-could-happen-to-you.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690132/yg7ijntrhdvqnwp5hjup.jpg
 
 
 

@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1725523674/rthz2v8hfk8dsm
 year:  2021
 tags:
   - iyer
-image: https://res.cloudinary.com/urre/image/upload/v1725520820/ktcspo2th561wwzl6avn.jpg
+image: ../assets/covers/uneasy.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1725520820/ktcspo2th561wwzl6avn.jpg
 
 tidal: 179651744
 credits:

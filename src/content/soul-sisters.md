@@ -7,8 +7,8 @@ year: 1963
 tags:
   - coleman
   - orgel
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690205/bhodlan0osjuehejlo50.jpg
+image: ../assets/covers/soul-sisters.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690205/bhodlan0osjuehejlo50.jpg
 
 
 

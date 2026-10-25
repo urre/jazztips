@@ -7,8 +7,8 @@ year: 2010
 tags:
   - Guitar
   - storband
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689935/imjxxdtagn4pkdbdmn13.jpg
+image: ../assets/covers/our-secret-world.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689935/imjxxdtagn4pkdbdmn13.jpg
 
 
 

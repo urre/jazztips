@@ -7,8 +7,8 @@ year: 2015
 tags:
   - electronic
   - kneebody
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1474923021/vresqixsogvldwtv8kla.jpg
+image: ../assets/covers/kneedelus.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1474923021/vresqixsogvldwtv8kla.jpg
 
 spotify: 'https://open.spotify.com/track/6FWy39QRioLmJ9WTyYRfmV'
 credits:

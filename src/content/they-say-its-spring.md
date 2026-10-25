@@ -7,8 +7,8 @@ year: 2013
 tags:
   - Vocals
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689875/dqsapvf2wmrntgdswrhn.jpg
+image: ../assets/covers/they-say-its-spring.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689875/dqsapvf2wmrntgdswrhn.jpg
 
 
 

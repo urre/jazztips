@@ -7,7 +7,8 @@ label: UMG
 year:  1966
 tags:
   - rollins
-image: https://res.cloudinary.com/urre/image/upload/v1727780903/a8j9ofbrnzfzp4y3qltp.jpg
+image: ../assets/covers/alfie-1966-original-music-from-the-score.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727780903/a8j9ofbrnzfzp4y3qltp.jpg
 
 spotify: https://open.spotify.com/album/3L6mtar6DrQT040SmGmd3l
 tidal: https://tidal.com/browse/album/110769428?u

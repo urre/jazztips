@@ -6,8 +6,8 @@ label: Hubro
 year: 2012
 tags:
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689921/ikeubxl5fxfbpwf0b8du.jpg
+image: ../assets/covers/cabin-music.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689921/ikeubxl5fxfbpwf0b8du.jpg
 
 
 

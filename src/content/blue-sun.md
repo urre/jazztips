@@ -6,8 +6,8 @@ label: Sony
 year: 1995
 tags:
   - isham
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690079/icd8rb7nje8anbcburlr.jpg
+image: ../assets/covers/blue-sun.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690079/icd8rb7nje8anbcburlr.jpg
 
 
 

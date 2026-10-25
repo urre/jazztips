@@ -8,8 +8,8 @@ tags:
   - fredrik
   - svenskt
   - uhlman
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689719/pfvt5rw2jmpxgqbzrogz.jpg
+image: ../assets/covers/sorgmantel.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689719/pfvt5rw2jmpxgqbzrogz.jpg
 
 
 

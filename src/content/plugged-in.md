@@ -8,8 +8,8 @@ tags:
   - kvartett
   - royston
   - sabbagh
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689771/u3a2ljxgvtad0c6du4jj.jpg
+image: ../assets/covers/plugged-in.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689771/u3a2ljxgvtad0c6du4jj.jpg
 
 
 

@@ -8,7 +8,8 @@ year: 2024
 tags:
   - jensen
   - jormin
-image: https://res.cloudinary.com/urre/image/upload/v1739352650/rrpmtmzefxd78bf2qi2a.jpg
+image: ../assets/covers/arne-jensen.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1739352650/rrpmtmzefxd78bf2qi2a.jpg
 tidal: https://tidal.com/browse/album/382736256?u
 credits:
   - name: Arne Jensen

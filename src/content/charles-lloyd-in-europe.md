@@ -9,8 +9,8 @@ tags:
   - jarrett
   - lloyd
   - mcbee
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690193/ujrmuvvn2hayux2jhy93.jpg
+image: ../assets/covers/charles-lloyd-in-europe.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690193/ujrmuvvn2hayux2jhy93.jpg
 
 
 

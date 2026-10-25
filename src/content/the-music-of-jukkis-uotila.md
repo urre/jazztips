@@ -8,8 +8,8 @@ tags:
   - sjo
   - storband
   - uotila
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689892/qipccvrcrhplqowwznwe.jpg
+image: ../assets/covers/the-music-of-jukkis-uotila.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689892/qipccvrcrhplqowwznwe.jpg
 
 
 

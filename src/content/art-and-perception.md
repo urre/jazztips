@@ -6,8 +6,8 @@ label: Argo
 year: 1961
 tags:
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689915/asoulyr81eo6fcnvp7dw.jpg
+image: ../assets/covers/art-and-perception.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689915/asoulyr81eo6fcnvp7dw.jpg
 
 
 

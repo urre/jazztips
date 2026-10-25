@@ -16,7 +16,8 @@ tags:
   - Shelly Manne
 permalink: https://jazztips.se/hampton-hawes-four/
 spotify: https://open.spotify.com/album/4q8tlvzuUYbid1iCxrGj8W
-image: https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/01/39/93/013993fa-a9a1-e545-882b-8d5ae25b6d49/22CRGIM33121.rgb.jpg/1400x1400bb.jpg
+image: ../assets/covers/hampton-hawes-four.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/01/39/93/013993fa-a9a1-e545-882b-8d5ae25b6d49/22CRGIM33121.rgb.jpg/1400x1400bb.jpg
 apple: https://embed.music.apple.com/us/album/four/1632534814
 credits:
   - name: Hampton Hawes

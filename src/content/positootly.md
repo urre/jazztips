@@ -10,8 +10,8 @@ tags:
   - kvintett
   - maupin
   - watts
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690112/semnknwlua8cyo3srwm6.jpg
+image: ../assets/covers/positootly.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690112/semnknwlua8cyo3srwm6.jpg
 
 
 

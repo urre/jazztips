@@ -9,8 +9,8 @@ tags:
   - chet
   - trio
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689890/jsnplsnlxlh4vkr6ogh2.jpg
+image: ../assets/covers/i-remember-chet.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689890/jsnplsnlxlh4vkr6ogh2.jpg
 
 
 

@@ -8,8 +8,8 @@ tags:
   - danielsson
   - act
   - öström
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1503142436/raj5tykbeskvgs6ylfob.jpg
+image: ../assets/covers/liberetto-iii.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1503142436/raj5tykbeskvgs6ylfob.jpg
 
 spotify: 'https://open.spotify.com/track/44ztnLZZhnYbmjDNeZOhL2'
 credits:

@@ -7,8 +7,8 @@ year: 2011
 tags:
   - brandqvist
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690110/lajbecdn99fxeyeetyll.jpg
+image: ../assets/covers/pappas-vardagsrum.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690110/lajbecdn99fxeyeetyll.jpg
 
 
 

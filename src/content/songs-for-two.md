@@ -10,7 +10,8 @@ tags:
   - vocal-jazz
   - tony-bennett
 ogimage: http://res.cloudinary.com/urre/image/upload/v1734679405/vozodzchpfirq8jjhvl6.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1734679386/q6movgv5siplobjnzuth.jpg
+image: ../assets/covers/songs-for-two.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1734679386/q6movgv5siplobjnzuth.jpg
 
 credits:
 - name: Tony Bennett

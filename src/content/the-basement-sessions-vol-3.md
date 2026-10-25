@@ -9,8 +9,8 @@ tags:
   - jazz
   - kullhammar
   - Saxophone
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689754/z0ya3rluwlwl4ni5bflk.jpg
+image: ../assets/covers/the-basement-sessions-vol-3.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689754/z0ya3rluwlwl4ni5bflk.jpg
 
 
 

@@ -7,8 +7,8 @@ year: 2008
 tags:
   - parks
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690273/exu5hwq5wxool40i7lea.jpg
+image: ../assets/covers/invisible-cinema.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690273/exu5hwq5wxool40i7lea.jpg
 
 
 

@@ -7,8 +7,8 @@ year: 2013
 tags:
   - kvartett
   - Trombone
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689833/qihej2vtux4dzrpe8ady.jpg
+image: ../assets/covers/hela-tiden.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689833/qihej2vtux4dzrpe8ady.jpg
 
 
 

@@ -8,8 +8,8 @@ tags:
   - film
   - kajfes
   - österberg
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689927/tf3wbq4gh7jwk7i3lrhz.jpg
+image: ../assets/covers/the-wild-ones.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689927/tf3wbq4gh7jwk7i3lrhz.jpg
 
 
 

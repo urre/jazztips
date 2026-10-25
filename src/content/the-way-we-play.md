@@ -8,8 +8,8 @@ tags:
   - trumpet
   - hill
   - mcbride
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1471367965/y42rsenewaa0gdmk9j2t.jpg
+image: ../assets/covers/the-way-we-play.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1471367965/y42rsenewaa0gdmk9j2t.jpg
 
 spotify: 'https://open.spotify.com/track/2iTPTNYQqiEiQ1pMXWOCXp'
 credits:

@@ -10,8 +10,8 @@ tags:
   - olatuja
   - Vocals
   - vocal
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689749/mp7g03iglcza0cpe9pql.jpg
+image: ../assets/covers/timeless.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689749/mp7g03iglcza0cpe9pql.jpg
 
 
 

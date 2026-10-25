@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1726822567/w95lhf4l2wikyo
 year:  2024
 tags:
   - mcbride
-image: https://res.cloudinary.com/urre/image/upload/v1726822036/qpoez3aurccr1mtkwwwd.jpg
+image: ../assets/covers/but-whos-gonna-play-the-melody.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726822036/qpoez3aurccr1mtkwwwd.jpg
 
 spotify: https://open.spotify.com/album/1wq4WlOpndhRd3nhjIFO38
 tidal: 334605450

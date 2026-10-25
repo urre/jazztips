@@ -6,8 +6,8 @@ label: Sula Records
 year: 2016
 tags:
   - molvaer
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1496179038/lidecfsgvs4szt825mmp.jpg
+image: ../assets/covers/buoyancy.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1496179038/lidecfsgvs4szt825mmp.jpg
 
 spotify: 'https://open.spotify.com/track/08qLKTwdk0KapeYuQrb6fm'
 credits:

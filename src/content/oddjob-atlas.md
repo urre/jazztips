@@ -15,7 +15,8 @@ permalink: /oddjob-atlas/
 spotify: https://open.spotify.com/album/44pDKJCcowN677qfwPQWFh
 apple: https://embed.music.apple.com/us/album/atlas/1839720722?uo=4
 tidal: https://tidal.com/browse/album/460482920?u
-image: https://lastfm.freetls.fastly.net/i/u/300x300/1154db228aa254a219c242a2646d60db.jpg
+image: ../assets/covers/oddjob-atlas.avif
+imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/1154db228aa254a219c242a2646d60db.jpg
 credits:
 - name: Goran Kajfes
   instrument: Trumpet, Cornet

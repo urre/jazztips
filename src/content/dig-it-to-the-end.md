@@ -9,8 +9,8 @@ tags:
   - hederos
   - lindström
   - werliin
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690100/ibjzebycwky77nrt7rbj.jpg
+image: ../assets/covers/dig-it-to-the-end.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690100/ibjzebycwky77nrt7rbj.jpg
 
 
 

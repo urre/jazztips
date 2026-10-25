@@ -13,7 +13,8 @@ tags:
 permalink: https://jazztips.se/chapter-one/
 spotify: https://open.spotify.com/album/2lblGX2zuKX7kdr8jU3ruq?si=gUPfjQf6S9eTFq5qck46Ig
 tidal: https://tidal.com/browse/album/425663129/
-image: https://jazzviews.net/wp-content/uploads/2025/08/CaelanC.jpg
+image: ../assets/covers/chapter-one.avif
+imageSource: https://jazzviews.net/wp-content/uploads/2025/08/CaelanC.jpg
 apple: https://embed.music.apple.com/us/album/chapter-one/1803831507
 qobuz: https://www.qobuz.com/fr-fr/album/chapter-one-caelan-cardello/f91txn84ia1nc
 credits:

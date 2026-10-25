@@ -9,8 +9,8 @@ tags:
   - bluenote
   - electronica
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689717/fbb9e8vnisufy14ncmjd.jpg
+image: ../assets/covers/breathless.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689717/fbb9e8vnisufy14ncmjd.jpg
 
 
 

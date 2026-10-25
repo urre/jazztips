@@ -8,8 +8,8 @@ tags:
   - gidlund
   - kallerdal
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690178/rfgehyxyhfkiyzbgcl0q.jpg
+image: ../assets/covers/the-happiest-man-alive.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690178/rfgehyxyhfkiyzbgcl0q.jpg
 
 
 

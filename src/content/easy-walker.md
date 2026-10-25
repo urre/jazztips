@@ -9,7 +9,8 @@ tags:
   - Jazz
   - Soul-Jazz
 permalink: https://jazztips.se/easy-walker/
-image: https://e.snmc.io/i/600/s/0c47263fdd5e8656f56bf4bf7423e1de/2451888/stanley-turrentine-easy-walker-Cover-Art.jpg
+image: ../assets/covers/easy-walker.avif
+imageSource: https://e.snmc.io/i/600/s/0c47263fdd5e8656f56bf4bf7423e1de/2451888/stanley-turrentine-easy-walker-Cover-Art.jpg
 tidal: https://tidal.com/browse/album/9549051
 apple: https://embed.music.apple.com/kr/album/easy-walker/724359914
 spotify: https://open.spotify.com/album/2s6vNYUh1eA23xeqFLxzlc

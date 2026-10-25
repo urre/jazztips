@@ -10,7 +10,8 @@ tags:
   - trumpet
   - jazz
   - hill
-image: https://res.cloudinary.com/urre/image/upload/v1731520936/r8ueni9kkubb0a9xytvk.png
+image: ../assets/covers/a-prayer-for-andrew.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1731520936/r8ueni9kkubb0a9xytvk.png
 
 spotify: https://open.spotify.com/album/7JmmUQnilfIqAmbxip1iys
 tidal: https://tidal.com/browse/album/326667773?u

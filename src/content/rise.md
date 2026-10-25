@@ -8,7 +8,8 @@ year: 2024
 tags:
   - trombone
   - darelid
-image: https://res.cloudinary.com/urre/image/upload/v1734680423/s4ei66of3khatqnjntcu.jpg
+image: ../assets/covers/rise.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1734680423/s4ei66of3khatqnjntcu.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1734680442/c9qqlrohxax2x9y6smnp.jpg
 
 credits:

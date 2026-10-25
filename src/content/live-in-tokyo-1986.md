@@ -14,8 +14,8 @@ tags:
   - ahead
   - stern
   - tokyo
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690156/dywg4siie46hvbeohxxs.jpg
+image: ../assets/covers/live-in-tokyo-1986.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690156/dywg4siie46hvbeohxxs.jpg
 
 
 

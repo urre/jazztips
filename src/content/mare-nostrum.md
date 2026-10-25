@@ -12,7 +12,8 @@ tags:
   - trio
 
 
-image: "https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/q_auto,f_auto,w_600,h_600/v1681886824/mknf5uw52d2dp9sxsylt.jpg"
+image: ../assets/covers/mare-nostrum.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_500,h_500/q_auto,f_auto,w_600,h_600/v1681886824/mknf5uw52d2dp9sxsylt.jpg
 
 spotify: 'https://open.spotify.com/album/7iZadmuPfAJ4YJWcgXTtTK'
 

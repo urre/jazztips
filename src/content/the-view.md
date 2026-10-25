@@ -7,8 +7,8 @@ year: 2011
 tags:
   - debut
   - Vocals
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690028/fk07gjdcymsynum1qgmf.jpg
+image: ../assets/covers/the-view.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690028/fk07gjdcymsynum1qgmf.jpg
 
 
 

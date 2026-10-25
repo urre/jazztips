@@ -9,8 +9,8 @@ tags:
   - lafaro
   - motian
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690226/t7anyotlvk43oa0lqz4a.jpg
+image: ../assets/covers/moon-beams.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690226/t7anyotlvk43oa0lqz4a.jpg
 
 
 

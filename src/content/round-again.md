@@ -10,8 +10,8 @@ tags:
   - blade
   - mehldau
   - kvartett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605008240/screenshots/v5azw7iliy3aqb31o9pw.jpg
+image: ../assets/covers/round-again.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605008240/screenshots/v5azw7iliy3aqb31o9pw.jpg
 
 spotify: >-
   https://open.spotify.com/album/6glNa1tv5xDIevYwSvxNkm?si=l49hi1yNRPextRxmxNK9MQ

@@ -9,7 +9,8 @@ tags:
   - mehldau
   - turner
   - bernstein
-image: https://storage.highresaudio.com/2024/11/26/kbz9re-solidjacks-preview-m3.jpg
+image: ../assets/covers/solid-jackson.avif
+imageSource: https://storage.highresaudio.com/2024/11/26/kbz9re-solidjacks-preview-m3.jpg
 permalink: /solid-jackson/
 tidal: https://tidal.com/browse/album/388624898?u
 apple: https://embed.music.apple.com/tr/song/solid-jackson-feat-larry-grenadier-bill-stewart/1778571357

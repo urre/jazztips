@@ -9,8 +9,8 @@ tags:
   - hall
   - coltrane
   - monk
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690195/hdpjxme1y9pm3y2nk4tu.jpg
+image: ../assets/covers/at-carnegie-hall.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690195/hdpjxme1y9pm3y2nk4tu.jpg
 
 
 

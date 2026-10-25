@@ -14,7 +14,8 @@ tags:
   - Jeff Lorber
   - Latin Jazz
 permalink: https://jazztips.se/randy-brecker-espirito/
-image: https://srgstore.com/cdn/shop/files/album_800x.jpg
+image: ../assets/covers/randy-brecker-espirito.avif
+imageSource: https://srgstore.com/cdn/shop/files/album_800x.jpg
 apple: https://embed.music.apple.com/us/album/esp%C3%ADrito/1882853654
 credits:
   - name: Randy Brecker

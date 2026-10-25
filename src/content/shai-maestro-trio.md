@@ -6,8 +6,8 @@ label: Laborie Jazz
 year: 2012
 tags:
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689996/hgzmaet1y0sm8xe5ghgd.jpg
+image: ../assets/covers/shai-maestro-trio.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689996/hgzmaet1y0sm8xe5ghgd.jpg
 
 
 

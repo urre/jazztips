@@ -8,7 +8,8 @@ year: 2007
 tags:
   - danielsson
   - możdżer
-image: https://res.cloudinary.com/urre/image/upload/v1744179786/htmsspuakfymswufo3fi.jpg
+image: ../assets/covers/pasodoble.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1744179786/htmsspuakfymswufo3fi.jpg
 permalink: /pasodoble/
 tidal: https://tidal.com/browse/album/20241580
 apple: https://embed.music.apple.com/se/album/pasodoble/285253811

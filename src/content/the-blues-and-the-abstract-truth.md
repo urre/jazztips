@@ -12,8 +12,8 @@ tags:
   - hubbard
   - impulse
   - nelson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690199/mfzcgtfbiyq6wnedb9zb.jpg
+image: ../assets/covers/the-blues-and-the-abstract-truth.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690199/mfzcgtfbiyq6wnedb9zb.jpg
 
 
 

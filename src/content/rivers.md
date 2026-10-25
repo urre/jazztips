@@ -8,8 +8,8 @@ tags:
   - múm
   - wallentin
   - werliin
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690077/zyf4zyeqrg6qhnatlrwv.jpg
+image: ../assets/covers/rivers.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690077/zyf4zyeqrg6qhnatlrwv.jpg
 
 
 

@@ -8,8 +8,8 @@ tags:
   - duo
   - piano
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690008/sqg7adtfhmbl23zynag2.jpg
+image: ../assets/covers/hot-house.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690008/sqg7adtfhmbl23zynag2.jpg
 
 
 

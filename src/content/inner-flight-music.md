@@ -9,7 +9,8 @@ tags:
   - wiklund
   - cornet
   - berg
-image: https://res.cloudinary.com/urre/image/upload/v1744179249/th2iqdqvknru5ct0k0be.webp
+image: ../assets/covers/inner-flight-music.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1744179249/th2iqdqvknru5ct0k0be.webp
 permalink: /inner-flight-music/
 tidal: https://tidal.com/browse/album/415603523
 apple: https://embed.music.apple.com/us/album/inner-flight-music/1794297870

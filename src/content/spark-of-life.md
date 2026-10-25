@@ -8,8 +8,8 @@ tags:
   - milder
   - miskiewicz
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1512898837/orgync44oura4peu7ksd.jpg
+image: ../assets/covers/spark-of-life.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1512898837/orgync44oura4peu7ksd.jpg
 
 spotify: 'https://open.spotify.com/track/5D5B5jdctHU8MMbEkZq7Vu'
 credits:

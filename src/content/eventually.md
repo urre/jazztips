@@ -10,8 +10,8 @@ tags:
   - guitar
   - young
   - ecm
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1700909270/maldnp4fb2vfvpqhoxhk.jpg
+image: ../assets/covers/eventually.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1700909270/maldnp4fb2vfvpqhoxhk.jpg
 
 spotify: 'https://open.spotify.com/album/0ibriY06AoMBqJcEUn1FTT?si=oVbOptnpQU6-fHXj9qho8Q'
 apple: https://embed.music.apple.com/se/album/eventually/1678980418

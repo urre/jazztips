@@ -11,8 +11,8 @@ tags:
   - scott
   - trumpet
   - yorke
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690231/stjtbqpijkvzrsoz49i6.jpg
+image: ../assets/covers/yesterday-you-said-tomorrow.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690231/stjtbqpijkvzrsoz49i6.jpg
 
 
 

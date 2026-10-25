@@ -10,7 +10,8 @@ tags:
 permalink: https://jazztips.se/mark-turner-patternmaster/
 spotify: https://open.spotify.com/album/6C7pqnwXzxj8J6bjK9C2Oa
 tidal: https://tidal.com/browse/album/504695583
-image: https://ecm-server.de/audio/06024384/0602438428717/Cover_1000.webp
+image: ../assets/covers/mark-turner-patternmaster.avif
+imageSource: https://ecm-server.de/audio/06024384/0602438428717/Cover_1000.webp
 apple: https://embed.music.apple.com/us/album/patternmaster/1870849451
 qobuz: https://www.qobuz.com/us-en/album/patternmaster-joe-martin-mark-turner-jason-palmer-jonathan-pinson/m4bgofzo9f77n
 credits:

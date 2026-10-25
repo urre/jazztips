@@ -10,7 +10,8 @@ tags:
 - evans
 - piano
 - vocals
-image: https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_600,h_600/v1691647756/sfaeeqvzesf5juzfrh7i.jpg
+image: ../assets/covers/the-tony-bennettbill-evans-album.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/q_auto,f_auto,w_600,h_600/v1691647756/sfaeeqvzesf5juzfrh7i.jpg
 
 spotify: https://open.spotify.com/album/02dTYy5Ev3JbBW8ByOkBa5
 tidal: 1286158

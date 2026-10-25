@@ -9,8 +9,8 @@ tags:
   - trio
   - piano
   - new york
-image: >-
-  https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1607451339/screenshots/rdgravrcl4ogndfg1rab.jpg
+image: ../assets/covers/notes-from-new-york.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1607451339/screenshots/rdgravrcl4ogndfg1rab.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1607451918/g3a3t2t29vuajzisbi8c.jpg
 

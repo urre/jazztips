@@ -9,8 +9,8 @@ tags:
   - hulten
   - rundqvist
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690118/e6tnvwlktlc3wtageuic.jpg
+image: ../assets/covers/in-the-city.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690118/e6tnvwlktlc3wtageuic.jpg
 
 
 

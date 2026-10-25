@@ -8,8 +8,8 @@ tags:
   - göteborg
   - hoob
   - klabbes
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689744/co6nu8barncq6f0bdxkx.jpg
+image: ../assets/covers/z.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689744/co6nu8barncq6f0bdxkx.jpg
 
 
 

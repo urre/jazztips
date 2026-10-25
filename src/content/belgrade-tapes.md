@@ -7,8 +7,8 @@ year: 2010
 tags:
   - belgrade
   - schönning
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690169/o5fush4eaecizsksqkju.jpg
+image: ../assets/covers/belgrade-tapes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690169/o5fush4eaecizsksqkju.jpg
 
 
 

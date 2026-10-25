@@ -12,8 +12,8 @@ tags:
   - adams
   - prestige
   - sims
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690243/v8mrj3svliarztasujfd.jpg
+image: ../assets/covers/encounter.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690243/v8mrj3svliarztasujfd.jpg
 
 
 

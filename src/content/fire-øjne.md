@@ -13,7 +13,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1727331418/oblte64ejo1aur
 year:  2024
 tags:
   - waal
-image: https://res.cloudinary.com/urre/image/upload/v1727331308/yk50dluswzuruucl5ayn.jpg
+image: ../assets/covers/fire-øjne.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727331308/yk50dluswzuruucl5ayn.jpg
 
 tidal: https://tidal.com/browse/album/341598125?u
 credits:

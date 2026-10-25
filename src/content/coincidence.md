@@ -8,8 +8,8 @@ tags:
   - abercrombie
   - beck
   - Guitar
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689728/czgjgf5bjsuohoseknai.jpg
+image: ../assets/covers/coincidence.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689728/czgjgf5bjsuohoseknai.jpg
 
 
 

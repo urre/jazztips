@@ -8,8 +8,8 @@ tags:
   - brecker
   - marsalis
   - watts
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690276/hqs8pokj6bgv275hs8jj.jpg
+image: ../assets/covers/bar-talk.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690276/hqs8pokj6bgv275hs8jj.jpg
 
 
 

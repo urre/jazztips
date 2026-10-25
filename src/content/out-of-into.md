@@ -11,7 +11,8 @@ tags:
   - ross
   - scott
   - brewer
-image: https://storage.highresaudio.com/2024/12/06/qvs86t-motioni-preview-m3.jpg
+image: ../assets/covers/out-of-into.avif
+imageSource: https://storage.highresaudio.com/2024/12/06/qvs86t-motioni-preview-m3.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1733855950/ztbgomykkkx6ul7ttfdj.jpg
 
 credits:

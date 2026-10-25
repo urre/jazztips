@@ -5,7 +5,8 @@ pubDate: '2025-02-07'
 artist: Anna-Maria Nordström
 label: Varva
 year: 2024
-image: https://res.cloudinary.com/urre/image/upload/v1738940197/gmevy14rq1d7ipsqynja.jpg
+image: ../assets/covers/mod.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1738940197/gmevy14rq1d7ipsqynja.jpg
 ogimage: https://res.cloudinary.com/urre/image/upload/v1738940197/gmevy14rq1d7ipsqynja.jpg
 tidal: https://tidal.com/browse/album/350797595?u
 spotify: https://open.spotify.com/album/0jwMOULadFhvOoVz3AjqWh

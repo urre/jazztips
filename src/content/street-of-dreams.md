@@ -8,8 +8,8 @@ tags:
   - 'trio,'
   - 'charlap,'
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1641374458/l9b21hvhcwe9sj6p6jdx.jpg
+image: ../assets/covers/street-of-dreams.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1641374458/l9b21hvhcwe9sj6p6jdx.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1641374581/yyho2uzozp5k2aiki5jw.jpg
 

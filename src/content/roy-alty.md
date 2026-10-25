@@ -6,8 +6,8 @@ label: Dreyfus Jazz
 year: 2011
 tags:
   - haynes
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690046/nvuozhrr3klyhxd96zsf.jpg
+image: ../assets/covers/roy-alty.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690046/nvuozhrr3klyhxd96zsf.jpg
 
 
 

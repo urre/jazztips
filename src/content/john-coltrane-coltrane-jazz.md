@@ -16,7 +16,8 @@ tags:
 permalink: https://jazztips.se/john-coltrane-coltrane-jazz/
 spotify: https://open.spotify.com/album/6tkTCJfx7yhF38Sq9rWrOZ
 tidal: https://tidal.com/browse/album/218984
-image: https://upload.wikimedia.org/wikipedia/en/1/10/Coltrane_jazz.jpg
+image: ../assets/covers/john-coltrane-coltrane-jazz.avif
+imageSource: https://upload.wikimedia.org/wikipedia/en/1/10/Coltrane_jazz.jpg
 apple: https://embed.music.apple.com/us/album/coltrane-jazz/962196458
 qobuz: https://www.qobuz.com/es-es/album/coltrane-jazz-john-coltrane/0081227989163
 credits:

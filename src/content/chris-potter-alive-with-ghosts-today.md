@@ -15,7 +15,8 @@ tags:
   - Suite
 permalink: https://jazztips.se/chris-potter-alive-with-ghosts-today/
 spotify: https://open.spotify.com/album/1rb1KllmGSy5ybN78fVA3J
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b9/2c/dd/b92cdd34-6a4a-9f44-b30b-13726cfa9134/199806706510.jpg/800x800bb.jpg
+image: ../assets/covers/chris-potter-alive-with-ghosts-today.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b9/2c/dd/b92cdd34-6a4a-9f44-b30b-13726cfa9134/199806706510.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/alive-with-ghosts-today/1874650387
 qobuz: https://www.qobuz.com/ca-en/album/alive-with-ghosts-today-chris-potter/hdscj8miza392
 credits:

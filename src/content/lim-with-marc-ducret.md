@@ -7,8 +7,8 @@ year: 2011
 tags:
   - ducret
   - lim
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690096/cwstmiebnmwnizb48rwj.jpg
+image: ../assets/covers/lim-with-marc-ducret.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690096/cwstmiebnmwnizb48rwj.jpg
 
 
 

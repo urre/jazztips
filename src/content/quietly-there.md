@@ -9,8 +9,8 @@ tags:
   - lundgren
   - piano
   - Saxophone
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689727/nrbqnkbcf8ngnvz5p5cv.jpg
+image: ../assets/covers/quietly-there.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689727/nrbqnkbcf8ngnvz5p5cv.jpg
 
 
 

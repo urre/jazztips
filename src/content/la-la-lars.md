@@ -11,7 +11,8 @@ tags:
   - kullhammar
   - bagge
   - berthling
-image: https://f4.bcbits.com/img/a1338820522_10.jpg
+image: ../assets/covers/la-la-lars.avif
+imageSource: https://f4.bcbits.com/img/a1338820522_10.jpg
 
 tidal: https://tidal.com/browse/album/72491451?u
 spotify: https://open.spotify.com/album/5L1jwQzcmmYTZ9kcvO02SF?si=x2bWJs_tRECX-CdBm2n_1g

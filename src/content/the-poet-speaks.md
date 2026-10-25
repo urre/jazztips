@@ -8,8 +8,8 @@ tags:
   - piano
   - trio
   - juteus
-image: >-
-  https://res.cloudinary.com/urre/image/upload/c_fill,h_500,w_500/v1668454297/c8a8d0hlgcfhjawp9ajl.jpg
+image: ../assets/covers/the-poet-speaks.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/c_fill,h_500,w_500/v1668454297/c8a8d0hlgcfhjawp9ajl.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1668694572/hp2z36bhdzuetaf7xg8t.jpg
 

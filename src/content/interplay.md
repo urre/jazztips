@@ -9,7 +9,8 @@ tags:
   - evans
   - hubbard
 permalink: https://jazztips.se/interplay/
-image: https://craftrecordings.com/cdn/shop/files/CR00855BillEvans-InterplayFrontCover.png?v=1744061013&width=2000
+image: ../assets/covers/interplay.avif
+imageSource: https://craftrecordings.com/cdn/shop/files/CR00855BillEvans-InterplayFrontCover.png?v=1744061013&width=2000
 tidal: https://tidal.com/browse/album/437617010/
 apple: https://embed.music.apple.com/nz/album/interplay/778472252
 spotify: https://open.spotify.com/album/72WSznqhvxfLmh4r2QUlFz

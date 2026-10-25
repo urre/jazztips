@@ -13,8 +13,8 @@ tags:
   - questlove
   - redman
   - rosenwinkel
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689874/rlvv8oqdatxnylm0vbp4.jpg
+image: ../assets/covers/momentum.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689874/rlvv8oqdatxnylm0vbp4.jpg
 
 
 

@@ -6,8 +6,8 @@ label: Found Recordings
 year: 2016
 tags:
   - janson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1520179316/nils-janson-alloy_qgaevn_ipc8vj.jpg
+image: ../assets/covers/alloy.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1520179316/nils-janson-alloy_qgaevn_ipc8vj.jpg
 
 spotify: 'https://open.spotify.com/track/6QtR9erlV1KQ2A4M3aLKY8'
 credits:

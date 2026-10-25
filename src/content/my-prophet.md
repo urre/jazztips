@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1727331106/kipyo5pn2cwgyz
 year:  2024
 tags:
   - tzur
-image: https://res.cloudinary.com/urre/image/upload/v1727330823/q3yvrfa0jxo3nxnebj9g.jpg
+image: ../assets/covers/my-prophet.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727330823/q3yvrfa0jxo3nxnebj9g.jpg
 
 credits:
 - name: Cyrano Almeida

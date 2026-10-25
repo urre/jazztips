@@ -9,7 +9,8 @@ year:  2024
 tags:
   - lindberg
   - jazzagenturen
-image: https://res.cloudinary.com/urre/image/upload/v1726736959/rbptv0l1phwlwmn9atrt.png
+image: ../assets/covers/swedish-songbook-vol2.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726736959/rbptv0l1phwlwmn9atrt.png
 
 tidal: 380269487
 apple: https://embed.music.apple.com/au/album/swedish-songbook-series-vol-2/1762024046

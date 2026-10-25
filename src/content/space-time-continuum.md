@@ -8,8 +8,8 @@ tags:
   - golson
   - piano
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689732/tcn8ogvs2vxyxvshedhp.jpg
+image: ../assets/covers/space-time-continuum.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689732/tcn8ogvs2vxyxvshedhp.jpg
 
 
 

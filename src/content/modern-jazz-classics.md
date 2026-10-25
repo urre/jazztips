@@ -13,8 +13,8 @@ tags:
   - sheldon
   - storband
   - västkust
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690070/ofdneeremanwayykj279.jpg
+image: ../assets/covers/modern-jazz-classics.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690070/ofdneeremanwayykj279.jpg
 
 
 

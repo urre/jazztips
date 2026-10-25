@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1726642422/ygiofdrqwkbohu
 year: 1959
 tags:
   - oday
-image: https://res.cloudinary.com/urre/image/upload/v1726642333/a9zoidfey8k7ghhjm35j.png
+image: ../assets/covers/anita-oday-swings-cole-porter-with-billy-may.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726642333/a9zoidfey8k7ghhjm35j.png
 spotify: https://open.spotify.com/album/4sNpXVjELLGNRpII10z3Ei?si=d_WeQMOeSs2VNQ0toJ6kdQ
 
 tidal: 117841406

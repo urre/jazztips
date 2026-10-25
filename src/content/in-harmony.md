@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1725439073/ab7xf0cgnvfkfj
 year: 2021
 tags:
   - hargrove
-image: https://res.cloudinary.com/urre/image/upload/v1725436544/dai00bnrfu5jcccbjmqa.jpg
+image: ../assets/covers/in-harmony.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1725436544/dai00bnrfu5jcccbjmqa.jpg
 
 tidal: 204772695
 credits:

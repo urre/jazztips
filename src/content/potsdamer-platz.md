@@ -8,8 +8,8 @@ tags:
   - ACT
   - lundgren
   - berglund
-image: >-
-  https://res.cloudinary.com/urre/image/upload/c_scale,w_629,h_629/v1486916837/Potsdamer-Platz_teaser_700x_imfb5p.jpg
+image: ../assets/covers/potsdamer-platz.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/c_scale,w_629,h_629/v1486916837/Potsdamer-Platz_teaser_700x_imfb5p.jpg
 
 spotify: 'https://open.spotify.com/track/2ZZWwjfmFdtQUmnn5LgQHf'
 credits:

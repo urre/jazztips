@@ -6,8 +6,8 @@ label: Atlantic
 year: 1964
 tags:
   - farmer
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690043/wyqra2p4nhecgehpjdvn.jpg
+image: ../assets/covers/live-at-the-half-note.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690043/wyqra2p4nhecgehpjdvn.jpg
 
 
 

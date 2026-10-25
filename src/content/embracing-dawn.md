@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1728022981/skb93scle7uesr
 year: 2024
 tags:
   - sands
-image: https://res.cloudinary.com/urre/image/upload/v1728022520/ihlgosuqyif6jn5kmw20.jpg
+image: ../assets/covers/embracing-dawn.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1728022520/ihlgosuqyif6jn5kmw20.jpg
 
 tidal: https://tidal.com/browse/album/371427175?u
 credits:

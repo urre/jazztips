@@ -10,8 +10,8 @@ tags:
   - flöjt
   - Guitar
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689785/j4kxztkbh6sk1qctcuai.jpg
+image: ../assets/covers/ecology.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689785/j4kxztkbh6sk1qctcuai.jpg
 
 
 

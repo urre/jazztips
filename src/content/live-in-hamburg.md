@@ -8,8 +8,8 @@ tags:
   - johansson
   - riedel
   - duo
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1485087620/vi7b3owqhofgxn4apkn5.jpg
+image: ../assets/covers/live-in-hamburg.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1485087620/vi7b3owqhofgxn4apkn5.jpg
 
 spotify: 'https://open.spotify.com/track/4Ibo55rWzT14Dgoywq3GW2'
 credits:

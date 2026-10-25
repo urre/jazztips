@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1726161575/zc1wzbjaijtciz
 year:  2004
 tags:
   - young
-image: https://res.cloudinary.com/urre/image/upload/v1726161207/vwriuczb2bilwxwgkecu.jpg
+image: ../assets/covers/evening-falls.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726161207/vwriuczb2bilwxwgkecu.jpg
 
 spotify: https://open.spotify.com/album/04rOhEVdVopQKAr65BdSVk
 tidal: 13420657

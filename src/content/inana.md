@@ -6,8 +6,8 @@ label: Pi
 year: 2011
 tags:
   - alsaffa
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690021/pmu68v3jo6zljrfu72us.jpg
+image: ../assets/covers/inana.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690021/pmu68v3jo6zljrfu72us.jpg
 
 
 

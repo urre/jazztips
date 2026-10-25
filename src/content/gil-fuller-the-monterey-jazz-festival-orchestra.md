@@ -10,8 +10,8 @@ tags:
   - moody
   - storband
   - sweets
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690041/wrsxftjhvwhdkhkibhqj.jpg
+image: ../assets/covers/gil-fuller-the-monterey-jazz-festival-orchestra.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690041/wrsxftjhvwhdkhkibhqj.jpg
 
 
 

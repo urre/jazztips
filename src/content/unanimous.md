@@ -9,8 +9,8 @@ tags:
   - owens
   - payton
   - sextett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690006/rwsywvoolbu8xsbnirfp.jpg
+image: ../assets/covers/unanimous.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690006/rwsywvoolbu8xsbnirfp.jpg
 
 
 

@@ -10,8 +10,8 @@ tags:
   - Malle
   - miles
   - paris
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690197/xarqkce3yinxy9ewxxda.jpg
+image: ../assets/covers/ascenseur-pour-lechafaud.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690197/xarqkce3yinxy9ewxxda.jpg
 
 
 

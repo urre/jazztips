@@ -8,8 +8,8 @@ tags:
   - danemo
   - janson
   - östholm
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690256/eqxrxwyvwms13rv39nfp.jpg
+image: ../assets/covers/excavation.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690256/eqxrxwyvwms13rv39nfp.jpg
 
 
 

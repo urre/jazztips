@@ -10,8 +10,8 @@ tags:
   - jones
   - stockholm
   - thuresson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690269/uw46jyg148vfgbz3kf37.jpg
+image: ../assets/covers/en-gang-i-stockholm.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690269/uw46jyg148vfgbz3kf37.jpg
 
 
 

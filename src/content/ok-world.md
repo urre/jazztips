@@ -7,8 +7,8 @@ year: 2013
 tags:
   - bugge
   - world
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689753/lr1cfusm7zxmlmpwvaeh.jpg
+image: ../assets/covers/ok-world.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689753/lr1cfusm7zxmlmpwvaeh.jpg
 
 
 

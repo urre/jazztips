@@ -8,8 +8,8 @@ tags:
   - kamasi
   - washington
   - saxophone
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1532678157/oe56vu746gyciq7cvsps.jpg
+image: ../assets/covers/heaven-and-earth.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1532678157/oe56vu746gyciq7cvsps.jpg
 ogimage: >-
   https://res.cloudinary.com/urre/image/upload/v1606987103/uckyqrtfpchoqkgv0ecx.jpg
 

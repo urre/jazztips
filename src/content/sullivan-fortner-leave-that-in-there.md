@@ -14,7 +14,8 @@ tags:
   - New Orleans Jazz
 permalink: https://jazztips.se/sullivan-fortner-leave-that-in-there/
 spotify: https://open.spotify.com/album/49WI8YfJ31cg9JG6KpGuIB
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/94/d7/d194d708-6aee-9bed-adab-8711865675a5/5400863212292_cover.jpg/1000x1000bb.jpg
+image: ../assets/covers/sullivan-fortner-leave-that-in-there.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/94/d7/d194d708-6aee-9bed-adab-8711865675a5/5400863212292_cover.jpg/1000x1000bb.jpg
 apple: https://embed.music.apple.com/us/album/leave-that-in-there/6769174993
 qobuz: https://www.qobuz.com/fr-fr/album/leave-that-in-there-sullivan-fortner/f0im3nm0ozdex
 credits:

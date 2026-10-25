@@ -15,7 +15,8 @@ tags:
   - Saxophone Trio
 permalink: https://jazztips.se/sonny-rollins-brass-trio/
 spotify: https://open.spotify.com/album/51xQakHIfX5FVfXTLRcUon
-image: https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ed/8c/45/ed8c4582-59b7-2629-d58a-253d60228119/00042281505621.rgb.jpg/800x800bb.jpg
+image: ../assets/covers/sonny-rollins-brass-trio.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/ed/8c/45/ed8c4582-59b7-2629-d58a-253d60228119/00042281505621.rgb.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/brass-trio/1444161578
 qobuz: https://www.qobuz.com/br-pt/album/brass-trio-sonny-rollins/0004228150562
 credits:

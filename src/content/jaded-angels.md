@@ -8,8 +8,8 @@ tags:
   - piano
   - trio
   - watson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690167/hvj0ddhrarojizyvloiu.jpg
+image: ../assets/covers/jaded-angels.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690167/hvj0ddhrarojizyvloiu.jpg
 
 
 

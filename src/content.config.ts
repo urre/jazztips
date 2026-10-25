@@ -5,7 +5,9 @@ const records = defineCollection({
 
 	loader: glob({ base: './src/content/', pattern: '**/*.{md,mdx}' }),
 
-	schema: z.object({
+	// Covers live in src/assets/covers (see scripts/localize-covers.mjs), so
+	// `image` is a local file Astro resizes and converts at build time
+	schema: ({ image }) => z.object({
 		draft: z.boolean().default(false),
 		title: z.string(),
     artist: z.string(),
@@ -13,7 +15,10 @@ const records = defineCollection({
     label: z.string().optional(),
     year: z.number().optional(),
     tags: z.array(z.string()),
-    image: z.string().url(),
+    image: image(),
+    // Where the cover was downloaded from
+    imageSource: z.string().url().optional(),
+    ogimage: z.string().url().optional(),
     spotify: z.string().url().optional(),
     tidal: z.union([z.string(), z.number()]).optional(),
     apple: z.string().url().optional(),

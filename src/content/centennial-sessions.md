@@ -9,7 +9,8 @@ tags:
   - bigband
   - mingus
 ogimage: http://res.cloudinary.com/urre/image/upload/v1734419108/hhd8qcoj5rtjn6xknmiz.jpg
-image: https://res.cloudinary.com/urre/image/upload/v1734419097/o7ctyh2xtoubp7b93ug8.jpg
+image: ../assets/covers/centennial-sessions.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1734419097/o7ctyh2xtoubp7b93ug8.jpg
 
 credits:
 - name: Charles Mingus

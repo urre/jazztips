@@ -8,8 +8,8 @@ tags:
   - bugge
   - jazzland
   - wesseltoft
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690183/vdih8okzrdgzdz3y5af0.jpg
+image: ../assets/covers/im.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690183/vdih8okzrdgzdz3y5af0.jpg
 
 
 

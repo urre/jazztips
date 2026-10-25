@@ -8,8 +8,8 @@ tags:
   - Guitar
   - hekselman
   - gilmore
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1469795018/3149027004121-cover-zoom_ujrwj6.jpg
+image: ../assets/covers/homes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1469795018/3149027004121-cover-zoom_ujrwj6.jpg
 
 spotify: 'https://open.spotify.com/track/2YNJ0SWqSCVDK0pZOJtRCw'
 spotify_album: 'spotify:album:4nL9nYWG8k53BwCMM8hCsr'

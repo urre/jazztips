@@ -8,8 +8,8 @@ tags:
   - brecker
   - goldstein
   - tenorsax
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690242/vhvketxne0x62ecndbll.jpg
+image: ../assets/covers/wide-angels.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690242/vhvketxne0x62ecndbll.jpg
 
 
 

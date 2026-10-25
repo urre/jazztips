@@ -15,7 +15,8 @@ tags:
   - Soul Jazz
 permalink: https://jazztips.se/kurt-elling-superblue/
 spotify: https://open.spotify.com/album/04E4IjVnj7uruPKNLSHlpj
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/56/93/b45693ee-7185-9e53-91c9-e8543e81ddc5/199066951347.jpg/1000x1000bb.jpg
+image: ../assets/covers/kurt-elling-superblue.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/56/93/b45693ee-7185-9e53-91c9-e8543e81ddc5/199066951347.jpg/1000x1000bb.jpg
 apple: https://embed.music.apple.com/us/album/superblue/1798827497
 qobuz: https://www.qobuz.com/us-en/album/superblue-kurt-elling-charlie-hunter-superblue/tncm9bvbozmcb
 credits:

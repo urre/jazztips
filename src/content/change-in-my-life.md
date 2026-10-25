@@ -7,8 +7,8 @@ year: 2003
 tags:
   - piano
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690279/ab8kbunm30snkv5hbeq0.jpg
+image: ../assets/covers/change-in-my-life.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690279/ab8kbunm30snkv5hbeq0.jpg
 
 
 

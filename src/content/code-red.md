@@ -6,8 +6,8 @@ label: Prophone
 year: 2007
 tags:
   - tolvan
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690161/xa9dpekzjfj1xz9cv56t.jpg
+image: ../assets/covers/code-red.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690161/xa9dpekzjfj1xz9cv56t.jpg
 
 
 

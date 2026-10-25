@@ -12,8 +12,8 @@ tags:
   - jones
   - kvintett
   - morgan
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690140/yzmjbmz0hrbrhgdphu0v.jpg
+image: ../assets/covers/the-philadelphians.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690140/yzmjbmz0hrbrhgdphu0v.jpg
 
 
 

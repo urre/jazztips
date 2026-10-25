@@ -10,7 +10,8 @@ tags:
   - coltrane
   - byrd
   - taylor
-image: https://res.cloudinary.com/urre/image/upload/v1728671528/xzjvaljna7tgxcpg4zwd.jpg
+image: ../assets/covers/sonnys-crib.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1728671528/xzjvaljna7tgxcpg4zwd.jpg
 
 spotify: https://open.spotify.com/album/469Y1IVCrttWSp2qQYzioA
 apple: https://embed.music.apple.com/us/album/sonnys-crib/724535638

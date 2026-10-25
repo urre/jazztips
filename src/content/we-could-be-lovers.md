@@ -10,8 +10,8 @@ tags:
   - piano
   - Vocals
   - vokal
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689704/ebcps9aspzegfc7hbr02.jpg
+image: ../assets/covers/we-could-be-lovers.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689704/ebcps9aspzegfc7hbr02.jpg
 
 
 

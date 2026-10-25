@@ -9,8 +9,8 @@ tags:
   - norge
   - Vocals
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689761/pbtkouotvyrqvxqwz8dz.jpg
+image: ../assets/covers/ei-som-deg.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689761/pbtkouotvyrqvxqwz8dz.jpg
 
 
 

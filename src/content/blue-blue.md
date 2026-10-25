@@ -9,8 +9,8 @@ tags:
   - spering
   - shultz
   - knutsson
-image: >-
-  https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605003448/screenshots/w0pygaoiqbckrxt4aitw.jpg
+image: ../assets/covers/blue-blue.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600/v1605003448/screenshots/w0pygaoiqbckrxt4aitw.jpg
 
 tidal: 50284582
 credits:

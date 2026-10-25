@@ -12,7 +12,8 @@ tags:
   - shorter
   - walton
   - fuller
-image: https://res.cloudinary.com/urre/image/upload/v1726641980/v8hhixxez4buhrls60aw.jpg
+image: ../assets/covers/ugetsu.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726641980/v8hhixxez4buhrls60aw.jpg
 
 spotify: https://open.spotify.com/album/3jcAQypvC2vU7loK5HZCSm
 tidal: 1281700

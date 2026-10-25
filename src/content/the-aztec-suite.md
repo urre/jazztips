@@ -9,8 +9,8 @@ tags:
   - orkester
   - storband
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689894/xmajkm46plli4psoli1y.jpg
+image: ../assets/covers/the-aztec-suite.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689894/xmajkm46plli4psoli1y.jpg
 
 
 

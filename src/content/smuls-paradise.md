@@ -7,8 +7,8 @@ year: 2012
 tags:
   - orgel
   - smulyan
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690031/iadqrkii2zcrygkhg2rv.jpg
+image: ../assets/covers/smuls-paradise.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690031/iadqrkii2zcrygkhg2rv.jpg
 
 
 

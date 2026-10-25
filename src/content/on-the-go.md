@@ -7,8 +7,8 @@ year: 2011
 tags:
   - halsall
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689985/t6c1jcym3j4tbizqhzad.jpg
+image: ../assets/covers/on-the-go.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689985/t6c1jcym3j4tbizqhzad.jpg
 
 
 

@@ -11,7 +11,8 @@ tags:
   - Contemporary Jazz
 permalink: https://jazztips.se/joel-lyssarides-late-on-earth/
 spotify: https://open.spotify.com/album/63CbMzRTlGlHhpanS4BAvZ
-image: https://www.actmusic.com/media/f7/dd/f8/1773928392/8021-2_Joel%20Lyssarides_Late%20on%20Earth_Cover_3000.jpg
+image: ../assets/covers/joel-lyssarides-late-on-earth.avif
+imageSource: https://www.actmusic.com/media/f7/dd/f8/1773928392/8021-2_Joel%20Lyssarides_Late%20on%20Earth_Cover_3000.jpg
 apple: https://embed.music.apple.com/us/album/late-on-earth/1876184955
 qobuz: https://www.qobuz.com/fr-fr/album/late-on-earth-joel-lyssarides/o2r9o3td1e3y4
 credits:

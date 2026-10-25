@@ -10,7 +10,8 @@ tags:
   - hill
   - scott
   - Pinderhughes
-image: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/04/8e/07/048e07ca-b039-826a-70c7-09a00df5882b/25UMGIM04429.rgb.jpg/600x600bf-60.jpg
+image: ../assets/covers/ones-and-twos.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/04/8e/07/048e07ca-b039-826a-70c7-09a00df5882b/25UMGIM04429.rgb.jpg/600x600bf-60.jpg
 permalink: /ones-and-twos/
 spotify: https://open.spotify.com/album/4nRENY6OH6RHFGrf1RthCW
 apple: https://embed.music.apple.com/us/album/ones-twos-expanded-edition/1811722772?uo=4

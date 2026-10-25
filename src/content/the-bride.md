@@ -9,8 +9,8 @@ tags:
   - höper
   - kvartett
   - östholm
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689971/xc5q52rirv7ngezpsira.jpg
+image: ../assets/covers/the-bride.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689971/xc5q52rirv7ngezpsira.jpg
 
 
 

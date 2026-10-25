@@ -6,8 +6,8 @@ label: Mack Avenue
 year: 2013
 tags:
   - fusion
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689867/tosszjpgd3tu49q5yi5e.jpg
+image: ../assets/covers/a-rise-in-the-road.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689867/tosszjpgd3tu49q5yi5e.jpg
 
 
 

@@ -6,7 +6,8 @@ artist: Wes Montgomery
 label: Craft
 ogimage: https://res.cloudinary.com/urre/image/upload/v1727676759/adjmlhssivwrg4zjyaz7.jpg
 year:  1962
-image: https://res.cloudinary.com/urre/image/upload/v1727676618/ojsylke05kvt5qarbyhk.jpg
+image: ../assets/covers/full-house.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727676618/ojsylke05kvt5qarbyhk.jpg
 tags:
   - montgomery
   - kelly

@@ -8,8 +8,8 @@ tags:
   - mcbride
   - payton
   - storband
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690099/dsgkoi9dtgwpvykdvzeo.jpg
+image: ../assets/covers/the-good-feeling.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690099/dsgkoi9dtgwpvykdvzeo.jpg
 
 
 

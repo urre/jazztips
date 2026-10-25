@@ -7,8 +7,8 @@ year: 2006
 tags:
   - scott
   - trumpet
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690275/owmlvp8tg4jeaolz7axq.jpg
+image: ../assets/covers/rewind-that.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690275/owmlvp8tg4jeaolz7axq.jpg
 
 
 

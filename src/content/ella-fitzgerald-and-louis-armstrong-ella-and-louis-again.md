@@ -11,7 +11,8 @@ tags:
 permalink: https://jazztips.se/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again/
 spotify: https://open.spotify.com/album/4zWqQOob980K9drUrUGM8M
 tidal: https://tidal.com/browse/album/119011948
-image: https://upload.wikimedia.org/wikipedia/en/e/ea/Ellalouisagain.jpg
+image: ../assets/covers/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again.avif
+imageSource: https://upload.wikimedia.org/wikipedia/en/e/ea/Ellalouisagain.jpg
 credits:
   - name: Ella Fitzgerald
     instrument: Vocals

@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1725602668/ypbpdadj4jzmnj
 year: 1977
 tags:
   - jamal
-image: https://res.cloudinary.com/urre/image/upload/v1725602502/nzgvfvy8ddoxt5bwggwh.jpg
+image: ../assets/covers/the-awakening.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1725602502/nzgvfvy8ddoxt5bwggwh.jpg
 
 spotify: https://open.spotify.com/album/2lM0Tamy6fq04pPCcPOZ8B
 tidal: 35655405

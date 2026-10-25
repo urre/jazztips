@@ -11,8 +11,8 @@ tags:
   - perkins
   - porcino
   - bigband
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690180/dsse9lqozhzejpaiwcca.jpg
+image: ../assets/covers/swing-is-here.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690180/dsse9lqozhzejpaiwcca.jpg
 
 
 

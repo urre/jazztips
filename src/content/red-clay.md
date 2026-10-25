@@ -11,8 +11,8 @@ tags:
   - henderson
   - hubbard
   - white
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690251/za8au4dawctjchofpn7m.jpg
+image: ../assets/covers/red-clay.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690251/za8au4dawctjchofpn7m.jpg
 
 
 

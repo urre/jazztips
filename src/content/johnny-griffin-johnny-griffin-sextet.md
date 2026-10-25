@@ -15,7 +15,8 @@ tags:
   - Pepper Adams
 permalink: https://jazztips.se/johnny-griffin-johnny-griffin-sextet/
 spotify: https://open.spotify.com/album/1WpqLPU8pa00SG6ERli6a6
-image: https://upload.wikimedia.org/wikipedia/en/c/ca/Griffin_1958.jpg
+image: ../assets/covers/johnny-griffin-johnny-griffin-sextet.avif
+imageSource: https://upload.wikimedia.org/wikipedia/en/c/ca/Griffin_1958.jpg
 apple: https://embed.music.apple.com/gb/album/johnny-griffin-sextet/315903907
 credits:
   - name: Johnny Griffin

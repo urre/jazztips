@@ -7,8 +7,8 @@ year: 2000
 tags:
   - blade
   - drums
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1500624965/so5btapoconikbpv3ctc.jpg
+image: ../assets/covers/perceptual.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1500624965/so5btapoconikbpv3ctc.jpg
 
 spotify: 'https://open.spotify.com/track/10TiIsRhDW0795Msycgs8E'
 credits:

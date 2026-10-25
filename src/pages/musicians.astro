@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
-import optimizeImage from "@utils/optimizeImage";
+import { coverThumb } from "@utils/coverThumb";
 import "../styles/dashboard.css";
 import { instrumentFamilies, normalizeName } from "@utils/instruments";
 import { normalizeLabel } from "@utils/labels";
@@ -14,6 +14,7 @@ import avatars from "../data/musician-avatars.json";
 const records = (
   await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft)
 ).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const thumbs = new Map(await Promise.all(records.map(async (r) => [r.id, await coverThumb(r.data.image)] as const)));
 
 type Appearance = {
   id: string;
@@ -64,7 +65,7 @@ records.forEach((record) => {
         id: record.id,
         title: record.data.title,
         artist: record.data.artist,
-        image: record.data.image,
+        image: thumbs.get(record.id)!,
         year: record.data.year,
         instrument: credit.instrument?.trim() ?? "",
       });
@@ -473,7 +474,7 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
                   {musician.records.map((record) => (
                     <li>
                       <a href={`/${record.id}`}>
-                        <img data-src={optimizeImage(record.image)} alt="" width="56" height="56" />
+                        <img data-src={record.image} alt="" width="56" height="56" />
                         <span>
                           <span class="appearance-title">
                             {record.artist} – {record.title}

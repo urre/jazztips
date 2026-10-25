@@ -7,8 +7,8 @@ year: 1983
 tags:
   - duo
   - piano
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689889/hl41aekxudk4ztx823ws.jpg
+image: ../assets/covers/at-home.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689889/hl41aekxudk4ztx823ws.jpg
 
 
 

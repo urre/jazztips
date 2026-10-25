@@ -8,8 +8,8 @@ tags:
   - bergonzi
   - kvartett
   - winther
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690055/ktxlsnipyxgjtbzcwhxa.jpg
+image: ../assets/covers/sonic-shapes.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690055/ktxlsnipyxgjtbzcwhxa.jpg
 
 
 

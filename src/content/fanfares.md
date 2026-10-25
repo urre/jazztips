@@ -7,8 +7,8 @@ year: 2012
 tags:
   - piano
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689936/gn47gpmr6wwm7vxfgs0m.jpg
+image: ../assets/covers/fanfares.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689936/gn47gpmr6wwm7vxfgs0m.jpg
 
 
 

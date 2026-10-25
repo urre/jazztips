@@ -7,8 +7,8 @@ year: 2016
 tags:
   - scofield
   - Guitar
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1474825833/p5tjcmlo4jvfwwwymuv3.jpg
+image: ../assets/covers/country-for-old-men.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1474825833/p5tjcmlo4jvfwwwymuv3.jpg
 
 spotify: 'https://open.spotify.com/track/2DFzGYzgDucxbyQbAPzNS5'
 credits:

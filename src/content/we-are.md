@@ -13,7 +13,8 @@ tags:
   - pop
   - hip-hop
   - shorty
-image: https://m.media-amazon.com/images/I/61T0yZN03IL._UF1000,1000_QL80_.jpg
+image: ../assets/covers/we-are.avif
+imageSource: https://m.media-amazon.com/images/I/61T0yZN03IL._UF1000,1000_QL80_.jpg
 permalink: /we-are/
 spotify: https://open.spotify.com/album/6kHFkPvL2X3rZPuS3CEMUE
 apple: https://embed.music.apple.com/us/album/we-are/1548291743?uo=4

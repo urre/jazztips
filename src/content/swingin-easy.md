@@ -8,8 +8,8 @@ tags:
   - haynes
   - trio
   - vaughan
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690063/whjej8jzirkmtghopcka.jpg
+image: ../assets/covers/swingin-easy.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690063/whjej8jzirkmtghopcka.jpg
 
 
 

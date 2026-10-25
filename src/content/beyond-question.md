@@ -9,8 +9,8 @@ tags:
   - rassinfosse
   - roditi
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690115/azqsimv1gueqymbdpcdx.jpg
+image: ../assets/covers/beyond-question.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690115/azqsimv1gueqymbdpcdx.jpg
 
 
 

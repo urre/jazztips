@@ -4,7 +4,8 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Musicians from "@components/record/Musicians.astro";
 import Embeds from "@components/record/embeds/Embeds.astro";
-import optimizeImage from "../utils/optimizeImage";
+import { getImage } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import RecordCover from "@components/record/RecordCover.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
 import Tags from "@components/record/Tags.astro";
@@ -31,7 +32,7 @@ export interface Props {
   description: string;
   pubDate?: string;
   updatedDate?: string;
-  image?: string;
+  image?: ImageMetadata;
   spotify?: string;
   tidal?: string;
   apple?: string;
@@ -84,6 +85,12 @@ const appleLink = `https://music.apple.com/us/search?term=${encodeURIComponent(
 )}`;
 
 const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
+
+// Small cover for the Qobuz card, and a JPEG for link previews since not
+// every service that reads og:image understands AVIF or WebP
+const qobuzCover = image && (await getImage({ src: image, width: 240, format: "webp" })).src;
+const shareImage =
+  ogimage ?? (image && (await getImage({ src: image, width: 1000, format: "jpg", quality: 82 })).src);
 ---
 
 <html lang="en">
@@ -92,7 +99,7 @@ const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
     <BaseHead
       title={`${artist} - ${title}`}
       description={description ?? `Album review for ${artist} - ${title}`}
-      image={ogimage}
+      image={shareImage}
     />
   </head>
 
@@ -105,7 +112,7 @@ const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
           image && (
             <RecordCover
               pulled={true}
-              src={`${optimizeImage(image)}`}
+              image={image}
               artist={artist}
               title={title}
               abovefold={true}
@@ -135,7 +142,7 @@ const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
           qobuz={qobuz}
           artist={artist}
           title={title}
-          cover={image ? optimizeImage(image) : undefined}
+          cover={qobuzCover}
         />
         <Tags tags={tags} />
 

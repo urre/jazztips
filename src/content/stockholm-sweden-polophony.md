@@ -9,8 +9,8 @@ tags:
   - sandell
   - standberg
   - thorman
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690213/hahfdrxbmfm4jtxb5ugt.jpg
+image: ../assets/covers/stockholm-sweden-polophony.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690213/hahfdrxbmfm4jtxb5ugt.jpg
 
 
 

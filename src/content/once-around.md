@@ -8,8 +8,8 @@ tags:
   - duo
   - östholm
   - strandberg
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690211/sdnpklpqecihfblanrv2.jpg
+image: ../assets/covers/once-around.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690211/sdnpklpqecihfblanrv2.jpg
 
 
 

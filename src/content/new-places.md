@@ -7,8 +7,8 @@ year: 2011
 tags:
   - broström
   - storband
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690011/ckiemvcnuklbcj11bpc1.jpg
+image: ../assets/covers/new-places.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690011/ckiemvcnuklbcj11bpc1.jpg
 
 
 

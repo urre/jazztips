@@ -8,7 +8,8 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1726161549/qlxjujcm7tr6a5
 year:  1957
 tags:
   - byrd
-image: https://res.cloudinary.com/urre/image/upload/v1726160948/vagnbamvoaliibmwojc5.jpg
+image: ../assets/covers/byrd-blows-on-beacon-hill.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1726160948/vagnbamvoaliibmwojc5.jpg
 
 spotify: https://open.spotify.com/album/1EMcznwjHSAqmaiUmxflj1
 tidal: 110447903

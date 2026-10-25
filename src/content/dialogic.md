@@ -10,8 +10,8 @@ tags:
   - cruz
   - davis
   - ridi
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690062/ra27wmqpvdt0mawyobc2.jpg
+image: ../assets/covers/dialogic.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690062/ra27wmqpvdt0mawyobc2.jpg
 
 
 

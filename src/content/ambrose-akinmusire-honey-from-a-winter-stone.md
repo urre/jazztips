@@ -11,7 +11,8 @@ tags:
 permalink: https://jazztips.se/ambrose-akinmusire-honey-from-a-winter-stone/
 spotify: https://open.spotify.com/album/69qmpFumQAb3y3UXgGCIbz
 
-image: https://i.discogs.com/_EH_TFiF8DJ2hMRW-UbykKyoVGlqnKTSb9EvJab4xt8/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDI3/MTYyLTE3Mzk5ODI1/MzQtMTU2MS5qcGVn.jpeg
+image: ../assets/covers/ambrose-akinmusire-honey-from-a-winter-stone.avif
+imageSource: https://i.discogs.com/_EH_TFiF8DJ2hMRW-UbykKyoVGlqnKTSb9EvJab4xt8/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMDI3/MTYyLTE3Mzk5ODI1/MzQtMTU2MS5qcGVn.jpeg
 apple: https://embed.music.apple.com/at/album/honey-from-a-winter-stone/1779386273
 qobuz: https://www.qobuz.com/us-en/album/honey-from-a-winter-stone-ambrose-akinmusire/ss83b13vveoza
 credits:

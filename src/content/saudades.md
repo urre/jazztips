@@ -12,7 +12,8 @@ tags:
   - trio
   - goldings
   - scofield
-image: https://res.cloudinary.com/urre/image/upload/v1725560989/qfedsi4yxceq3e3oflxx.jpg
+image: ../assets/covers/saudades.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1725560989/qfedsi4yxceq3e3oflxx.jpg
 
 spotify: https://open.spotify.com/album/364yqtoN3OAGgIAl6IVkvD?si=J7SgeXlPTQep1-chDjx-tA
 tidal: 13475845

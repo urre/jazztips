@@ -10,7 +10,8 @@ tags:
   - jarrett
   - dejohnette
   - holland
-image: https://res.cloudinary.com/urre/image/upload/v1727781081/z1ql1wpxeb0cego6icoh.jpg
+image: ../assets/covers/gnu-high.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1727781081/z1ql1wpxeb0cego6icoh.jpg
 
 spotify: https://open.spotify.com/album/5vqvjyYYQ2h7ODzZnfXSFw
 tidal: https://tidal.com/browse/album/14336531?u

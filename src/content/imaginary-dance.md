@@ -6,8 +6,8 @@ label: StayTuned
 year: 2002
 tags:
   - lockheart
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690039/kqcjaqc3oh4u1xssjyy4.jpg
+image: ../assets/covers/imaginary-dance.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690039/kqcjaqc3oh4u1xssjyy4.jpg
 
 
 

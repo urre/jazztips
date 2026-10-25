@@ -8,8 +8,8 @@ tags:
   - almqvist
   - kvartett
   - sjöstedt
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689953/htvx4xqmrivxks2sikgk.jpg
+image: ../assets/covers/good-to-be.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689953/htvx4xqmrivxks2sikgk.jpg
 
 
 

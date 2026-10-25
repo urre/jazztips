@@ -6,8 +6,8 @@ label: Basho
 year: 2012
 tags:
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689930/flsu0teaui3idcck8d8z.jpg
+image: ../assets/covers/hush.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689930/flsu0teaui3idcck8d8z.jpg
 
 
 

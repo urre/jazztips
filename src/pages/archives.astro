@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
-import optimizeImage from "@utils/optimizeImage";
+import { coverThumb } from "@utils/coverThumb";
 import { normalizeLabel } from "@utils/labels";
 import "../styles/dashboard.css";
 
@@ -28,6 +28,7 @@ const countThisYear = byYear.get(thisYear)?.length ?? 0;
 const countLastYear = byYear.get(thisYear - 1)?.length ?? 0;
 const labels = new Set(records.map((r) => normalizeLabel(r.data.label)?.toLowerCase()).filter(Boolean));
 const latest = records[0];
+const thumbs = new Map(await Promise.all(records.map(async (r) => [r.id, await coverThumb(r.data.image)] as const)));
 
 // Tags differ only in case ("Jazz" / "jazz"); count them together and link the
 // most used spelling
@@ -88,7 +89,7 @@ const dayMonth = (date: Date) => date.toLocaleDateString("en-GB", { day: "numeri
         {
           latest && (
             <a class="stat-card stat-card--highlight latest" href={`/${latest.id}`}>
-              <img src={optimizeImage(latest.data.image)} alt="" width="48" height="48" />
+              <img src={thumbs.get(latest.id)} alt="" width="48" height="48" />
               <span class="stat-label">
                 Latest: <strong>{latest.data.artist} – {latest.data.title}</strong>
               </span>
@@ -177,7 +178,7 @@ const dayMonth = (date: Date) => date.toLocaleDateString("en-GB", { day: "numeri
                   >
                     <a href={`/${record.id}`} class="record">
                       <img
-                        src={optimizeImage(record.data.image)}
+                        src={thumbs.get(record.id)}
                         alt=""
                         width="56"
                         height="56"

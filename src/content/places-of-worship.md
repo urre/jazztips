@@ -8,8 +8,8 @@ tags:
   - danielsson
   - henriksen
   - nordiskt
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689819/gygsbllgdanm44fu6hnj.jpg
+image: ../assets/covers/places-of-worship.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689819/gygsbllgdanm44fu6hnj.jpg
 
 
 

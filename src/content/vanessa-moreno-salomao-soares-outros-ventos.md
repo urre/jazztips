@@ -11,7 +11,8 @@ tags:
 permalink: https://jazztips.se/vanessa-moreno-salomao-soares-outros-ventos/
 spotify: https://open.spotify.com/album/1S4XU3tL29wOblHIlt1bRf
 tidal: https://tidal.com/browse/album/439006940
-image: https://cdn-images.dzcdn.net/images/cover/f729399cd8b33794a4c031bfb9de1d1d/0x1900-000000-80-0-0.jpg
+image: ../assets/covers/vanessa-moreno-salomao-soares-outros-ventos.avif
+imageSource: https://cdn-images.dzcdn.net/images/cover/f729399cd8b33794a4c031bfb9de1d1d/0x1900-000000-80-0-0.jpg
 apple: https://embed.apple.com/pt/album/outros-ventos/1817493658
 qobuz: https://www.qobuz.com/ca-fr/album/outros-ventos-salomao-soares-vanessa-moreno/scemrqkayf9wb
 credits:

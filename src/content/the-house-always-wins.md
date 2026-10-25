@@ -6,8 +6,8 @@ label: Edition
 year: 2007
 tags:
   - kvintett
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690003/zftmmzmgctdmekxhydu0.jpg
+image: ../assets/covers/the-house-always-wins.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690003/zftmmzmgctdmekxhydu0.jpg
 
 
 

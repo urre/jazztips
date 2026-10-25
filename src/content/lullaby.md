@@ -6,7 +6,8 @@ artist: "Mathias Eick"
 label: ECM
 year: 2025
 tags: ['ecm', 'eick']
-image: https://ecm-server.de/audio/06024751/0602475104865/Cover_1000.webp
+image: ../assets/covers/lullaby.avif
+imageSource: https://ecm-server.de/audio/06024751/0602475104865/Cover_1000.webp
 spotify: https://open.spotify.com/album/3UK3AuuDGFk46w0323tb23
 tidal: https://tidal.com/browse/album/416352866
 apple: https://embed.music.apple.com/gb/album/lullaby/1772926336

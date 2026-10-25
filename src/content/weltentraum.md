@@ -7,8 +7,8 @@ year: 2014
 tags:
   - piano
   - trio
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465689798/jrucce9pjsaziczs8od6.jpg
+image: ../assets/covers/weltentraum.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465689798/jrucce9pjsaziczs8od6.jpg
 
 
 

@@ -15,7 +15,8 @@ permalink: /the-mood/
 spotify: https://open.spotify.com/album/1Qyt5UZcbhHsr06iyYL6RB
 apple: https://embed.music.apple.com/us/album/the-mood/1649836507?uo=4
 tidal: https://tidal.com/browse/album/254029002?u
-image: https://lastfm.freetls.fastly.net/i/u/300x300/b9fd9b47503ec7208ad8d10d358333ba.jpg
+image: ../assets/covers/the-mood.avif
+imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/b9fd9b47503ec7208ad8d10d358333ba.jpg
 credits:
 - name: Maurice Brown
   instrument: Trumpet, Vocals, Production

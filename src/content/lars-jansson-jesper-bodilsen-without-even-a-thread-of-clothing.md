@@ -15,7 +15,8 @@ tags:
   - Double Bass
 permalink: https://jazztips.se/lars-jansson-jesper-bodilsen-without-even-a-thread-of-clothing/
 spotify: https://open.spotify.com/prerelease/6ImQWpJdX0aJ6vvA31edV6
-image: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/3a/99/3d3a99d7-9ec6-7793-2f64-4385492c3b42/cover.jpg/800x800bb.jpg
+image: ../assets/covers/lars-jansson-jesper-bodilsen-without-even-a-thread-of-clothing.avif
+imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/3a/99/3d3a99d7-9ec6-7793-2f64-4385492c3b42/cover.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/without-even-a-thread-of-clothing/1850692923
 qobuz: https://www.qobuz.com/us-en/album/without-even-a-thread-of-clothing-lars-jansson-jesper-bodilsen/p7mw3wop6b8pc
 credits:

@@ -16,8 +16,8 @@ tags:
   - macero
   - ventiltrombon
   - vibrafon
-image: >-
-  https://res.cloudinary.com/urre/image/upload/v1465690134/plgwlulaesxxjdqn4u8m.jpg
+image: ../assets/covers/bob-brookmeyer-friends.avif
+imageSource: https://res.cloudinary.com/urre/image/upload/v1465690134/plgwlulaesxxjdqn4u8m.jpg
 
 
 
