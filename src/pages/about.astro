@@ -6,7 +6,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
 
 const records = await getCollection("records", ({ data }) => !data.draft);
-const years = new Date().getFullYear() - 2015;
+const startYear = 2010;
+const years = new Date().getFullYear() - startYear;
 ---
 
 <!DOCTYPE html>
@@ -29,7 +30,7 @@ const years = new Date().getFullYear() - 2015;
         <h1>About Jazztips</h1>
 
         <p class="intro">
-          Hi, I'm Urban Sandén. I started Jazztips in February 2015.
+          Hi, I'm Urban Sandén. I started Jazztips in February {startYear}.
         </p>
 
         <dl class="stats">
