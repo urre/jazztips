@@ -1,42 +1,339 @@
 ---
 import BaseHead from "../../components/BaseHead.astro";
 import Header from "../../components/Header.astro";
+import { GROUP_ORDER, PEOPLE, mergeTags, type MergedTag } from "@utils/tags";
 
 import { getCollection } from "astro:content";
 
-// Get all posts from the collection
 const records = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 
-// Extract tags from post data instead of frontmatter
-const tags = [...new Set(records.map((record) => record.data.tags).flat())];
-const uniqueTagCount = tags.length;
+const tags = mergeTags(records.map((record) => record.data.tags));
 
-const pageTitle = "Tag Index";
+const byCount = (a: MergedTag, b: MergedTag) => b.count - a.count || a.label.localeCompare(b.label);
+const byName = (a: MergedTag, b: MergedTag) => a.label.localeCompare(b.label, "sv");
+
+// Styles, instruments and so on read best most used first,
+// the long tail of names reads best alphabetically
+const groups = GROUP_ORDER.map((group) => ({
+  group,
+  id: group.toLowerCase().replace(/[^a-z]+/g, "-").replace(/-$/, ""),
+  tags: tags.filter((tag) => tag.group === group).sort(group === PEOPLE ? byName : byCount),
+})).filter(({ tags }) => tags.length);
+
+const letterOf = (name: string) => {
+  const letter = name[0].toLocaleUpperCase("sv");
+  return /\p{L}/u.test(letter) ? letter : "#";
+};
+
+const people = groups.find(({ group }) => group === PEOPLE);
+const letters = Object.entries(
+  Object.groupBy(people?.tags ?? [], (tag) => letterOf(tag.label))
+) as Array<[string, MergedTag[]]>;
+
+const pageTitle = "Tags";
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={pageTitle} description="Tags" />
+    <BaseHead title={pageTitle} description="Browse Jazztips records by style, instrument, ensemble, place, label and musician" />
   </head>
 
   <body>
     <Header />
-    <main>
-      <h1>View content by Tags</h1>
-      <p>Currently <em>{uniqueTagCount}</em> tags</p>
-      <ul class="tags">
-        {
-          tags
-            .sort((tag1: string, tag2: string) => tag1.localeCompare(tag2))
-            .map((tag) => (
-              <li>
-                <a rel="tag" class="button" href={`/tags/${tag}`}>
-                  {tag}
-                </a>
-              </li>
-            ))
-        }
-      </ul>
+    <main class="tags-page">
+      <h1>Tags</h1>
+      <p class="lede">
+        <em>{tags.length}</em> tags across <em>{records.length}</em> records, grouped by style,
+        instrument, ensemble, place, label and musician.
+      </p>
+
+      <div class="toolbar">
+        <input
+          type="search"
+          id="tag-filter"
+          placeholder="Filter tags…"
+          aria-label="Filter tags"
+          autocomplete="off"
+        />
+        <nav class="jump" aria-label="Tag groups">
+          {groups.map(({ group, id }) => <a href={`#${id}`}>{group}</a>)}
+        </nav>
+      </div>
+
+      <p id="no-tags" class="no-tags" hidden>No tags match.</p>
+
+      {
+        groups.map(({ group, id, tags }) => (
+          <section class="group" id={id} data-group>
+            <h2>
+              {group} <span class="group-count">{tags.length}</span>
+            </h2>
+
+            {group === PEOPLE ? (
+              <>
+                <nav class="letters" aria-label="Jump to letter">
+                  {letters.map(([letter]) => (
+                    <a href={`#letter-${letter}`}>{letter}</a>
+                  ))}
+                </nav>
+                <div class="letter-grid">
+                  {letters.map(([letter, letterTags]) => (
+                    <div class="letter" id={`letter-${letter}`} data-group>
+                      <h3>{letter}</h3>
+                      <ul class="plain-list names">
+                        {letterTags.map((tag) => (
+                          <li data-tag={[tag.label, ...tag.variants].join(" ").toLowerCase()}>
+                            <a href={`/tags/${tag.name}`}>
+                              {tag.label}
+                              {tag.count > 1 && <span class="count">{tag.count}</span>}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>
+                <ul class="plain-list chips">
+                  {tags.filter((tag) => tag.count > 1).map((tag) => (
+                    <li data-tag={[tag.label, ...tag.variants].join(" ").toLowerCase()}>
+                      <a rel="tag" href={`/tags/${tag.name}`}>
+                        {tag.label}
+                        <span class="count">{tag.count}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                {tags.some((tag) => tag.count === 1) && (
+                  <details class="once" data-group>
+                    <summary>
+                      {tags.filter((tag) => tag.count === 1).length} more used on a single record
+                    </summary>
+                    <ul class="plain-list chips">
+                      {tags.filter((tag) => tag.count === 1).map((tag) => (
+                        <li data-tag={[tag.label, ...tag.variants].join(" ").toLowerCase()}>
+                          <a rel="tag" href={`/tags/${tag.name}`}>
+                            {tag.label}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                )}
+              </>
+            )}
+          </section>
+        ))
+      }
     </main>
+
+    <script>
+      const input = document.getElementById("tag-filter") as HTMLInputElement | null;
+      const empty = document.getElementById("no-tags");
+
+      // Remember what the visitor opened themselves, filtering opens everything
+      document.querySelectorAll<HTMLDetailsElement>("details.once").forEach((details) => {
+        details.addEventListener("toggle", () => {
+          if (!input?.value.trim()) details.dataset.userOpen = String(details.open);
+        });
+      });
+
+      input?.addEventListener("input", () => {
+        const query = input.value.trim().toLowerCase();
+
+        document.querySelectorAll<HTMLElement>("[data-tag]").forEach((item) => {
+          item.hidden = Boolean(query) && !item.dataset.tag!.includes(query);
+        });
+
+        // Hide letters and groups left without any visible tags, innermost first
+        const containers = [...document.querySelectorAll<HTMLElement>("[data-group]")].reverse();
+        containers.forEach((container) => {
+          container.hidden = !container.querySelector("[data-tag]:not([hidden])");
+        });
+
+        // Single-use tags are folded away, show them while filtering
+        document.querySelectorAll<HTMLDetailsElement>("details.once").forEach((details) => {
+          details.open = Boolean(query) || details.dataset.userOpen === "true";
+        });
+
+        if (empty) empty.hidden = containers.some((container) => !container.hidden);
+      });
+    </script>
+
+    <style>
+      .tags-page h1 {
+        margin-bottom: 0.25rem;
+      }
+
+      .lede {
+        margin-top: 0;
+        color: var(--grey);
+      }
+
+      .lede em {
+        font-style: normal;
+        color: var(--text);
+      }
+
+      .toolbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem 1.5rem;
+        margin: 1.5rem 0 1rem;
+        padding: 0.75rem 0;
+        background-color: var(--bg-color);
+        border-bottom: 1px solid var(--border-soft);
+      }
+
+      .toolbar input {
+        flex: 0 1 280px;
+        min-width: 0;
+        padding: 0.4rem 1rem;
+      }
+
+      .jump {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .jump a,
+      .letters a {
+        color: var(--grey);
+        text-decoration: underline;
+        text-decoration-color: var(--grey-light);
+        text-underline-offset: 4px;
+      }
+
+      .jump a:hover,
+      .letters a:hover {
+        color: var(--profile);
+      }
+
+      .group {
+        /* Leave room for the sticky toolbar when jumping to a section */
+        scroll-margin-top: 5rem;
+        padding-top: 1.5rem;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-soft);
+      }
+
+      .group h2 {
+        display: flex;
+        align-items: baseline;
+        gap: 0.6rem;
+        margin: 0 0 1rem;
+      }
+
+      .group-count {
+        font-size: 0.85rem;
+        color: var(--grey);
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .chips a {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.45rem;
+        padding: 0.3rem 0.85rem;
+        border-radius: 2rem;
+        border: 1px solid var(--border);
+        background-color: var(--surface);
+        line-height: 1.4;
+      }
+
+      .count {
+        font-size: 0.75rem;
+        color: var(--grey);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .letters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem 0.75rem;
+        margin-bottom: 1.25rem;
+      }
+
+      .letter-grid {
+        columns: 15rem auto;
+        column-gap: 2rem;
+      }
+
+      .letter {
+        break-inside: avoid;
+        margin-bottom: 1.25rem;
+        scroll-margin-top: 5rem;
+      }
+
+      .letter h3 {
+        margin: 0 0 0.25rem;
+        font-size: 1.1rem;
+        color: var(--profile);
+      }
+
+      .names {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .names a {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.4rem;
+        line-height: 1.6;
+      }
+
+      .names a:hover {
+        color: var(--profile);
+      }
+
+      .once {
+        margin-top: 1rem;
+      }
+
+      .once summary {
+        cursor: pointer;
+        width: fit-content;
+        font-size: 0.9rem;
+        color: var(--grey);
+        text-decoration: underline;
+        text-decoration-color: var(--grey-light);
+        text-underline-offset: 4px;
+      }
+
+      .once[open] summary {
+        margin-bottom: 0.75rem;
+      }
+
+      .once .chips a {
+        padding: 0.15rem 0.7rem;
+        font-size: 0.9rem;
+      }
+
+      .no-tags {
+        color: var(--grey);
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+    </style>
   </body>
 </html>

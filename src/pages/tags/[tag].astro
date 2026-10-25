@@ -4,39 +4,37 @@ import BaseHead from "@components/BaseHead.astro";
 import Header from "@components/Header.astro";
 import optimizeImage from "@utils/optimizeImage";
 import { getCollection } from "astro:content";
+import { mergeTags, tagKey } from "@utils/tags";
 
 export async function getStaticPaths() {
   const allPosts = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
 
-  const uniqueTags = [
-    ...new Set(allPosts.map((post) => post.data.tags).flat()),
-  ];
-
-  return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter(
-      (post) => post.data.tags && post.data.tags.includes(tag)
+  // Every spelling keeps its own URL, and all of them list the records
+  // tagged with any spelling ("Hard Bop", "hard-bop", "hardbop")
+  return mergeTags(allPosts.map((post) => post.data.tags)).flatMap(({ key, label, variants }) => {
+    const filteredPosts = allPosts.filter((post) =>
+      post.data.tags?.some((postTag: string) => tagKey(postTag) === key)
     );
 
-    return {
+    return variants.map((tag) => ({
       params: { tag },
-      props: { posts: filteredPosts },
-    };
+      props: { posts: filteredPosts, label },
+    }));
   });
 }
 
-const { tag } = Astro.params;
-const { posts } = Astro.props;
+const { posts, label } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title={`${tag}`} description="Tag" />
+    <BaseHead title={`${label}`} description="Tag" />
   </head>
 
   <body>
     <Header />
     <main>
-      <h1>Tagged <em>{tag}</em></h1>
+      <h1>Tagged <em>{label}</em></h1>
       <ul>
         {
           posts.map((record) => (
