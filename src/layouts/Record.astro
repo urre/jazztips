@@ -6,7 +6,6 @@ import Musicians from "@components/record/Musicians.astro";
 import Embeds from "@components/record/embeds/Embeds.astro";
 import optimizeImage from "../utils/optimizeImage";
 import RecordCover from "@components/record/RecordCover.astro";
-import RecordLayout from "@components/record/RecordLayout.astro";
 import RecordInfo from "@components/record/RecordInfo.astro";
 import Tags from "@components/record/Tags.astro";
 import Explore from "@components/record/Explore.astro";
@@ -100,8 +99,8 @@ const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
   <Header />
 
   <main>
-    <article>
-      <RecordLayout>
+    <article class="record">
+      <div class="record-hero">
         {
           image && (
             <RecordCover
@@ -118,52 +117,116 @@ const postId = Astro.url.pathname.replace(/^\/|\/$/g, "");
         <RecordInfo artist={artist} title={title} label={label} year={year}>
           {
             updatedDate && (
-              <div>
+              <div class="updated">
                 Last updated on <time>{updatedDate}</time>
               </div>
             )
           }
-
-          {credits && <Musicians musicians={credits} />}
-
-          <Embeds
-            tidal={tidal}
-            spotify={spotify}
-            apple={apple}
-            qobuz={qobuz}
-            artist={artist}
-            title={title}
-            cover={image ? optimizeImage(image) : undefined}
-          />
-          <Tags tags={tags} />
-
-          <Explore
-            tidal={tidal}
-            tidalLink={tidalLink}
-            tidalId={tidalId}
-            artist={artist}
-            qobuz={qobuz}
-            title={title}
-            buyat={buyat}
-            buy={buy}
-            spotify={spotify}
-            appleLink={appleLink}
-            apple={apple}
-          />
-
-          {artist && <AlsoAppearsOn musicians={credits} postId={postId} />}
-          <RecordCopyButton
-            artist={artist}
-            title={title}
-            label={label}
-            year={year}
-            credits={credits}
-            description={description}
-          />
         </RecordInfo>
-      </RecordLayout>
+      </div>
+
+      <div class="record-body">
+        {credits && <Musicians musicians={credits} />}
+
+        <Embeds
+          tidal={tidal}
+          spotify={spotify}
+          apple={apple}
+          qobuz={qobuz}
+          artist={artist}
+          title={title}
+          cover={image ? optimizeImage(image) : undefined}
+        />
+        <Tags tags={tags} />
+
+        <Explore
+          tidal={tidal}
+          tidalLink={tidalLink}
+          tidalId={tidalId}
+          artist={artist}
+          qobuz={qobuz}
+          title={title}
+          buyat={buyat}
+          buy={buy}
+          spotify={spotify}
+          appleLink={appleLink}
+          apple={apple}
+        />
+
+        {artist && <AlsoAppearsOn musicians={credits} postId={postId} />}
+        <RecordCopyButton
+          artist={artist}
+          title={title}
+          label={label}
+          year={year}
+          credits={credits}
+          description={description}
+        />
+      </div>
     </article>
   </main>
   <Footer />
   <Analytics />
 </html>
+
+<style>
+  /* One centred column: cover and title on a row, everything else below */
+  .record {
+    max-width: 1100px;
+    margin-inline: auto;
+  }
+
+  .record-hero {
+    display: grid;
+    justify-items: center;
+    gap: calc(var(--gap) * 0.75);
+    text-align: center;
+    margin-bottom: calc(var(--gap) * 1.5);
+  }
+
+  .record-hero :global(h1) {
+    margin-inline: auto;
+  }
+
+  .updated {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--grey);
+  }
+
+  @media (min-width: 768px) {
+    .record-hero {
+      grid-template-columns: min(420px, 42vw) minmax(0, 1fr);
+      align-items: center;
+      justify-items: start;
+      /* Room for the vinyl peeking out from behind the cover */
+      column-gap: calc(var(--fluid-gap) * 5);
+      text-align: left;
+    }
+
+    .record-hero :global(h1) {
+      margin-inline: 0;
+    }
+
+    /* Same cover size at every width from here, the record cover component
+       otherwise switches between sizes made for the old side column */
+    .record .record-hero :global(.record-cover:has(img.image-lg)) {
+      width: 100%;
+      max-width: 420px;
+      aspect-ratio: 1 / 1;
+    }
+
+    .record .record-hero :global(.record-cover:has(img.image-lg) span) {
+      opacity: 1;
+    }
+  }
+
+  .record-body {
+    display: grid;
+    gap: calc(var(--gap) * 0.5);
+  }
+
+  .record-body > :global(fieldset) {
+    margin: 0;
+  }
+</style>
