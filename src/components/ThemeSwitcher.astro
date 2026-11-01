@@ -51,8 +51,10 @@
     height: 16px;
   }
 
-  button:hover {
-    color: var(--text);
+  @media (hover: hover) and (pointer: fine) {
+    button:hover {
+      color: var(--text);
+    }
   }
 
   button:focus-visible {
@@ -93,6 +95,11 @@
     } else {
       document.documentElement.dataset.theme = choice;
     }
+    // The status bar follows the chosen theme, or each scheme's own colour
+    document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]').forEach((meta) => {
+      const color = choice === "dark" ? "#121314" : choice === "light" ? "#f8f8f8" : meta.dataset.default!;
+      meta.setAttribute("content", color);
+    });
     buttons.forEach((button) => {
       button.setAttribute("aria-pressed", String(button.dataset.themeChoice === choice));
     });

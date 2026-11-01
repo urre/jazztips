@@ -285,8 +285,10 @@ const dayMonth = (date: Date) => date.toLocaleDateString("en-GB", { day: "numeri
     transition: border-color 150ms, box-shadow 150ms;
   }
 
-  .record:hover {
-    border-color: var(--profile);
+  @media (hover: hover) and (pointer: fine) {
+    .record:hover {
+      border-color: var(--profile);
+    }
   }
 
   .record:focus-visible {

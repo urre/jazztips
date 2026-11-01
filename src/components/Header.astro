@@ -119,8 +119,10 @@ import ThemeSwitcher from "./ThemeSwitcher.astro";
     transition: background-color 150ms, color 150ms;
   }
 
-  header nav a:hover {
-    background-color: var(--surface-hover);
+  @media (hover: hover) and (pointer: fine) {
+    header nav a:hover {
+      background-color: var(--surface-hover);
+    }
   }
 
   header nav a.active {
@@ -200,9 +202,14 @@ import ThemeSwitcher from "./ThemeSwitcher.astro";
     transition: box-shadow 150ms;
   }
 
-  .nav-toggle:hover,
   .nav-toggle:focus-visible {
     box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .nav-toggle:hover {
+      box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+    }
   }
 
   .bars {

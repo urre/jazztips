@@ -30,8 +30,10 @@ const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
     transition: box-shadow 200ms;
   }
 
-  .ad-card:hover {
-    box-shadow: rgba(99, 99, 99, 0.22) 0px 6px 20px 0px;
+  @media (hover: hover) and (pointer: fine) {
+    .ad-card:hover {
+      box-shadow: rgba(99, 99, 99, 0.22) 0px 6px 20px 0px;
+    }
   }
 
   .ad-card:focus-visible {
@@ -90,9 +92,11 @@ const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
     height: 13px;
   }
 
-  .ad-card:hover .ad-cta {
-    text-decoration: underline;
-    text-underline-offset: 3px;
+  @media (hover: hover) and (pointer: fine) {
+    .ad-card:hover .ad-cta {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
   }
 
   .ad-screen {

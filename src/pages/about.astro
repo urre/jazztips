@@ -163,10 +163,16 @@ const years = new Date().getFullYear() - startYear;
     transition: box-shadow 150ms, border-color 150ms;
   }
 
-  .links a:hover,
   .links a:focus-visible {
     outline: none;
     box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .links a:hover {
+      outline: none;
+      box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+    }
   }
 
   .links svg {

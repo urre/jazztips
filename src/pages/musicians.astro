@@ -592,10 +592,16 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
     cursor: pointer;
   }
 
-  .legend-filter:hover,
   .legend-filter[aria-pressed="true"] {
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .legend-filter:hover {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
   }
 
   .legend-filter:focus-visible {
@@ -641,8 +647,10 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
     color: var(--grey);
   }
 
-  .featured-credit:hover {
-    text-decoration: underline;
+  @media (hover: hover) and (pointer: fine) {
+    .featured-credit:hover {
+      text-decoration: underline;
+    }
   }
 
   .featured-grid {
@@ -661,9 +669,11 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
     transition: background-color 150ms, border-color 150ms;
   }
 
-  .featured-card:hover {
-    background-color: var(--surface-hover);
-    border-color: var(--grey-subtle);
+  @media (hover: hover) and (pointer: fine) {
+    .featured-card:hover {
+      background-color: var(--surface-hover);
+      border-color: var(--grey-subtle);
+    }
   }
 
   .featured-card:focus-visible {
@@ -807,9 +817,14 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
     display: none;
   }
 
-  .musician summary:hover,
   .musician[open] summary {
     background-color: var(--surface-hover);
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .musician summary:hover {
+      background-color: var(--surface-hover);
+    }
   }
 
   .musician summary:focus-visible {
@@ -894,8 +909,10 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
     transition: border-color 150ms;
   }
 
-  .appearances a:hover {
-    border-color: var(--profile);
+  @media (hover: hover) and (pointer: fine) {
+    .appearances a:hover {
+      border-color: var(--profile);
+    }
   }
 
   .appearances img {
@@ -930,8 +947,10 @@ const musicianLink = (name: string) => `/musicians?musician=${encodeURIComponent
     color: var(--profile);
   }
 
-  .appearances .discogs a:hover {
-    text-decoration: underline;
+  @media (hover: hover) and (pointer: fine) {
+    .appearances .discogs a:hover {
+      text-decoration: underline;
+    }
   }
 
   @media (max-width: 700px) {

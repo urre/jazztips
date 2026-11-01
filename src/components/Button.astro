@@ -27,7 +27,7 @@ const { href } = Astro.props;
     padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
     position: relative;
     text-decoration: none;
-    transition: box-shadow 150ms;
+    transition: box-shadow 150ms, transform 120ms ease-out, background-color 120ms ease-out;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -36,22 +36,40 @@ const { href } = Astro.props;
     gap: 0.5rem;
   }
 
+  /* Press feedback the moment a finger lands, on touch and mouse alike */
+  .button:active {
+    transform: scale(0.97);
+    background-color: var(--surface-hover);
+  }
+
   .button svg {
     width: 24px;
     height: 24px;
     display: inline-block;
   }
 
-  .button:hover,
   .button:focus {
     border-color: var(--border);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: var(--grey);
   }
 
-  .button:hover,
+  @media (hover: hover) and (pointer: fine) {
+    .button:hover {
+      border-color: var(--border);
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      color: var(--grey);
+    }
+  }
+
   .button:focus {
     box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .button:hover {
+      box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+    }
   }
 </style>
 

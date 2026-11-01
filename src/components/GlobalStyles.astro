@@ -106,7 +106,10 @@
   }
 
   body {
+    /* svh, not vh: on phones 100vh is the height with the address bar hidden,
+       so the page always overflowed by the bar's height on load */
     min-height: 100vh;
+    min-height: 100svh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -114,8 +117,9 @@
     line-height: 1.75;
     max-width: 130em;
     margin: 0 auto;
-    padding-left: calc(var(--fluid-gap) * 1.25);
-    padding-right: calc(var(--fluid-gap) * 1.25);
+    /* Keep clear of the notch in landscape (viewport-fit=cover) */
+    padding-left: max(calc(var(--fluid-gap) * 1.25), env(safe-area-inset-left, 0px));
+    padding-right: max(calc(var(--fluid-gap) * 1.25), env(safe-area-inset-right, 0px));
     color: var(--text);
     font-family: "Spectral-Light", "Times New Roman", Times, serif;
     background-color: var(--bg-color);
@@ -124,7 +128,53 @@
   html {
     background-color: var(--bg-color);
     text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Fire taps right away instead of waiting to see if it's a double-tap zoom */
+  a,
+  button,
+  summary,
+  label,
+  [role="button"] {
+    touch-action: manipulation;
+  }
+
+  /* Controls, not content: no text selection or callout on long-press */
+  button,
+  summary,
+  [role="button"],
+  [rel="tag"],
+  .chip,
+  header nav a {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  /* Press feedback for tappable cards and chips; hover styles are mouse-only */
+  .record-grid a {
+    display: block;
+    transition: transform 120ms ease-out;
+  }
+
+  [rel="tag"]:active,
+  .record-grid a:active {
+    transform: scale(0.97);
+  }
+
+  /* iOS zooms into inputs with text under 16px and never zooms back out */
+  input,
+  textarea,
+  select {
+    font-size: max(16px, 1em);
+  }
+
+  /* Fieldsets default to min-width: min-content, so a wide player inside
+     pushed the record page past the edge of the screen on phones */
+  fieldset {
+    min-width: 0;
   }
 
   ul:not(.plain-list, .record-grid) {
@@ -195,7 +245,8 @@
   footer {
     margin-top: 10vh;
     padding-top: 2vh;
-    padding-bottom: 2vh;
+    /* Clear of the home indicator */
+    padding-bottom: max(2vh, env(safe-area-inset-bottom, 0px));
   }
 
   .tags {
@@ -239,14 +290,15 @@
   }
 
   [rel="tag"] {
-    transition: border-color 150ms;
     padding: 0.25rem 0.75rem;
     border-radius: 2rem;
-    transition: box-shadow 0.1s;
+    transition: box-shadow 0.1s, transform 120ms ease-out;
   }
 
-  [rel="tag"]:hover {
-    box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+  @media (hover: hover) and (pointer: fine) {
+    [rel="tag"]:hover {
+      box-shadow: var(--ring-offset) 0px 0px 0px 2px, var(--profile) 0px 0px 0px 4px;
+    }
   }
 
   [rel="tag"]:focus-visible {
@@ -280,8 +332,10 @@
     }
   }
 
-  .search-list li:hover {
-    background-color: var(--surface-hover);
+  @media (hover: hover) and (pointer: fine) {
+    .search-list li:hover {
+      background-color: var(--surface-hover);
+    }
   }
 
   input[type="search"] {

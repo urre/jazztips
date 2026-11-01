@@ -54,8 +54,10 @@ const sizes = large
     object-fit: cover;
   }
 
-  .record-cover:hover span {
-    transform: translateX(20%);
+  @media (hover: hover) and (pointer: fine) {
+    .record-cover:hover span {
+      transform: translateX(20%);
+    }
   }
 
   .record-cover span {
@@ -126,8 +128,10 @@ const sizes = large
     transform: translateX(20%);
   }
 
-  .record-cover-pulled:hover span {
-    transform: translateX(30%);
+  @media (hover: hover) and (pointer: fine) {
+    .record-cover-pulled:hover span {
+      transform: translateX(30%);
+    }
   }
 
   /* Tablets have room for a bigger cover than phones */

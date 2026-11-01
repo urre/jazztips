@@ -42,8 +42,10 @@
   transition: box-shadow 150ms;
 }
 
-.stat-card--highlight:hover {
-  box-shadow: var(--shadow) 0px 4px 14px 0px;
+@media (hover: hover) and (pointer: fine) {
+  .stat-card--highlight:hover {
+    box-shadow: var(--shadow) 0px 4px 14px 0px;
+  }
 }
 
 .stat-number {
@@ -133,8 +135,10 @@
   transition: opacity 150ms;
 }
 
-.columns:hover .column:not(:hover) .column-bar {
-  opacity: 0.45;
+@media (hover: hover) and (pointer: fine) {
+  .columns:hover .column:not(:hover) .column-bar {
+    opacity: 0.45;
+  }
 }
 
 .column-value {
@@ -199,9 +203,14 @@
   cursor: default;
 }
 
-.bar-row:hover,
 .bar-row[aria-pressed="true"] {
   background-color: var(--grey-subtle);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bar-row:hover {
+    background-color: var(--grey-subtle);
+  }
 }
 
 .bar-row:focus-visible {
@@ -284,8 +293,10 @@
   transition: border-color 150ms, background-color 150ms;
 }
 
-.chip:hover {
-  border-color: var(--profile);
+@media (hover: hover) and (pointer: fine) {
+  .chip:hover {
+    border-color: var(--profile);
+  }
 }
 
 .chip:focus-visible {
@@ -322,10 +333,16 @@
   font-size: 0.9rem;
 }
 
-.show-more:hover,
 .show-more:focus-visible {
   border-color: var(--profile);
   color: var(--profile);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .show-more:hover {
+    border-color: var(--profile);
+    color: var(--profile);
+  }
 }
 
 .show-more[hidden] {

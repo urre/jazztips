@@ -179,7 +179,7 @@ const pageTitle = "Tags";
 
       .toolbar {
         position: sticky;
-        top: 0;
+        top: env(safe-area-inset-top, 0px);
         z-index: 10;
         display: flex;
         flex-wrap: wrap;
@@ -212,9 +212,11 @@ const pageTitle = "Tags";
         text-underline-offset: 4px;
       }
 
-      .jump a:hover,
-      .letters a:hover {
-        color: var(--profile);
+      @media (hover: hover) and (pointer: fine) {
+        .jump a:hover,
+        .letters a:hover {
+          color: var(--profile);
+        }
       }
 
       .group {
@@ -300,8 +302,10 @@ const pageTitle = "Tags";
         line-height: 1.6;
       }
 
-      .names a:hover {
-        color: var(--profile);
+      @media (hover: hover) and (pointer: fine) {
+        .names a:hover {
+          color: var(--profile);
+        }
       }
 
       .once {
