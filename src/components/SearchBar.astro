@@ -1,21 +1,5 @@
 ---
 import Search from "./Search";
-import { getCollection } from "astro:content";
-import { coverThumb } from "@utils/cloudinary";
-
-const records = await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft);
-
-// The list is embedded in every page, so only send what the search reads
-const searchList = records.map(({ id, data }) => ({
-  id,
-  data: {
-    title: data.title,
-    artist: data.artist,
-    label: data.label,
-    credits: data.credits,
-    image: coverThumb(data.image),
-  },
-}));
 ---
 
-<Search client:load searchList={searchList} />
+<Search client:load />

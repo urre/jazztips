@@ -1,14 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Fuse from "fuse.js";
 
-export default function Search({ searchList }) {
+// Fetched once per page, the first time the search is used
+let searchIndex;
+const loadSearchIndex = () => {
+  searchIndex ??= fetch("/search-index.json")
+    .then((response) => response.json())
+    .catch(() => {
+      searchIndex = undefined; // let the next attempt try again
+      return [];
+    });
+  return searchIndex;
+};
+
+export default function Search() {
   const [query, setQuery] = useState("");
+  const [searchList, setSearchList] = useState(null);
+
+  const ensureSearchList = () => {
+    if (!searchList) loadSearchIndex().then(setSearchList);
+  };
 
   // Get the search query from the URL on component mount
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const initialQuery = urlParams.get("query") || ""; // Get the query parameter or default to empty string
     setQuery(initialQuery);
+    if (initialQuery) loadSearchIndex().then(setSearchList);
   }, []);
 
   // Update the URL when the query changes
@@ -38,7 +56,7 @@ export default function Search({ searchList }) {
     threshold: 0.3, // Adjust threshold for search accuracy
   };
 
-  const fuse = new Fuse(searchList, options);
+  const fuse = useMemo(() => new Fuse(searchList ?? [], options), [searchList]);
 
   // Get the search results based on the query
   const posts = fuse
@@ -48,6 +66,7 @@ export default function Search({ searchList }) {
 
   // Handle the input change in search box
   const handleOnSearch = (event) => {
+    ensureSearchList();
     setQuery(event.target.value);
   };
 
@@ -73,6 +92,7 @@ export default function Search({ searchList }) {
         type="search"
         value={query} // Input value is controlled by `query` state
         onChange={handleOnSearch} // Update state when the user types
+        onFocus={ensureSearchList} // Start loading the list before the first keystroke
         placeholder="Search"
       />
 
