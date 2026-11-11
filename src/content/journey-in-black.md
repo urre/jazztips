@@ -9,8 +9,7 @@ tags:
   - dashiell
   - werner
   - dejohnette
-image: ../assets/covers/journey-in-black.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1738913368/cfma6hfqnqtp4ickrfxm.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1738913368/cfma6hfqnqtp4ickrfxm.jpg
 spotify: https://open.spotify.com/album/2mjWOyFn8CJPCLw82gcDwB
 tidal: https://tidal.com/browse/album/315711764
 apple: https://embed.music.apple.com/us/album/journey-in-black/1706935604

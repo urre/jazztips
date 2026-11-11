@@ -14,7 +14,7 @@ permalink: /without-further-ado/
 spotify: https://open.spotify.com/album/3vkNGUlipZ7lxgJzaO6VXy
 apple: https://embed.music.apple.com/us/album/without-further-ado-vol-1/1818889585?uo=4
 tidal: https://tidal.com/browse/album/92439206?u
-image: ../assets/covers/without-further-ado.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410402/jazztips/covers/without-further-ado.jpg
 imageSource: https://f4.bcbits.com/img/a0247136435_16.jpg
 credits:
 - name: Christian McBride

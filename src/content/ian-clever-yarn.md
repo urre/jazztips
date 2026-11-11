@@ -12,7 +12,7 @@ tags:
   - canadian
 permalink: /ian-clever-yarn/
 tidal: https://tidal.com/browse/album/394089096
-image: ../assets/covers/ian-clever-yarn.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410388/jazztips/covers/ian-clever-yarn.jpg
 imageSource: https://f4.bcbits.com/img/a3905238155_16.jpg
 credits:
 - name: Ian Cleaver

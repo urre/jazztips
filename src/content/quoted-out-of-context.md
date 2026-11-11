@@ -6,8 +6,7 @@ label: Plugged
 year: 2012
 tags:
   - milder
-image: ../assets/covers/quoted-out-of-context.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689918/rw29z0mk2bavfaez5yfe.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689918/rw29z0mk2bavfaez5yfe.jpg
 
 
 

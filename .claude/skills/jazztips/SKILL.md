@@ -120,13 +120,17 @@ node "$CLAUDE_PROJECT_DIR/.claude/skills/jazztips/build-markdown.js" < /tmp/jazz
 
 It prints `{"relPath": "src/content/<slug>.md", "markdown": "..."}` on stdout. Use the `Write` tool to write `markdown` to `$CLAUDE_PROJECT_DIR/<relPath>`. The frontmatter includes `draft: true` at this point.
 
-Then store the cover locally. Covers live in `src/assets/covers/` as compact AVIF files and the content schema requires a local `image`, so the build fails on a remote URL:
+Then put the cover on Cloudinary. Covers are served from Cloudinary, not from the repo, and the content schema only accepts `https://res.cloudinary.com/urre/` URLs, so the build fails on any other image URL.
+
+The upload script reads `CLOUDINARY_URL` from `.env` in the repo root (git-ignored). If `.env` is missing or has no `CLOUDINARY_URL`, copy just that line over from `~/.dotfiles/.env` first:
 
 ```bash
-cd "$CLAUDE_PROJECT_DIR" && node scripts/localize-covers.mjs <slug>
+cd "$CLAUDE_PROJECT_DIR"
+grep -qs '^CLOUDINARY_URL=' .env || { grep -E '^CLOUDINARY_URL=' ~/.dotfiles/.env >> .env && chmod 600 .env; }
+node scripts/cloudinary-covers.mjs <slug>
 ```
 
-This downloads `image`, saves `src/assets/covers/<slug>.avif` (max 1000 px) and rewrites the frontmatter to `image: ../assets/covers/<slug>.avif` plus `imageSource: <original URL>`. If the download fails, pick another cover URL, put it in `image:` and run it again.
+This uploads `image` to `jazztips/covers/<slug>` on Cloudinary (capped at 1400 px) and rewrites the frontmatter to `image: <Cloudinary URL>` plus `imageSource: <original URL>`. If Cloudinary can't fetch the URL, pick another cover URL, put it in `image:` and run it again. Never print the `CLOUDINARY_URL` value, and never commit `.env` or image files to the repo.
 
 ### Step 5 — Build, then commit & push (or bail out)
 
@@ -143,7 +147,7 @@ cd "$CLAUDE_PROJECT_DIR" && npm run build
 
 ```bash
 cd "$CLAUDE_PROJECT_DIR"
-git add src/content/<slug>.md src/assets/covers/<slug>.avif
+git add src/content/<slug>.md
 git commit -m "Add record: <Artist> - <Album>"
 git push origin main
 ```

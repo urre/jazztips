@@ -13,7 +13,7 @@ tags:
   - pop
   - hip-hop
   - shorty
-image: ../assets/covers/we-are.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410402/jazztips/covers/we-are.jpg
 imageSource: https://m.media-amazon.com/images/I/61T0yZN03IL._UF1000,1000_QL80_.jpg
 permalink: /we-are/
 spotify: https://open.spotify.com/album/6kHFkPvL2X3rZPuS3CEMUE

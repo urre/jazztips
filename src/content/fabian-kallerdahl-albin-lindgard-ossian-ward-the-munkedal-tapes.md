@@ -14,7 +14,7 @@ tags:
   - Albin Lindgård
   - Ossian Ward
 permalink: https://jazztips.se/fabian-kallerdahl-albin-lindgard-ossian-ward-the-munkedal-tapes/
-image: ../assets/covers/fabian-kallerdahl-albin-lindgard-ossian-ward-the-munkedal-tapes.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410386/jazztips/covers/fabian-kallerdahl-albin-lindgard-ossian-ward-the-munkedal-tapes.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/b0/02/2bb002d1-bb2e-1075-6f8a-71421c1225d2/820233621830.jpg/1000x1000bb.jpg
 apple: https://embed.music.apple.com/us/album/the-munkedal-tapes/6776208181
 credits:

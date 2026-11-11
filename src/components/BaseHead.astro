@@ -3,6 +3,7 @@
 // all pages through the use of the <BaseHead /> component.
 
 import GlobalStyles from "./GlobalStyles.astro";
+import { SITE_IMAGES } from "@utils/cloudinary";
 
 export interface Props {
   title: string;
@@ -27,9 +28,9 @@ const {
   name="viewport"
   content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
 />
-<link rel="icon" href="/favicon.ico" sizes="any" />
-<link rel="icon" href="/icon.svg" type="image/svg+xml" />
-<link rel="apple-touch-icon" href="/icon-512.png" />
+<link rel="icon" href={SITE_IMAGES.favicon} sizes="any" />
+<link rel="icon" href={SITE_IMAGES.iconSvg} type="image/svg+xml" />
+<link rel="apple-touch-icon" href={SITE_IMAGES.icon512} />
 <link rel="manifest" href="/manifest.webmanifest" />
 <meta name="msapplication-TileColor" content="#008965" />
 <!-- Browser chrome and status bar match the page background, per scheme -->

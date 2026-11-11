@@ -15,7 +15,7 @@ tags:
   - garland
   - chambers
 permalink: https://jazztips.se/art-pepper-meets-the-rhythm-section/
-image: ../assets/covers/art-pepper-meets-the-rhythm-section.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410380/jazztips/covers/art-pepper-meets-the-rhythm-section.jpg
 imageSource: https://m.media-amazon.com/images/I/81OjVN0F9+L._UF894,1000_QL80_.jpg
 tidal: https://tidal.com/browse/album/277283961/?u
 apple: https://embed.music.apple.com/us/album/1440780070

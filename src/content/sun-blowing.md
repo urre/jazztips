@@ -9,8 +9,7 @@ tags:
   - danielsson
   - lund
   - neset
-image: ../assets/covers/sun-blowing.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1474922565/sunblowing_ycrq6h.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1474922565/sunblowing_ycrq6h.jpg
 
 spotify: 'https://open.spotify.com/track/5mrO04uQC1t9UG6oLFc9gT'
 credits:

@@ -11,8 +11,7 @@ tags:
   - andersson
   - jazzagenturen
 
-image: ../assets/covers/hindsight.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1726727030/pckynqluswtrpftwzewo.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1726727030/pckynqluswtrpftwzewo.jpg
 tidal: 339370029
 spotify: https://open.spotify.com/album/0QCHhXAlj2YM8r0CtGjMH3?si=uTt1CITgSnar6T9DY0MuVg
 apple: https://embed.music.apple.com/se/album/hindsight/1725274390

@@ -7,8 +7,7 @@ year: 2012
 tags:
   - piano
   - trio
-image: ../assets/covers/revolution.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689900/n8megh2vrvtoqnq4y0ae.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689900/n8megh2vrvtoqnq4y0ae.jpg
 
 
 

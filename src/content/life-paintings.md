@@ -8,8 +8,7 @@ tags:
   - kvartett
   - london
   - wilson
-image: ../assets/covers/life-paintings.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690024/iv4s7ucmyactnjqpy4zq.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690024/iv4s7ucmyactnjqpy4zq.jpg
 
 
 

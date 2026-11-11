@@ -9,8 +9,7 @@ tags:
   - note
   - hill
   - tolliver
-image: ../assets/covers/time-lines.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690060/pwr3yj7isuxbwoseathy.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690060/pwr3yj7isuxbwoseathy.jpg
 
 
 

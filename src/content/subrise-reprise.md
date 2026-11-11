@@ -9,8 +9,7 @@ tags:
   - potter
   - saxophone
   - trio
-image: ../assets/covers/subrise-reprise.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1748842910/nxf6tlbv8ujntfzwmzyd.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1748842910/nxf6tlbv8ujntfzwmzyd.jpg
 permalink: /sunrise-reprise/
 spotify: https://open.spotify.com/album/5wreZiEotGjOjkul69Vy8t
 apple: https://embed.music.apple.com/us/album/sunrise-reprise/1557271996?uo=4

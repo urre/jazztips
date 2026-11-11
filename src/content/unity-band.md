@@ -7,8 +7,7 @@ label: Nonesuch
 tags:
   - kvartett
   - metheny
-image: ../assets/covers/unity-band.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689983/wna7kge6sce79mxxgllu.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689983/wna7kge6sce79mxxgllu.jpg
 
 
 

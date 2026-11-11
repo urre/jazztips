@@ -8,8 +8,7 @@ year: 2024
 tags:
   - snarkypuppy
   - metropole
-image: ../assets/covers/sylva.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1747308532/dem8air2tw9zngvexwzq.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1747308532/dem8air2tw9zngvexwzq.jpg
 permalink: /sylva/
 tidal: https://tidal.com/browse/album/362026635
 apple: https://embed.music.apple.com/us/album/sylva-remixed-remastered/1735386775

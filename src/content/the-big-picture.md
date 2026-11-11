@@ -8,8 +8,7 @@ tags:
   - karlzon
   - piano
   - trio
-image: ../assets/covers/the-big-picture.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690013/qkgryjfaunuwaev5yl1t.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690013/qkgryjfaunuwaev5yl1t.jpg
 
 
 

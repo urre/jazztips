@@ -9,8 +9,7 @@ tags:
   - filmmusik
   - kallerdal
   - trio
-image: ../assets/covers/popmotion.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690147/zjcxujqgvcfnillbapku.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690147/zjcxujqgvcfnillbapku.jpg
 
 
 

@@ -9,8 +9,7 @@ tags:
   - meza
   - vocal
   - latin
-image: ../assets/covers/portal.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1748003608/a0ofvfbhrbwclvdwnkxo.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1748003608/a0ofvfbhrbwclvdwnkxo.jpg
 permalink: /portal/
 tidal: https://tidal.com/browse/album/421042143?u
 apple: https://embed.music.apple.com/us/album/portal/1799246494

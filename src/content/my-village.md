@@ -7,8 +7,7 @@ year: 2013
 tags:
   - kvartett
   - Saxophone
-image: ../assets/covers/my-village.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689871/ged0f9nwikwr5olqzrsj.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689871/ged0f9nwikwr5olqzrsj.jpg
 
 
 

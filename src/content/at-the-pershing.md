@@ -8,8 +8,7 @@ tags:
   - jamal
   - persching
   - trio
-image: ../assets/covers/at-the-pershing.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690220/qtoyuyfflkfjdsw6gj6h.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690220/qtoyuyfflkfjdsw6gj6h.jpg
 
 
 

@@ -15,7 +15,7 @@ tags:
   - Dan Wilson
 permalink: https://jazztips.se/ulysses-owens-jr-kind-of-grunge/
 spotify: https://open.spotify.com/album/37iJ4Q5MvQbkf7vYjvKRfi
-image: ../assets/covers/ulysses-owens-jr-kind-of-grunge.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410401/jazztips/covers/ulysses-owens-jr-kind-of-grunge.jpg
 imageSource: https://f4.bcbits.com/img/a4214215264_10.jpg
 apple: https://embed.music.apple.com/us/album/kind-of-grunge/1896054540
 qobuz: https://www.qobuz.com/fr-fr/album/kind-of-grunge-ulysses-owens-jr-musora/k3w69l6sezz1g

@@ -9,8 +9,7 @@ tags:
   - copland
   - howard
   - lewis
-image: ../assets/covers/bothand.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690227/chcvmxi0bzs0vdgbf1u7.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690227/chcvmxi0bzs0vdgbf1u7.jpg
 
 
 

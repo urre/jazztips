@@ -8,8 +8,7 @@ ogimage: https://res.cloudinary.com/urre/image/upload/v1725948792/zinbxqdycie8nd
 year: 2023
 tags:
   - fortner
-image: ../assets/covers/solo-game.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1725948165/hvryem5kmqdeo0ccc2ib.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1725948165/hvryem5kmqdeo0ccc2ib.jpg
 
 tidal: 328372277
 credits:

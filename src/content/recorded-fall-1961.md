@@ -12,8 +12,7 @@ tags:
   - brookmeyer
   - kuhn
   - west coast
-image: ../assets/covers/recorded-fall-1961.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/w_600,h_600,c_fill/v1725867766/at4pyqcbvahfl7fcxxbu.jpg
+image: https://res.cloudinary.com/urre/image/upload/w_600,h_600,c_fill/v1725867766/at4pyqcbvahfl7fcxxbu.jpg
 
 tidal: 4020137
 spotify: https://open.spotify.com/album/4eujTUUqxbXKR0rSfwyw2h

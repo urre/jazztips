@@ -15,7 +15,7 @@ tags:
   - Coltrane
   - Mattias Ståhl
 permalink: https://jazztips.se/elin-forkelid-plays-for-trane-vol-2/
-image: ../assets/covers/elin-forkelid-plays-for-trane-vol-2.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410383/jazztips/covers/elin-forkelid-plays-for-trane-vol-2.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/06/38/200638bf-8799-dfe8-f6e1-d29167a92a7b/artwork.jpg/1400x1400bb.jpg
 apple: https://embed.music.apple.com/us/album/plays-for-trane-vol-2-feat-jon-f%C3%A4lt-vilhelm-bromander/6810899514
 credits:

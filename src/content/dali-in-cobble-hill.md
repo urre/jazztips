@@ -6,8 +6,7 @@ label: Criss Cross
 year: 2012
 tags:
   - kvartett
-image: ../assets/covers/dali-in-cobble-hill.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689944/exbw8d4kdeeteewqfwyo.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689944/exbw8d4kdeeteewqfwyo.jpg
 
 
 

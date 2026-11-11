@@ -12,8 +12,7 @@ tags:
   - duo
   - piano
   - guitar
-image: ../assets/covers/metheny-mehldau.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1725048052/n9mxotdszthukcj9fh2r.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1725048052/n9mxotdszthukcj9fh2r.jpg
 
 spotify: https://open.spotify.com/album/46toyUpsWtgtWQi4ME16nj
 tidal: 100222648?u

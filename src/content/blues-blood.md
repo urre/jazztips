@@ -7,8 +7,7 @@ label: Blue Note Records
 year: 2024
 tags:
   - wilkins
-image: ../assets/covers/blues-blood.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1734680322/aroo7lsv15kom9ccytak.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1734680322/aroo7lsv15kom9ccytak.jpg
 
 ogimage: http://res.cloudinary.com/urre/image/upload/v1734680358/lbkeusktaqrt5iosghxq.jpg
 credits:

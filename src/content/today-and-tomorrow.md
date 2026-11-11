@@ -13,8 +13,7 @@ tags:
   - trio
   - tyner
   - warren
-image: ../assets/covers/today-and-tomorrow.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690188/sbivsgmwrrukgd6fjeii.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690188/sbivsgmwrrukgd6fjeii.jpg
 
 
 

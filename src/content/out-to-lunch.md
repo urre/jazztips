@@ -7,8 +7,7 @@ year: 1964
 tags:
   - avantgarde
   - frijazz
-image: ../assets/covers/out-to-lunch.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689942/czf9jahisxbbnphzpged.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689942/czf9jahisxbbnphzpged.jpg
 
 
 

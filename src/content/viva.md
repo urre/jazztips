@@ -13,8 +13,7 @@ tags:
   - samuels
   - sanschez
   - urcula
-image: ../assets/covers/viva.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690089/hptrm7iaxknjusq4boka.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690089/hptrm7iaxknjusq4boka.jpg
 
 
 

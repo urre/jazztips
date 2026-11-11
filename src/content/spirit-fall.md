@@ -9,7 +9,7 @@ tags:
   - patitucci
   - potter
   - blade
-image: ../assets/covers/spirit-fall.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410399/jazztips/covers/spirit-fall.webp
 imageSource: https://editionrecords.com/wp-content/uploads/2024/11/EDN1258_Spirit_Fall_Packshot_1500-1000x1000.jpg.webp
 permalink: /spirit-fall/
 tidal: https://tidal.com/browse/album/399566297?u

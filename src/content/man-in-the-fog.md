@@ -7,8 +7,7 @@ year: 2013
 tags:
   - piano
   - solo
-image: ../assets/covers/man-in-the-fog.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689902/mr6ldgxecmpi4dvjypvu.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689902/mr6ldgxecmpi4dvjypvu.jpg
 
 
 

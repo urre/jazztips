@@ -14,7 +14,7 @@ tags:
 permalink: https://jazztips.se/henriette-eilertsen-trio-moder/
 spotify: https://open.spotify.com/album/1psrKkoJu12JcoZV2Hykq9
 tidal: https://tidal.com/browse/album/483026322
-image: ../assets/covers/henriette-eilertsen-trio-moder.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410388/jazztips/covers/henriette-eilertsen-trio-moder.jpg
 imageSource: https://f4.bcbits.com/img/a0992077284_16.jpg
 credits:
   - name: Henriette Eilertsen

@@ -12,8 +12,7 @@ tags:
   - hubbard
   - jones
   - shorter
-image: ../assets/covers/speak-no-evil.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690263/oixcktuwblsvywooa77u.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690263/oixcktuwblsvywooa77u.jpg
 
 
 

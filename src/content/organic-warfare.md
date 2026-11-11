@@ -8,8 +8,7 @@ tags:
   - hoiby
   - trio
   - wanngren
-image: ../assets/covers/organic-warfare.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690036/jeljb7y5lldr4eblsyff.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690036/jeljb7y5lldr4eblsyff.jpg
 
 
 

@@ -8,8 +8,7 @@ tags:
   - improvisationer
   - piano
   - solo
-image: ../assets/covers/mirrors.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689766/koyl0oalurexgg3qkny7.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689766/koyl0oalurexgg3qkny7.jpg
 
 
 

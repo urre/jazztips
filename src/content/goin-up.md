@@ -12,8 +12,7 @@ tags:
   - jones
   - trumpet
   - tyner
-image: ../assets/covers/goin-up.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690201/ki5ifomphvz9osptgwv3.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690201/ki5ifomphvz9osptgwv3.jpg
 
 
 

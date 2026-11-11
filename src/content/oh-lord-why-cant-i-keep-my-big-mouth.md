@@ -12,8 +12,7 @@ tags:
   - ruskträsk
   - ståhl
   - yttling
-image: ../assets/covers/oh-lord-why-cant-i-keep-my-big-mouth.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690127/ofgcmzqavbkmlherpuy4.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690127/ofgcmzqavbkmlherpuy4.jpg
 
 
 

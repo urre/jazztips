@@ -8,8 +8,7 @@ tags:
   - redman
   - Saxophone
   - trio
-image: ../assets/covers/trios-live.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689770/yrhhvvge9bzkogyqqnns.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689770/yrhhvvge9bzkogyqqnns.jpg
 
 
 

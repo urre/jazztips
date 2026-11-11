@@ -10,8 +10,7 @@ tags:
   - Guitar
   - groove
   - scofield
-image: ../assets/covers/uberjam-deux.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689872/wzov9d7zgx5nfdpmed5q.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689872/wzov9d7zgx5nfdpmed5q.jpg
 
 
 

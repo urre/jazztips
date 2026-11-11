@@ -9,7 +9,7 @@ tags:
   - mehldau
   - turner
   - bernstein
-image: ../assets/covers/solid-jackson.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410399/jazztips/covers/solid-jackson.jpg
 imageSource: https://storage.highresaudio.com/2024/11/26/kbz9re-solidjacks-preview-m3.jpg
 permalink: /solid-jackson/
 tidal: https://tidal.com/browse/album/388624898?u

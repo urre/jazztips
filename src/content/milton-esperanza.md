@@ -8,8 +8,7 @@ year: 2024
 tags:
   - nascimento
   - spalding
-image: ../assets/covers/milton-esperanza.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1732866704/pjapyf4bqrvkpjfvbvyz.png
+image: https://res.cloudinary.com/urre/image/upload/v1732866704/pjapyf4bqrvkpjfvbvyz.png
 ogimage: https://res.cloudinary.com/urre/image/upload/v1732866704/pjapyf4bqrvkpjfvbvyz.png
 
 spotify: https://open.spotify.com/album/6lVRgFz4vQ3qoNT2nJfsar

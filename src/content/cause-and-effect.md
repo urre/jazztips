@@ -10,8 +10,7 @@ tags:
   - johanesson
   - karlzon
   - schultz
-image: ../assets/covers/cause-and-effect.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689908/zagxyywwanr3jmwkgvak.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689908/zagxyywwanr3jmwkgvak.jpg
 
 
 

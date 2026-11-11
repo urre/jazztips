@@ -15,7 +15,7 @@ permalink: /terri-lyne-carrington-new-standards/
 spotify: https://open.spotify.com/album/3fn7tQJA1sjZuZbxPiqlWF
 apple: https://embed.music.apple.com/us/album/new-standards-vol-1/1635218059?uo=4
 tidal: https://tidal.com/browse/album/238543390?u
-image: ../assets/covers/terri-lyne-carrington-new-standards.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410399/jazztips/covers/terri-lyne-carrington-new-standards.jpg
 imageSource: https://i.scdn.co/image/ab67616d0000b2736a1304929ff488356073f1a6
 credits:
 - name: Terri Lyne Carrington

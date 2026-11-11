@@ -1,9 +1,8 @@
 ---
-import { Picture } from "astro:assets";
-import type { ImageMetadata } from "astro";
+import { coverSrcset, coverUrl } from "@utils/cloudinary";
 
 export interface Props {
-  image: ImageMetadata;
+  image: string;
   artist?: string;
   title?: string;
   alt?: string;
@@ -40,10 +39,6 @@ const sizes = large
     .record-cover {
       aspect-ratio: 1 / 1;
     }
-  }
-
-  .record-cover picture {
-    display: contents;
   }
 
   .record-cover img {
@@ -154,16 +149,17 @@ const sizes = large
 </style>
 
 <figure class={`record-cover ${pulled ? "record-cover-pulled" : ""} `}>
-  <Picture
-    src={image}
-    alt={alt ?? `${artist} - ${title}`}
-    widths={widths}
+  <img
+    src={coverUrl(image, widths[widths.length - 1])}
+    srcset={coverSrcset(image, widths)}
     sizes={sizes}
-    formats={["avif", "webp"]}
-    fallbackFormat="webp"
+    width={widths[widths.length - 1]}
+    height={widths[widths.length - 1]}
+    alt={alt ?? `${artist} - ${title}`}
     class={large ? "image-lg" : undefined}
     loading={abovefold ? "eager" : "lazy"}
     fetchpriority={abovefold ? "high" : undefined}
+    decoding="async"
   />
   <span></span>
 </figure>

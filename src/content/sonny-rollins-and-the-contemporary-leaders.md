@@ -10,8 +10,7 @@ tags:
   - rollins
   - kessel
   - saxophone
-image: ../assets/covers/sonny-rollins-and-the-contemporary-leaders.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1725350188/ekxdptctbv4wfacrxmgg.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1725350188/ekxdptctbv4wfacrxmgg.jpg
 
 tidal: 77733414
 credits:

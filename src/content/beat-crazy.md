@@ -7,8 +7,7 @@ year: 2016
 tags:
   - duo
   - ljungkvist
-image: ../assets/covers/beat-crazy.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1479153482/and-now-the-queen_a190wb.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1479153482/and-now-the-queen_a190wb.jpg
 
 spotify: 'https://open.spotify.com/track/6vefQUYv16kHzF9dTKQ0va'
 credits:

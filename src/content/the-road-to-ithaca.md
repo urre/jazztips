@@ -8,8 +8,7 @@ tags:
   - maestro
   - piano
   - trio
-image: ../assets/covers/the-road-to-ithaca.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689808/x49wj2sxaxmvm37iopr7.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689808/x49wj2sxaxmvm37iopr7.jpg
 
 
 

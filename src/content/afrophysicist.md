@@ -8,8 +8,7 @@ tags:
   - bridgewater
   - croker
   - trumpet
-image: ../assets/covers/afrophysicist.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689751/canlzujj5k1mibshpzjz.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689751/canlzujj5k1mibshpzjz.jpg
 
 
 

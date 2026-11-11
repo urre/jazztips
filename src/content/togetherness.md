@@ -10,8 +10,7 @@ tags:
   - dominique
   - duo
   - piano
-image: ../assets/covers/togetherness.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689987/o3df9rugdmaoxpfpp8gt.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689987/o3df9rugdmaoxpfpp8gt.jpg
 
 
 

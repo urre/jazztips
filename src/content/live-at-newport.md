@@ -10,8 +10,7 @@ tags:
   - piano
   - terry
   - tyner
-image: ../assets/covers/live-at-newport.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690142/bapbwzmw31wn4v0idk1u.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690142/bapbwzmw31wn4v0idk1u.jpg
 
 
 

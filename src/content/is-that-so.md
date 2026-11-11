@@ -8,8 +8,7 @@ tags:
   - heart
   - kvartett
   - vincentz
-image: ../assets/covers/is-that-so.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689801/haftsav0hgt6fhxks0w9.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689801/haftsav0hgt6fhxks0w9.jpg
 spotify: 'https://open.spotify.com/track/1IDdcfaXWtTSzhjy2mf6SU'
 credits:
   - name: Niels Vincentz

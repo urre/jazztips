@@ -9,8 +9,7 @@ tags:
   - pepper
   - rich
   - storband
-image: ../assets/covers/mercy-mercy.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690259/vyndyfenkau7ui1nhxdk.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690259/vyndyfenkau7ui1nhxdk.jpg
 
 
 

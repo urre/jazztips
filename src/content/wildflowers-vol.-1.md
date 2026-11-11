@@ -8,8 +8,7 @@ year: 2025
 tags:
   - elling
   - fortner
-image: ../assets/covers/wildflowers-vol.-1.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1738913581/pkjtnicd5swwmqbnejzq.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1738913581/pkjtnicd5swwmqbnejzq.jpg
 tidal: https://tidal.com/browse/album/383929919
 spotify: https://open.spotify.com/album/5NpZCaiiQSB4LB7bGLxz8p
 apple: https://embed.music.apple.com/us/album/wildflowers-vol-1/1765308345

@@ -12,8 +12,7 @@ tags:
   - york
   - rogers
   - Saxophone
-image: ../assets/covers/reflecting-time.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689764/r0sygho38fecnukyo8s8.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689764/r0sygho38fecnukyo8s8.jpg
 
 
 

@@ -15,7 +15,7 @@ permalink: /kjell-mulelid-trio-and-now/
 spotify: https://open.spotify.com/album/6DlnFlZTrd19WA41zUjZUh
 apple: https://embed.music.apple.com/us/album/and-now/1825131856
 tidal: https://tidal.com/browse/album/403165839?u
-image: ../assets/covers/kjell-mulelid-trio-and-now.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410391/jazztips/covers/kjell-mulelid-trio-and-now.jpg
 imageSource: https://f4.bcbits.com/img/a0420412888_16.jpg
 credits:
 - name: Kjell Mulelid

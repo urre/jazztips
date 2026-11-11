@@ -10,8 +10,7 @@ tags:
   - nils
   - landgren
   - storband
-image: ../assets/covers/dont-fence-me-in.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690171/mjxzzkk7tqynjpukk7qn.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690171/mjxzzkk7tqynjpukk7qn.jpg
 
 
 

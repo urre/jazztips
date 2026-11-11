@@ -8,7 +8,7 @@ year: 1961
 tags:
   - felder
   - sample
-image: ../assets/covers/freedom-sound.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410386/jazztips/covers/freedom-sound.jpg
 imageSource: https://i.scdn.co/image/ab67616d0000b273db6b4e54cc468542ca3f6c93
 tidal: https://tidal.com/browse/album/101873624
 spotify: https://open.spotify.com/album/2MoUoCr4ejBMKMTb6x0TsO

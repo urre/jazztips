@@ -8,8 +8,7 @@ tags:
   - duo
   - kallerdahl
   - orgel
-image: ../assets/covers/can-we-still-be-friends.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690068/ngxfde4vhsutraos698h.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690068/ngxfde4vhsutraos698h.jpg
 
 
 

@@ -10,8 +10,7 @@ tags:
   - olin
   - tollboms
   - welin
-image: ../assets/covers/le-specialite.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690094/mkrez44q5flwwo3gqmof.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690094/mkrez44q5flwwo3gqmof.jpg
 
 
 

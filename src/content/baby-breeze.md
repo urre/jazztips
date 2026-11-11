@@ -8,8 +8,7 @@ tags:
   - baker
   - ballad
   - Vocals
-image: ../assets/covers/baby-breeze.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689928/k326vk3k5pvrvixxqify.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689928/k326vk3k5pvrvixxqify.jpg
 
 
 

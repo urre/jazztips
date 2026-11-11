@@ -6,8 +6,7 @@ label: Playground
 year: 2012
 tags:
   - mariam
-image: ../assets/covers/blood-donation.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689812/satbfhfaapqhtoqbz7rf.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689812/satbfhfaapqhtoqbz7rf.jpg
 
 
 

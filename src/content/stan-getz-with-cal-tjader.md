@@ -9,7 +9,7 @@ tags:
   - getz
   - tjader
   - jazz
-image: ../assets/covers/stan-getz-with-cal-tjader.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410399/jazztips/covers/stan-getz-with-cal-tjader.jpg
 imageSource: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvuXLeELZKuebmt7jKyzsIDKBjcuGPi4CyXA&s
 permalink: /stan-getz-with-cal-tjader/
 tidal: https://tidal.com/browse/album/1286225

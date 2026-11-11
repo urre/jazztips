@@ -11,7 +11,7 @@ tags:
 permalink: https://jazztips.se/rigmor-gustafsson-rigmor-pa-svenska/
 spotify: https://open.spotify.com/album/1yIkpcbkGZawxJmi1PT7aS
 tidal: https://stage.tidal.com/album/172005944
-image: ../assets/covers/rigmor-gustafsson-rigmor-pa-svenska.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410397/jazztips/covers/rigmor-gustafsson-rigmor-pa-svenska.jpg
 imageSource: https://www.lira.se/wp-content/uploads/2025/05/rigmor_pa_svenska_-1.jpg
 apple: https://music.apple.com/us/album/rigmor-p%C3%A5-svenska/1794590296
 qobuz: https://www.qobuz.com/us-en/album/rigmor-pa-svenska-rigmor-gustafsson/q4nxjeoygmunb

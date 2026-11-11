@@ -8,7 +8,7 @@ year: 2025
 tags:
   - fulton
   - lindquist
-image: ../assets/covers/athome.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410380/jazztips/covers/athome.jpg
 imageSource: https://f4.bcbits.com/img/a1849109412_16.jpg
 permalink: /at-home/
 tidal: https://tidal.com/browse/album/411398705?u

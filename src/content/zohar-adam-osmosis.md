@@ -14,7 +14,7 @@ tags:
   - Keyboards
   - Christian McBride
 permalink: https://jazztips.se/zohar-adam-osmosis/
-image: ../assets/covers/zohar-adam-osmosis.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410403/jazztips/covers/zohar-adam-osmosis.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bf/ff/3e/bfff3e5c-a63d-4ca8-2c9b-bfe63e0c98b5/129484.jpg/1000x1000bb.jpg
 apple: https://embed.music.apple.com/us/album/osmosis/6808737085
 credits:

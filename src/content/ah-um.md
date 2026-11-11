@@ -6,8 +6,7 @@ label: Columbia Records
 year: 1959
 tags:
   - mingus
-image: ../assets/covers/ah-um.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689923/xicmdjajwwhsluhc8q6i.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689923/xicmdjajwwhsluhc8q6i.jpg
 
 
 

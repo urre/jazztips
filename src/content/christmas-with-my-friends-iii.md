@@ -10,8 +10,7 @@ tags:
   - knutsson
   - landgren
   - sand
-image: ../assets/covers/christmas-with-my-friends-iii.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689818/y8ohb50pseh5b5ptrjwc.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689818/y8ohb50pseh5b5ptrjwc.jpg
 
 
 

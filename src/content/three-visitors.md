@@ -11,8 +11,7 @@ tags:
   - blade
   - potter
 ogimage: http://res.cloudinary.com/urre/image/upload/v1737703379/fdegyarntlmrwfdu0nai.jpg
-image: ../assets/covers/three-visitors.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1737703345/bcjhu8jxexctpre4eclp.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1737703345/bcjhu8jxexctpre4eclp.jpg
 
 spotify: https://open.spotify.com/album/3VRPYpeqcnjvIFhqiwtgJe
 tidal: https://tidal.com/browse/album/376773286?u

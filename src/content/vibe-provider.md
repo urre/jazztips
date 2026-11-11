@@ -10,7 +10,7 @@ tags:
   - piano
   - trio
   - contemporary
-image: ../assets/covers/vibe-provider.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410401/jazztips/covers/vibe-provider.jpg
 imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/22089c271beb16edf01f3a3482102bf2.jpg
 permalink: /vibe-provider/
 spotify: https://open.spotify.com/album/4YvIUDjkaF2XnXhq3tUkd9

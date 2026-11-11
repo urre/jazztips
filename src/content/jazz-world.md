@@ -11,8 +11,7 @@ tags:
   - höglind
   - johansson
   - unit
-image: ../assets/covers/jazz-world.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689988/rpixbuk5esd0badg80tc.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689988/rpixbuk5esd0badg80tc.jpg
 
 
 

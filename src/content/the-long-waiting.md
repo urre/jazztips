@@ -7,8 +7,7 @@ year: 2012
 tags:
   - storband
   - wheeler
-image: ../assets/covers/the-long-waiting.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689966/uyiuokqnqnspqrfvuida.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689966/uyiuokqnqnspqrfvuida.jpg
 
 
 

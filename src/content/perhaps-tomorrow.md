@@ -7,8 +7,7 @@ year: 2013
 tags:
   - kvartett
   - piano
-image: ../assets/covers/perhaps-tomorrow.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689805/t1bprukj2ganfnal1eyv.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689805/t1bprukj2ganfnal1eyv.jpg
 
 
 

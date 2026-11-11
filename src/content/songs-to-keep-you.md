@@ -7,8 +7,7 @@ label: Sail Cabin Records
 year: 2024
 tags:
   - forkelid
-image: ../assets/covers/songs-to-keep-you.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1731666664/smcijdyjaaufkt6sghhk.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1731666664/smcijdyjaaufkt6sghhk.jpg
 
 spotify: https://open.spotify.com/album/2eSCfvYatRImUYGH8zrEzK
 tidal: https://tidal.com/browse/album/393231658?u

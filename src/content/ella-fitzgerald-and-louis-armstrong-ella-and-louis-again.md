@@ -11,7 +11,7 @@ tags:
 permalink: https://jazztips.se/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again/
 spotify: https://open.spotify.com/album/4zWqQOob980K9drUrUGM8M
 tidal: https://tidal.com/browse/album/119011948
-image: ../assets/covers/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410384/jazztips/covers/ella-fitzgerald-and-louis-armstrong-ella-and-louis-again.avif
 imageSource: https://upload.wikimedia.org/wikipedia/en/e/ea/Ellalouisagain.jpg
 credits:
   - name: Ella Fitzgerald

@@ -8,8 +8,7 @@ tags:
   - einav
   - kvartett
   - maestro
-image: ../assets/covers/opus-one.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689995/zplnqlsq1hz2ovtrarne.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689995/zplnqlsq1hz2ovtrarne.jpg
 
 
 

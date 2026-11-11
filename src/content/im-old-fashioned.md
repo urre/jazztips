@@ -8,8 +8,7 @@ tags:
   - asplund
   - bengtsson
   - milder
-image: ../assets/covers/im-old-fashioned.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690268/o4z7oewwakjp0wlumruz.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690268/o4z7oewwakjp0wlumruz.jpg
 
 
 

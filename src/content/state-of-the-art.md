@@ -8,8 +8,7 @@ tags:
   - debut
   - kvintett
   - williams
-image: ../assets/covers/state-of-the-art.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689948/kkksc9bqveiaexuaztzi.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689948/kkksc9bqveiaexuaztzi.jpg
 
 
 

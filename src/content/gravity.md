@@ -9,8 +9,7 @@ tags:
   - flygelhorn
   - haffner
   - wasserfuhr
-image: ../assets/covers/gravity.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690105/dnaeaiank3kkxs6mdl2u.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690105/dnaeaiank3kkxs6mdl2u.jpg
 
 
 

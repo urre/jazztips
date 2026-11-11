@@ -9,7 +9,7 @@ tags:
   - truffaz
   - soundtrack
   - trumpet
-image: ../assets/covers/clap.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410382/jazztips/covers/clap.png
 imageSource: https://store.bluenote.com/cdn/shop/files/ErikTruffazClap.png?v=1694464885&width=800
 permalink: /clap/
 spotify: https://open.spotify.com/album/1HV1d1eZnnlAQkG5beiBQi

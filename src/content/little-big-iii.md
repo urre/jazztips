@@ -7,8 +7,7 @@ label: Blue Note Records
 year: 2024
 tags:
   - parks
-image: ../assets/covers/little-big-iii.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1730186586/bo5zbsnnwn8zlx47nxqx.png
+image: https://res.cloudinary.com/urre/image/upload/v1730186586/bo5zbsnnwn8zlx47nxqx.png
 ogimage: http://res.cloudinary.com/urre/image/upload/v1730186588/xn6i7mtwmo4dvgladid1.jpg
 
 spotify: https://open.spotify.com/album/0aj5rKNNnNHjdC799ogFu1

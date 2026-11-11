@@ -8,8 +8,7 @@ tags:
   - jansson
   - johansen
   - riedel
-image: ../assets/covers/open-minds.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689906/hclsulsk2uzga3e0ysg6.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689906/hclsulsk2uzga3e0ysg6.jpg
 
 
 

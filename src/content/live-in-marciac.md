@@ -8,8 +8,7 @@ tags:
   - marciac
   - mehldau
   - piano
-image: ../assets/covers/live-in-marciac.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690217/njn5tkornazmnxus8unz.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690217/njn5tkornazmnxus8unz.jpg
 
 
 

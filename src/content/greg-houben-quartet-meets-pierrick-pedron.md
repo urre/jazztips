@@ -8,8 +8,7 @@ tags:
   - houben
   - kvintett
   - pedron
-image: ../assets/covers/greg-houben-quartet-meets-pierrick-pedron.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690073/kccc5o7q80s1059xxwsc.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690073/kccc5o7q80s1059xxwsc.jpg
 
 
 

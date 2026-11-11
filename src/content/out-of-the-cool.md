@@ -8,8 +8,7 @@ tags:
   - evans
   - impulse
   - storband
-image: ../assets/covers/out-of-the-cool.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690249/f5b380ez2e6nekq0fnc8.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690249/f5b380ez2e6nekq0fnc8.jpg
 
 
 

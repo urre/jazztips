@@ -6,8 +6,7 @@ label: Edition
 year: 2011
 tags:
   - kairos
-image: ../assets/covers/statement-of-intent.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690044/c2wsx26hg3igbn3gw1ad.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690044/c2wsx26hg3igbn3gw1ad.jpg
 
 
 

@@ -11,8 +11,7 @@ tags:
   - friform
   - trumpet
   - turntablist
-image: ../assets/covers/ascension.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689839/d2bdjfigk3acphzd5kv4.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689839/d2bdjfigk3acphzd5kv4.jpg
 
 
 

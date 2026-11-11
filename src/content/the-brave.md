@@ -8,8 +8,7 @@ tags:
   - Guitar
   - kvintett
   - riepler
-image: ../assets/covers/the-brave.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689972/amthen4n3ftnsnvcgcvm.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689972/amthen4n3ftnsnvcgcvm.jpg
 
 
 

@@ -11,8 +11,7 @@ tags:
   - mcbride
   - mehldau
   - redman
-image: ../assets/covers/longgone.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1726822283/s0dt3xreqzulrlxcklg9.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1726822283/s0dt3xreqzulrlxcklg9.jpg
 
 spotify: https://open.spotify.com/album/52Vr22XzeD9rIOnOQ3OSKR
 tidal: 244296071

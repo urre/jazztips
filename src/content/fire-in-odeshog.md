@@ -6,8 +6,7 @@ label: Lashiec Records
 year: 2011
 tags:
   - ödeshög
-image: ../assets/covers/fire-in-odeshog.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690014/qfxpyf9jth1n7dzaumpb.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690014/qfxpyf9jth1n7dzaumpb.jpg
 
 
 

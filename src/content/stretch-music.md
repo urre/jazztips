@@ -8,8 +8,7 @@ tags:
   - electronica
   - scott
   - trumpet
-image: ../assets/covers/stretch-music.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689706/avg0grbcjlwi77daok4p.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689706/avg0grbcjlwi77daok4p.jpg
 
 
 

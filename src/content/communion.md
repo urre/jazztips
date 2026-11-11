@@ -11,8 +11,7 @@ tags:
   - marsalis
   - mehldau
   - patitucci
-image: ../assets/covers/communion.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690222/ppjyyx9qtsjbjvasrfro.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690222/ppjyyx9qtsjbjvasrfro.jpg
 
 
 

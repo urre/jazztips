@@ -10,8 +10,7 @@ tags:
   - stackenäs
   - strandberg
   - thorman
-image: ../assets/covers/i-know-you.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690080/gxnypqcsxbomsvp7rfip.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690080/gxnypqcsxbomsvp7rfip.jpg
 
 
 

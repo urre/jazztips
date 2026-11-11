@@ -11,7 +11,7 @@ tags:
   - ross
   - scott
   - brewer
-image: ../assets/covers/out-of-into.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410395/jazztips/covers/out-of-into.jpg
 imageSource: https://storage.highresaudio.com/2024/12/06/qvs86t-motioni-preview-m3.jpg
 ogimage: http://res.cloudinary.com/urre/image/upload/v1733855950/ztbgomykkkx6ul7ttfdj.jpg
 

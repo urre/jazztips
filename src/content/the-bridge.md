@@ -10,7 +10,7 @@ tags:
   - hard-bop
   - saxophone
 ogimage: http://res.cloudinary.com/urre/image/upload/v1737962654/m3vlxywyxnfeunokzdg4.jpg
-image: ../assets/covers/the-bridge.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410400/jazztips/covers/the-bridge.jpg
 imageSource: https://lastfm.freetls.fastly.net/i/u/600x600/11860912e0524bb9b0ed4a256199cbb0.jpg
 
 tidal: https://tidal.com/browse/album/41692?u

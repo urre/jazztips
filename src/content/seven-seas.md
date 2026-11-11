@@ -8,8 +8,7 @@ tags:
   - Bass
   - cohen
   - världsmusik
-image: ../assets/covers/seven-seas.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690159/vhvkxdbas9drqxq5phl6.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690159/vhvkxdbas9drqxq5phl6.jpg
 
 
 

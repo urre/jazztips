@@ -7,8 +7,7 @@ year: 2012
 tags:
   - kvartett
   - marsalis
-image: ../assets/covers/four-mfs-playin-tunes.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689977/rq1klitkjjbufyc1qgpq.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689977/rq1klitkjjbufyc1qgpq.jpg
 
 
 

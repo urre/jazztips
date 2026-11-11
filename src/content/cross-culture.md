@@ -8,8 +8,7 @@ tags:
   - kvintett
   - lovano
   - spalding
-image: ../assets/covers/cross-culture.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689898/q5zsn1onx3136tqpljbf.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689898/q5zsn1onx3136tqpljbf.jpg
 
 
 

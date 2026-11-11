@@ -7,8 +7,7 @@ year: 2010
 tags:
   - kvartett
   - kvist
-image: ../assets/covers/lemon-man.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689952/dflocrirhnd26ajm1iv8.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689952/dflocrirhnd26ajm1iv8.jpg
 
 
 

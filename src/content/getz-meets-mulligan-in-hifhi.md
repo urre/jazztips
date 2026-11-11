@@ -9,7 +9,7 @@ tags:
   - getz
   - mulligan
   - brown
-image: ../assets/covers/getz-meets-mulligan-in-hifhi.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410386/jazztips/covers/getz-meets-mulligan-in-hifhi.jpg
 imageSource: https://m.media-amazon.com/images/I/A1xy+3UEvLL._UF1000,1000_QL80_.jpg
 permalink: /stan-getz-meets-mulligan-in-hifi/
 tidal: https://tidal.com/browse/album/321502546

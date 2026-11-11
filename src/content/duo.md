@@ -8,8 +8,7 @@ tags:
   - duo
   - schwarz
   - wesseltoft
-image: ../assets/covers/duo.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690026/cf5naia3vmmme868x440.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690026/cf5naia3vmmme868x440.jpg
 
 
 

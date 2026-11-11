@@ -15,8 +15,7 @@ tags:
   - evans
   - farmer
   - golson
-image: ../assets/covers/modern-art.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1727330478/t3uixzxidvpvdjfwgehh.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1727330478/t3uixzxidvpvdjfwgehh.jpg
 
 spotify: https://open.spotify.com/album/35GC6fz2v6ZoXcVlKf6BA6
 tidal: https://tidal.com/browse/album/1330574?u

@@ -10,8 +10,7 @@ tags:
   - mehldau
   - rosenwinkel
   - sambeat
-image: ../assets/covers/friendship.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690057/chdodjq7l953thx8makn.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690057/chdodjq7l953thx8makn.jpg
 
 
 

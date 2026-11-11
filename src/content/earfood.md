@@ -8,8 +8,7 @@ tags:
   - bop
   - hargrove
   - kvintett
-image: ../assets/covers/earfood.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690165/an2ppv8ss57wn3waed6c.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690165/an2ppv8ss57wn3waed6c.jpg
 
 
 

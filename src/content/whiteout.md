@@ -9,8 +9,7 @@ tags:
   - Qvenild
   - rune
   - trio
-image: ../assets/covers/whiteout.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690254/e66rkzffgiivr5llsfqc.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690254/e66rkzffgiivr5llsfqc.jpg
 
 
 

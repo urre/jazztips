@@ -15,7 +15,7 @@ tags:
   - Orchestral Jazz
 permalink: https://jazztips.se/silje-nergaard-tomorrow-we-ll-figure-out-the-rest/
 spotify: https://open.spotify.com/album/63iuwueP9rBNt0fjuu6lC3
-image: ../assets/covers/silje-nergaard-tomorrow-we-ll-figure-out-the-rest.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410398/jazztips/covers/silje-nergaard-tomorrow-we-ll-figure-out-the-rest.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8f/c6/5b/8fc65b53-2872-05e0-c496-ab9a2588e55f/196872736410.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/tomorrow-well-figure-out-the-rest/1790408700
 qobuz: https://www.qobuz.com/fr-fr/album/tomorrow-well-figure-out-the-rest-silje-nergaard/ewx0hq3mfkkrc

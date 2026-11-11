@@ -7,8 +7,7 @@ year: 2011
 tags:
   - hoob
   - kallerdahl
-image: ../assets/covers/delphian-palace.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690050/x14837bvqgwk6sprhrfv.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690050/x14837bvqgwk6sprhrfv.jpg
 
 
 

@@ -9,8 +9,7 @@ tags:
   - garde
   - ayler
   - frijazz
-image: ../assets/covers/live-at-glenn-miller-cafe.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690120/cc1vqg5urdgl1shvzwq2.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690120/cc1vqg5urdgl1shvzwq2.jpg
 
 
 

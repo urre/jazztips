@@ -10,8 +10,7 @@ tags:
   - improvisation
   - trio
   - violin
-image: ../assets/covers/viva-black.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689737/qaamvbtabe04qaegtkey.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689737/qaamvbtabe04qaegtkey.jpg
 
 
 

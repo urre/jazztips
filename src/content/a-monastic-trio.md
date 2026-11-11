@@ -6,8 +6,7 @@ label: Impulse
 year: 1968
 tags:
   - coltrane
-image: ../assets/covers/a-monastic-trio.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690123/du9j0ghijxjyejturcet.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690123/du9j0ghijxjyejturcet.jpg
 
 
 

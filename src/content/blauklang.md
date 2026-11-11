@@ -12,8 +12,7 @@ tags:
   - miles
   - puntin
   - stockhausen
-image: ../assets/covers/blauklang.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689780/ab0t60onfl05twybd7lg.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689780/ab0t60onfl05twybd7lg.jpg
 
 
 

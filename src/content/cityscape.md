@@ -8,8 +8,7 @@ year: 1982
 tags:
   - ogerman
   - brecker
-image: ../assets/covers/cityscape.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1732866521/nv8g4pxqlerourimx0xh.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1732866521/nv8g4pxqlerourimx0xh.jpg
 ogimage: https://res.cloudinary.com/urre/image/upload/v1732866521/nv8g4pxqlerourimx0xh.jpg
 
 spotify: https://open.spotify.com/album/2NSuqJgxs9mnzGNn5tM278

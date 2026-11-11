@@ -10,8 +10,7 @@ tags:
   - lindberg
   - andersson
   - jazzagenturen
-image: ../assets/covers/swedish-songbook-vol1.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1726727617/u7phyh6wl0e4q4cxz2ec.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1726727617/u7phyh6wl0e4q4cxz2ec.jpg
 
 tidal: 195133037
 apple: https://embed.music.apple.com/au/album/swedish-songbook-series-vol-1/1582645029

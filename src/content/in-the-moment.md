@@ -10,8 +10,7 @@ tags:
   - nilsson
   - söderlind
   - thuresson
-image: ../assets/covers/in-the-moment.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689722/robrgiuxuc1prpaxexku.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689722/robrgiuxuc1prpaxexku.jpg
 
 
 

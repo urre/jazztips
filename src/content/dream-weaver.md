@@ -9,8 +9,7 @@ tags:
   - jarrett
   - lloyd
   - macbee
-image: ../assets/covers/dream-weaver.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690058/ivh7o6xidoygilltnetd.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690058/ivh7o6xidoygilltnetd.jpg
 
 
 

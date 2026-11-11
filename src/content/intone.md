@@ -7,8 +7,7 @@ year: 2012
 tags:
   - intone
   - kvintett
-image: ../assets/covers/intone.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689829/kbadt0utrap3hqhevjpk.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689829/kbadt0utrap3hqhevjpk.jpg
 
 
 

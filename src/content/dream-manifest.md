@@ -13,7 +13,7 @@ permalink: /dream-manifest/
 spotify: https://open.spotify.com/album/4NRmmJqFrnn3tM6aI5xwQq
 apple: https://embed.music.apple.com/us/album/dream-manifest/1799380463?uo=4
 tidal: https://tidal.com/browse/album/421196525?u
-image: ../assets/covers/dream-manifest.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410383/jazztips/covers/dream-manifest.jpg
 imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/0911891f30a405b6670205dd33f4c59b.jpg
 credits:
 - name: Theo Croker

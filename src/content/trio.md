@@ -9,8 +9,7 @@ tags:
   - scher
   - trio
   - wollesen
-image: ../assets/covers/trio.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689837/m49aiv3ot63sh0jpldnh.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689837/m49aiv3ot63sh0jpldnh.jpg
 
 
 

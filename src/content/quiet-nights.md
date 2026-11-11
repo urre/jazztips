@@ -8,8 +8,7 @@ tags:
   - evans
   - miles
   - storband
-image: ../assets/covers/quiet-nights.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689946/vpqpnsloefbc1bgs9c1h.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689946/vpqpnsloefbc1bgs9c1h.jpg
 
 
 

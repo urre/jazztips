@@ -6,8 +6,7 @@ label: Skip
 year: 2012
 tags:
   - lakatos
-image: ../assets/covers/hometone.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689920/ru734kgkeown0rmcgrcp.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689920/ru734kgkeown0rmcgrcp.jpg
 
 
 

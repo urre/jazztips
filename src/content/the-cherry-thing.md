@@ -10,8 +10,7 @@ tags:
   - friform
   - gustafsson
   - holmlander
-image: ../assets/covers/the-cherry-thing.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689990/hf52sewguhwjjn0jcwsq.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689990/hf52sewguhwjjn0jcwsq.jpg
 
 
 

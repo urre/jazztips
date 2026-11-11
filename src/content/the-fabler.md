@@ -7,8 +7,7 @@ year: 2012
 tags:
   - agnas
   - kvartett
-image: ../assets/covers/the-fabler.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689962/du6l9mptel4ytzdppgbx.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689962/du6l9mptel4ytzdppgbx.jpg
 
 
 

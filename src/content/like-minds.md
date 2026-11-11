@@ -12,8 +12,7 @@ tags:
   - holland
   - kvartett
   - metheny
-image: ../assets/covers/like-minds.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690271/ehrfjf9zccjxrolvub3p.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690271/ehrfjf9zccjxrolvub3p.jpg
 
 
 

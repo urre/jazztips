@@ -8,8 +8,7 @@ tags:
   - haynes
   - nelson
   - orgel
-image: ../assets/covers/taking-care-of-business.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690035/shtp36dabgq1k1leyvlu.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690035/shtp36dabgq1k1leyvlu.jpg
 
 
 

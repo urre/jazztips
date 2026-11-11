@@ -9,8 +9,7 @@ tags:
   - groove
   - lundgaard
   - soul
-image: ../assets/covers/walk-tall.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689881/stxxnejdh4lsbfcdmk7a.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689881/stxxnejdh4lsbfcdmk7a.jpg
 
 
 

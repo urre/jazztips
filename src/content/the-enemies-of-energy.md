@@ -7,8 +7,7 @@ year: 2000
 tags:
   - Guitar
   - rosenwinkel
-image: ../assets/covers/the-enemies-of-energy.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689993/wuiokilk624jgwnqwkil.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689993/wuiokilk624jgwnqwkil.jpg
 
 
 

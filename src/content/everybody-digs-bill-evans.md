@@ -13,7 +13,7 @@ tags:
   - standards
   - peacepiece
 permalink: https://jazztips.se/everybody-digs-bill-evans/
-image: ../assets/covers/everybody-digs-bill-evans.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410385/jazztips/covers/everybody-digs-bill-evans.jpg
 imageSource: https://m.media-amazon.com/images/I/712rp7-zFkL._UF1000,1000_QL80_.jpg
 apple: https://embed.music.apple.com/se/album/everybody-digs-bill-evans/402259545
 tidal: https://tidal.com/browse/album/587501

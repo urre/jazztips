@@ -6,8 +6,7 @@ label: Cloud/Stunt
 year: 2010
 tags:
   - trio
-image: ../assets/covers/plastic-moon.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689999/ctmfu5lvosmmjnlclug7.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689999/ctmfu5lvosmmjnlclug7.jpg
 
 
 

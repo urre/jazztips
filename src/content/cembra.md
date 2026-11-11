@@ -6,8 +6,7 @@ label: Maine coon productions
 year: 2012
 tags:
   - trio
-image: ../assets/covers/cembra.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689969/ybh0vlykhhyil6thfwr2.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689969/ybh0vlykhhyil6thfwr2.jpg
 
 
 

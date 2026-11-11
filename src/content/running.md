@@ -8,8 +8,7 @@ tags:
   - act
   - kvartett
   - wasserfuhr
-image: ../assets/covers/running.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689821/didimwih7smxjydmpitj.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689821/didimwih7smxjydmpitj.jpg
 
 
 

@@ -7,8 +7,7 @@ year: 2008
 tags:
   - Guitar
   - trio
-image: ../assets/covers/concord.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690009/hduxhgu6d1b5uvpeukoj.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690009/hduxhgu6d1b5uvpeukoj.jpg
 
 
 

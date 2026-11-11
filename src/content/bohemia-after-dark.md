@@ -12,8 +12,7 @@ tags:
   - clarke
   - richardson
   - silver
-image: ../assets/covers/bohemia-after-dark.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690215/edenoxrptmvsmcafr1tv.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690215/edenoxrptmvsmcafr1tv.jpg
 
 
 

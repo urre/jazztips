@@ -11,7 +11,7 @@ tags:
   - Funk
 permalink: https://jazztips.se/fonville-x-fribush-what-day-is-it/
 tidal: https://tidal.com/browse/album/474771801
-image: ../assets/covers/fonville-x-fribush-what-day-is-it.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410386/jazztips/covers/fonville-x-fribush-what-day-is-it.jpg
 imageSource: https://f4.bcbits.com/img/a1863630490_10.jpg
 credits:
   - name: Corey Fonville

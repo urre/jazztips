@@ -10,8 +10,7 @@ tags:
   - pepper
   - west coast
   - sheldon
-image: ../assets/covers/smack-up.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1725947478/dff7odvndx3n2an37s5x.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1725947478/dff7odvndx3n2an37s5x.jpg
 
 spotify: https://open.spotify.com/album/3OLrZAzTsdUXpPzSpjqGLT
 tidal: 345752674

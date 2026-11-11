@@ -14,7 +14,7 @@ permalink: /samara-joy-portrait/
 spotify: https://open.spotify.com/album/7sH4icMotSET9zBcbR5Gz4
 apple: https://embed.music.apple.com/us/album/portrait/1761436800?uo=4
 tidal: https://tidal.com/browse/album/391234425
-image: ../assets/covers/samara-joy-portrait.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410397/jazztips/covers/samara-joy-portrait.jpg
 imageSource: https://www.universalmusic.ca/wp-content/uploads/sites/2543/2024/10/SJ_Portrait_Album-Cover-2-scaled.jpg
 credits:
 - name: Samara Joy

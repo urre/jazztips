@@ -11,8 +11,7 @@ tags:
   - landgren
   - nils
   - sample
-image: ../assets/covers/teamwork.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689845/xmxmmkmfcdhwiqirou9r.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689845/xmxmmkmfcdhwiqirou9r.jpg
 
 
 

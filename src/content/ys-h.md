@@ -7,8 +7,7 @@ year: 2008
 tags:
   - 60-tal
   - septett
-image: ../assets/covers/ys-h.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690278/bwfj1hdvuieejukpbudm.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690278/bwfj1hdvuieejukpbudm.jpg
 
 
 

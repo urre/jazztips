@@ -10,7 +10,7 @@ tags:
 permalink: https://jazztips.se/sullivan-fortner-moments-preserved/
 spotify: https://open.spotify.com/album/6BJlE8waleuTEIuzcYqd4Q
 tidal: https://tidal.com/mix/0003df23518ed9312c5b68ecee49ed
-image: ../assets/covers/sullivan-fortner-moments-preserved.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410400/jazztips/covers/sullivan-fortner-moments-preserved.jpg
 imageSource: https://storage.highresaudio.com/2018/05/30/wyimmc-momentspre-master.jpg
 apple: https://embed.music.apple.com/jp/album/moments-preserved/1370838437
 qobuz: https://www.qobuz.com/us-en/album/moments-preserved-sullivan-fortner/vvgh11axgxisc

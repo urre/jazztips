@@ -9,8 +9,7 @@ tags:
   - piano
   - svensson
   - trio
-image: ../assets/covers/i-love-jan-lundgren-trio.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689725/casc66ksasogfzkbblz3.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689725/casc66ksasogfzkbblz3.jpg
 
 
 

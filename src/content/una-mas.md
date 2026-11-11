@@ -9,8 +9,7 @@ tags:
   - hancock
   - henderson
   - williams
-image: ../assets/covers/una-mas.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690246/xzwffs3iar7yoitetlvs.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690246/xzwffs3iar7yoitetlvs.jpg
 
 
 

@@ -7,8 +7,7 @@ year: 2011
 tags:
   - duo
   - orgel
-image: ../assets/covers/out-of-bounds.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690029/giviz9qrdtzvaqiecmua.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690029/giviz9qrdtzvaqiecmua.jpg
 
 
 

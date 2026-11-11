@@ -11,8 +11,7 @@ tags:
   - jazz
   - standard
   - trumpet
-image: ../assets/covers/live-at-the-jazz-standard.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690203/zzvr61wno5nztlh4dj0k.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690203/zzvr61wno5nztlh4dj0k.jpg
 
 
 

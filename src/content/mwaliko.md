@@ -10,8 +10,7 @@ tags:
   - Guitar
   - loueke
   - spalding
-image: ../assets/covers/mwaliko.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689823/tihcrossxkwssxaucis7.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689823/tihcrossxkwssxaucis7.jpg
 
 
 

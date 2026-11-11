@@ -12,8 +12,7 @@ tags:
   - spering
   - strandberg
   - thorell
-image: ../assets/covers/takeaway.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690116/rogrfqjkzf5howq5ystl.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690116/rogrfqjkzf5howq5ystl.jpg
 
 
 

@@ -8,8 +8,7 @@ tags:
   - kvartett
   - shaw
   - sipiagin
-image: ../assets/covers/generations.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690102/clja6h2efdmbyv6kuxti.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690102/clja6h2efdmbyv6kuxti.jpg
 
 
 

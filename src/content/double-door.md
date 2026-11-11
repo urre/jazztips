@@ -8,8 +8,7 @@ tags:
   - almqvist
   - duo
   - landeus
-image: ../assets/covers/double-door.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690107/h0ccytwyevsjueljccfo.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690107/h0ccytwyevsjueljccfo.jpg
 
 
 

@@ -6,8 +6,7 @@ label: Calibrated
 year: 2012
 tags:
   - kirk
-image: ../assets/covers/blues-moderism.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690004/gbw0dzjgc1hjkrpsqjmp.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690004/gbw0dzjgc1hjkrpsqjmp.jpg
 
 
 

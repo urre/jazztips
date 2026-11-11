@@ -8,8 +8,7 @@ tags:
   - klaman
   - trumpet
   - kvartett
-image: ../assets/covers/devils-dance.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1477836191/devils-dance_cfxqpw.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1477836191/devils-dance_cfxqpw.jpg
 
 spotify: 'https://open.spotify.com/track/68tSVIQZ46qduxkXlfPSGl'
 credits:

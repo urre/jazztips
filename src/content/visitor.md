@@ -11,8 +11,7 @@ tags:
   - piano
   - lindgren
   - höper
-image: ../assets/covers/visitor.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1726033716/qhkkvresqfc9prbao2y4.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1726033716/qhkkvresqfc9prbao2y4.jpg
 
 tidal: 216929721
 spotify: https://open.spotify.com/album/4syZHZiuvbXt0nWb9QT39A

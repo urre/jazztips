@@ -16,7 +16,7 @@ tags:
 permalink: https://jazztips.se/callum-au-sing-seven-seas-vol-1/
 spotify: https://open.spotify.com/album/79jVrSTHIonAvIDTFSD2fY
 tidal: https://tidal.com/browse/album/517864895
-image: ../assets/covers/callum-au-sing-seven-seas-vol-1.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410381/jazztips/covers/callum-au-sing-seven-seas-vol-1.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ce/d2/94/ced29437-f4d2-55e0-e40d-5d0485fc3563/0604565990686.png/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/sing-seven-seas-vol-1/6769139318
 credits:

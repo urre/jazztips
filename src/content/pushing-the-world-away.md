@@ -7,8 +7,7 @@ year: 2013
 tags:
   - bop
   - garret
-image: ../assets/covers/pushing-the-world-away.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689835/pjxiapiodgpzg9sbkpy7.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689835/pjxiapiodgpzg9sbkpy7.jpg
 
 
 

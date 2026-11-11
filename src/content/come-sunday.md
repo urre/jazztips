@@ -9,8 +9,7 @@ tags:
   - haden
   - jones
   - spirituals
-image: ../assets/covers/come-sunday.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690033/kny6pkwodocyzgslcuex.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690033/kny6pkwodocyzgslcuex.jpg
 
 
 

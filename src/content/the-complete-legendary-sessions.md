@@ -10,8 +10,7 @@ tags:
   - evans
   - piano
   - trumpet
-image: ../assets/covers/the-complete-legendary-sessions.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689778/iyaip8mbbokpzrrkika2.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689778/iyaip8mbbokpzrrkika2.jpg
 
 
 

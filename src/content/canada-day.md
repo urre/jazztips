@@ -6,8 +6,7 @@ label: Clean Feed
 year: 2009
 tags:
   - eisenstadt
-image: ../assets/covers/canada-day.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690020/zhxzox4pravqd1dpnyyi.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690020/zhxzox4pravqd1dpnyyi.jpg
 
 
 

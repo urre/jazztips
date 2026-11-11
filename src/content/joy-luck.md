@@ -10,8 +10,7 @@ tags:
   - ovsepian
   - peter
   - trio
-image: ../assets/covers/joy-luck.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690154/eia1fxsg1wfolba6qlud.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690154/eia1fxsg1wfolba6qlud.jpg
 
 
 

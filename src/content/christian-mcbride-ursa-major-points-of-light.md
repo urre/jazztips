@@ -17,7 +17,7 @@ tags:
 permalink: https://jazztips.se/christian-mcbride-ursa-major-points-of-light/
 spotify: https://open.spotify.com/album/3bv3qJuC7oiOrIBvuxdwwR
 tidal: https://tidal.com/browse/album/547863463
-image: ../assets/covers/christian-mcbride-ursa-major-points-of-light.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410382/jazztips/covers/christian-mcbride-ursa-major-points-of-light.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/3b/05/f93b05f0-dfb3-235e-6910-a344c2c0caad/129051.jpg/1000x1000bb.jpg
 apple: https://embed.music.apple.com/us/album/points-of-light/6796366850
 qobuz: https://www.qobuz.com/gb-en/album/points-of-light-christian-mcbride-ursa-major/fkbjwc874w81e

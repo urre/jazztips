@@ -16,7 +16,7 @@ tags:
   - Blue Mitchell
 permalink: https://jazztips.se/hank-mobley-hi-voltage/
 tidal: https://tidal.com/browse/album/1403128
-image: ../assets/covers/hank-mobley-hi-voltage.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410365/jazztips/covers/hank-mobley-hi-voltage.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music/v4/1d/97/af/1d97af05-0905-d640-c504-03cf949c7aaa/00724386447654.tif/1400x1400bb.jpg
 apple: https://embed.music.apple.com/us/album/hi-voltage-the-rudy-van-gelder-edition-remastered/724925658
 qobuz: https://www.qobuz.com/se-en/album/hi-voltage-hank-mobley/0724386447654

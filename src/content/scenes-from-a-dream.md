@@ -10,8 +10,7 @@ tags:
   - erskine
   - goldings
   - metropole
-image: ../assets/covers/scenes-from-a-dream.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690149/dzvzkcqwnct3iukefoib.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690149/dzvzkcqwnct3iukefoib.jpg
 
 
 

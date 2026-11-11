@@ -1,5 +1,5 @@
 ---
-import appScreen from "../assets/jazzkonserter-app.webp";
+import { SITE_IMAGES, cloudinary } from "@utils/cloudinary";
 
 export interface Props {
   href?: string;
@@ -158,9 +158,9 @@ const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
     </div>
     <figure class="ad-screen">
       <img
-        src={appScreen.src}
-        width={appScreen.width}
-        height={appScreen.height}
+        src={cloudinary(SITE_IMAGES.jazzkonserterApp, "f_auto,q_auto,w_840")}
+        width="900"
+        height="1272"
         alt="Konsertlistan på jazzkonserter.se visad i en mobil"
         loading="lazy"
         decoding="async"

@@ -10,7 +10,7 @@ tags:
   - haden
   - metheny
 permalink: https://jazztips.se/pat-metheny-charlie-haden-beyond-the-missouri-sky-short-stories/
-image: ../assets/covers/pat-metheny-charlie-haden-beyond-the-missouri-sky-short-stories.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410395/jazztips/covers/pat-metheny-charlie-haden-beyond-the-missouri-sky-short-stories.jpg
 imageSource: https://imusic.b-cdn.net/images/item/original/226/0600753832226.jpg?pat-metheny-charlie-haden-2018-beyond-the-missouri-sky-lp&class=scaled&v=1529755496
 spotify: https://open.spotify.com/album/1bG2Y1Q0xpew4QpXllEax0
 apple: https://embed.music.apple.com/us/album/beyond-the-missouri-sky-short-stories/1440918548

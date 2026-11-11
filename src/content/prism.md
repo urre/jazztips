@@ -8,8 +8,7 @@ tags:
   - eubanks
   - holland
   - kvartett
-image: ../assets/covers/prism.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689831/swge3bmqkbmccdtnyino.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689831/swge3bmqkbmccdtnyino.jpg
 
 
 

@@ -15,7 +15,7 @@ tags:
   - Quartet
 permalink: https://jazztips.se/elsa-nilsson-liminal/
 tidal: https://tidal.com/browse/album/504857558
-image: ../assets/covers/elsa-nilsson-liminal.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410384/jazztips/covers/elsa-nilsson-liminal.jpg
 imageSource: https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/1d/51/a41d5104-bb9a-7708-f3bc-0bb3f30cea12/16214.jpg/800x800bb.jpg
 apple: https://embed.music.apple.com/us/album/liminal/1883085515
 credits:

@@ -10,8 +10,7 @@ tags:
   - mehldau
   - piano
   - trio
-image: ../assets/covers/ode.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690016/rmvfpepqdgoiiylkaymt.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690016/rmvfpepqdgoiiylkaymt.jpg
 
 
 

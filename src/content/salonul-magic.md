@@ -6,8 +6,7 @@ year: 2012
 tags:
   - lindeborg
   - piano
-image: ../assets/covers/salonul-magic.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689939/do347s35vdtxjmnwua5r.png
+image: https://res.cloudinary.com/urre/image/upload/v1465689939/do347s35vdtxjmnwua5r.png
 spotify: 'https://open.spotify.com/track/6TbRpB229njsNjp1h5Ybxj'
 credits:
   - name: Erik Lindeborg

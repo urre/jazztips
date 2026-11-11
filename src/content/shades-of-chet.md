@@ -10,8 +10,7 @@ tags:
   - fresu
   - rava
   - trumpet
-image: ../assets/covers/shades-of-chet.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690190/slmwgezyvxbeaiaxfzig.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690190/slmwgezyvxbeaiaxfzig.jpg
 
 
 

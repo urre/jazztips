@@ -10,8 +10,7 @@ tags:
   - feldman
   - hardbop
   - lighthouse
-image: ../assets/covers/at-the-lighthouse.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690229/rwbagqwdbwhjctm9mkyl.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690229/rwbagqwdbwhjctm9mkyl.jpg
 
 
 

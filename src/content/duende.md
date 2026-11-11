@@ -7,8 +7,7 @@ year: 2012
 tags:
   - cohen
   - duo
-image: ../assets/covers/duende.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689974/kncugq3qghvfpoher66h.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689974/kncugq3qghvfpoher66h.jpg
 
 
 

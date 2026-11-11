@@ -12,8 +12,7 @@ tags:
   - ljungkvist
   - nevrin
   - velin
-image: ../assets/covers/badaling.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690065/x6ula4eolanndxlxpghq.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690065/x6ula4eolanndxlxpghq.jpg
 
 
 

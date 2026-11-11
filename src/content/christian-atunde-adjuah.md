@@ -7,8 +7,7 @@ year: 2012
 tags:
   - scott
   - williams
-image: ../assets/covers/christian-atunde-adjuah.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689981/zbzvubpr5skrzj3vkiph.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689981/zbzvubpr5skrzj3vkiph.jpg
 
 
 

@@ -9,8 +9,7 @@ tags:
   - eicher
   - jarrett
   - piano
-image: ../assets/covers/facing-you.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690261/cawfc4fke4dtuu8xjpgw.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690261/cawfc4fke4dtuu8xjpgw.jpg
 
 
 

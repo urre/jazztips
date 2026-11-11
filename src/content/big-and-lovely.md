@@ -6,7 +6,7 @@ artist: Allison Miller with the One O'Clock Lab Band
 label: Royal Potato
 year: 2025
 tags: ['miller', 'big band']
-image: ../assets/covers/big-and-lovely.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410380/jazztips/covers/big-and-lovely.jpg
 imageSource: https://f4.bcbits.com/img/a3371538264_16.jpg
 tidal: https://tidal.com/browse/album/404300705?u
 spotify: https://open.spotify.com/album/6KEvBtVYUgubkpZRK32aXE?si=OQWHXLmTSOKPNVP7R4HSeg

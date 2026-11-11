@@ -7,8 +7,7 @@ year: 2009
 tags:
   - garcia
   - kvartett
-image: ../assets/covers/perennial.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690084/oyimt7glq5cbrltgnbm3.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690084/oyimt7glq5cbrltgnbm3.jpg
 
 
 

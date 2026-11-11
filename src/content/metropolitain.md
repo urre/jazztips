@@ -11,8 +11,7 @@ tags:
   - eastwood
   - Katche
   - Legnini
-image: ../assets/covers/metropolitain.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690157/wh9aykoxxzqq6qpy4gle.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690157/wh9aykoxxzqq6qpy4gle.jpg
 
 
 

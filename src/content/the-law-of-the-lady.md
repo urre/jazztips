@@ -7,8 +7,7 @@ year: 2012
 tags:
   - gustafsson
   - Vocals
-image: ../assets/covers/the-law-of-the-lady.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689791/jpulpexqdyus8i1nonoa.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689791/jpulpexqdyus8i1nonoa.jpg
 
 
 

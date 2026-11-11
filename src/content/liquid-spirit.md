@@ -8,8 +8,7 @@ year: 2013
 tags:
   - porter
   - Vocals
-image: ../assets/covers/liquid-spirit.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689857/la8vbubwdz7ji4mb64gu.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689857/la8vbubwdz7ji4mb64gu.jpg
 
 
 

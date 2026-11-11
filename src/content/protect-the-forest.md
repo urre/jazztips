@@ -6,8 +6,7 @@ label: Hoob
 year: 2012
 tags:
   - electronica
-image: ../assets/covers/protect-the-forest.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689957/lfjtf0dowv8mym2j1cqv.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689957/lfjtf0dowv8mym2j1cqv.jpg
 
 
 

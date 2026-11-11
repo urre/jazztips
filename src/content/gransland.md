@@ -6,8 +6,7 @@ label: Havtorn Records
 year: 2013
 tags:
   - trio
-image: ../assets/covers/gransland.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689896/icr9jboh6zakgqv3jtin.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689896/icr9jboh6zakgqv3jtin.jpg
 
 
 

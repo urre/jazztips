@@ -8,8 +8,7 @@ tags:
   - lien
   - norge
   - trio
-image: ../assets/covers/hello-troll.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689708/ja3srwbkf5zxlo7ohczh.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689708/ja3srwbkf5zxlo7ohczh.jpg
 
 
 

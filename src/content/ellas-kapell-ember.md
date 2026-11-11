@@ -11,7 +11,7 @@ tags:
 permalink: https://jazztips.se/ellas-kapell-ember/
 spotify: https://open.spotify.com/album/6sDcKPHcD7qsLjRsZkdOsM
 tidal: https://tidal.com/browse/album/483026322
-image: ../assets/covers/ellas-kapell-ember.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410384/jazztips/covers/ellas-kapell-ember.jpg
 imageSource: https://i.scdn.co/image/ab67616d0000b27398fcf7d7f0930019d760639f
 apple: https://embed.music.apple.com/se/album/ember/1864286509
 qobuz: https://www.qobuz.com/us-en/interpreter/ellas-kapell/8166105

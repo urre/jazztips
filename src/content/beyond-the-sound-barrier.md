@@ -10,8 +10,7 @@ tags:
   - patitucci
   - perez
   - shorter
-image: ../assets/covers/beyond-the-sound-barrier.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690104/qzmo3ewi1gmouvqgh23w.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690104/qzmo3ewi1gmouvqgh23w.jpg
 
 
 

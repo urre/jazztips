@@ -9,8 +9,7 @@ tags:
   - redman
   - Saxophone
   - trio
-image: ../assets/covers/the-bad-plus-joshua-redman.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689733/irvmahf3qezvg9l9ahiw.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689733/irvmahf3qezvg9l9ahiw.jpg
 
 
 

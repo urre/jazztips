@@ -7,8 +7,7 @@ year: 2012
 tags:
   - kvintett
   - lemore
-image: ../assets/covers/remote-location.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689959/sbzsg5k9yufduryrxruz.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689959/sbzsg5k9yufduryrxruz.jpg
 
 
 

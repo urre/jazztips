@@ -8,8 +8,7 @@ tags:
   - asplund
   - karlzon
   - trio
-image: ../assets/covers/heat.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690245/fw99xilowoqgj0hplylk.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690245/fw99xilowoqgj0hplylk.jpg
 
 
 

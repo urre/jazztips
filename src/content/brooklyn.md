@@ -11,8 +11,7 @@ tags:
   - new
   - york
   - patitucci
-image: ../assets/covers/brooklyn.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689742/pdfkaqeluzmvfcwdzjqd.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689742/pdfkaqeluzmvfcwdzjqd.jpg
 
 
 

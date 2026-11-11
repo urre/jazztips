@@ -8,8 +8,7 @@ tags:
   - berglund
   - hederos
   - tonbruket
-image: ../assets/covers/forevergreens.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689709/wbpth1r1i8vuhjdyjfyz.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689709/wbpth1r1i8vuhjdyjfyz.jpg
 
 
 

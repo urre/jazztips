@@ -9,7 +9,7 @@ tags:
   - ferrante
   - mintzer
 ogimage: https://lastfm.freetls.fastly.net/i/u/300x300/5cfe15fa9778728882d9fc414a325077.jpg
-image: ../assets/covers/fasten-up.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410392/jazztips/covers/fasten-up.avif
 imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/5cfe15fa9778728882d9fc414a325077.jpg
 tidal: https://tidal.com/browse/album/403638898?u
 spotify:  https://open.spotify.com/album/063d2nZSG84v5ZXGorsOLw

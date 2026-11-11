@@ -11,8 +11,7 @@ tags:
   - mulligan
   - pianolös
   - Saxophone
-image: ../assets/covers/two-of-a-mind.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689912/iz8hxlxoangljms5bvvu.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689912/iz8hxlxoangljms5bvvu.jpg
 
 
 

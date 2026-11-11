@@ -29,7 +29,9 @@
       }
     },
     "image": {
-      "type": "string"
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https:\\/\\/res\\.cloudinary\\.com\\/urre\\/.*"
     },
     "imageSource": {
       "type": "string",

@@ -9,8 +9,7 @@ tags:
   - berglund
   - metheny
   - öström
-image: ../assets/covers/thread-of-life.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690235/fbtcwezr99k3kcyv4s5k.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690235/fbtcwezr99k3kcyv4s5k.jpg
 
 
 

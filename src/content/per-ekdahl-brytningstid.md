@@ -11,7 +11,7 @@ tags:
   - Chamber Jazz
 permalink: https://jazztips.se/per-ekdahl-brytningstid/
 spotify: https://open.spotify.com/album/1bthq5Avt6msQYnXelmbIZ
-image: ../assets/covers/per-ekdahl-brytningstid.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410395/jazztips/covers/per-ekdahl-brytningstid.jpg
 imageSource: https://i.scdn.co/image/ab67616d00001e02f82a1c19c0cfcc5eccb8e2b9
 apple: https://embed.music.apple.com/us/album/brytningstid/1889670696
 qobuz: https://www.qobuz.com/us-en/album/brytningstid-per-ekdahl/lqykmugrfx24w

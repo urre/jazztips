@@ -9,8 +9,7 @@ tags:
   - erskine
   - mintzer
   - patitucci
-image: ../assets/covers/the-hudson-project.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690218/kqvh3gxinuwfcstxfqq4.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690218/kqvh3gxinuwfcstxfqq4.jpg
 
 
 

@@ -9,8 +9,7 @@ tags:
   - lindborg
   - lundgren
   - Saxophone
-image: ../assets/covers/the-one.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689846/znwhddlpywngk5omtbxp.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689846/znwhddlpywngk5omtbxp.jpg
 
 
 

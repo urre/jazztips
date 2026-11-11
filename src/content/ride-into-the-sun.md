@@ -14,7 +14,7 @@ permalink: /ride-into-the-sun/
 spotify: https://open.spotify.com/album/2ulLCUuxrYYuHjOqnhBkx9
 apple: https://embed.music.apple.com/us/album/ride-into-the-sun/1813515323?uo=4
 tidal: https://tidal.com/browse/album/441072655?u
-image: ../assets/covers/ride-into-the-sun.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410397/jazztips/covers/ride-into-the-sun.jpg
 imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/a5488c6372f104314f38fa1e8b558fe6.jpg
 credits:
 - name: Brad Mehldau

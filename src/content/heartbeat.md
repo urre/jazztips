@@ -6,8 +6,7 @@ label: Berno Records
 year: 2012
 tags:
   - skott
-image: ../assets/covers/heartbeat.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689877/tpi44g0tnj4nghhxboit.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689877/tpi44g0tnj4nghhxboit.jpg
 
 
 

@@ -11,8 +11,7 @@ tags:
   - potter
   - mcbride
   - chambers
-image: ../assets/covers/echoes-and-other-songs.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1728022585/homm9zqm9yrqchjlctq3.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1728022585/homm9zqm9yrqchjlctq3.jpg
 
 tidal: https://tidal.com/browse/album/371427138?u
 spotify: https://open.spotify.com/album/6pfEUFLGik0vypQgyQyAYL

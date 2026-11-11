@@ -8,8 +8,7 @@ tags:
   - Bass
   - klampanis
   - strings
-image: ../assets/covers/minor-dispute.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689713/xnvjijobghzw9neoejrg.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689713/xnvjijobghzw9neoejrg.jpg
 
 
 

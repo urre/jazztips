@@ -7,8 +7,7 @@ year: 2013
 tags:
   - havtorn
   - sextett
-image: ../assets/covers/perssons-sexa.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689841/urxdvckqr54xp9mvqsub.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689841/urxdvckqr54xp9mvqsub.jpg
 
 
 

@@ -8,8 +8,7 @@ tags:
   - adderly
   - cannonball
   - kvintett
-image: ../assets/covers/nancy-wilsoncannonball-adderly.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689933/wr74zlgkmk01espkyrnt.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689933/wr74zlgkmk01espkyrnt.jpg
 
 
 

@@ -9,8 +9,7 @@ tags:
   - piano
   - trio
   - yahel
-image: ../assets/covers/from-sun-to-sun.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689849/n2qvhf4huzxp7dyd1ayh.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689849/n2qvhf4huzxp7dyd1ayh.jpg
 
 
 

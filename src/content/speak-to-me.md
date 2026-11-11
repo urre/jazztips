@@ -7,8 +7,7 @@ label: UMG
 year:  2024
 tags:
   - lage
-image: ../assets/covers/speak-to-me.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1728282905/xu1xslq6rz8rqc1kwnfc.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1728282905/xu1xslq6rz8rqc1kwnfc.jpg
 
 tidal: https://tidal.com/browse/album/347041526?u
 credits:

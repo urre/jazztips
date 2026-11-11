@@ -9,8 +9,7 @@ tags:
   - holman
   - paich
   - roberts
-image: ../assets/covers/good-pickins.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690192/xrmjguajlxv62sfmwkmi.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690192/xrmjguajlxv62sfmwkmi.jpg
 
 
 

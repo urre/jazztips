@@ -9,8 +9,7 @@ tags:
   - improvisation
   - öberg
   - piano
-image: ../assets/covers/piano.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690130/nfm2clrnsxz1ejjc9twb.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690130/nfm2clrnsxz1ejjc9twb.jpg
 
 
 

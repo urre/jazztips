@@ -11,8 +11,7 @@ tags:
   - trio
   - motion
   - peacock
-image: ../assets/covers/at-the-deer-head-inn.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1727244479/hjrwrm624prg9suqocsd.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1727244479/hjrwrm624prg9suqocsd.jpg
 
 spotify: https://open.spotify.com/album/0qGevxDUgjWryUef7KUnat
 tidal: https://tidal.com/browse/album/13340790?u

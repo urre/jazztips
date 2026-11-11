@@ -11,7 +11,7 @@ tags:
 permalink: https://jazztips.se/svante-soderqvist-the-rocket-like-in-the-movies/
 spotify: https://open.spotify.com/album/4yMHUAidQFFojQk5D7kFSo
 tidal: https://tidal.com/browse/album/478386343
-image: ../assets/covers/svante-soderqvist-the-rocket-like-in-the-movies.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410400/jazztips/covers/svante-soderqvist-the-rocket-like-in-the-movies.jpg
 imageSource: https://propermusic.com/cdn/shop/files/0822359004764.jpg?v=1768990157&width=800
 apple: https://embed.music.apple.com/jp/album/like-in-the-movies/1858946917
 qobuz: https://www.qobuz.com/us-en/album/the-rocket-svante-soderqvist-adam-forkelid-and-calle-rasmusson/zga57cdunajmb

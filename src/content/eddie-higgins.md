@@ -8,8 +8,7 @@ tags:
   - hardbop
   - higgins
   - kvintett
-image: ../assets/covers/eddie-higgins.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465690125/w8cnouepoj3jnxtphze6.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465690125/w8cnouepoj3jnxtphze6.jpg
 
 
 

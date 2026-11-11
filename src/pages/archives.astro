@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
-import { coverThumb } from "@utils/coverThumb";
+import { coverThumb } from "@utils/cloudinary";
 import { normalizeLabel } from "@utils/labels";
 import "../styles/dashboard.css";
 
@@ -28,7 +28,7 @@ const countThisYear = byYear.get(thisYear)?.length ?? 0;
 const countLastYear = byYear.get(thisYear - 1)?.length ?? 0;
 const labels = new Set(records.map((r) => normalizeLabel(r.data.label)?.toLowerCase()).filter(Boolean));
 const latest = records[0];
-const thumbs = new Map(await Promise.all(records.map(async (r) => [r.id, await coverThumb(r.data.image)] as const)));
+const thumbs = new Map(records.map((r) => [r.id, coverThumb(r.data.image)]));
 
 // Tags differ only in case ("Jazz" / "jazz"); count them together and link the
 // most used spelling

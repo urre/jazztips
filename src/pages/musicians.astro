@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 import { getCollection } from "astro:content";
-import { coverThumb } from "@utils/coverThumb";
+import { coverThumb } from "@utils/cloudinary";
 import "../styles/dashboard.css";
 import { instrumentFamilies, normalizeName } from "@utils/instruments";
 import { normalizeLabel } from "@utils/labels";
@@ -14,7 +14,7 @@ import avatars from "../data/musician-avatars.json";
 const records = (
   await getCollection("records", ({ data }) => import.meta.env.DEV || !data.draft)
 ).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const thumbs = new Map(await Promise.all(records.map(async (r) => [r.id, await coverThumb(r.data.image)] as const)));
+const thumbs = new Map(records.map((r) => [r.id, coverThumb(r.data.image)]));
 
 type Appearance = {
   id: string;

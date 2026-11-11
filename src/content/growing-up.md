@@ -6,8 +6,7 @@ label: Playing with Music
 year: 2013
 tags:
   - larsson
-image: ../assets/covers/growing-up.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689910/hfgzbq8cv7a0l97o1age.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689910/hfgzbq8cv7a0l97o1age.jpg
 
 
 

@@ -8,8 +8,7 @@ tags:
   - broo
   - frijazz
   - gustafsson
-image: ../assets/covers/dashes-to-dashes.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689797/djmgjdfjrkv0t6eu3s9o.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689797/djmgjdfjrkv0t6eu3s9o.jpg
 
 
 

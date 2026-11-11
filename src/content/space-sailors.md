@@ -10,8 +10,7 @@ tags:
   - berglund
   - trio
   - piano
-image: ../assets/covers/space-sailors.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1603991543/screenshots/nysd3ghdwogmg1k6nbzw.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1603991543/screenshots/nysd3ghdwogmg1k6nbzw.jpg
 
 spotify: >-
   https://open.spotify.com/album/2ogpiZdnA3GtoBhAq8bYyw?si=cNRXaIYETi-Qxad14SkIgA

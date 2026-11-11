@@ -9,8 +9,7 @@ tags:
   - landgren
   - Vocals
   - Trombone
-image: ../assets/covers/eternal-beauty.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689802/vukbw3eaue98dxpwyffa.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689802/vukbw3eaue98dxpwyffa.jpg
 
 
 

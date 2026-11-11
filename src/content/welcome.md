@@ -14,7 +14,7 @@ permalink: /welcome/
 spotify: https://open.spotify.com/album/5qf20lEhYtZtHIZmMkIu6C
 apple: https://embed.music.apple.com/us/album/welcome/1638692007?uo=4
 tidal: https://tidal.com/browse/album/241981419
-image: ../assets/covers/welcome.avif
+image: https://res.cloudinary.com/urre/image/upload/v1794410402/jazztips/covers/welcome.jpg
 imageSource: https://lastfm.freetls.fastly.net/i/u/300x300/0b79f9c85e2bdc82d72f4336badaf43f.jpg
 credits:
 - name: Don Glori

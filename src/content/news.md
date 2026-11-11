@@ -8,8 +8,7 @@ tags:
   - almqvist
   - erlandsson
   - kvartett
-image: ../assets/covers/news.avif
-imageSource: https://res.cloudinary.com/urre/image/upload/v1465689814/yqhehrn04p7n1wgjjyia.jpg
+image: https://res.cloudinary.com/urre/image/upload/v1465689814/yqhehrn04p7n1wgjjyia.jpg
 
 
 
