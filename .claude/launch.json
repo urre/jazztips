@@ -9,9 +9,9 @@
         "dev",
         "--",
         "--port",
-        "4322"
+        "4324"
       ],
-      "port": 4322,
+      "port": 4324,
       "autoPort": false
     }
   ]
