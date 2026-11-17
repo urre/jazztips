@@ -44,6 +44,16 @@ const years = new Date().getFullYear() - startYear;
           </div>
         </dl>
 
+        <div class="advertise">
+          <h2>Advertise on Jazztips</h2>
+          <p>
+            Have a record, a concert, a festival or a jazz club that deserves an audience? Jazztips
+            reaches listeners who actively look for new music, and a few carefully chosen ads fit right
+            in. <a href="mailto:hej@urre.me?subject=Advertising%20on%20Jazztips">Get in touch</a> and
+            I'll tell you more about formats, placement and pricing.
+          </p>
+        </div>
+
         <ul class="links plain-list">
           <li>
             <a href="mailto:hej@urre.me">
@@ -140,6 +150,29 @@ const years = new Date().getFullYear() - startYear;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--grey);
+  }
+
+  .advertise {
+    margin: 0 0 2rem;
+    max-width: 44ch;
+  }
+
+  .advertise h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .advertise p {
+    margin: 0;
+    color: var(--grey);
+    text-wrap: pretty;
+  }
+
+  .advertise a {
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--profile);
+    text-underline-offset: 4px;
   }
 
   .links {

@@ -21,11 +21,8 @@ const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
     overflow: hidden;
     border-radius: var(--border-radius);
     border: 1px solid var(--border-soft);
-    /* Ends in the photo's own background colour so the image blends in */
-    background: light-dark(
-      linear-gradient(180deg, #ffffff 0%, #fbfafc 40%, #f2f0f3 100%),
-      var(--surface)
-    );
+    /* light-dark() only takes colours, a gradient inside it drops the whole rule */
+    background-color: var(--surface);
     box-shadow: rgba(99, 99, 99, 0.12) 0px 2px 10px 0px;
     transition: box-shadow 200ms;
   }
@@ -90,13 +87,6 @@ const { href = "https://jazzkonserter.se", label = "Annons" } = Astro.props;
   .ad-cta svg {
     width: 13px;
     height: 13px;
-  }
-
-  @media (hover: hover) and (pointer: fine) {
-    .ad-card:hover .ad-cta {
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
   }
 
   .ad-screen {
