@@ -21,6 +21,10 @@ qobuz: https://www.qobuz.com/se-en/album/prisma-refractions-of-jan-johansson-car
 credits:
   - name: Carl Bagge
     instrument: Piano
+  - name: Niklas Fernqvist
+    instrument: Bass
+  - name: Daniel Fredriksson
+    instrument: Drums
 ---
 
 Prisma - Refractions Of Jan Johansson is a 2026 album by the Swedish piano trio led by Carl Bagge, released on 13 November 2026 on the Prisma Music label. The album is devoted to the music associated with Jan Johansson, the Swedish pianist whose 1960s recordings of Swedish folk melodies, among them Jazz på svenska, became central to Swedish jazz.
